@@ -12,26 +12,26 @@ interface Testimonial {
 const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "Dr. Dunegan Gilliam and her team were incredibly thorough and compassionate. My implant procedure was smoother than I ever expected.",
-    name: "Sarah M.",
+      "Dr. Overstreet and his team made the entire implant process seamless. I was nervous going in, but the level of care and professionalism put me completely at ease. My new teeth look and feel natural.",
+    name: "Sarah M., Richmond",
     rating: 5,
   },
   {
     quote:
-      "I was nervous about gum grafting, but the staff put me at ease from the moment I walked in. The results exceeded my expectations.",
-    name: "James T.",
+      "I had gum grafting done by Dr. Dunegan and the results exceeded my expectations. Minimal discomfort and my gums look better than they have in years.",
+    name: "James R., Midlothian",
     rating: 5,
   },
   {
     quote:
-      "The best periodontal office in Richmond, hands down. Professional, modern, and genuinely caring about their patients.",
-    name: "Linda W.",
+      "Dr. White took the time to explain every step of my periodontal treatment. The staff is incredibly kind and the office is spotless. I wouldn't go anywhere else.",
+    name: "Patricia L., Richmond",
     rating: 5,
   },
   {
     quote:
-      "From consultation to follow-up, every step was explained clearly. I finally feel confident about my smile again.",
-    name: "Robert K.",
+      "Dr. Lyons saved my implant when another office said it couldn't be done. He used an innovative technique and I'm so grateful for his skill and patience.",
+    name: "Michael T., Henrico",
     rating: 5,
   },
 ];

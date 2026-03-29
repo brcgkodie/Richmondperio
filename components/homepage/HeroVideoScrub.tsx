@@ -3,10 +3,17 @@
 import { useRef, useEffect } from "react";
 import Link from "next/link";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
-import { PRACTICE_PHONE_DISPLAY } from "@/lib/constants";
+import {
+  PRACTICE_PHONE_RICHMOND,
+  PRACTICE_PHONE_MIDLOTHIAN,
+  PRACTICE_PHONE_RICHMOND_DISPLAY,
+  PRACTICE_PHONE_MIDLOTHIAN_DISPLAY,
+} from "@/lib/constants";
 
-const HEADLINE_WORDS =
-  "Exceptional Periodontal Care in Richmond, Virginia".split(" ");
+const HEADLINE_LINE1 = "Overstreet, White & Dunegan".split(" ");
+const HEADLINE_LINE2 =
+  "Periodontal Excellence in Richmond, Virginia".split(" ");
+const HEADLINE_WORDS = [...HEADLINE_LINE1, ...HEADLINE_LINE2];
 
 export default function HeroVideoScrub() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -119,29 +126,41 @@ export default function HeroVideoScrub() {
       {/* Content */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center text-white">
         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-widest text-white/80">
-          Board-Certified Periodontists
+          Periodontics &amp; Dental Implant Surgery
         </span>
 
         <h1
           ref={headlineRef}
           className="mx-auto max-w-4xl font-serif text-4xl font-bold leading-tight md:text-6xl lg:text-7xl"
         >
-          {HEADLINE_WORDS.map((word, i) => (
-            <span key={i} className="inline-block overflow-hidden">
+          {HEADLINE_LINE1.map((word, i) => (
+            <span key={`l1-${i}`} className="inline-block overflow-hidden">
               <span className="hero-word inline-block">
                 {word}
-                {i < HEADLINE_WORDS.length - 1 ? "\u00A0" : ""}
+                {i < HEADLINE_LINE1.length - 1 ? "\u00A0" : ""}
               </span>
             </span>
           ))}
+          <br />
+          <span className="text-2xl md:text-4xl lg:text-5xl">
+            {HEADLINE_LINE2.map((word, i) => (
+              <span key={`l2-${i}`} className="inline-block overflow-hidden">
+                <span className="hero-word inline-block">
+                  {word}
+                  {i < HEADLINE_LINE2.length - 1 ? "\u00A0" : ""}
+                </span>
+              </span>
+            ))}
+          </span>
         </h1>
 
         <p
           ref={subtextRef}
           className="mx-auto mt-6 max-w-2xl text-lg text-white/80 opacity-0 md:text-xl"
         >
-          Advanced implant, grafting, and periodontal treatments delivered with
-          precision and compassion by Richmond&apos;s leading specialists.
+          Board-certified periodontists devoted to dental implant surgery, gum
+          grafting, bone regeneration, and the treatment of periodontal disease.
+          Serving Richmond and Midlothian, VA.
         </p>
 
         <div
@@ -152,13 +171,19 @@ export default function HeroVideoScrub() {
             href="/appointments"
             className="rounded-full bg-white px-8 py-3 text-sm font-semibold text-black transition hover:bg-white/90"
           >
-            Request Appointment
+            Schedule a Consultation
           </Link>
           <a
-            href={`tel:+18043556593`}
+            href={`tel:${PRACTICE_PHONE_RICHMOND}`}
             className="rounded-full border border-white/40 px-8 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
           >
-            Call {PRACTICE_PHONE_DISPLAY}
+            Richmond {PRACTICE_PHONE_RICHMOND_DISPLAY}
+          </a>
+          <a
+            href={`tel:${PRACTICE_PHONE_MIDLOTHIAN}`}
+            className="rounded-full border border-white/40 px-8 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            Midlothian {PRACTICE_PHONE_MIDLOTHIAN_DISPLAY}
           </a>
         </div>
       </div>

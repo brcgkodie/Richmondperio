@@ -5,7 +5,7 @@ import CTABand from "@/components/shared/CTABand";
 export const metadata: Metadata = {
   title: "About Our Practice",
   description:
-    "Learn about Richmond Periodontics & Dental Implants — board-certified periodontists serving Richmond and Midlothian, VA with advanced periodontal and implant care.",
+    "Learn about Overstreet, White & Dunegan, Ltd. — board-certified periodontists devoted to periodontics and dental implant surgery in Richmond and Midlothian, VA.",
 };
 
 export default function AboutPage() {
@@ -15,15 +15,15 @@ export default function AboutPage() {
       <section className="bg-neutral-50 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
-            About Richmond Periodontics
+            About Overstreet, White &amp; Dunegan
           </h1>
           <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
-            For over two decades, Richmond Periodontics &amp; Dental Implants
-            has been the trusted partner for patients and referring dentists
-            across the greater Richmond and Midlothian, Virginia area. Our
-            practice is built on a foundation of clinical excellence, advanced
-            technology, and genuine compassion for every patient who walks
-            through our doors.
+            Overstreet, White &amp; Dunegan, Ltd. is a practice devoted
+            exclusively to Periodontics and Dental Implant Surgery, serving
+            patients and referring dentists across the greater Richmond and
+            Midlothian, Virginia area. Our practice is built on a foundation of
+            clinical excellence, advanced technology, and genuine compassion for
+            every patient who walks through our doors.
           </p>
         </div>
       </section>
@@ -38,18 +38,28 @@ export default function AboutPage() {
                   A Legacy of Specialized Care
                 </h2>
                 <p className="text-neutral-600 leading-relaxed mb-4">
-                  With two convenient locations on Grove Avenue in Richmond and
-                  in Midlothian, our team of four board-certified periodontists
-                  delivers the highest standard of periodontal care. We
-                  specialize in dental implants, gum grafting, bone
-                  regeneration, crown lengthening, periodontal disease
-                  treatment, and surgical extractions.
+                  With two convenient locations — 4909 Grove Avenue in Richmond
+                  and 11301-B Polo Place in Midlothian — our team of
+                  board-certified periodontists delivers the highest standard of
+                  periodontal care. We specialize in dental implants, gum
+                  grafting, bone regeneration, crown lengthening, periodontal
+                  disease treatment, and surgical extractions.
                 </p>
-                <p className="text-neutral-600 leading-relaxed">
+                <p className="text-neutral-600 leading-relaxed mb-4">
                   Each of our doctors has completed advanced postgraduate
                   training in periodontics and holds board certification from the
                   American Board of Periodontology — a distinction achieved by a
-                  small percentage of periodontists nationwide.
+                  small percentage of periodontists nationwide. All of our
+                  doctors are members of the American Academy of Periodontology
+                  (AAP), American Dental Association (ADA), and have been voted
+                  Top Periodontists in Richmond Magazine.
+                </p>
+                <p className="text-neutral-600 leading-relaxed">
+                  Research continues to demonstrate links between periodontal
+                  disease and systemic health conditions such as cardiovascular
+                  disease, diabetes, and respiratory illness. Our team stays at
+                  the forefront of this evolving science to provide comprehensive
+                  care that supports your overall health.
                 </p>
               </div>
               <div>
@@ -88,12 +98,22 @@ export default function AboutPage() {
               welcoming environment where patients feel informed, comfortable,
               and confident in their care.
             </p>
-            <p className="text-lg text-neutral-600 leading-relaxed">
+            <p className="text-lg text-neutral-600 leading-relaxed mb-6">
               We are dedicated to serving the Richmond and Midlothian
               communities by building lasting relationships with our patients
               and referring dentists, and by continuously advancing our clinical
               expertise to deliver the best possible outcomes.
             </p>
+            <div className="text-sm text-neutral-500 leading-relaxed space-y-1">
+              <p>
+                <strong>Richmond:</strong> 4909 Grove Avenue, Richmond, VA —{" "}
+                <a href="tel:8043556593" className="underline">(804) 355-6593</a>
+              </p>
+              <p>
+                <strong>Midlothian:</strong> 11301-B Polo Place, Midlothian, VA —{" "}
+                <a href="tel:8047947094" className="underline">(804) 794-7094</a>
+              </p>
+            </div>
           </div>
         </section>
       </SectionReveal>

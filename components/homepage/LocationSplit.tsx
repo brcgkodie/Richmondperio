@@ -90,7 +90,7 @@ export default function LocationSplit() {
               <p className="mb-4 text-sm text-gray-600">
                 <span className="font-semibold text-[#182838]">Phone:</span>{" "}
                 <a
-                  href={`tel:${loc.phone.replace(/\D/g, "")}`}
+                  href={`tel:${loc.phoneTel}`}
                   className="text-[#0542BF] hover:underline"
                 >
                   {loc.phone}

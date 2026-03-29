@@ -11,7 +11,7 @@ export function generateLocalBusinessSchema() {
     "@type": "MedicalClinic",
     name: PRACTICE_NAME,
     description:
-      "Board-certified periodontal and dental implant surgery practice serving Richmond and Midlothian, Virginia. Specializing in dental implants, gum grafting, bone grafting, and periodontal disease treatment.",
+      "Board-certified periodontal and dental implant surgery practice — Overstreet, White & Dunegan, Ltd. — serving Richmond and Midlothian, Virginia.",
     url: SITE_URL,
     telephone: PRACTICE_PHONE,
     address: LOCATIONS.map((loc) => ({
@@ -36,20 +36,20 @@ export function generateLocalBusinessSchema() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday"],
         opens: "08:00",
         closes: "17:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Friday",
+        dayOfWeek: ["Thursday", "Friday"],
         opens: "08:00",
-        closes: "13:00",
+        closes: "17:00",
       },
     ],
     sameAs: [
-      "https://www.instagram.com/richmondperio",
-      "https://www.facebook.com/richmondperio",
+      "https://www.instagram.com/owdperio/",
+      "https://www.facebook.com/owdperio",
     ],
   };
 }

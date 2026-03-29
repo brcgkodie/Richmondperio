@@ -6,7 +6,7 @@ import SectionReveal from "@/components/shared/SectionReveal";
 export const metadata: Metadata = {
   title: "Our Services",
   description:
-    "Explore periodontal and dental implant services at Richmond Periodontics — dental implants, gum grafting, bone grafting, crown lengthening, and more in Richmond & Midlothian, VA.",
+    "Explore periodontal and dental implant services at Overstreet, White & Dunegan, Ltd. — dental implants, gum grafting, bone grafting, crown lengthening, and more in Richmond & Midlothian, VA.",
 };
 
 export default function ServicesPage() {
@@ -19,11 +19,11 @@ export default function ServicesPage() {
             Periodontal &amp; Implant Services
           </h1>
           <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
-            Our board-certified periodontists offer a comprehensive range of
-            periodontal and implant services at our Richmond and Midlothian, VA
-            offices. From dental implants to gum disease treatment, we combine
-            advanced techniques with personalized care to restore your oral
-            health and confidence.
+            The board-certified periodontists at Overstreet, White &amp; Dunegan
+            offer a comprehensive range of periodontal and implant services at
+            our Richmond and Midlothian, VA offices. From dental implants to gum
+            disease treatment, we combine advanced techniques with personalized
+            care to restore your oral health and confidence.
           </p>
         </div>
       </section>

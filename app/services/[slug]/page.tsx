@@ -17,7 +17,7 @@ const SERVICE_DATA: Record<
 > = {
   "dental-implants": {
     description:
-      "Richmond Periodontics is a leading provider of dental implants in Richmond, VA. Our board-certified periodontists use advanced 3D imaging and guided implant surgery to place titanium implants that look, feel, and function like your natural teeth. Whether you need a single implant, implant-supported bridge, or full-arch restoration, our team delivers predictable, long-lasting results with exceptional patient comfort at our Richmond and Midlothian offices.",
+      "Overstreet, White & Dunegan is a leading provider of dental implants in Richmond, VA. Our board-certified periodontists at OWD Periodontics use advanced 3D imaging and guided implant surgery to place titanium implants that look, feel, and function like your natural teeth. Whether you need a single implant, implant-supported bridge, or full-arch restoration, our team delivers predictable, long-lasting results with exceptional patient comfort at our Richmond and Midlothian offices.",
     faqs: [
       {
         question: "How long does the dental implant process take?",
@@ -39,7 +39,7 @@ const SERVICE_DATA: Record<
   },
   "gum-grafting": {
     description:
-      "Gum grafting at Richmond Periodontics restores receding gum tissue and protects exposed tooth roots. Our Richmond, VA periodontists specialize in connective tissue grafts, free gingival grafts, and the pinhole surgical technique — a minimally invasive approach that reduces recovery time. Gum recession can lead to sensitivity, decay, and aesthetic concerns, and our expert team provides lasting solutions tailored to each patient's needs.",
+      "Gum grafting at Overstreet, White & Dunegan restores receding gum tissue and protects exposed tooth roots. Our board-certified periodontists in Richmond, VA specialize in connective tissue grafts, free gingival grafts, and the pinhole surgical technique — a minimally invasive approach that reduces recovery time. Gum recession can lead to sensitivity, decay, and aesthetic concerns, and our expert team provides lasting solutions tailored to each patient's needs.",
     faqs: [
       {
         question: "Is gum grafting painful?",
@@ -56,7 +56,7 @@ const SERVICE_DATA: Record<
   },
   "bone-grafting": {
     description:
-      "Bone grafting at Richmond Periodontics rebuilds jawbone volume lost to tooth extraction, periodontal disease, or trauma. Our Richmond, VA specialists use cutting-edge biomaterials and regenerative techniques including guided bone regeneration to restore the foundation needed for successful dental implant placement. We serve patients throughout the greater Richmond and Midlothian area with predictable bone augmentation procedures.",
+      "Bone grafting at Overstreet, White & Dunegan rebuilds jawbone volume lost to tooth extraction, periodontal disease, or trauma. Our board-certified periodontists in Richmond, VA use cutting-edge biomaterials and regenerative techniques including guided bone regeneration to restore the foundation needed for successful dental implant placement. We serve patients throughout the greater Richmond and Midlothian area with predictable bone augmentation procedures.",
     faqs: [
       {
         question: "Why might I need a bone graft?",
@@ -73,7 +73,7 @@ const SERVICE_DATA: Record<
   },
   "crown-lengthening": {
     description:
-      "Crown lengthening at Richmond Periodontics reshapes excess gum and bone tissue to expose more natural tooth structure. Our board-certified periodontists in Richmond, VA perform functional crown lengthening to support dental restorations and aesthetic crown lengthening to correct a gummy smile. Using precise surgical techniques, we create balanced, natural-looking gumlines with minimal recovery time for patients across the Richmond metropolitan area.",
+      "Crown lengthening at Overstreet, White & Dunegan reshapes excess gum and bone tissue to expose more natural tooth structure. Our board-certified periodontists in Richmond, VA perform functional crown lengthening to support dental restorations and aesthetic crown lengthening to correct a gummy smile. Using precise surgical techniques, we create balanced, natural-looking gumlines with minimal recovery time for patients across the Richmond metropolitan area.",
     faqs: [
       {
         question: "What is crown lengthening used for?",
@@ -90,7 +90,7 @@ const SERVICE_DATA: Record<
   },
   "periodontal-disease-treatment": {
     description:
-      "Richmond Periodontics provides comprehensive periodontal disease treatment for patients in Richmond and Midlothian, VA. From early-stage gingivitis to advanced periodontitis, our board-certified specialists offer scaling and root planing, laser therapy, osseous surgery, and regenerative procedures. Early intervention is key to preserving your natural teeth, and our personalized treatment plans address the underlying causes of gum disease to restore lasting oral health.",
+      "Overstreet, White & Dunegan provides comprehensive periodontal disease treatment for patients in Richmond and Midlothian, VA. From early-stage gingivitis to advanced periodontitis, our board-certified periodontists offer scaling and root planing, laser therapy, osseous surgery, and regenerative procedures. Early intervention is key to preserving your natural teeth, and our personalized treatment plans address the underlying causes of gum disease to restore lasting oral health.",
     faqs: [
       {
         question: "What are the signs of periodontal disease?",
@@ -112,7 +112,7 @@ const SERVICE_DATA: Record<
   },
   "tooth-extractions": {
     description:
-      "Richmond Periodontics performs gentle surgical tooth extractions including wisdom teeth removal at our Richmond and Midlothian, VA offices. Our periodontists have advanced training in atraumatic extraction techniques that preserve surrounding bone and tissue, creating optimal conditions for future implant placement. We offer same-day socket preservation grafting and, in select cases, immediate dental implant placement following extraction.",
+      "Overstreet, White & Dunegan performs gentle surgical tooth extractions including wisdom teeth removal at our Richmond and Midlothian, VA offices. Our board-certified periodontists have advanced training in atraumatic extraction techniques that preserve surrounding bone and tissue, creating optimal conditions for future implant placement. We offer same-day socket preservation grafting and, in select cases, immediate dental implant placement following extraction.",
     faqs: [
       {
         question: "When is a surgical extraction necessary?",

@@ -36,37 +36,37 @@ const instrumentSerif = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://richmondperio.com"),
+  metadataBase: new URL("https://richmondperioonline.com"),
   title: {
     default:
-      "Richmond Periodontics & Dental Implants — Periodontist in Richmond, VA",
-    template: "%s | Richmond Periodontics & Dental Implants",
+      "Overstreet, White & Dunegan — Periodontists in Richmond & Midlothian, VA",
+    template: "%s | Overstreet, White & Dunegan — Periodontist Richmond VA",
   },
   description:
-    "Board-certified periodontists serving Richmond and Midlothian, VA. Specializing in dental implants, gum grafting, bone grafting, crown lengthening, and periodontal disease treatment.",
+    "Overstreet, White & Dunegan, Ltd. — board-certified periodontists serving Richmond and Midlothian, VA. Specializing in dental implants, gum grafting, bone grafting, crown lengthening, and periodontal disease treatment.",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://richmondperio.com",
-    siteName: "Richmond Periodontics & Dental Implants",
+    url: "https://richmondperioonline.com",
+    siteName: "Overstreet, White & Dunegan, Ltd.",
     title:
-      "Richmond Periodontics & Dental Implants — Periodontist in Richmond, VA",
+      "Overstreet, White & Dunegan — Periodontists in Richmond & Midlothian, VA",
     description:
-      "Board-certified periodontists serving Richmond and Midlothian, VA. Specializing in dental implants, gum grafting, bone grafting, and periodontal disease treatment.",
+      "Overstreet, White & Dunegan, Ltd. — board-certified periodontists serving Richmond and Midlothian, VA. Specializing in dental implants, gum grafting, bone grafting, crown lengthening, and periodontal disease treatment.",
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Richmond Periodontics & Dental Implants — Periodontist in Richmond, VA",
+      "Overstreet, White & Dunegan — Periodontists in Richmond & Midlothian, VA",
     description:
-      "Board-certified periodontists serving Richmond and Midlothian, VA.",
+      "Overstreet, White & Dunegan, Ltd. — board-certified periodontists serving Richmond and Midlothian, VA.",
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://richmondperio.com",
+    canonical: "https://richmondperioonline.com",
   },
 };
 
