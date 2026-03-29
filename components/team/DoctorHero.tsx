@@ -63,39 +63,45 @@ export default function DoctorHero({ doctor }: DoctorHeroProps) {
   }, [doctor.name]);
 
   return (
-    <section className="relative w-full bg-neutral-50">
-      <div className="mx-auto max-w-7xl px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section className="relative w-full bg-cream">
+      <div className="mx-auto max-w-7xl px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-0 items-end">
         {/* Text content */}
-        <div className="order-2 md:order-1">
+        <div className="order-2 md:order-1 md:col-span-5 md:col-start-1">
+          <div className="accent-line mb-6" />
+          <p
+            ref={credentialsRef}
+            className="label-sm text-teal mb-2"
+          >
+            {doctor.credentials}
+          </p>
           <h1
             ref={nameRef}
-            className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-3"
+            className="heading-xl text-navy"
           >
             {doctor.name}
           </h1>
           <p
-            ref={credentialsRef}
-            className="text-lg md:text-xl text-neutral-600 mb-2"
-          >
-            {doctor.credentials}
-          </p>
-          <p
             ref={titleRef}
-            className="text-base md:text-lg text-neutral-500"
+            className="body-lg text-gray-dark/60 mt-2"
           >
             {doctor.title}
           </p>
         </div>
 
         {/* Headshot */}
-        <div className="order-1 md:order-2 relative aspect-[3/4] w-full max-w-md mx-auto md:mx-0 md:ml-auto rounded-lg overflow-hidden">
-          <Image
-            src={doctor.image}
-            alt={`${doctor.name}, ${doctor.credentials}`}
-            fill
-            className="object-cover"
-            priority
-          />
+        <div className="order-1 md:order-2 md:col-span-6 md:col-start-7">
+          <div className="relative w-full max-w-md mx-auto md:mx-0 md:ml-auto">
+            <div className="absolute -bottom-3 -right-3 w-full h-full border border-teal/20" />
+            <div className="relative overflow-hidden bg-navy aspect-[3/4]">
+              <Image
+                src={doctor.image}
+                alt={`${doctor.name}, ${doctor.credentials}`}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
