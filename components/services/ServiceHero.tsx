@@ -80,26 +80,8 @@ export default function ServiceHero({
           priority
         />
       ) : (
-        <>
-          {/* Visual texture when no media */}
-          <div className="dot-grid absolute inset-0 pointer-events-none" />
-          <div
-            className="pointer-events-none absolute -top-[20%] right-[-10%] h-[400px] w-[400px] rounded-full opacity-[0.12]"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(28,129,141,0.5) 0%, rgba(24,40,56,0) 70%)",
-              filter: "blur(80px)",
-            }}
-          />
-          <div
-            className="pointer-events-none absolute bottom-[-10%] left-[-5%] h-[300px] w-[300px] rounded-full opacity-[0.1]"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(56,100,180,0.4) 0%, rgba(24,40,56,0) 70%)",
-              filter: "blur(80px)",
-            }}
-          />
-        </>
+        /* Subtle noise texture when no media */
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43NSIgbnVtT2N0YXZlcz0iNCIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuMDMiLz48L3N2Zz4=')] opacity-20 mix-blend-overlay pointer-events-none" />
       )}
 
       {/* Gradient overlay */}

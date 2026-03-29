@@ -7,6 +7,15 @@ import FAQAccordion from "@/components/services/FAQAccordion";
 import SectionReveal from "@/components/shared/SectionReveal";
 import CTABand from "@/components/shared/CTABand";
 
+const SERVICE_IMAGES: Record<string, string> = {
+  "dental-implants": "/images/services/dental-implants.jpg",
+  "gum-grafting": "/images/services/gum-grafting.jpg",
+  "bone-grafting": "/images/services/bone-grafting.jpg",
+  "crown-lengthening": "/images/services/crown-lengthening.jpg",
+  "periodontal-disease-treatment": "/images/services/periodontal-disease.jpg",
+  "tooth-extractions": "/images/services/tooth-extractions.jpg",
+};
+
 const SERVICE_DATA: Record<
   string,
   {
@@ -169,6 +178,7 @@ export default async function ServicePage({
       <ServiceHero
         title={service.title}
         description={service.shortDescription}
+        imageSrc={SERVICE_IMAGES[slug]}
       />
 
       {/* Service Content */}

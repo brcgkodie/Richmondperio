@@ -74,12 +74,12 @@ export default function BeforeAfterSlider({
   return (
     <div className="w-full">
       {label && (
-        <p className="text-sm font-medium text-neutral-600 mb-3">{label}</p>
+        <p className="label-sm text-gray-dark/60 mb-3">{label}</p>
       )}
 
       <div
         ref={containerRef}
-        className={`relative w-full aspect-[4/3] overflow-hidden rounded-lg select-none ${
+        className={`relative w-full aspect-[4/3] overflow-hidden select-none ${
           isDragging ? "cursor-grabbing" : "cursor-grab"
         }`}
         onMouseDown={handleMouseDown}
@@ -115,11 +115,11 @@ export default function BeforeAfterSlider({
 
         {/* Divider line */}
         <div
-          className="absolute top-0 bottom-0 w-0.5 bg-white shadow-lg"
+          className="absolute top-0 bottom-0 w-0.5 bg-white"
           style={{ left: `${position}%`, transform: "translateX(-50%)" }}
         >
           {/* Handle */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white border border-navy/10 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -130,7 +130,7 @@ export default function BeforeAfterSlider({
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-neutral-700"
+              className="text-navy"
             >
               <path d="M18 8l4 4-4 4" />
               <path d="M6 8l-4 4 4 4" />
@@ -139,10 +139,10 @@ export default function BeforeAfterSlider({
         </div>
 
         {/* Labels */}
-        <span className="absolute top-3 left-3 bg-black/60 text-white text-xs font-medium px-2 py-1 rounded">
+        <span className="absolute top-3 left-3 bg-navy/80 text-white text-xs font-medium px-2 py-1">
           Before
         </span>
-        <span className="absolute top-3 right-3 bg-black/60 text-white text-xs font-medium px-2 py-1 rounded">
+        <span className="absolute top-3 right-3 bg-navy/80 text-white text-xs font-medium px-2 py-1">
           After
         </span>
       </div>
