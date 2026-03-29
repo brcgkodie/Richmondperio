@@ -76,7 +76,7 @@ export function Header() {
                 {"children" in item &&
                   activeDropdown === item.label &&
                   item.children && (
-                    <div className="absolute left-0 top-full w-64 bg-[#182838] border border-white/10 py-3 shadow-2xl mt-2">
+                    <div className="absolute left-0 top-full w-72 bg-[#182838] border border-white/10 py-3 shadow-2xl mt-2">
                       {item.children.map((child) => (
                         <Link
                           key={child.href}

@@ -251,10 +251,22 @@ export const NAV_ITEMS = [
     })),
   },
   { label: "Our Doctors", href: "/team" },
+  {
+    label: "Patient Resources",
+    href: "/patient-resources",
+    children: [
+      { label: "New Patients", href: "/new-patients" },
+      { label: "Pre-Operative Instructions", href: "/patient-resources/pre-operative-instructions" },
+      { label: "Oral Sedation Checklist", href: "/patient-resources/pre-operative-oral-sedation" },
+      { label: "IV Sedation Checklist", href: "/patient-resources/pre-operative-iv-sedation" },
+      { label: "Post-Operative Instructions", href: "/patient-resources/post-operative-instructions" },
+      { label: "Sinus Surgery Post-Op", href: "/patient-resources/sinus-surgery-post-op" },
+      { label: "Referring Doctors", href: "/referring-doctors" },
+    ],
+  },
   { label: "Results", href: "/results" },
   { label: "Locations", href: "/locations" },
   { label: "Reviews", href: "/reviews" },
-  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
