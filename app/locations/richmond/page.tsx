@@ -21,7 +21,7 @@ export default function RichmondLocationPage() {
             {richmond.name}
           </h1>
           <p className="text-lg text-neutral-600">
-            Richmond Periodontics &amp; Dental Implants — {richmond.city},{" "}
+            Overstreet, White &amp; Dunegan, Ltd. — {richmond.city},{" "}
             {richmond.state}
           </p>
         </div>

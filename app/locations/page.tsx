@@ -6,7 +6,7 @@ import SectionReveal from "@/components/shared/SectionReveal";
 export const metadata: Metadata = {
   title: "Our Locations",
   description:
-    "Visit Richmond Periodontics & Dental Implants at our Richmond Grove Avenue or Midlothian office. Board-certified periodontists serving central Virginia.",
+    "Visit Overstreet, White & Dunegan, Ltd. at our Richmond Grove Avenue or Midlothian Polo Place office. Board-certified periodontists serving central Virginia.",
 };
 
 export default function LocationsPage() {
