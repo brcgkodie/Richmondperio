@@ -78,21 +78,21 @@ export default function LocationSplit() {
               }}
               className="bg-white p-8 md:p-12 border-l-2 border-teal transition-colors duration-300 hover:border-blue"
             >
-              <h3 className="mb-4 text-xl font-bold text-navy">
+              <h3 className="heading-md text-navy mb-4">
                 {loc.name}
               </h3>
 
-              <address className="mb-4 text-sm not-italic leading-relaxed text-gray-600">
+              <address className="mb-4 not-italic leading-relaxed text-gray-dark/60">
                 {loc.street}
                 <br />
                 {loc.city}, {loc.state} {loc.zip}
               </address>
 
-              <p className="mb-4 text-sm">
-                <span className="font-semibold text-navy">Phone:</span>{" "}
+              <p className="mb-4">
+                <span className="label-sm text-navy">Phone:</span>{" "}
                 <a
                   href={`tel:${loc.phoneTel}`}
-                  className="text-sm font-medium text-navy"
+                  className="label-sm text-navy"
                 >
                   {loc.phone}
                 </a>
@@ -100,10 +100,10 @@ export default function LocationSplit() {
 
               {/* Hours */}
               <div className="mb-6">
-                <span className="mb-1 block text-sm font-semibold text-navy">
+                <span className="label-sm text-navy mb-1 block">
                   Hours
                 </span>
-                <ul className="space-y-0.5 text-sm text-gray-600">
+                <ul className="space-y-0.5 text-gray-dark/60">
                   {loc.hours.map((h) => (
                     <li key={h.days} className="flex justify-between">
                       <span>{h.days}</span>

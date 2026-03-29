@@ -1,7 +1,3 @@
-"use client";
-
-import { useRef, useEffect } from "react";
-import { gsap, ScrollTrigger } from "@/lib/gsap";
 import MagneticButton from "@/components/shared/MagneticButton";
 import { PRACTICE_PHONE_DISPLAY } from "@/lib/constants";
 
@@ -18,37 +14,10 @@ export default function CTABand({
   buttonText = "Request Appointment",
   buttonHref = "/appointments",
 }: CTABandProps) {
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const el = sectionRef.current;
-    if (!el) return;
-
-    const tween = gsap.fromTo(
-      el,
-      { backgroundColor: "#F1ECE8" },
-      {
-        backgroundColor: "#182838",
-        ease: "none",
-        scrollTrigger: {
-          trigger: el,
-          start: "top 80%",
-          end: "top 30%",
-          scrub: true,
-        },
-      }
-    );
-
-    return () => {
-      tween.scrollTrigger?.kill();
-      tween.kill();
-    };
-  }, []);
-
   return (
     <section
-      ref={sectionRef}
       className="py-24 px-6 text-white"
+      style={{ backgroundColor: "#182838" }}
     >
       <div className="mx-auto max-w-3xl">
         <div className="accent-line mx-auto mb-8" />

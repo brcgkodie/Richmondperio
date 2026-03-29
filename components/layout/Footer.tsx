@@ -3,36 +3,13 @@ import {
   PRACTICE_NAME,
   LOCATIONS,
   SERVICES,
-  PRACTICE_PHONE_RICHMOND_DISPLAY,
-  PRACTICE_PHONE_MIDLOTHIAN_DISPLAY,
   INSTAGRAM_URL,
 } from "@/lib/constants";
 
 export function Footer() {
   return (
     <footer className="bg-[#182838] text-white">
-      {/* Part 1: CTA area */}
-      <div className="border-b border-white/5">
-        <div className="mx-auto max-w-7xl px-6 py-20 md:py-28 text-center">
-          <div className="accent-line mx-auto mb-8" />
-          <h2 className="heading-xl text-white">Ready to talk?</h2>
-          <p className="label-sm text-white/30 mt-6">Schedule a consultation at either office</p>
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a href="tel:+18043556593" className="label-sm text-teal hover:text-white transition-colors">
-              Richmond {PRACTICE_PHONE_RICHMOND_DISPLAY}
-            </a>
-            <span className="hidden sm:block w-px h-4 bg-white/20" />
-            <a href="tel:+18047947094" className="label-sm text-teal hover:text-white transition-colors">
-              Midlothian {PRACTICE_PHONE_MIDLOTHIAN_DISPLAY}
-            </a>
-          </div>
-          <div className="mt-8">
-            <Link href="/appointments" className="btn-primary-light"><span>Request Appointment</span></Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Part 2: Info grid */}
+      {/* Info grid */}
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-8 md:grid-cols-12">
           {/* Practice info */}

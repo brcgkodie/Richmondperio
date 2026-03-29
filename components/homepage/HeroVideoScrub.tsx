@@ -25,6 +25,10 @@ export default function HeroVideoScrub() {
   const accentRef = useRef<HTMLDivElement>(null);
   const labelRef = useRef<HTMLSpanElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const orb1Ref = useRef<HTMLDivElement>(null);
+  const orb2Ref = useRef<HTMLDivElement>(null);
+  const orb3Ref = useRef<HTMLDivElement>(null);
+  const decoLineRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -37,6 +41,47 @@ export default function HeroVideoScrub() {
     if (prefersReduced) return;
 
     const ctx = gsap.context(() => {
+      /* ── Ambient gradient orb animations ── */
+      if (orb1Ref.current) {
+        gsap.to(orb1Ref.current, {
+          x: 120,
+          y: -80,
+          duration: 22,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+        });
+      }
+      if (orb2Ref.current) {
+        gsap.to(orb2Ref.current, {
+          x: -100,
+          y: 60,
+          duration: 26,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+        });
+      }
+      if (orb3Ref.current) {
+        gsap.to(orb3Ref.current, {
+          x: 80,
+          y: 100,
+          duration: 30,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+        });
+      }
+
+      /* ── Decorative line draw ── */
+      if (decoLineRef.current) {
+        gsap.fromTo(
+          decoLineRef.current,
+          { scaleX: 0, transformOrigin: "left center" },
+          { scaleX: 1, duration: 1.8, ease: "power2.inOut", delay: 0.3 }
+        );
+      }
+
       /* ── Entrance timeline ── */
       const tl = gsap.timeline({
         defaults: { ease: "grove-smooth", duration: 1 },
@@ -113,7 +158,7 @@ export default function HeroVideoScrub() {
         );
       }
 
-      // Scroll indicator pulse
+      // Scroll indicator fade in
       if (scrollRef.current) {
         tl.fromTo(
           scrollRef.current,
@@ -121,6 +166,16 @@ export default function HeroVideoScrub() {
           { opacity: 1, duration: 0.6 },
           1.2
         );
+
+        // Scroll indicator bounce/pulse loop
+        gsap.to(scrollRef.current, {
+          y: 6,
+          duration: 1.4,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+          delay: 1.8,
+        });
       }
     }, section);
 
@@ -132,11 +187,50 @@ export default function HeroVideoScrub() {
       ref={sectionRef}
       className="relative h-[100svh] min-h-[600px] overflow-hidden bg-[#182838]"
     >
-      {/* Subtle background texture */}
+      {/* ── Animated gradient orbs ── */}
+      <div
+        ref={orb1Ref}
+        className="pointer-events-none absolute -top-[20%] -left-[10%] h-[600px] w-[600px] rounded-full opacity-[0.18]"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(45,212,191,0.4) 0%, rgba(24,40,56,0) 70%)",
+          filter: "blur(100px)",
+        }}
+      />
+      <div
+        ref={orb2Ref}
+        className="pointer-events-none absolute top-[30%] right-[-5%] h-[500px] w-[500px] rounded-full opacity-[0.15]"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(56,100,180,0.5) 0%, rgba(24,40,56,0) 70%)",
+          filter: "blur(120px)",
+        }}
+      />
+      <div
+        ref={orb3Ref}
+        className="pointer-events-none absolute -bottom-[15%] left-[30%] h-[550px] w-[550px] rounded-full opacity-[0.2]"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(30,70,130,0.45) 0%, rgba(24,40,56,0) 70%)",
+          filter: "blur(110px)",
+        }}
+      />
+
+      {/* ── Dot grid texture ── */}
+      <div className="dot-grid absolute inset-0 pointer-events-none" />
+
+      {/* Subtle background noise texture */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43NSIgbnVtT2N0YXZlcz0iNCIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuMDMiLz48L3N2Zz4=')] opacity-30 mix-blend-overlay pointer-events-none" />
 
       {/* Accent gradient — subtle teal glow */}
       <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-teal/[0.03] to-transparent pointer-events-none" />
+
+      {/* ── Decorative horizontal line ── */}
+      <div
+        ref={decoLineRef}
+        className="pointer-events-none absolute top-1/2 left-0 right-0 h-px bg-white/[0.05]"
+        style={{ transform: "scaleX(0)" }}
+      />
 
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-start justify-center px-6 text-left text-white md:px-8">
@@ -156,7 +250,7 @@ export default function HeroVideoScrub() {
             <span className="block overflow-hidden">
               <span
                 ref={line1Ref}
-                className="block heading-xl text-white leading-[1.05]"
+                className="block heading-xl text-[clamp(2.25rem,7vw,5rem)] text-white leading-[1.05]"
               >
                 {HEADLINE_LINE1}
               </span>
@@ -164,7 +258,7 @@ export default function HeroVideoScrub() {
             <span className="block overflow-hidden">
               <span
                 ref={line2Ref}
-                className="block heading-xl text-white leading-[1.05]"
+                className="block heading-xl text-[clamp(2.25rem,7vw,5rem)] text-white leading-[1.05]"
               >
                 {HEADLINE_LINE2}
               </span>
