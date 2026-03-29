@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import SectionReveal from "@/components/shared/SectionReveal";
 import CTABand from "@/components/shared/CTABand";
 
@@ -29,6 +30,24 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+
+      {/* Team Photo */}
+      <SectionReveal>
+        <section className="py-16 md:py-24">
+          <div className="mx-auto max-w-7xl px-6">
+            <div className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden bg-navy">
+              <Image
+                src="/images/team/team-group.jpg"
+                alt="Drs. Dunegan Gilliam, Overstreet, Lyons, and White — the periodontists at Overstreet, White & Dunegan"
+                fill
+                sizes="100vw"
+                className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-1000"
+                priority
+              />
+            </div>
+          </div>
+        </section>
+      </SectionReveal>
 
       {/* Practice Description */}
       <SectionReveal>

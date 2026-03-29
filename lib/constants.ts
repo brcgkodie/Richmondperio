@@ -139,7 +139,7 @@ export const TEAM = [
     bio: "Dr. Overstreet was born and raised in Richmond, VA. He is one of eleven family members to pursue a career in dentistry. After graduating Magna Cum Laude from the Medical College of Virginia School of Dentistry in 2000, he completed his periodontics residency and master's degree at MCV in 2003. Dr. Overstreet's surgical interests include implant dentistry, soft tissue esthetics — grafting and recontouring — and the treatment of periodontal disease. He continues to serve as a part-time faculty member in the VCU periodontal program and is co-developer of the Titanium Study Club, which teaches general dentists the art of implant dentistry. Dr. Overstreet has been recognized as one of Richmond's Top Periodontists by his peers in Richmond Magazine every year since 2012.",
     personal:
       "Dr. Overstreet enjoys spending time with his family and staying connected to the Richmond dental community through teaching and mentorship.",
-    image: "/images/team/dr-overstreet.jpg",
+    image: "/images/team/dr-overstreet.png",
     pageUrl: "/team/dr-overstreet",
   },
   {
