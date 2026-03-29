@@ -1,0 +1,96 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { TEAM } from "@/lib/constants";
+import PhysicianSchema from "@/components/seo/PhysicianSchema";
+import BreadcrumbSchema from "@/components/seo/BreadcrumbSchema";
+import DoctorHero from "@/components/team/DoctorHero";
+import DoctorBio from "@/components/team/DoctorBio";
+import SectionReveal from "@/components/shared/SectionReveal";
+import CTABand from "@/components/shared/CTABand";
+
+export function generateStaticParams() {
+  return TEAM.map((member) => ({ slug: member.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const member = TEAM.find((m) => m.slug === slug);
+  if (!member) return {};
+
+  return {
+    title: `Dr. ${member.name}, ${member.credentials}`,
+    description: member.bio,
+  };
+}
+
+export default async function DoctorPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const member = TEAM.find((m) => m.slug === slug);
+  if (!member) notFound();
+
+  const breadcrumbs = [
+    { name: "Home", url: "https://richmondperio.com" },
+    { name: "Team", url: "https://richmondperio.com/team" },
+    {
+      name: `Dr. ${member.name}`,
+      url: `https://richmondperio.com/team/${member.slug}`,
+    },
+  ];
+
+  return (
+    <>
+      <PhysicianSchema doctor={member} />
+      <div className="mx-auto max-w-7xl px-6">
+        <BreadcrumbSchema items={breadcrumbs} />
+      </div>
+
+      <DoctorHero doctor={member} />
+
+      <DoctorBio
+        doctor={{
+          bio: member.bio,
+          personal: member.personal,
+          education: member.education.map(
+            (e) => `${e.degree} — ${e.institution}`
+          ),
+          memberships: [...member.memberships],
+        }}
+      />
+
+      {/* Reviews Placeholder */}
+      <SectionReveal>
+        <section className="bg-neutral-50 py-16 md:py-24">
+          <div className="mx-auto max-w-3xl px-6 text-center">
+            <h2 className="font-serif text-3xl text-neutral-900 mb-6">
+              Patient Reviews
+            </h2>
+            <p className="text-neutral-600 leading-relaxed">
+              Patient reviews for Dr. {member.name} will be displayed here.
+              Check back soon or visit our{" "}
+              <a
+                href="/reviews"
+                className="text-[#0542BF] underline underline-offset-2"
+              >
+                reviews page
+              </a>{" "}
+              to see what our patients are saying.
+            </p>
+          </div>
+        </section>
+      </SectionReveal>
+
+      <CTABand
+        headline={`Schedule a Consultation with Dr. ${member.name.split(" ")[0]}`}
+        subtext="Take the first step toward better periodontal health today."
+      />
+    </>
+  );
+}

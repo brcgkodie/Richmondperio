@@ -1,22 +1,38 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Instrument_Serif } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { LenisProvider } from "@/components/layout/LenisProvider";
 import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
 
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
+// Self-hosted fonts for zero layout shift and no external requests.
+// Replace src paths with actual .woff2 files when available.
+// Falling back to system fonts until font files are added.
+const jakarta = localFont({
+  src: [
+    {
+      path: "../public/fonts/PlusJakartaSans-Variable.woff2",
+      style: "normal",
+    },
+  ],
   variable: "--font-sans",
   display: "swap",
+  fallback: ["system-ui", "sans-serif"],
+  adjustFontFallback: false,
 });
 
-const instrumentSerif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
+const instrumentSerif = localFont({
+  src: [
+    {
+      path: "../public/fonts/InstrumentSerif-Regular.woff2",
+      style: "normal",
+    },
+  ],
   variable: "--font-serif",
   display: "swap",
+  fallback: ["Georgia", "serif"],
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {

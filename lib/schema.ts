@@ -57,8 +57,8 @@ export function generateLocalBusinessSchema() {
 export function generatePhysicianSchema(doctor: {
   name: string;
   credentials: string;
-  education: { institution: string; degree: string }[];
-  memberships: string[];
+  education: readonly { readonly institution: string; readonly degree: string }[];
+  memberships: readonly string[];
 }) {
   return {
     "@context": "https://schema.org",

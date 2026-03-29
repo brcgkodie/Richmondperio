@@ -6,7 +6,7 @@ import {
   PRACTICE_PHONE_DISPLAY,
 } from "@/lib/constants";
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="bg-[#182838] text-white">
       <div className="mx-auto max-w-7xl px-6 py-16">

@@ -4,8 +4,8 @@ interface PhysicianSchemaProps {
   doctor: {
     name: string;
     credentials: string;
-    education: { institution: string; degree: string }[];
-    memberships: string[];
+    education: readonly { readonly institution: string; readonly degree: string }[];
+    memberships: readonly string[];
   };
 }
 

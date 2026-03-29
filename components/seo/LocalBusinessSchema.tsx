@@ -1,6 +1,6 @@
 import { generateLocalBusinessSchema } from "@/lib/schema";
 
-export default function LocalBusinessSchema() {
+export function LocalBusinessSchema() {
   return (
     <script
       type="application/ld+json"

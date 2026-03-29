@@ -8,7 +8,7 @@ interface LenisProviderProps {
   children: ReactNode;
 }
 
-export default function LenisProvider({ children }: LenisProviderProps) {
+export function LenisProvider({ children }: LenisProviderProps) {
   useEffect(() => {
     const lenis = new Lenis();
 
