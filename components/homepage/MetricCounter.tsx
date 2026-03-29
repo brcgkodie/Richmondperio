@@ -43,25 +43,24 @@ export default function MetricCounter() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#182838] py-16 md:py-24"
+      className="bg-[#182838] py-12 md:py-24"
     >
       <div className="mx-auto max-w-6xl px-6">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between">
+        <div className="grid grid-cols-2 gap-px bg-white/5 md:flex md:flex-row md:gap-0 md:bg-transparent md:items-start md:justify-between">
           {METRICS.map((metric, i) => (
             <React.Fragment key={metric.label}>
               {i > 0 && <div className="hidden md:block w-px self-stretch bg-white/10" />}
-              {i > 0 && <hr className="md:hidden border-white/5 my-8" />}
-              <div className="flex-1 text-center py-2 md:py-0">
+              <div className="flex-1 text-center bg-[#182838] py-8 md:py-0">
                 <span
                   ref={(el) => {
                     numberRefs.current[i] = el;
                   }}
-                  className="block font-serif text-5xl font-normal text-white md:text-6xl lg:text-7xl tracking-tight"
+                  className="block font-serif text-4xl font-normal text-white md:text-6xl lg:text-7xl tracking-tight"
                 >
                   0
                 </span>
-                <span className="text-teal text-2xl font-serif">+</span>
-                <span className="mt-3 block label-sm text-white/40">
+                <span className="text-teal text-xl md:text-2xl font-serif">+</span>
+                <span className="mt-2 md:mt-3 block label-sm text-white/40">
                   {metric.label}
                 </span>
               </div>

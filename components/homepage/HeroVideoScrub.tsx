@@ -233,7 +233,7 @@ export default function HeroVideoScrub() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-start justify-center px-6 text-left text-white md:px-8">
+      <div className="relative z-10 flex h-full flex-col items-start justify-end pb-24 sm:justify-center sm:pb-0 px-6 text-left text-white md:px-8">
         <div className="mx-auto w-full max-w-7xl">
           <div ref={accentRef} className="accent-line mb-5 md:mb-6" />
           <span
@@ -266,7 +266,7 @@ export default function HeroVideoScrub() {
             <span className="block overflow-hidden mt-2 md:mt-4">
               <span
                 ref={subtitleRef}
-                className="block heading-lg text-white/50 leading-[1.15]"
+                className="block heading-lg text-white/40 leading-[1.15]"
               >
                 {SUBTITLE}
               </span>
@@ -275,7 +275,7 @@ export default function HeroVideoScrub() {
 
           <p
             ref={subtextRef}
-            className="mt-6 md:mt-8 max-w-lg body-lg text-white/35 opacity-0"
+            className="hidden sm:block mt-6 md:mt-8 max-w-lg body-lg text-white/35 opacity-0"
           >
             Board-certified periodontists devoted to dental implant surgery, gum
             grafting, bone regeneration, and the treatment of periodontal disease.
@@ -314,7 +314,7 @@ export default function HeroVideoScrub() {
       {/* Scroll indicator */}
       <div
         ref={scrollRef}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-0"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center gap-2 opacity-0"
       >
         <span className="text-[10px] uppercase tracking-[0.25em] text-white/25">Scroll</span>
         <div className="h-10 w-px bg-gradient-to-b from-white/25 to-transparent" />
