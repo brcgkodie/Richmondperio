@@ -21,7 +21,7 @@ export default function MidlothianLocationPage() {
             {midlothian.name}
           </h1>
           <p className="text-lg text-neutral-600">
-            Richmond Periodontics &amp; Dental Implants — {midlothian.city},{" "}
+            Overstreet, White &amp; Dunegan, Ltd. — {midlothian.city},{" "}
             {midlothian.state}
           </p>
         </div>

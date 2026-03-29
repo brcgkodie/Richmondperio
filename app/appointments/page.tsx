@@ -37,9 +37,10 @@ export default function AppointmentsPage() {
             Request an Appointment
           </h1>
           <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
-            Fill out the form below and our team will contact you to confirm
-            your appointment. For immediate scheduling, please call our office
-            directly.
+            Fill out the form below and our team at Overstreet, White &amp;
+            Dunegan will contact you to confirm your appointment. For immediate
+            scheduling, call our Richmond office at (804) 355-6593 or our
+            Midlothian office at (804) 794-7094.
           </p>
         </div>
       </section>
