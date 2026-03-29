@@ -5,7 +5,7 @@ import CTABand from "@/components/shared/CTABand";
 export const metadata: Metadata = {
   title: "New Patients",
   description:
-    "Welcome to Richmond Periodontics & Dental Implants. Learn what to expect on your first visit, insurance information, and download patient forms.",
+    "Welcome to Overstreet, White & Dunegan, Ltd. Learn what to expect on your first visit, insurance information, and download patient forms.",
 };
 
 export default function NewPatientsPage() {
@@ -18,9 +18,10 @@ export default function NewPatientsPage() {
             Welcome, New Patients
           </h1>
           <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
-            We are thrilled you have chosen Richmond Periodontics &amp; Dental
-            Implants for your periodontal care. Here is everything you need to
-            know before your first visit.
+            We are thrilled you have chosen Overstreet, White &amp; Dunegan
+            for your periodontal care. Contact our Richmond office at (804)
+            355-6593 or Midlothian at (804) 794-7094. Here is everything you
+            need to know before your first visit.
           </p>
         </div>
       </section>

@@ -5,7 +5,7 @@ import SectionReveal from "@/components/shared/SectionReveal";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Read the latest articles on dental implants, periodontal health, gum disease, and oral care from the periodontists at Richmond Periodontics & Dental Implants.",
+    "Read the latest articles on dental implants, periodontal health, gum disease, and oral care from the periodontists at Overstreet, White & Dunegan, Ltd.",
 };
 
 const BLOG_POSTS = [
@@ -13,7 +13,7 @@ const BLOG_POSTS = [
     slug: "what-to-expect-dental-implant-consultation",
     title: "What to Expect at Your Dental Implant Consultation",
     excerpt:
-      "Thinking about dental implants? Learn what happens during your first consultation, from 3D imaging to personalized treatment planning, at Richmond Periodontics.",
+      "Thinking about dental implants? Learn what happens during your first consultation, from 3D imaging to personalized treatment planning, at Overstreet, White & Dunegan.",
     date: "March 15, 2026",
     author: "Dr. Kara Dunegan Gilliam",
   },
@@ -23,7 +23,7 @@ const BLOG_POSTS = [
     excerpt:
       "Gum disease affects nearly half of adults over 30. Discover the early warning signs and why timely treatment from a periodontist can save your teeth.",
     date: "February 28, 2026",
-    author: "Dr. Michael Shabahang",
+    author: "Dr. Benjamin T. Overstreet",
   },
   {
     slug: "gum-grafting-recovery-tips",
@@ -31,7 +31,7 @@ const BLOG_POSTS = [
     excerpt:
       "Had a gum graft or scheduled for one? Our periodontists share practical tips to ensure a comfortable recovery and great long-term results.",
     date: "February 10, 2026",
-    author: "Dr. Ashley California",
+    author: "Dr. John H. White",
   },
 ];
 

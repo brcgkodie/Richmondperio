@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SERVICES, TEAM } from "@/lib/constants";
 
-const BASE_URL = "https://richmondperio.com";
+const BASE_URL = "https://richmondperioonline.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [

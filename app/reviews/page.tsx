@@ -4,7 +4,7 @@ import SectionReveal from "@/components/shared/SectionReveal";
 export const metadata: Metadata = {
   title: "Patient Reviews",
   description:
-    "Read patient reviews and testimonials for Richmond Periodontics & Dental Implants. See why patients trust our board-certified periodontists in Richmond and Midlothian, VA.",
+    "Read patient reviews and testimonials for Overstreet, White & Dunegan, Ltd. See why patients trust our board-certified periodontists in Richmond and Midlothian, VA.",
 };
 
 const REVIEWS = [
@@ -23,19 +23,19 @@ const REVIEWS = [
   {
     name: "Patricia L.",
     rating: 5,
-    text: "After years of dealing with periodontal disease, I finally found a practice that took the time to explain everything and create a real plan. Dr. Shabahang is excellent.",
+    text: "After years of dealing with periodontal disease, I finally found a practice that took the time to explain everything and create a real plan. Dr. Overstreet is excellent.",
     date: "January 2026",
   },
   {
     name: "Michael T.",
     rating: 5,
-    text: "Had a bone graft and implant placed at the Midlothian office. Dr. Miller was thorough and skilled. The recovery was much smoother than I anticipated.",
+    text: "Had a bone graft and implant placed at the Midlothian office. Dr. White was thorough and skilled. The recovery was much smoother than I anticipated.",
     date: "December 2025",
   },
   {
     name: "Karen W.",
     rating: 5,
-    text: "Dr. California fixed my gummy smile with crown lengthening and the results are amazing. I finally feel confident smiling. The whole experience was top-notch.",
+    text: "Dr. Lyons fixed my gummy smile with crown lengthening and the results are amazing. I finally feel confident smiling. The whole experience was top-notch.",
     date: "November 2025",
   },
   {

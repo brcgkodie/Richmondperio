@@ -4,7 +4,7 @@ import SectionReveal from "@/components/shared/SectionReveal";
 export const metadata: Metadata = {
   title: "Patient Resources",
   description:
-    "Pre- and post-operative instructions, insurance information, payment options, and FAQs from Richmond Periodontics & Dental Implants.",
+    "Pre- and post-operative instructions, insurance information, payment options, and FAQs from Overstreet, White & Dunegan, Ltd.",
 };
 
 export default function PatientResourcesPage() {

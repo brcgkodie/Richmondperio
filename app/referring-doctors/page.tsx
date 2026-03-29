@@ -1,7 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { PRACTICE_PHONE_DISPLAY } from "@/lib/constants";
+import {
+  PRACTICE_PHONE_RICHMOND_DISPLAY,
+  PRACTICE_PHONE_MIDLOTHIAN_DISPLAY,
+  PRACTICE_PHONE_RICHMOND,
+  PRACTICE_PHONE_MIDLOTHIAN,
+} from "@/lib/constants";
 
 export default function ReferringDoctorsPage() {
   const [form, setForm] = useState({
@@ -37,9 +42,9 @@ export default function ReferringDoctorsPage() {
             For Referring Doctors
           </h1>
           <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
-            Thank you for trusting Richmond Periodontics &amp; Dental Implants
-            with your patients&apos; periodontal care. We are committed to
-            seamless communication and collaborative treatment planning.
+            Thank you for trusting Overstreet, White &amp; Dunegan, Ltd. with
+            your patients&apos; periodontal care. We are committed to seamless
+            communication and collaborative treatment planning.
           </p>
         </div>
       </section>
@@ -93,12 +98,21 @@ export default function ReferringDoctorsPage() {
                     Contact Us Directly
                   </h3>
                   <p className="mb-2">
-                    <span className="font-medium">Phone:</span>{" "}
+                    <span className="font-medium">Richmond:</span>{" "}
                     <a
-                      href={`tel:${PRACTICE_PHONE_DISPLAY.replace(/[^+\d]/g, "")}`}
+                      href={`tel:${PRACTICE_PHONE_RICHMOND}`}
                       className="text-[#0542BF] hover:underline"
                     >
-                      {PRACTICE_PHONE_DISPLAY}
+                      {PRACTICE_PHONE_RICHMOND_DISPLAY}
+                    </a>
+                  </p>
+                  <p className="mb-2">
+                    <span className="font-medium">Midlothian:</span>{" "}
+                    <a
+                      href={`tel:${PRACTICE_PHONE_MIDLOTHIAN}`}
+                      className="text-[#0542BF] hover:underline"
+                    >
+                      {PRACTICE_PHONE_MIDLOTHIAN_DISPLAY}
                     </a>
                   </p>
                   <p>
