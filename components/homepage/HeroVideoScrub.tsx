@@ -121,70 +121,70 @@ export default function HeroVideoScrub() {
       )}
 
       {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#182838]/80 via-[#182838]/30 to-[#182838]/90" />
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center text-white">
-        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-widest text-white/80">
-          Periodontics &amp; Dental Implant Surgery
-        </span>
+      <div className="relative z-10 flex min-h-screen flex-col items-start justify-end px-6 pb-24 text-left text-white md:pb-32">
+        <div className="mx-auto w-full max-w-5xl">
+          <div className="accent-line mb-6" />
+          <span className="label-sm text-teal mb-6 block">
+            Periodontics &amp; Dental Implant Surgery
+          </span>
 
-        <h1
-          ref={headlineRef}
-          className="mx-auto max-w-4xl font-serif text-4xl font-bold leading-tight md:text-6xl lg:text-7xl"
-        >
-          {HEADLINE_LINE1.map((word, i) => (
-            <span key={`l1-${i}`} className="inline-block overflow-hidden">
-              <span className="hero-word inline-block">
-                {word}
-                {i < HEADLINE_LINE1.length - 1 ? "\u00A0" : ""}
-              </span>
-            </span>
-          ))}
-          <br />
-          <span className="text-2xl md:text-4xl lg:text-5xl">
-            {HEADLINE_LINE2.map((word, i) => (
-              <span key={`l2-${i}`} className="inline-block overflow-hidden">
+          <h1
+            ref={headlineRef}
+            className="max-w-5xl heading-xl text-white"
+          >
+            {HEADLINE_LINE1.map((word, i) => (
+              <span key={`l1-${i}`} className="inline-block overflow-hidden">
                 <span className="hero-word inline-block">
                   {word}
-                  {i < HEADLINE_LINE2.length - 1 ? "\u00A0" : ""}
+                  {i < HEADLINE_LINE1.length - 1 ? "\u00A0" : ""}
                 </span>
               </span>
             ))}
-          </span>
-        </h1>
+            <br />
+            <span className="heading-lg text-white/80 mt-2">
+              {HEADLINE_LINE2.map((word, i) => (
+                <span key={`l2-${i}`} className="inline-block overflow-hidden">
+                  <span className="hero-word inline-block">
+                    {word}
+                    {i < HEADLINE_LINE2.length - 1 ? "\u00A0" : ""}
+                  </span>
+                </span>
+              ))}
+            </span>
+          </h1>
 
-        <p
-          ref={subtextRef}
-          className="mx-auto mt-6 max-w-2xl text-lg text-white/80 opacity-0 md:text-xl"
-        >
-          Board-certified periodontists devoted to dental implant surgery, gum
-          grafting, bone regeneration, and the treatment of periodontal disease.
-          Serving Richmond and Midlothian, VA.
-        </p>
+          <p
+            ref={subtextRef}
+            className="mt-8 max-w-xl body-lg text-white/60 opacity-0"
+          >
+            Board-certified periodontists devoted to dental implant surgery, gum
+            grafting, bone regeneration, and the treatment of periodontal disease.
+            Serving Richmond and Midlothian, VA.
+          </p>
 
-        <div
-          ref={ctaRef}
-          className="mt-8 flex flex-col items-center gap-4 opacity-0 sm:flex-row"
-        >
-          <Link
-            href="/appointments"
-            className="rounded-full bg-white px-8 py-3 text-sm font-semibold text-black transition hover:bg-white/90"
+          <div
+            ref={ctaRef}
+            className="mt-8 flex flex-col items-start gap-5 opacity-0 sm:flex-row sm:items-center"
           >
-            Schedule a Consultation
-          </Link>
-          <a
-            href={`tel:${PRACTICE_PHONE_RICHMOND}`}
-            className="rounded-full border border-white/40 px-8 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-          >
-            Richmond {PRACTICE_PHONE_RICHMOND_DISPLAY}
-          </a>
-          <a
-            href={`tel:${PRACTICE_PHONE_MIDLOTHIAN}`}
-            className="rounded-full border border-white/40 px-8 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-          >
-            Midlothian {PRACTICE_PHONE_MIDLOTHIAN_DISPLAY}
-          </a>
+            <Link
+              href="/appointments"
+              className="btn-primary-light"
+            >
+              <span>Schedule a Consultation</span>
+            </Link>
+            <div className="flex items-center gap-4 text-sm">
+              <a href={`tel:${PRACTICE_PHONE_RICHMOND}`} className="text-white/50 transition-colors hover:text-white">
+                Richmond {PRACTICE_PHONE_RICHMOND_DISPLAY}
+              </a>
+              <span className="text-white/20">|</span>
+              <a href={`tel:${PRACTICE_PHONE_MIDLOTHIAN}`} className="text-white/50 transition-colors hover:text-white">
+                Midlothian {PRACTICE_PHONE_MIDLOTHIAN_DISPLAY}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

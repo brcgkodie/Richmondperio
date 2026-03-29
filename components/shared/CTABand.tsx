@@ -48,23 +48,28 @@ export default function CTABand({
   return (
     <section
       ref={sectionRef}
-      className="py-24 px-6 text-center text-white"
+      className="py-24 px-6 text-white"
     >
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
+        <div className="accent-line mx-auto mb-8" />
+        <h2 className="heading-xl font-serif text-white text-center">
           {headline}
         </h2>
-        <p className="mt-4 text-lg text-gray-300">{subtext}</p>
-        <div className="mt-10 flex flex-col items-center gap-6 sm:flex-row sm:justify-center">
+        <p className="body-lg text-white/40 text-center mt-4 max-w-xl mx-auto">
+          {subtext}
+        </p>
+        <div className="mt-10 flex flex-col items-center gap-6">
           <MagneticButton
             href={buttonHref}
-            className="inline-block rounded-full bg-white px-8 py-4 text-sm font-semibold tracking-wide text-[#182838] transition-shadow hover:shadow-lg"
+            className="inline-block"
           >
-            {buttonText}
+            <span className="btn-primary-light">
+              <span>{buttonText}</span>
+            </span>
           </MagneticButton>
           <a
             href={`tel:${PRACTICE_PHONE_DISPLAY.replace(/[^+\d]/g, "")}`}
-            className="text-lg font-medium text-white underline underline-offset-4 transition-colors hover:text-gray-300"
+            className="label-sm text-white/30 hover:text-white transition-colors mt-6 block text-center"
           >
             {PRACTICE_PHONE_DISPLAY}
           </a>

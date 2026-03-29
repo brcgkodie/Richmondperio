@@ -42,7 +42,7 @@ export default function ServiceHero({
   }, []);
 
   return (
-    <section className="relative h-[60vh] min-h-[400px] flex items-end overflow-hidden">
+    <section className="relative h-[70vh] min-h-[500px] flex items-end overflow-hidden">
       {/* Background: video or fallback image */}
       {videoSrc ? (
         <video
@@ -63,20 +63,21 @@ export default function ServiceHero({
         />
       ) : null}
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#182838]/90 via-[#182838]/60 to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-12 md:pb-16">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-16 md:pb-24 flex flex-col items-start">
+        <div className="accent-line mb-6" />
         <h1
           ref={titleRef}
-          className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-4"
+          className="heading-xl text-white"
         >
           {title}
         </h1>
         <p
           ref={descRef}
-          className="text-lg md:text-xl text-white/90 max-w-2xl"
+          className="body-lg text-white/60 max-w-xl mt-4"
         >
           {description}
         </p>

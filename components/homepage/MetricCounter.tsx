@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import { METRICS } from "@/lib/constants";
 
@@ -43,24 +43,29 @@ export default function MetricCounter() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#F1ECE8] py-20 md:py-28"
+      className="bg-[#182838] py-16 md:py-24"
     >
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-12">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between">
           {METRICS.map((metric, i) => (
-            <div key={metric.label} className="text-center">
-              <span
-                ref={(el) => {
-                  numberRefs.current[i] = el;
-                }}
-                className="block text-4xl font-bold text-[#182838] md:text-5xl lg:text-6xl"
-              >
-                0
-              </span>
-              <span className="mt-2 block text-sm font-medium uppercase tracking-wide text-[#182838]/70 md:text-base">
-                {metric.label}
-              </span>
-            </div>
+            <React.Fragment key={metric.label}>
+              {i > 0 && <div className="hidden md:block w-px self-stretch bg-white/10" />}
+              {i > 0 && <hr className="md:hidden border-white/5 my-8" />}
+              <div className="flex-1 text-center py-2 md:py-0">
+                <span
+                  ref={(el) => {
+                    numberRefs.current[i] = el;
+                  }}
+                  className="block font-serif text-5xl font-normal text-white md:text-6xl lg:text-7xl tracking-tight"
+                >
+                  0
+                </span>
+                <span className="text-teal text-2xl font-serif">+</span>
+                <span className="mt-3 block label-sm text-white/40">
+                  {metric.label}
+                </span>
+              </div>
+            </React.Fragment>
           ))}
         </div>
       </div>

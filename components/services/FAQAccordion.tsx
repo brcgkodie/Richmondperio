@@ -57,26 +57,32 @@ function AccordionItem({
   }, [isOpen]);
 
   return (
-    <div className="border-b border-neutral-200">
+    <div className="border-b border-navy/10">
       <button
         type="button"
-        className="flex w-full items-center justify-between py-5 text-left"
+        className="flex w-full items-center justify-between py-6 text-left"
         onClick={onToggle}
         aria-expanded={isOpen}
       >
-        <span className="text-lg font-medium text-neutral-900 pr-4">
+        <span className="font-serif text-xl text-navy pr-8">
           {faq.question}
         </span>
         <span
           ref={iconRef}
-          className="flex-shrink-0 text-2xl leading-none text-neutral-500"
+          className={`flex h-8 w-8 flex-shrink-0 items-center justify-center border text-sm transition-all duration-300 ${
+            isOpen
+              ? "bg-navy text-white border-navy"
+              : "border-navy/20 text-navy/40"
+          }`}
           aria-hidden="true"
         >
           +
         </span>
       </button>
       <div ref={contentRef} className="overflow-hidden" style={{ height: 0 }}>
-        <p className="pb-5 text-neutral-600 leading-relaxed">{faq.answer}</p>
+        <p className="body-lg text-gray-dark/70 pb-6 pl-0 md:pl-8">
+          {faq.answer}
+        </p>
       </div>
     </div>
   );
