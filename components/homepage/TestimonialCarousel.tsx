@@ -36,16 +36,6 @@ const TESTIMONIALS: Testimonial[] = [
   },
 ];
 
-function Stars({ count }: { count: number }) {
-  return (
-    <span className="text-lg text-amber-400" aria-label={`${count} out of 5 stars`}>
-      {Array.from({ length: 5 }, (_, i) => (
-        <span key={i}>{i < count ? "\u2605" : "\u2606"}</span>
-      ))}
-    </span>
-  );
-}
-
 export default function TestimonialCarousel() {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -117,89 +107,84 @@ export default function TestimonialCarousel() {
 
   return (
     <section className="bg-[#182838] py-20 md:py-28">
-      <div className="mx-auto max-w-3xl px-6 text-center">
-        <span className="mb-2 inline-block text-sm font-semibold uppercase tracking-widest text-[#1C818D]">
-          Patient Reviews
-        </span>
-        <h2 className="mb-12 font-serif text-3xl font-bold text-white md:text-4xl">
-          What Our Patients Say
-        </h2>
+      <div
+        className="mx-auto max-w-7xl px-6 grid md:grid-cols-12 gap-12 items-start"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
+        {/* Left column */}
+        <div className="md:col-span-4">
+          <span className="label-sm text-teal mb-4 block">Patient Reviews</span>
+          <h2 className="heading-lg text-white">What Our Patients Say</h2>
+          {/* Nav arrows */}
+          <div className="flex gap-3 mt-8">
+            <button
+              onClick={prev}
+              aria-label="Previous testimonial"
+              className="h-12 w-12 border border-white/10 flex items-center justify-center text-white/40 transition-all hover:text-white hover:border-white/30"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12.79 5.23a.75.75 0 0 1-.02 1.06L8.832 10l3.938 3.71a.75.75 0 1 1-1.04 1.08l-4.5-4.25a.75.75 0 0 1 0-1.08l4.5-4.25a.75.75 0 0 1 1.06.02Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+            <button
+              onClick={next}
+              aria-label="Next testimonial"
+              className="h-12 w-12 border border-white/10 flex items-center justify-center text-white/40 transition-all hover:text-white hover:border-white/30"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M7.21 14.77a.75.75 0 0 1 .02-1.06L11.168 10 7.23 6.29a.75.75 0 1 1 1.04-1.08l4.5 4.25a.75.75 0 0 1 0 1.08l-4.5 4.25a.75.75 0 0 1-1.06-.02Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          {/* Dash indicators */}
+          <div className="flex gap-2 mt-6">
+            {TESTIMONIALS.map((_, i) => (
+              <div
+                key={i}
+                className={`h-px transition-all duration-300 ${i === active ? "w-8 bg-teal" : "w-4 bg-white/20"}`}
+              />
+            ))}
+          </div>
+        </div>
 
-        <div
-          className="relative min-h-[200px]"
-          onMouseEnter={() => setPaused(true)}
-          onMouseLeave={() => setPaused(false)}
-        >
+        {/* Right column - quote */}
+        <div className="md:col-span-8 relative min-h-[200px]">
           {TESTIMONIALS.map((t, i) => (
             <div
               key={i}
               ref={(el) => {
                 slideRefs.current[i] = el;
               }}
-              className={`absolute inset-0 flex flex-col items-center justify-center ${i !== active ? "hidden opacity-0" : ""}`}
+              className={`${i !== active ? "hidden opacity-0" : ""} ${i === 0 ? "" : "absolute inset-0"}`}
             >
-              <Stars count={t.rating} />
-              <blockquote className="mt-4 text-lg leading-relaxed text-white/90 md:text-xl">
-                &ldquo;{t.quote}&rdquo;
+              <span className="font-serif text-[8rem] leading-none text-teal/15 block -mb-16 select-none">&ldquo;</span>
+              <blockquote className="font-serif text-2xl md:text-3xl font-normal leading-snug text-white/90">
+                {t.quote}
               </blockquote>
-              <cite className="mt-4 block text-sm font-medium not-italic text-white/60">
+              <cite className="label-sm text-white/40 mt-8 block not-italic">
                 {t.name}
               </cite>
             </div>
           ))}
-        </div>
-
-        {/* Navigation arrows */}
-        <div className="mt-8 flex items-center justify-center gap-4">
-          <button
-            onClick={prev}
-            aria-label="Previous testimonial"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white transition hover:bg-white/10"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="h-5 w-5"
-            >
-              <path
-                fillRule="evenodd"
-                d="M12.79 5.23a.75.75 0 0 1-.02 1.06L8.832 10l3.938 3.71a.75.75 0 1 1-1.04 1.08l-4.5-4.25a.75.75 0 0 1 0-1.08l4.5-4.25a.75.75 0 0 1 1.06.02Z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-
-          {/* Dots */}
-          <div className="flex gap-2">
-            {TESTIMONIALS.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => goTo(i)}
-                aria-label={`Go to testimonial ${i + 1}`}
-                className={`h-2 w-2 rounded-full transition ${i === active ? "bg-white" : "bg-white/30"}`}
-              />
-            ))}
-          </div>
-
-          <button
-            onClick={next}
-            aria-label="Next testimonial"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white transition hover:bg-white/10"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="h-5 w-5"
-            >
-              <path
-                fillRule="evenodd"
-                d="M7.21 14.77a.75.75 0 0 1 .02-1.06L11.168 10 7.23 6.29a.75.75 0 1 1 1.04-1.08l4.5 4.25a.75.75 0 0 1 0 1.08l-4.5 4.25a.75.75 0 0 1-1.06-.02Z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
         </div>
       </div>
     </section>
