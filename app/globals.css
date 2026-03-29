@@ -14,6 +14,157 @@
   --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
+/* ───── Typography Scale ───── */
+
+.heading-xl {
+  font-family: var(--font-serif);
+  font-size: clamp(2.75rem, 5vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+.heading-lg {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+}
+
+.heading-md {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  line-height: 1.15;
+  font-weight: 400;
+}
+
+.label-sm {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.body-lg {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.125vw, 1.125rem);
+  line-height: 1.7;
+}
+
+/* ───── Decorative Primitives ───── */
+
+.accent-line {
+  display: block;
+  width: 3rem;
+  height: 1px;
+  background-color: var(--color-teal);
+}
+
+.accent-line-vertical {
+  display: block;
+  width: 1px;
+  height: 3rem;
+  background-color: var(--color-teal);
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, var(--color-teal) 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.06;
+}
+
+.gradient-wash-navy {
+  background: linear-gradient(135deg, #182838 0%, #0542BF 100%);
+}
+
+/* ───── Button System ───── */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-navy);
+  color: var(--color-navy);
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-navy);
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary:hover {
+  color: white;
+}
+
+.btn-primary:hover::before {
+  transform: translateY(0);
+}
+
+.btn-primary span,
+.btn-primary-light span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-primary-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary-light::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white;
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary-light:hover {
+  color: var(--color-navy);
+}
+
+.btn-primary-light:hover::before {
+  transform: translateY(0);
+}
+
+/* ───── Base ───── */
+
 html {
   scroll-behavior: auto;
 }

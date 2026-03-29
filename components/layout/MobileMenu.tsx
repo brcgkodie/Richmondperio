@@ -3,7 +3,11 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { gsap } from "@/lib/gsap";
-import { NAV_ITEMS, PRACTICE_PHONE_DISPLAY } from "@/lib/constants";
+import {
+  NAV_ITEMS,
+  PRACTICE_PHONE_RICHMOND_DISPLAY,
+  PRACTICE_PHONE_MIDLOTHIAN_DISPLAY,
+} from "@/lib/constants";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -90,13 +94,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       </div>
 
       {/* Nav links */}
-      <div ref={linksRef} className="flex flex-1 flex-col gap-2 px-8 pt-4">
+      <div ref={linksRef} className="flex flex-1 flex-col px-8 pt-4">
         {NAV_ITEMS.map((item) => (
           <Link
             key={item.label}
             href={item.href}
             onClick={onClose}
-            className="text-2xl font-medium text-white/90 transition-colors hover:text-white"
+            className="font-serif text-3xl font-normal text-white/80 py-3 border-b border-white/5 block transition-colors hover:text-white"
           >
             {item.label}
           </Link>
@@ -105,18 +109,27 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
       {/* Bottom CTA */}
       <div ref={ctaRef} className="px-8 pb-10">
-        <a
-          href={`tel:${PRACTICE_PHONE_DISPLAY.replace(/[^+\d]/g, "")}`}
-          className="mb-4 block text-center text-lg text-white/70 transition-colors hover:text-white"
-        >
-          {PRACTICE_PHONE_DISPLAY}
-        </a>
+        <div className="accent-line my-8" />
+        <div className="flex flex-col items-center gap-3 mb-6">
+          <a
+            href="tel:+18043556593"
+            className="label-sm text-teal hover:text-white transition-colors"
+          >
+            Richmond {PRACTICE_PHONE_RICHMOND_DISPLAY}
+          </a>
+          <a
+            href="tel:+18047947094"
+            className="label-sm text-teal hover:text-white transition-colors"
+          >
+            Midlothian {PRACTICE_PHONE_MIDLOTHIAN_DISPLAY}
+          </a>
+        </div>
         <Link
           href="/appointments"
           onClick={onClose}
-          className="block rounded-full bg-white py-3 text-center font-semibold text-[#182838] transition-opacity hover:opacity-90"
+          className="btn-primary-light w-full text-center"
         >
-          Request Appointment
+          <span>Request Appointment</span>
         </Link>
       </div>
     </div>

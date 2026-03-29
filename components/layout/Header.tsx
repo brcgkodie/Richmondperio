@@ -24,19 +24,19 @@ export function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-[#182838] shadow-lg"
-            : "bg-transparent"
+            ? "bg-[#182838]/95 backdrop-blur-md border-b border-white/5 py-3"
+            : "bg-transparent py-6"
         }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
           {/* Practice name */}
           <Link
             href="/"
-            className="font-serif text-xl font-semibold tracking-tight text-white"
+            className="label-sm tracking-[0.2em] text-white"
           >
-            Richmond Periodontics
+            OWD
           </Link>
 
           {/* Desktop navigation */}
@@ -52,7 +52,7 @@ export function Header() {
               >
                 <Link
                   href={item.href}
-                  className="rounded-md px-3 py-2 text-sm font-medium text-white/90 transition-colors hover:text-white"
+                  className="relative px-3 py-2 text-[13px] font-medium tracking-wide text-white/70 transition-colors duration-300 hover:text-white after:absolute after:bottom-0 after:left-3 after:h-px after:w-0 after:bg-teal after:transition-all after:duration-300 hover:after:w-[calc(100%-1.5rem)]"
                 >
                   {item.label}
                   {"children" in item && (
@@ -76,12 +76,12 @@ export function Header() {
                 {"children" in item &&
                   activeDropdown === item.label &&
                   item.children && (
-                    <div className="absolute left-0 top-full w-64 rounded-lg bg-white py-2 shadow-xl">
+                    <div className="absolute left-0 top-full w-64 bg-[#182838] border border-white/10 py-3 shadow-2xl mt-2">
                       {item.children.map((child) => (
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-50 hover:text-[#182838]"
+                          className="block text-[13px] text-white/70 transition-colors duration-200 hover:text-white hover:bg-white/5 px-5 py-2.5"
                         >
                           {child.label}
                         </Link>
@@ -96,7 +96,7 @@ export function Header() {
           <div className="flex items-center gap-4">
             <Link
               href="/appointments"
-              className="hidden rounded-full bg-white px-5 py-2 text-sm font-semibold text-[#182838] transition-opacity hover:opacity-90 lg:inline-block"
+              className="hidden border border-white/30 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.12em] text-white transition-all duration-300 hover:bg-white hover:text-[#182838] lg:inline-block"
             >
               Request Appointment
             </Link>
