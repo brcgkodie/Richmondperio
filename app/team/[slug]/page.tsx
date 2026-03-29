@@ -37,11 +37,11 @@ export default async function DoctorPage({
   if (!member) notFound();
 
   const breadcrumbs = [
-    { name: "Home", url: "https://richmondperio.com" },
-    { name: "Team", url: "https://richmondperio.com/team" },
+    { name: "Home", url: "https://richmondperioonline.com" },
+    { name: "Team", url: "https://richmondperioonline.com/team" },
     {
       name: `Dr. ${member.name}`,
-      url: `https://richmondperio.com/team/${member.slug}`,
+      url: `https://richmondperioonline.com/team/${member.slug}`,
     },
   ];
 

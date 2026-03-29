@@ -7,7 +7,7 @@ import SectionReveal from "@/components/shared/SectionReveal";
 export const metadata: Metadata = {
   title: "Our Team",
   description:
-    "Meet our board-certified periodontists at Richmond Periodontics & Dental Implants, serving Richmond and Midlothian, VA.",
+    "Meet our board-certified periodontists at Overstreet, White & Dunegan, Ltd., serving Richmond and Midlothian, VA.",
 };
 
 export default function TeamPage() {
@@ -17,12 +17,12 @@ export default function TeamPage() {
       <section className="bg-neutral-50 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
-            Meet Our Periodontists
+            Meet Our Doctors
           </h1>
           <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
-            Our team of four board-certified periodontists brings decades of
-            combined experience in dental implant surgery, periodontal
-            treatment, and regenerative procedures.
+            Every periodontist at Overstreet, White &amp; Dunegan is a Diplomate
+            of the American Board of Periodontology and has been voted a Top
+            Periodontist by peers in Richmond Magazine.
           </p>
         </div>
       </section>

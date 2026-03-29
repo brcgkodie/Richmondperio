@@ -143,7 +143,7 @@ export async function generateMetadata({
   if (!service) return {};
 
   return {
-    title: service.title,
+    title: `${service.title} | Overstreet, White & Dunegan, Ltd.`,
     description: service.shortDescription,
   };
 }
