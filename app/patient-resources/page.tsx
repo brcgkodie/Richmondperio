@@ -1,11 +1,50 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SectionReveal from "@/components/shared/SectionReveal";
 
 export const metadata: Metadata = {
   title: "Patient Resources",
   description:
-    "Pre- and post-operative instructions, insurance information, payment options, and FAQs from Overstreet, White & Dunegan, Ltd.",
+    "Pre- and post-operative instructions, sedation checklists, insurance information, payment options, and FAQs from Overstreet, White & Dunegan, Ltd.",
 };
+
+const CHECKLISTS = [
+  {
+    href: "/patient-resources/pre-operative-instructions",
+    title: "General Pre-Operative Instructions",
+    description:
+      "Medications, eating guidelines, what to bring, and how to prepare for your procedure.",
+    tag: "Pre-Operative",
+  },
+  {
+    href: "/patient-resources/pre-operative-oral-sedation",
+    title: "Oral Sedation Checklist",
+    description:
+      "Fasting requirements, transportation, and safety instructions for oral sedation patients.",
+    tag: "Pre-Operative",
+  },
+  {
+    href: "/patient-resources/pre-operative-iv-sedation",
+    title: "IV Sedation Checklist",
+    description:
+      "Strict fasting and safety protocols for patients receiving intravenous sedation.",
+    tag: "Pre-Operative",
+  },
+  {
+    href: "/patient-resources/post-operative-instructions",
+    title: "General Post-Operative Instructions",
+    description:
+      "Bleeding, swelling, pain management, diet, oral hygiene, and when to call our office.",
+    tag: "Post-Operative",
+  },
+  {
+    href: "/patient-resources/sinus-surgery-post-op",
+    title: "Sinus Surgery Post-Op Precautions",
+    description:
+      "Special precautions after sinus lift surgery to protect the graft and ensure proper healing.",
+    tag: "Post-Operative",
+  },
+];
 
 export default function PatientResourcesPage() {
   return (
@@ -14,112 +53,44 @@ export default function PatientResourcesPage() {
       <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="accent-line mb-6" />
-          <h1 className="heading-xl text-navy mb-6">
-            Patient Resources
-          </h1>
+          <span className="label-sm text-teal mb-4 block">
+            For Our Patients
+          </span>
+          <h1 className="heading-xl text-navy mb-6">Patient Resources</h1>
           <p className="max-w-3xl body-lg text-gray-dark/70">
-            Helpful information to prepare for your procedure and support your
-            recovery.
+            Everything you need to prepare for your procedure and support your
+            recovery — from pre-operative checklists and sedation instructions
+            to post-operative care guides.
           </p>
         </div>
       </section>
 
-      {/* Pre-Procedure Instructions */}
+      {/* Checklists & Instructions */}
       <SectionReveal>
         <section className="py-16 md:py-24">
-          <div className="mx-auto max-w-3xl px-6">
-            <h2 className="heading-lg text-navy mb-8">
-              Pre-Procedure Instructions
+          <div className="mx-auto max-w-7xl px-6">
+            <h2 className="heading-lg text-navy mb-10">
+              Checklists &amp; Instructions
             </h2>
-            <div className="space-y-6 text-gray-dark/70 leading-relaxed">
-              <div className="border-l-2 border-teal bg-white p-6">
-                <h3 className="text-lg font-semibold text-navy mb-3">
-                  General Guidelines
-                </h3>
-                <ul className="list-disc list-inside space-y-2">
-                  <li>
-                    Take all prescribed medications as directed prior to your
-                    appointment.
-                  </li>
-                  <li>
-                    Eat a light meal before your procedure unless instructed
-                    otherwise.
-                  </li>
-                  <li>
-                    Arrange for a responsible adult to drive you home if you will
-                    be receiving sedation.
-                  </li>
-                  <li>Wear comfortable, loose-fitting clothing.</li>
-                  <li>
-                    Inform our office of any changes to your medications or
-                    health status.
-                  </li>
-                </ul>
-              </div>
-
-              <div className="border-l-2 border-teal bg-white p-6">
-                <h3 className="text-lg font-semibold text-navy mb-3">
-                  If You Are Taking Blood Thinners
-                </h3>
-                <p>
-                  Do not stop taking blood thinners unless specifically
-                  instructed by your periodontist and your prescribing
-                  physician. Please inform our office of all blood-thinning
-                  medications you take.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </SectionReveal>
-
-      {/* Post-Procedure Instructions */}
-      <SectionReveal>
-        <section className="bg-cream py-16 md:py-24">
-          <div className="mx-auto max-w-3xl px-6">
-            <h2 className="heading-lg text-navy mb-8">
-              Post-Procedure Instructions
-            </h2>
-            <div className="space-y-6 text-gray-dark/70 leading-relaxed">
-              <div className="border-l-2 border-teal bg-white p-6">
-                <h3 className="text-lg font-semibold text-navy mb-3">
-                  After Surgical Procedures
-                </h3>
-                <ul className="list-disc list-inside space-y-2">
-                  <li>
-                    Apply ice packs to the outside of your face for 20 minutes
-                    on, 20 minutes off during the first 24 hours.
-                  </li>
-                  <li>
-                    Take prescribed pain medication as directed before the
-                    anesthesia wears off.
-                  </li>
-                  <li>
-                    Stick to soft foods for the first few days — yogurt, soup,
-                    mashed potatoes, and smoothies are good options.
-                  </li>
-                  <li>
-                    Avoid smoking, using straws, and vigorous rinsing for at
-                    least 48 hours.
-                  </li>
-                  <li>
-                    Gently rinse with warm salt water starting the day after
-                    surgery.
-                  </li>
-                </ul>
-              </div>
-
-              <div className="border-l-2 border-teal bg-white p-6">
-                <h3 className="text-lg font-semibold text-navy mb-3">
-                  When to Call Our Office
-                </h3>
-                <p>
-                  Contact us immediately if you experience excessive bleeding
-                  that does not subside with gentle pressure, severe pain not
-                  controlled by medication, fever above 101 degrees, or unusual
-                  swelling that worsens after 3 days.
-                </p>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-light">
+              {CHECKLISTS.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group bg-white p-8 hover:bg-cream transition-colors"
+                >
+                  <span className="label-sm text-teal/40 mb-3 block">
+                    {item.tag}
+                  </span>
+                  <h3 className="heading-md text-navy mb-3 group-hover:text-teal transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="body-lg text-gray-dark/70 mb-4">
+                    {item.description}
+                  </p>
+                  <span className="label-sm text-teal">— View instructions</span>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
@@ -127,23 +98,31 @@ export default function PatientResourcesPage() {
 
       {/* Insurance & Payment */}
       <SectionReveal>
-        <section className="py-16 md:py-24">
+        <section className="bg-cream py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
             <h2 className="heading-lg text-navy mb-8">
               Insurance &amp; Payment
             </h2>
-            <div className="text-gray-dark/70 leading-relaxed space-y-4">
+            <div className="body-lg text-gray-dark/70 space-y-4">
               <p>
                 We accept most major dental and medical insurance plans. Our
                 administrative team will verify your benefits and provide a
                 clear estimate of costs before your treatment begins.
               </p>
               <p>We also offer flexible payment options:</p>
-              <ul className="list-disc list-inside space-y-2 pl-2">
-                <li>Interest-free payment plans</li>
-                <li>CareCredit and Proceed Finance</li>
-                <li>Cash, check, and all major credit cards</li>
-                <li>HSA and FSA accepted</li>
+              <ul className="space-y-3 pl-2">
+                <li className="border-l-2 border-teal pl-4">
+                  Interest-free payment plans
+                </li>
+                <li className="border-l-2 border-teal pl-4">
+                  CareCredit and Proceed Finance
+                </li>
+                <li className="border-l-2 border-teal pl-4">
+                  Cash, check, and all major credit cards
+                </li>
+                <li className="border-l-2 border-teal pl-4">
+                  HSA and FSA accepted
+                </li>
               </ul>
             </div>
           </div>
@@ -152,7 +131,7 @@ export default function PatientResourcesPage() {
 
       {/* FAQs */}
       <SectionReveal>
-        <section className="bg-cream py-16 md:py-24">
+        <section className="py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
             <h2 className="heading-lg text-navy mb-8">
               Frequently Asked Questions

@@ -50,6 +50,12 @@ const nextConfig: NextConfig = {
       { source: "/midlothian-location", destination: "/locations/midlothian", permanent: true },
       { source: "/midlothian-location/", destination: "/locations/midlothian", permanent: true },
 
+      // ── PDF Checklists → New Pages ──
+      { source: "/wp-content/uploads/2025/02/Pre-Operative-Instructions-General.pdf", destination: "/patient-resources/pre-operative-instructions", permanent: true },
+      { source: "/wp-content/uploads/2025/02/Pre-Operative-Oral-Sedation-Checklist.pdf", destination: "/patient-resources/pre-operative-oral-sedation", permanent: true },
+      { source: "/wp-content/uploads/2025/02/Pre-Operative-IV-Sedation-Checklist.pdf", destination: "/patient-resources/pre-operative-iv-sedation", permanent: true },
+      { source: "/wp-content/uploads/2025/02/Post-Operative-Instructions-General-New.pdf", destination: "/patient-resources/post-operative-instructions", permanent: true },
+      { source: "/wp-content/uploads/2025/02/Sinus-Surgery-Post-Op-Precautions.pdf", destination: "/patient-resources/sinus-surgery-post-op", permanent: true },
     ];
   },
 };
