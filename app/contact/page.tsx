@@ -29,12 +29,12 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="bg-neutral-50 py-20 md:py-28">
+      <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
+          <h1 className="heading-xl text-navy mb-6">
             Contact Us
           </h1>
-          <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
+          <p className="max-w-3xl body-lg text-gray-dark/70">
             Have a question or ready to schedule a visit? Reach out to us using
             the form below or contact either of our offices directly.
           </p>
@@ -46,16 +46,16 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
             <div>
-              <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+              <h2 className="heading-lg text-navy mb-8">
                 Send Us a Message
               </h2>
 
               {submitted ? (
-                <div className="rounded-xl bg-green-50 border border-green-200 p-8 text-center">
-                  <h3 className="text-xl font-semibold text-green-800 mb-2">
+                <div className="bg-cream border border-teal/20 p-8 text-center">
+                  <h3 className="text-xl font-semibold text-navy mb-2">
                     Thank You!
                   </h3>
-                  <p className="text-green-700">
+                  <p className="text-gray-dark/70">
                     Your message has been received. Our team will be in touch
                     shortly.
                   </p>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium text-neutral-700 mb-1"
+                      className="block text-sm font-medium text-navy/70 mb-1"
                     >
                       Full Name *
                     </label>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                       required
                       value={form.name}
                       onChange={handleChange}
-                      className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                      className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/30 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                       placeholder="John Smith"
                     />
                   </div>
@@ -84,7 +84,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium text-neutral-700 mb-1"
+                      className="block text-sm font-medium text-navy/70 mb-1"
                     >
                       Email Address *
                     </label>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                       required
                       value={form.email}
                       onChange={handleChange}
-                      className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                      className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/30 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="phone"
-                      className="block text-sm font-medium text-neutral-700 mb-1"
+                      className="block text-sm font-medium text-navy/70 mb-1"
                     >
                       Phone Number
                     </label>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                       name="phone"
                       value={form.phone}
                       onChange={handleChange}
-                      className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                      className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/30 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                       placeholder="(804) 555-0123"
                     />
                   </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="location"
-                      className="block text-sm font-medium text-neutral-700 mb-1"
+                      className="block text-sm font-medium text-navy/70 mb-1"
                     >
                       Preferred Location
                     </label>
@@ -130,7 +130,7 @@ export default function ContactPage() {
                       name="location"
                       value={form.location}
                       onChange={handleChange}
-                      className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                      className="w-full border border-navy/10 px-4 py-3 text-navy focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                     >
                       <option value="">Select a location</option>
                       {LOCATIONS.map((loc) => (
@@ -144,7 +144,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="message"
-                      className="block text-sm font-medium text-neutral-700 mb-1"
+                      className="block text-sm font-medium text-navy/70 mb-1"
                     >
                       Message *
                     </label>
@@ -155,16 +155,16 @@ export default function ContactPage() {
                       rows={5}
                       value={form.message}
                       onChange={handleChange}
-                      className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF] resize-y"
+                      className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/30 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal resize-y"
                       placeholder="How can we help you?"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full rounded-full bg-[#182838] px-8 py-4 text-sm font-semibold text-white transition-shadow hover:shadow-lg sm:w-auto"
+                    className="btn-primary w-full sm:w-auto"
                   >
-                    Send Message
+                    <span>Send Message</span>
                   </button>
                 </form>
               )}
@@ -172,26 +172,26 @@ export default function ContactPage() {
 
             {/* Office Info */}
             <div>
-              <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+              <h2 className="heading-lg text-navy mb-8">
                 Our Offices
               </h2>
 
               <div className="space-y-10">
                 {LOCATIONS.map((location) => (
                   <div key={location.id}>
-                    <h3 className="text-xl font-semibold text-neutral-900 mb-3">
+                    <h3 className="font-serif text-xl text-navy mb-3">
                       {location.name}
                     </h3>
-                    <address className="not-italic text-neutral-600 leading-relaxed mb-2">
+                    <address className="not-italic text-gray-dark/70 leading-relaxed mb-2">
                       {location.street}
                       <br />
                       {location.city}, {location.state} {location.zip}
                     </address>
-                    <p className="text-neutral-600 mb-3">
+                    <p className="text-gray-dark/70 mb-3">
                       <span className="font-medium">Phone:</span>{" "}
                       <a
                         href={`tel:${location.phone.replace(/[^+\d]/g, "")}`}
-                        className="text-[#0542BF] hover:underline"
+                        className="text-teal hover:text-navy"
                       >
                         {location.phone}
                       </a>
@@ -200,7 +200,7 @@ export default function ContactPage() {
                       {location.hours.map((h) => (
                         <li
                           key={h.days}
-                          className="flex justify-between text-sm text-neutral-600 max-w-xs"
+                          className="flex justify-between text-sm text-gray-dark/70 max-w-xs"
                         >
                           <span>{h.days}</span>
                           <span>{h.time}</span>
@@ -211,12 +211,12 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              <div className="mt-10 rounded-xl bg-neutral-50 p-6">
-                <p className="text-neutral-600">
+              <div className="mt-10 bg-cream border-l-2 border-teal p-6">
+                <p className="text-gray-dark/70">
                   <span className="font-medium">General inquiries:</span>{" "}
                   <a
                     href={`tel:${PRACTICE_PHONE_DISPLAY.replace(/[^+\d]/g, "")}`}
-                    className="text-[#0542BF] hover:underline"
+                    className="text-teal hover:text-navy"
                   >
                     {PRACTICE_PHONE_DISPLAY}
                   </a>

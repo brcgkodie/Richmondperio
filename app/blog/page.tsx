@@ -39,12 +39,14 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-neutral-50 py-20 md:py-28">
+      <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
+          <div className="accent-line mb-6" />
+          <span className="label-sm text-teal mb-4 block">Insights</span>
+          <h1 className="heading-xl text-navy mb-6">
             Blog
           </h1>
-          <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
+          <p className="max-w-3xl body-lg text-gray-dark/70">
             Expert insights on periodontal health, dental implants, and oral
             care from our board-certified periodontists.
           </p>
@@ -60,29 +62,29 @@ export default function BlogPage() {
                 <Link
                   key={post.slug}
                   href={`/blog/${post.slug}`}
-                  className="group rounded-2xl border border-neutral-200 bg-white overflow-hidden transition-shadow hover:shadow-lg"
+                  className="group bg-white overflow-hidden border-l-2 border-teal hover:border-blue transition-colors"
                 >
                   {/* Image placeholder */}
-                  <div className="aspect-[16/9] bg-neutral-200 flex items-center justify-center">
-                    <span className="text-sm text-neutral-400">
+                  <div className="aspect-[16/9] bg-navy/5 flex items-center justify-center">
+                    <span className="label-sm text-gray-dark/40">
                       Blog image
                     </span>
                   </div>
 
                   <div className="p-6">
-                    <time className="text-xs text-neutral-400">{post.date}</time>
-                    <h2 className="mt-2 text-xl font-semibold text-neutral-900 group-hover:text-[#0542BF] transition-colors leading-snug">
+                    <time className="label-sm text-gray-dark/40">{post.date}</time>
+                    <h2 className="mt-2 font-serif text-xl text-navy leading-snug">
                       {post.title}
                     </h2>
-                    <p className="mt-3 text-neutral-600 text-sm leading-relaxed">
+                    <p className="mt-3 text-gray-dark/70 text-sm leading-relaxed">
                       {post.excerpt}
                     </p>
                     <div className="mt-4 flex items-center justify-between">
-                      <span className="text-xs text-neutral-500">
+                      <span className="text-xs text-gray-dark/50">
                         {post.author}
                       </span>
-                      <span className="text-sm font-semibold text-[#0542BF] group-hover:underline">
-                        Read More &rarr;
+                      <span className="label-sm text-teal">
+                        &mdash; Read more
                       </span>
                     </div>
                   </div>

@@ -104,12 +104,12 @@ export default async function BlogPostPage({
         <div className="mx-auto max-w-3xl px-6">
           {/* Header */}
           <header className="mb-12">
-            <time className="text-sm text-neutral-400">{post.date}</time>
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-neutral-900 mt-3 mb-6 leading-tight">
+            <time className="label-sm text-gray-dark/40">{post.date}</time>
+            <h1 className="heading-xl text-navy mt-3 mb-6 leading-tight">
               {post.title}
             </h1>
             <div className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-full bg-neutral-200 flex items-center justify-center text-xs font-bold text-neutral-400">
+              <div className="h-10 w-10 rounded-full bg-navy flex items-center justify-center text-xs font-bold text-white">
                 {post.author
                   .replace("Dr. ", "")
                   .split(" ")
@@ -120,11 +120,11 @@ export default async function BlogPostPage({
               <div>
                 <Link
                   href={`/team/${post.authorSlug}`}
-                  className="text-sm font-medium text-neutral-900 hover:text-[#0542BF] transition-colors"
+                  className="text-sm font-medium text-navy hover:text-teal transition-colors"
                 >
                   {post.author}
                 </Link>
-                <p className="text-xs text-neutral-500">
+                <p className="text-xs text-gray-dark/50">
                   Board-Certified Periodontist
                 </p>
               </div>
@@ -134,17 +134,17 @@ export default async function BlogPostPage({
           {/* Content */}
           <div className="prose prose-neutral prose-lg max-w-none">
             {post.content.map((paragraph, i) => (
-              <p key={i} className="text-neutral-600 leading-relaxed mb-6">
+              <p key={i} className="body-lg text-gray-dark/70 leading-relaxed mb-6">
                 {paragraph}
               </p>
             ))}
           </div>
 
           {/* Back to blog */}
-          <div className="mt-12 pt-8 border-t border-neutral-200">
+          <div className="mt-12 pt-8 border-t border-navy/10">
             <Link
               href="/blog"
-              className="text-sm font-semibold text-[#0542BF] hover:underline"
+              className="text-sm font-semibold text-teal hover:text-navy transition-colors"
             >
               &larr; Back to Blog
             </Link>

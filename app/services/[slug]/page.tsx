@@ -175,10 +175,10 @@ export default async function ServicePage({
       <SectionReveal>
         <section className="py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-6">
+            <h2 className="heading-lg text-navy mb-6">
               {service.title} in Richmond, VA
             </h2>
-            <p className="text-neutral-600 text-lg leading-relaxed">
+            <p className="body-lg text-gray-dark/70">
               {data.description}
             </p>
           </div>
@@ -187,9 +187,9 @@ export default async function ServicePage({
 
       {/* FAQs */}
       <SectionReveal>
-        <section className="bg-neutral-50 py-16 md:py-24">
+        <section className="bg-cream py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-8 text-center">
+            <h2 className="heading-lg text-navy mb-8 text-center">
               Frequently Asked Questions
             </h2>
             <FAQAccordion faqs={data.faqs} />
@@ -201,7 +201,7 @@ export default async function ServicePage({
       <SectionReveal>
         <section className="py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+            <h2 className="heading-lg text-navy mb-8">
               Related Services
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -209,12 +209,12 @@ export default async function ServicePage({
                 <Link
                   key={related.slug}
                   href={`/services/${related.slug}`}
-                  className="group rounded-xl border border-neutral-200 bg-white p-6 transition-shadow hover:shadow-lg"
+                  className="group bg-white p-6 border-l-2 border-teal hover:border-blue transition-colors"
                 >
-                  <h3 className="text-xl font-semibold text-neutral-900 mb-2 group-hover:text-[#0542BF] transition-colors">
+                  <h3 className="heading-md text-navy mb-2">
                     {related.title}
                   </h3>
-                  <p className="text-neutral-600 text-sm leading-relaxed">
+                  <p className="text-gray-dark/70 text-sm leading-relaxed">
                     {related.shortDescription}
                   </p>
                 </Link>

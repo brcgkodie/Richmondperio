@@ -12,12 +12,13 @@ export default function NewPatientsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-neutral-50 py-20 md:py-28">
+      <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
+          <div className="accent-line mb-6" />
+          <h1 className="heading-xl text-navy mb-6">
             Welcome, New Patients
           </h1>
-          <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
+          <p className="max-w-3xl body-lg text-gray-dark/70">
             We are thrilled you have chosen Overstreet, White &amp; Dunegan
             for your periodontal care. Contact our Richmond office at (804)
             355-6593 or Midlothian at (804) 794-7094. Here is everything you
@@ -30,10 +31,10 @@ export default function NewPatientsPage() {
       <SectionReveal>
         <section className="py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+            <h2 className="heading-lg text-navy mb-8">
               What to Expect on Your First Visit
             </h2>
-            <div className="space-y-6 text-neutral-600 leading-relaxed">
+            <div className="space-y-6 text-gray-dark/70 leading-relaxed">
               <p>
                 Your first appointment will typically last 60 to 90 minutes. We
                 want to take the time to thoroughly understand your oral health
@@ -41,14 +42,14 @@ export default function NewPatientsPage() {
               </p>
               <ol className="list-decimal list-inside space-y-4 pl-2">
                 <li>
-                  <span className="font-medium text-neutral-900">
+                  <span className="font-medium text-navy">
                     Welcome and paperwork
                   </span>{" "}
                   — Arrive 15 minutes early to complete any remaining forms. You
                   can also download and fill them out ahead of time.
                 </li>
                 <li>
-                  <span className="font-medium text-neutral-900">
+                  <span className="font-medium text-navy">
                     Comprehensive exam
                   </span>{" "}
                   — Your periodontist will perform a thorough evaluation
@@ -56,14 +57,14 @@ export default function NewPatientsPage() {
                   review of your dental and medical history.
                 </li>
                 <li>
-                  <span className="font-medium text-neutral-900">
+                  <span className="font-medium text-navy">
                     Discussion and treatment plan
                   </span>{" "}
                   — We will explain our findings in plain language, discuss your
                   treatment options, and develop a personalized plan together.
                 </li>
                 <li>
-                  <span className="font-medium text-neutral-900">
+                  <span className="font-medium text-navy">
                     Scheduling and next steps
                   </span>{" "}
                   — Our team will help you schedule any follow-up appointments
@@ -77,12 +78,12 @@ export default function NewPatientsPage() {
 
       {/* Insurance */}
       <SectionReveal>
-        <section className="bg-neutral-50 py-16 md:py-24">
+        <section className="bg-cream py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+            <h2 className="heading-lg text-navy mb-8">
               Insurance &amp; Payment
             </h2>
-            <div className="space-y-4 text-neutral-600 leading-relaxed">
+            <div className="space-y-4 text-gray-dark/70 leading-relaxed">
               <p>
                 We accept most major dental insurance plans. Our team will
                 verify your benefits and provide a detailed estimate of your
@@ -110,10 +111,10 @@ export default function NewPatientsPage() {
       <SectionReveal>
         <section className="py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+            <h2 className="heading-lg text-navy mb-8">
               Patient Forms
             </h2>
-            <p className="text-neutral-600 leading-relaxed mb-8">
+            <p className="text-gray-dark/70 leading-relaxed mb-8">
               Save time at your first visit by downloading and completing your
               patient forms ahead of time. Please bring completed forms along
               with a photo ID and your insurance card.
@@ -121,11 +122,11 @@ export default function NewPatientsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <a
                 href="#"
-                className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-5 transition-shadow hover:shadow-md"
+                className="flex items-center gap-3 border-l-2 border-teal bg-white p-5 hover:bg-cream transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-[#0542BF] flex-shrink-0"
+                  className="h-8 w-8 text-teal flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -138,20 +139,20 @@ export default function NewPatientsPage() {
                   />
                 </svg>
                 <div>
-                  <p className="font-medium text-neutral-900">
+                  <p className="font-medium text-navy">
                     New Patient Registration
                   </p>
-                  <p className="text-sm text-neutral-500">PDF Download</p>
+                  <p className="text-sm text-gray-dark/50">PDF Download</p>
                 </div>
               </a>
 
               <a
                 href="#"
-                className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-5 transition-shadow hover:shadow-md"
+                className="flex items-center gap-3 border-l-2 border-teal bg-white p-5 hover:bg-cream transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-[#0542BF] flex-shrink-0"
+                  className="h-8 w-8 text-teal flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -164,20 +165,20 @@ export default function NewPatientsPage() {
                   />
                 </svg>
                 <div>
-                  <p className="font-medium text-neutral-900">
+                  <p className="font-medium text-navy">
                     Medical History Form
                   </p>
-                  <p className="text-sm text-neutral-500">PDF Download</p>
+                  <p className="text-sm text-gray-dark/50">PDF Download</p>
                 </div>
               </a>
 
               <a
                 href="#"
-                className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-5 transition-shadow hover:shadow-md"
+                className="flex items-center gap-3 border-l-2 border-teal bg-white p-5 hover:bg-cream transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-[#0542BF] flex-shrink-0"
+                  className="h-8 w-8 text-teal flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -190,20 +191,20 @@ export default function NewPatientsPage() {
                   />
                 </svg>
                 <div>
-                  <p className="font-medium text-neutral-900">
+                  <p className="font-medium text-navy">
                     HIPAA Privacy Notice
                   </p>
-                  <p className="text-sm text-neutral-500">PDF Download</p>
+                  <p className="text-sm text-gray-dark/50">PDF Download</p>
                 </div>
               </a>
 
               <a
                 href="#"
-                className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-5 transition-shadow hover:shadow-md"
+                className="flex items-center gap-3 border-l-2 border-teal bg-white p-5 hover:bg-cream transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-[#0542BF] flex-shrink-0"
+                  className="h-8 w-8 text-teal flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -216,10 +217,10 @@ export default function NewPatientsPage() {
                   />
                 </svg>
                 <div>
-                  <p className="font-medium text-neutral-900">
+                  <p className="font-medium text-navy">
                     Insurance Information Form
                   </p>
-                  <p className="text-sm text-neutral-500">PDF Download</p>
+                  <p className="text-sm text-gray-dark/50">PDF Download</p>
                 </div>
               </a>
             </div>

@@ -45,12 +45,13 @@ export default function ResultsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-neutral-50 py-20 md:py-28">
+      <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
+          <div className="accent-line mb-6" />
+          <h1 className="heading-xl text-navy mb-6">
             Patient Results
           </h1>
-          <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
+          <p className="max-w-3xl body-lg text-gray-dark/70">
             See the transformative results our patients have achieved. Browse
             before-and-after cases from dental implant, gum grafting, and
             periodontal procedures performed by our board-certified
@@ -63,7 +64,7 @@ export default function ResultsPage() {
       <SectionReveal>
         <section className="py-16 md:py-24">
           <div className="mx-auto max-w-7xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-10">
+            <h2 className="heading-lg text-navy mb-10">
               Featured Cases
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -88,19 +89,19 @@ export default function ResultsPage() {
 
       {/* Gallery Grid */}
       <SectionReveal>
-        <section className="bg-neutral-50 py-16 md:py-24">
+        <section className="bg-cream py-16 md:py-24">
           <div className="mx-auto max-w-7xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-10">
+            <h2 className="heading-lg text-navy mb-10">
               Case Gallery
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {CASES.map((c) => (
                 <div
                   key={c.id}
-                  className="rounded-2xl border border-neutral-200 bg-white overflow-hidden"
+                  className="bg-white border-l-2 border-teal overflow-hidden"
                 >
-                  <div className="aspect-[4/3] bg-neutral-200 flex items-center justify-center">
-                    <span className="text-sm text-neutral-400">
+                  <div className="aspect-[4/3] bg-navy/5 flex items-center justify-center">
+                    <span className="text-sm text-gray-dark/40">
                       Case photo placeholder
                     </span>
                   </div>
@@ -108,7 +109,7 @@ export default function ResultsPage() {
                     <span className="text-xs font-semibold uppercase tracking-wider text-[#1C818D]">
                       {c.category}
                     </span>
-                    <h3 className="text-base font-medium text-neutral-900 mt-1">
+                    <h3 className="text-base font-medium text-navy mt-1">
                       {c.label}
                     </h3>
                   </div>

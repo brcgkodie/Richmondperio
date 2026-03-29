@@ -31,12 +31,13 @@ export default function AppointmentsPage() {
 
   return (
     <>
-      <section className="bg-neutral-50 py-20 md:py-28">
+      <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
+          <div className="accent-line mb-6" />
+          <h1 className="heading-xl text-navy mb-6">
             Request an Appointment
           </h1>
-          <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
+          <p className="max-w-3xl body-lg text-gray-dark/70">
             Fill out the form below and our team at Overstreet, White &amp;
             Dunegan will contact you to confirm your appointment. For immediate
             scheduling, call our Richmond office at (804) 355-6593 or our
@@ -48,9 +49,9 @@ export default function AppointmentsPage() {
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-6">
           {/* NexHealth / Zocdoc integration placeholder */}
-          <div className="mb-10 rounded-xl bg-blue-50 border border-blue-200 p-6">
-            <p className="text-sm text-blue-800">
-              <span className="font-semibold">Online Scheduling:</span> Direct
+          <div className="mb-10 bg-cream border-l-2 border-teal p-6">
+            <p className="text-sm text-navy/70">
+              <span className="text-navy font-medium">Online Scheduling:</span> Direct
               online booking via NexHealth or Zocdoc will be available here
               soon. In the meantime, please use the form below to request an
               appointment.
@@ -58,11 +59,11 @@ export default function AppointmentsPage() {
           </div>
 
           {submitted ? (
-            <div className="rounded-xl bg-green-50 border border-green-200 p-8 text-center">
-              <h2 className="text-xl font-semibold text-green-800 mb-2">
+            <div className="bg-cream border border-teal/20 p-8 text-center">
+              <h2 className="text-xl font-semibold text-navy mb-2">
                 Request Received!
               </h2>
-              <p className="text-green-700">
+              <p className="text-gray-dark/70">
                 Thank you for your appointment request. Our team will contact
                 you within one business day to confirm your appointment.
               </p>
@@ -73,7 +74,7 @@ export default function AppointmentsPage() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-neutral-700 mb-1"
+                    className="block text-sm font-medium text-navy/70 mb-1"
                   >
                     Full Name *
                   </label>
@@ -84,7 +85,7 @@ export default function AppointmentsPage() {
                     required
                     value={form.name}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                    className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/30 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                     placeholder="John Smith"
                   />
                 </div>
@@ -92,7 +93,7 @@ export default function AppointmentsPage() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-neutral-700 mb-1"
+                    className="block text-sm font-medium text-navy/70 mb-1"
                   >
                     Email Address *
                   </label>
@@ -103,7 +104,7 @@ export default function AppointmentsPage() {
                     required
                     value={form.email}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                    className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/30 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -113,7 +114,7 @@ export default function AppointmentsPage() {
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block text-sm font-medium text-neutral-700 mb-1"
+                    className="block text-sm font-medium text-navy/70 mb-1"
                   >
                     Phone Number *
                   </label>
@@ -124,7 +125,7 @@ export default function AppointmentsPage() {
                     required
                     value={form.phone}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                    className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/30 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                     placeholder="(804) 555-0123"
                   />
                 </div>
@@ -132,7 +133,7 @@ export default function AppointmentsPage() {
                 <div>
                   <label
                     htmlFor="preferredDate"
-                    className="block text-sm font-medium text-neutral-700 mb-1"
+                    className="block text-sm font-medium text-navy/70 mb-1"
                   >
                     Preferred Date
                   </label>
@@ -142,7 +143,7 @@ export default function AppointmentsPage() {
                     name="preferredDate"
                     value={form.preferredDate}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                    className="w-full border border-navy/10 px-4 py-3 text-navy focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                   />
                 </div>
               </div>
@@ -151,7 +152,7 @@ export default function AppointmentsPage() {
                 <div>
                   <label
                     htmlFor="location"
-                    className="block text-sm font-medium text-neutral-700 mb-1"
+                    className="block text-sm font-medium text-navy/70 mb-1"
                   >
                     Preferred Location *
                   </label>
@@ -161,7 +162,7 @@ export default function AppointmentsPage() {
                     required
                     value={form.location}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                    className="w-full border border-navy/10 px-4 py-3 text-navy focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                   >
                     <option value="">Select a location</option>
                     {LOCATIONS.map((loc) => (
@@ -175,7 +176,7 @@ export default function AppointmentsPage() {
                 <div>
                   <label
                     htmlFor="reason"
-                    className="block text-sm font-medium text-neutral-700 mb-1"
+                    className="block text-sm font-medium text-navy/70 mb-1"
                   >
                     Reason for Visit
                   </label>
@@ -184,7 +185,7 @@ export default function AppointmentsPage() {
                     name="reason"
                     value={form.reason}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                    className="w-full border border-navy/10 px-4 py-3 text-navy focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                   >
                     <option value="">Select a service</option>
                     {SERVICES.map((service) => (
@@ -202,7 +203,7 @@ export default function AppointmentsPage() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-neutral-700 mb-1"
+                  className="block text-sm font-medium text-navy/70 mb-1"
                 >
                   Additional Information
                 </label>
@@ -212,16 +213,16 @@ export default function AppointmentsPage() {
                   rows={4}
                   value={form.message}
                   onChange={handleChange}
-                  className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF] resize-y"
+                  className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/30 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal resize-y"
                   placeholder="Any additional details about your visit..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full rounded-full bg-[#182838] px-8 py-4 text-sm font-semibold text-white transition-shadow hover:shadow-lg sm:w-auto"
+                className="btn-primary w-full sm:w-auto"
               >
-                Request Appointment
+                <span>Request Appointment</span>
               </button>
             </form>
           )}

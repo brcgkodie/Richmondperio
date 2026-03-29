@@ -22,6 +22,8 @@ export const LOCATIONS = [
     phone: PRACTICE_PHONE_RICHMOND_DISPLAY,
     phoneTel: PRACTICE_PHONE_RICHMOND,
     mapUrl: "https://maps.google.com/?q=4909+Grove+Avenue+Richmond+VA+23226",
+    mapEmbed:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.1!2d-77.494!3d37.5597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b1143a5f5c5b8b%3A0x1e3e5a4c8a5b5b5b!2s4909%20Grove%20Ave%2C%20Richmond%2C%20VA%2023226!5e0!3m2!1sen!2sus!4v1",
     hours: [
       { days: "Monday", time: "8:00 AM – 5:00 PM" },
       { days: "Tuesday", time: "8:00 AM – 5:00 PM" },
@@ -42,6 +44,8 @@ export const LOCATIONS = [
     phoneTel: PRACTICE_PHONE_MIDLOTHIAN,
     mapUrl:
       "https://maps.google.com/?q=11301-B+Polo+Place+Midlothian+VA+23113",
+    mapEmbed:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.5!2d-77.653!3d37.4897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b173e8a5b5b5b5%3A0x2e4e5a4c8a5b5b5b!2s11301B%20Polo%20Pl%2C%20Midlothian%2C%20VA%2023113!5e0!3m2!1sen!2sus!4v1",
     hours: [
       { days: "Monday", time: "8:00 AM – 5:00 PM" },
       { days: "Tuesday", time: "8:00 AM – 5:00 PM" },

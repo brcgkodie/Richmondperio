@@ -11,12 +11,13 @@ export default function PatientResourcesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-neutral-50 py-20 md:py-28">
+      <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
+          <div className="accent-line mb-6" />
+          <h1 className="heading-xl text-navy mb-6">
             Patient Resources
           </h1>
-          <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
+          <p className="max-w-3xl body-lg text-gray-dark/70">
             Helpful information to prepare for your procedure and support your
             recovery.
           </p>
@@ -27,12 +28,12 @@ export default function PatientResourcesPage() {
       <SectionReveal>
         <section className="py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+            <h2 className="heading-lg text-navy mb-8">
               Pre-Procedure Instructions
             </h2>
-            <div className="space-y-6 text-neutral-600 leading-relaxed">
-              <div className="rounded-xl border border-neutral-200 bg-white p-6">
-                <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+            <div className="space-y-6 text-gray-dark/70 leading-relaxed">
+              <div className="border-l-2 border-teal bg-white p-6">
+                <h3 className="text-lg font-semibold text-navy mb-3">
                   General Guidelines
                 </h3>
                 <ul className="list-disc list-inside space-y-2">
@@ -56,8 +57,8 @@ export default function PatientResourcesPage() {
                 </ul>
               </div>
 
-              <div className="rounded-xl border border-neutral-200 bg-white p-6">
-                <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+              <div className="border-l-2 border-teal bg-white p-6">
+                <h3 className="text-lg font-semibold text-navy mb-3">
                   If You Are Taking Blood Thinners
                 </h3>
                 <p>
@@ -74,14 +75,14 @@ export default function PatientResourcesPage() {
 
       {/* Post-Procedure Instructions */}
       <SectionReveal>
-        <section className="bg-neutral-50 py-16 md:py-24">
+        <section className="bg-cream py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+            <h2 className="heading-lg text-navy mb-8">
               Post-Procedure Instructions
             </h2>
-            <div className="space-y-6 text-neutral-600 leading-relaxed">
-              <div className="rounded-xl border border-neutral-200 bg-white p-6">
-                <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+            <div className="space-y-6 text-gray-dark/70 leading-relaxed">
+              <div className="border-l-2 border-teal bg-white p-6">
+                <h3 className="text-lg font-semibold text-navy mb-3">
                   After Surgical Procedures
                 </h3>
                 <ul className="list-disc list-inside space-y-2">
@@ -108,8 +109,8 @@ export default function PatientResourcesPage() {
                 </ul>
               </div>
 
-              <div className="rounded-xl border border-neutral-200 bg-white p-6">
-                <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+              <div className="border-l-2 border-teal bg-white p-6">
+                <h3 className="text-lg font-semibold text-navy mb-3">
                   When to Call Our Office
                 </h3>
                 <p>
@@ -128,10 +129,10 @@ export default function PatientResourcesPage() {
       <SectionReveal>
         <section className="py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+            <h2 className="heading-lg text-navy mb-8">
               Insurance &amp; Payment
             </h2>
-            <div className="text-neutral-600 leading-relaxed space-y-4">
+            <div className="text-gray-dark/70 leading-relaxed space-y-4">
               <p>
                 We accept most major dental and medical insurance plans. Our
                 administrative team will verify your benefits and provide a
@@ -151,9 +152,9 @@ export default function PatientResourcesPage() {
 
       {/* FAQs */}
       <SectionReveal>
-        <section className="bg-neutral-50 py-16 md:py-24">
+        <section className="bg-cream py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+            <h2 className="heading-lg text-navy mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-6">
@@ -177,12 +178,12 @@ export default function PatientResourcesPage() {
               ].map((faq) => (
                 <div
                   key={faq.q}
-                  className="rounded-xl border border-neutral-200 bg-white p-6"
+                  className="border-l-2 border-teal bg-white p-6"
                 >
-                  <h3 className="text-lg font-semibold text-neutral-900 mb-2">
+                  <h3 className="text-lg font-semibold text-navy mb-2">
                     {faq.q}
                   </h3>
-                  <p className="text-neutral-600 leading-relaxed">{faq.a}</p>
+                  <p className="text-gray-dark/70 leading-relaxed">{faq.a}</p>
                 </div>
               ))}
             </div>

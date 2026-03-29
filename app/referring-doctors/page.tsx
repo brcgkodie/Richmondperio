@@ -36,12 +36,13 @@ export default function ReferringDoctorsPage() {
 
   return (
     <>
-      <section className="bg-neutral-50 py-20 md:py-28">
+      <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
+          <div className="accent-line mb-6" />
+          <h1 className="heading-xl text-navy mb-6">
             For Referring Doctors
           </h1>
-          <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
+          <p className="max-w-3xl body-lg text-gray-dark/70">
             Thank you for trusting Overstreet, White &amp; Dunegan, Ltd. with
             your patients&apos; periodontal care. We are committed to seamless
             communication and collaborative treatment planning.
@@ -54,38 +55,38 @@ export default function ReferringDoctorsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Referral Process */}
             <div>
-              <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+              <h2 className="heading-lg text-navy mb-8">
                 Our Referral Process
               </h2>
-              <div className="space-y-6 text-neutral-600 leading-relaxed">
+              <div className="space-y-6 text-gray-dark/70 leading-relaxed">
                 <p>
                   We make the referral process as simple as possible for you and
                   your patients. Here is how it works:
                 </p>
                 <ol className="list-decimal list-inside space-y-4 pl-2">
                   <li>
-                    <span className="font-medium text-neutral-900">
+                    <span className="font-medium text-navy">
                       Submit a referral
                     </span>{" "}
                     — Use the form on this page, fax your referral to our
                     office, or call us directly.
                   </li>
                   <li>
-                    <span className="font-medium text-neutral-900">
+                    <span className="font-medium text-navy">
                       Prompt scheduling
                     </span>{" "}
                     — We contact the patient within one business day to schedule
                     their consultation.
                   </li>
                   <li>
-                    <span className="font-medium text-neutral-900">
+                    <span className="font-medium text-navy">
                       Comprehensive evaluation
                     </span>{" "}
                     — Our periodontists perform a thorough exam and develop a
                     treatment plan in coordination with your care.
                   </li>
                   <li>
-                    <span className="font-medium text-neutral-900">
+                    <span className="font-medium text-navy">
                       Detailed communication
                     </span>{" "}
                     — You receive a full report after each visit including
@@ -93,15 +94,15 @@ export default function ReferringDoctorsPage() {
                   </li>
                 </ol>
 
-                <div className="mt-8 rounded-xl bg-neutral-50 border border-neutral-200 p-6">
-                  <h3 className="text-lg font-semibold text-neutral-900 mb-3">
+                <div className="mt-8 border-l-2 border-teal bg-cream p-6">
+                  <h3 className="text-lg font-semibold text-navy mb-3">
                     Contact Us Directly
                   </h3>
                   <p className="mb-2">
                     <span className="font-medium">Richmond:</span>{" "}
                     <a
                       href={`tel:${PRACTICE_PHONE_RICHMOND}`}
-                      className="text-[#0542BF] hover:underline"
+                      className="text-teal hover:underline"
                     >
                       {PRACTICE_PHONE_RICHMOND_DISPLAY}
                     </a>
@@ -110,7 +111,7 @@ export default function ReferringDoctorsPage() {
                     <span className="font-medium">Midlothian:</span>{" "}
                     <a
                       href={`tel:${PRACTICE_PHONE_MIDLOTHIAN}`}
-                      className="text-[#0542BF] hover:underline"
+                      className="text-teal hover:underline"
                     >
                       {PRACTICE_PHONE_MIDLOTHIAN_DISPLAY}
                     </a>
@@ -119,7 +120,7 @@ export default function ReferringDoctorsPage() {
                     <span className="font-medium">Email:</span>{" "}
                     <a
                       href="mailto:referrals@richmondperio.com"
-                      className="text-[#0542BF] hover:underline"
+                      className="text-teal hover:underline"
                     >
                       referrals@richmondperio.com
                     </a>
@@ -130,16 +131,16 @@ export default function ReferringDoctorsPage() {
 
             {/* Referral Form */}
             <div>
-              <h2 className="font-serif text-3xl text-neutral-900 mb-8">
+              <h2 className="heading-lg text-navy mb-8">
                 Referral Form
               </h2>
 
               {submitted ? (
-                <div className="rounded-xl bg-green-50 border border-green-200 p-8 text-center">
-                  <h3 className="text-xl font-semibold text-green-800 mb-2">
+                <div className="bg-cream border border-teal/20 p-8 text-center">
+                  <h3 className="text-xl font-semibold text-navy mb-2">
                     Referral Received
                   </h3>
-                  <p className="text-green-700">
+                  <p className="text-gray-dark/70">
                     Thank you for your referral. Our team will contact the
                     patient within one business day.
                   </p>
@@ -150,7 +151,7 @@ export default function ReferringDoctorsPage() {
                     <div>
                       <label
                         htmlFor="doctorName"
-                        className="block text-sm font-medium text-neutral-700 mb-1"
+                        className="block text-sm font-medium text-navy/70 mb-1"
                       >
                         Your Name *
                       </label>
@@ -161,7 +162,7 @@ export default function ReferringDoctorsPage() {
                         required
                         value={form.doctorName}
                         onChange={handleChange}
-                        className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                        className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/40 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                         placeholder="Dr. Jane Doe"
                       />
                     </div>
@@ -169,7 +170,7 @@ export default function ReferringDoctorsPage() {
                     <div>
                       <label
                         htmlFor="practiceName"
-                        className="block text-sm font-medium text-neutral-700 mb-1"
+                        className="block text-sm font-medium text-navy/70 mb-1"
                       >
                         Practice Name *
                       </label>
@@ -180,7 +181,7 @@ export default function ReferringDoctorsPage() {
                         required
                         value={form.practiceName}
                         onChange={handleChange}
-                        className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                        className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/40 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                         placeholder="ABC Family Dentistry"
                       />
                     </div>
@@ -190,7 +191,7 @@ export default function ReferringDoctorsPage() {
                     <div>
                       <label
                         htmlFor="doctorPhone"
-                        className="block text-sm font-medium text-neutral-700 mb-1"
+                        className="block text-sm font-medium text-navy/70 mb-1"
                       >
                         Phone Number
                       </label>
@@ -200,7 +201,7 @@ export default function ReferringDoctorsPage() {
                         name="doctorPhone"
                         value={form.doctorPhone}
                         onChange={handleChange}
-                        className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                        className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/40 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                         placeholder="(804) 555-0123"
                       />
                     </div>
@@ -208,7 +209,7 @@ export default function ReferringDoctorsPage() {
                     <div>
                       <label
                         htmlFor="doctorEmail"
-                        className="block text-sm font-medium text-neutral-700 mb-1"
+                        className="block text-sm font-medium text-navy/70 mb-1"
                       >
                         Email Address
                       </label>
@@ -218,7 +219,7 @@ export default function ReferringDoctorsPage() {
                         name="doctorEmail"
                         value={form.doctorEmail}
                         onChange={handleChange}
-                        className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                        className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/40 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                         placeholder="doctor@practice.com"
                       />
                     </div>
@@ -227,7 +228,7 @@ export default function ReferringDoctorsPage() {
                   <div>
                     <label
                       htmlFor="patientName"
-                      className="block text-sm font-medium text-neutral-700 mb-1"
+                      className="block text-sm font-medium text-navy/70 mb-1"
                     >
                       Patient Name *
                     </label>
@@ -238,7 +239,7 @@ export default function ReferringDoctorsPage() {
                       required
                       value={form.patientName}
                       onChange={handleChange}
-                      className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                      className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/40 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                       placeholder="Patient full name"
                     />
                   </div>
@@ -246,7 +247,7 @@ export default function ReferringDoctorsPage() {
                   <div>
                     <label
                       htmlFor="reason"
-                      className="block text-sm font-medium text-neutral-700 mb-1"
+                      className="block text-sm font-medium text-navy/70 mb-1"
                     >
                       Reason for Referral *
                     </label>
@@ -256,7 +257,7 @@ export default function ReferringDoctorsPage() {
                       required
                       value={form.reason}
                       onChange={handleChange}
-                      className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF]"
+                      className="w-full border border-navy/10 px-4 py-3 text-navy focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal"
                     >
                       <option value="">Select reason</option>
                       <option value="implant-evaluation">
@@ -278,7 +279,7 @@ export default function ReferringDoctorsPage() {
                   <div>
                     <label
                       htmlFor="notes"
-                      className="block text-sm font-medium text-neutral-700 mb-1"
+                      className="block text-sm font-medium text-navy/70 mb-1"
                     >
                       Clinical Notes
                     </label>
@@ -288,16 +289,16 @@ export default function ReferringDoctorsPage() {
                       rows={4}
                       value={form.notes}
                       onChange={handleChange}
-                      className="w-full rounded-lg border border-neutral-300 px-4 py-3 text-neutral-900 placeholder-neutral-400 focus:border-[#0542BF] focus:outline-none focus:ring-1 focus:ring-[#0542BF] resize-y"
+                      className="w-full border border-navy/10 px-4 py-3 text-navy placeholder-gray-dark/40 focus:border-teal focus:outline-none focus:ring-1 focus:ring-teal resize-y"
                       placeholder="Relevant clinical notes, X-ray findings, treatment history..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full rounded-full bg-[#182838] px-8 py-4 text-sm font-semibold text-white transition-shadow hover:shadow-lg sm:w-auto"
+                    className="btn-primary w-full sm:w-auto"
                   >
-                    Submit Referral
+                    <span>Submit Referral</span>
                   </button>
                 </form>
               )}

@@ -113,16 +113,21 @@ export default function LocationSplit() {
                 </ul>
               </div>
 
-              {/* Map placeholder */}
+              {/* Google Maps embed */}
               <div
                 ref={(el) => {
                   mapRefs.current[i] = el;
                 }}
-                className="bg-navy/5 border border-navy/10 p-6 mt-6"
+                className="mt-6 overflow-hidden"
               >
-                <p className="label-sm text-navy/40">
-                  {loc.street}, {loc.city}, {loc.state} {loc.zip}
-                </p>
+                <iframe
+                  src={loc.mapEmbed}
+                  className="w-full h-48 grayscale hover:grayscale-0 transition-all duration-700 border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={`${loc.name} Map`}
+                  allowFullScreen
+                />
               </div>
 
               <Link

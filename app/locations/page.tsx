@@ -13,12 +13,14 @@ export default function LocationsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-neutral-50 py-20 md:py-28">
+      <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
+          <div className="accent-line mb-6" />
+          <span className="label-sm text-teal mb-4 block">Our Offices</span>
+          <h1 className="heading-xl text-navy mb-6">
             Our Locations
           </h1>
-          <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
+          <p className="max-w-3xl body-lg text-gray-dark/70">
             We have two convenient offices to serve patients across the greater
             Richmond area. Both locations offer the full range of periodontal
             and implant services.
@@ -34,19 +36,19 @@ export default function LocationsPage() {
               {LOCATIONS.map((location) => (
                 <div
                   key={location.id}
-                  className="rounded-2xl border border-neutral-200 bg-white p-8"
+                  className="bg-white p-8 md:p-10 border-l-2 border-teal hover:border-blue transition-colors"
                 >
-                  <h2 className="font-serif text-2xl text-neutral-900 mb-4">
+                  <h2 className="heading-md text-navy mb-4">
                     {location.name}
                   </h2>
 
-                  <address className="not-italic text-neutral-600 mb-4 leading-relaxed">
+                  <address className="not-italic text-gray-dark/70 mb-4 leading-relaxed">
                     {location.street}
                     <br />
                     {location.city}, {location.state} {location.zip}
                   </address>
 
-                  <p className="text-neutral-600 mb-6">
+                  <p className="text-gray-dark/70 mb-6">
                     <span className="font-medium">Phone:</span>{" "}
                     <a
                       href={`tel:${location.phone.replace(/[^+\d]/g, "")}`}
@@ -57,14 +59,14 @@ export default function LocationsPage() {
                   </p>
 
                   {/* Hours */}
-                  <h3 className="text-sm font-semibold uppercase tracking-wider text-neutral-500 mb-3">
+                  <h3 className="label-sm text-teal/60 mb-3">
                     Office Hours
                   </h3>
                   <ul className="space-y-1 mb-6">
                     {location.hours.map((h) => (
                       <li
                         key={h.days}
-                        className="flex justify-between text-sm text-neutral-600"
+                        className="flex justify-between text-sm text-gray-dark/70"
                       >
                         <span>{h.days}</span>
                         <span>{h.time}</span>
@@ -75,7 +77,7 @@ export default function LocationsPage() {
                   <div className="flex gap-4">
                     <Link
                       href={`/locations/${location.id}`}
-                      className="inline-block rounded-full bg-[#182838] px-6 py-3 text-sm font-semibold text-white transition-shadow hover:shadow-lg"
+                      className="btn-primary"
                     >
                       View Details
                     </Link>
@@ -83,7 +85,7 @@ export default function LocationsPage() {
                       href={location.mapUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold text-neutral-700 transition-colors hover:bg-neutral-50"
+                      className="border border-navy/20 px-6 py-3 text-xs font-medium uppercase tracking-[0.08em] text-navy hover:bg-navy hover:text-white transition-colors"
                     >
                       Get Directions
                     </a>

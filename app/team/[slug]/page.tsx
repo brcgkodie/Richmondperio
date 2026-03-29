@@ -5,7 +5,6 @@ import PhysicianSchema from "@/components/seo/PhysicianSchema";
 import BreadcrumbSchema from "@/components/seo/BreadcrumbSchema";
 import DoctorHero from "@/components/team/DoctorHero";
 import DoctorBio from "@/components/team/DoctorBio";
-import SectionReveal from "@/components/shared/SectionReveal";
 import CTABand from "@/components/shared/CTABand";
 
 export function generateStaticParams() {
@@ -64,28 +63,6 @@ export default async function DoctorPage({
           memberships: [...member.memberships],
         }}
       />
-
-      {/* Reviews Placeholder */}
-      <SectionReveal>
-        <section className="bg-neutral-50 py-16 md:py-24">
-          <div className="mx-auto max-w-3xl px-6 text-center">
-            <h2 className="font-serif text-3xl text-neutral-900 mb-6">
-              Patient Reviews
-            </h2>
-            <p className="text-neutral-600 leading-relaxed">
-              Patient reviews for Dr. {member.name} will be displayed here.
-              Check back soon or visit our{" "}
-              <a
-                href="/reviews"
-                className="text-[#0542BF] underline underline-offset-2"
-              >
-                reviews page
-              </a>{" "}
-              to see what our patients are saying.
-            </p>
-          </div>
-        </section>
-      </SectionReveal>
 
       <CTABand
         headline={`Schedule a Consultation with Dr. ${member.name.split(" ")[0]}`}

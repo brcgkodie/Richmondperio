@@ -13,12 +13,14 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-neutral-50 py-20 md:py-28">
+      <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
+          <div className="accent-line mb-6" />
+          <span className="label-sm text-teal mb-4 block">Our Services</span>
+          <h1 className="heading-xl text-navy mb-6">
             Periodontal &amp; Implant Services
           </h1>
-          <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
+          <p className="body-lg text-gray-dark/70 max-w-3xl">
             The board-certified periodontists at Overstreet, White &amp; Dunegan
             offer a comprehensive range of periodontal and implant services at
             our Richmond and Midlothian, VA offices. From dental implants to gum
@@ -37,16 +39,16 @@ export default function ServicesPage() {
                 <Link
                   key={service.slug}
                   href={`/services/${service.slug}`}
-                  className="group rounded-2xl border border-neutral-200 bg-white p-8 transition-shadow hover:shadow-lg"
+                  className="group bg-white p-8 md:p-10 border-l-2 border-teal hover:border-blue transition-colors"
                 >
-                  <h2 className="font-serif text-2xl text-neutral-900 mb-3 group-hover:text-[#0542BF] transition-colors">
+                  <h2 className="heading-md text-navy mb-3">
                     {service.title}
                   </h2>
-                  <p className="text-neutral-600 leading-relaxed mb-6">
+                  <p className="body-lg text-gray-dark/70 mb-6">
                     {service.shortDescription}
                   </p>
-                  <span className="text-sm font-semibold text-[#0542BF] group-hover:underline">
-                    Learn More &rarr;
+                  <span className="label-sm text-teal group-hover:underline">
+                    — Learn more
                   </span>
                 </Link>
               ))}

@@ -14,12 +14,14 @@ export default function TeamPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-neutral-50 py-20 md:py-28">
+      <section className="bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6">
+          <span className="label-sm text-teal mb-4 block">Our Doctors</span>
+          <div className="accent-line mb-6" />
+          <h1 className="heading-xl text-navy mb-6">
             Meet Our Doctors
           </h1>
-          <p className="max-w-3xl text-lg text-neutral-600 leading-relaxed">
+          <p className="max-w-3xl body-lg text-gray-dark/70">
             Every periodontist at Overstreet, White &amp; Dunegan is a Diplomate
             of the American Board of Periodontology and has been voted a Top
             Periodontist by peers in Richmond Magazine.
@@ -38,23 +40,23 @@ export default function TeamPage() {
                   href={`/team/${member.slug}`}
                   className="group text-center"
                 >
-                  <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl bg-neutral-200 mb-4">
+                  <div className="relative aspect-[3/4] w-full overflow-hidden bg-navy mb-4">
                     <Image
                       src={member.image}
                       alt={`Dr. ${member.name}, ${member.credentials}`}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                     />
                   </div>
-                  <h2 className="text-xl font-semibold text-neutral-900 group-hover:text-[#0542BF] transition-colors">
+                  <h2 className="font-serif text-xl text-navy">
                     Dr. {member.name}
                   </h2>
-                  <p className="text-sm text-neutral-500 mt-1">
+                  <p className="label-sm text-teal mt-1">
                     {member.credentials}
                   </p>
-                  <p className="text-sm text-neutral-500">{member.title}</p>
-                  <span className="mt-3 inline-block text-sm font-semibold text-[#0542BF] group-hover:underline">
+                  <p className="text-sm text-gray-dark/60">{member.title}</p>
+                  <span className="mt-3 inline-block label-sm text-navy/50 group-hover:text-navy transition-colors">
                     View Bio &rarr;
                   </span>
                 </Link>
