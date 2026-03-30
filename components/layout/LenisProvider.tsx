@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, type ReactNode } from "react";
-import { ScrollTrigger } from "@/lib/gsap";
+import { gsap, ScrollTrigger } from "@/lib/gsap";
 import Lenis from "lenis";
 
 interface LenisProviderProps {
@@ -10,19 +10,21 @@ interface LenisProviderProps {
 
 export function LenisProvider({ children }: LenisProviderProps) {
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      lerp: 0.1,
+      smoothWheel: true,
+    });
 
+    // Sync Lenis scroll position with ScrollTrigger
     lenis.on("scroll", ScrollTrigger.update);
 
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    const id = requestAnimationFrame(raf);
+    // Use GSAP ticker for Lenis RAF — more reliable than manual requestAnimationFrame
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+    gsap.ticker.lagSmoothing(0);
 
     return () => {
-      cancelAnimationFrame(id);
       lenis.destroy();
     };
   }, []);

@@ -22,7 +22,8 @@ const SCROLL_CAPTIONS = [
 ];
 
 export default function HeroVideoScrub() {
-  const sectionRef = useRef<HTMLElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const stickyRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const line1Ref = useRef<HTMLSpanElement>(null);
@@ -37,22 +38,22 @@ export default function HeroVideoScrub() {
   const captionsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    const section = sectionRef.current;
+    const wrapper = wrapperRef.current;
+    const sticky = stickyRef.current;
     const video = videoRef.current;
-    if (!section) return;
+    if (!wrapper || !sticky) return;
 
     const prefersReduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
 
-    // Pause video immediately — scroll controls playback
     if (video) {
       video.pause();
       video.currentTime = 0;
     }
 
     const ctx = gsap.context(() => {
-      /* ── Video scrub on scroll ── */
+      /* ── Video scrub — uses CSS sticky, no pin conflict with Lenis ── */
       if (video && !prefersReduced) {
         const onLoaded = () => {
           const proxy = { t: 0 };
@@ -60,13 +61,10 @@ export default function HeroVideoScrub() {
             t: video.duration || 1,
             ease: "none",
             scrollTrigger: {
-              trigger: section,
+              trigger: wrapper,
               start: "top top",
-              end: "+=300%", // pin for 3x viewport height — video plays fully before unpin
-              pin: true,
-              scrub: 0.3,    // slight smoothing for frame seeking
-              anticipatePin: 1,
-              pinSpacing: true,
+              end: "bottom bottom",
+              scrub: 0.3,
             },
             onUpdate: () => {
               video.currentTime = proxy.t;
@@ -80,39 +78,56 @@ export default function HeroVideoScrub() {
           video.addEventListener("loadedmetadata", onLoaded, { once: true });
         }
 
-        // Scroll-linked captions — fade in/out at different scroll progress
+        // Scroll-linked captions
         captionsRef.current.forEach((cap, i) => {
           if (!cap) return;
-          const segmentSize = 1 / (SCROLL_CAPTIONS.length + 1);
-          const startPct = (i + 0.5) * segmentSize;
-          const endPct = startPct + segmentSize;
+          const count = SCROLL_CAPTIONS.length;
+          const seg = 1 / (count + 1);
+          const enter = (i + 0.5) * seg;
+          const leave = enter + seg;
 
-          // Fade in
-          ScrollTrigger.create({
-            trigger: section,
-            start: `top+=${startPct * 300}% top`,
-            end: `top+=${(startPct + segmentSize * 0.3) * 300}% top`,
-            scrub: true,
-            onUpdate: (self) => {
-              gsap.set(cap, { opacity: self.progress, y: 20 * (1 - self.progress) });
-            },
-          });
-          // Fade out
-          ScrollTrigger.create({
-            trigger: section,
-            start: `top+=${(endPct - segmentSize * 0.3) * 300}% top`,
-            end: `top+=${endPct * 300}% top`,
-            scrub: true,
-            onUpdate: (self) => {
-              gsap.set(cap, { opacity: 1 - self.progress });
+          gsap.fromTo(cap,
+            { opacity: 0, y: 20 },
+            {
+              opacity: 1, y: 0,
+              scrollTrigger: {
+                trigger: wrapper,
+                start: `${enter * 100}% top`,
+                end: `${(enter + seg * 0.3) * 100}% top`,
+                scrub: true,
+              },
+            }
+          );
+          gsap.to(cap, {
+            opacity: 0,
+            scrollTrigger: {
+              trigger: wrapper,
+              start: `${(leave - seg * 0.3) * 100}% top`,
+              end: `${leave * 100}% top`,
+              scrub: true,
             },
           });
         });
+
+        // Fade out hero content as user scrolls into video
+        const heroContent = sticky.querySelector("[data-hero-content]");
+        if (heroContent) {
+          gsap.to(heroContent, {
+            opacity: 0,
+            y: -40,
+            scrollTrigger: {
+              trigger: wrapper,
+              start: "5% top",
+              end: "15% top",
+              scrub: true,
+            },
+          });
+        }
       }
 
       if (prefersReduced) return;
 
-      /* ── Decorative line draw ── */
+      /* ── Entrance animations ── */
       if (decoLineRef.current) {
         gsap.fromTo(
           decoLineRef.current,
@@ -121,233 +136,162 @@ export default function HeroVideoScrub() {
         );
       }
 
-      /* ── Entrance timeline ── */
       const tl = gsap.timeline({
         defaults: { ease: "grove-smooth", duration: 1 },
         delay: 0.15,
       });
 
-      // Accent line draws in
       if (accentRef.current) {
-        tl.fromTo(
-          accentRef.current,
-          { scaleX: 0, transformOrigin: "left" },
-          { scaleX: 1, duration: 0.6 },
-          0
-        );
+        tl.fromTo(accentRef.current, { scaleX: 0, transformOrigin: "left" }, { scaleX: 1, duration: 0.6 }, 0);
       }
-
-      // Label fades up
       if (labelRef.current) {
-        tl.fromTo(
-          labelRef.current,
-          { opacity: 0, y: 20 },
-          { opacity: 1, y: 0, duration: 0.6 },
-          0.1
-        );
+        tl.fromTo(labelRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6 }, 0.1);
       }
-
-      // Headline line 1 — clip reveal
       if (line1Ref.current) {
-        tl.fromTo(
-          line1Ref.current,
-          { yPercent: 110 },
-          { yPercent: 0, duration: 0.9 },
-          0.25
-        );
+        tl.fromTo(line1Ref.current, { yPercent: 110 }, { yPercent: 0, duration: 0.9 }, 0.25);
       }
-
-      // Headline line 2
       if (line2Ref.current) {
-        tl.fromTo(
-          line2Ref.current,
-          { yPercent: 110 },
-          { yPercent: 0, duration: 0.9 },
-          0.4
-        );
+        tl.fromTo(line2Ref.current, { yPercent: 110 }, { yPercent: 0, duration: 0.9 }, 0.4);
       }
-
-      // Subtitle
       if (subtitleRef.current) {
-        tl.fromTo(
-          subtitleRef.current,
-          { yPercent: 110 },
-          { yPercent: 0, duration: 0.9 },
-          0.55
-        );
+        tl.fromTo(subtitleRef.current, { yPercent: 110 }, { yPercent: 0, duration: 0.9 }, 0.55);
       }
-
-      // Description
       if (subtextRef.current) {
-        tl.fromTo(
-          subtextRef.current,
-          { opacity: 0, y: 30 },
-          { opacity: 1, y: 0, duration: 0.8 },
-          0.85
-        );
+        tl.fromTo(subtextRef.current, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8 }, 0.85);
       }
-
-      // CTA buttons
       if (ctaRef.current) {
-        tl.fromTo(
-          ctaRef.current,
-          { opacity: 0, y: 30 },
-          { opacity: 1, y: 0, duration: 0.8 },
-          1.0
-        );
+        tl.fromTo(ctaRef.current, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8 }, 1.0);
       }
-
-      // Scroll indicator fade in
       if (scrollRef.current) {
-        tl.fromTo(
-          scrollRef.current,
-          { opacity: 0 },
-          { opacity: 1, duration: 0.6 },
-          1.2
-        );
-
+        tl.fromTo(scrollRef.current, { opacity: 0 }, { opacity: 1, duration: 0.6 }, 1.2);
         gsap.to(scrollRef.current, {
-          y: 6,
-          duration: 1.4,
-          ease: "sine.inOut",
-          yoyo: true,
-          repeat: -1,
-          delay: 1.8,
+          y: 6, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 1.8,
         });
       }
-    }, section);
+    }, wrapper);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative h-[100svh] min-h-[600px] overflow-hidden bg-[#182838]"
-    >
-      {/* Background video — scrubbed by scroll */}
-      <video
-        ref={videoRef}
-        className="absolute inset-0 h-full w-full object-cover"
-        src="/videos/hero.mp4"
-        muted
-        playsInline
-        preload="auto"
-      />
+    // Tall wrapper provides scroll distance; sticky child stays in viewport
+    <div ref={wrapperRef} className="relative" style={{ height: "400vh" }}>
+      <section
+        ref={stickyRef}
+        className="sticky top-0 h-[100svh] min-h-[600px] overflow-hidden bg-[#182838]"
+      >
+        {/* Background video */}
+        <video
+          ref={videoRef}
+          className="absolute inset-0 h-full w-full object-cover"
+          src="/videos/hero.mp4"
+          muted
+          playsInline
+          preload="auto"
+        />
 
-      {/* Dark gradient overlay for text legibility */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#182838]/85 via-[#182838]/50 to-[#182838]/30" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#182838]/70 via-transparent to-[#182838]/20" />
+        {/* Gradient overlays */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#182838]/85 via-[#182838]/50 to-[#182838]/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#182838]/70 via-transparent to-[#182838]/20" />
 
-      {/* Subtle noise texture */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43NSIgbnVtT2N0YXZlcz0iNCIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuMDMiLz48L3N2Zz4=')] opacity-20 mix-blend-overlay pointer-events-none" />
+        {/* Noise texture */}
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43NSIgbnVtT2N0YXZlcz0iNCIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuMDMiLz48L3N2Zz4=')] opacity-20 mix-blend-overlay pointer-events-none" />
 
-      {/* Decorative horizontal line */}
-      <div
-        ref={decoLineRef}
-        className="pointer-events-none absolute top-1/2 left-0 right-0 h-px bg-white/[0.05]"
-        style={{ transform: "scaleX(0)" }}
-      />
+        {/* Decorative line */}
+        <div
+          ref={decoLineRef}
+          className="pointer-events-none absolute top-1/2 left-0 right-0 h-px bg-white/[0.05]"
+          style={{ transform: "scaleX(0)" }}
+        />
 
-      {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-start justify-end pb-24 sm:justify-center sm:pb-0 px-6 text-left text-white md:px-8">
-        <div className="mx-auto w-full max-w-7xl">
-          <div ref={accentRef} className="accent-line mb-5 md:mb-6" />
-          <span
-            ref={labelRef}
-            className="label-sm text-teal mb-5 md:mb-6 block opacity-0"
-          >
-            Periodontics &amp; Dental Implant Surgery
-          </span>
-
-          <h1
-            ref={headlineRef}
-            className="max-w-5xl"
-          >
-            <span className="block overflow-hidden">
-              <span
-                ref={line1Ref}
-                className="block heading-xl text-[clamp(2.25rem,7vw,5rem)] text-white leading-[1.05]"
-              >
-                {HEADLINE_LINE1}
-              </span>
-            </span>
-            <span className="block overflow-hidden">
-              <span
-                ref={line2Ref}
-                className="block heading-xl text-[clamp(2.25rem,7vw,5rem)] text-white leading-[1.05]"
-              >
-                {HEADLINE_LINE2}
-              </span>
-            </span>
-            <span className="block overflow-hidden mt-2 md:mt-4">
-              <span
-                ref={subtitleRef}
-                className="block heading-lg text-white/40 leading-[1.15]"
-              >
-                {SUBTITLE}
-              </span>
-            </span>
-          </h1>
-
-          <p
-            ref={subtextRef}
-            className="hidden sm:block mt-6 md:mt-8 max-w-lg body-lg text-white/35 opacity-0"
-          >
-            Board-certified periodontists devoted to dental implant surgery, gum
-            grafting, bone regeneration, and the treatment of periodontal disease.
-            Serving Richmond &amp; Midlothian, VA.
-          </p>
-
-          <div
-            ref={ctaRef}
-            className="mt-8 md:mt-10 flex flex-col items-start gap-5 opacity-0 sm:flex-row sm:items-center"
-          >
-            <Link
-              href="/appointments"
-              className="btn-primary-light"
+        {/* Hero content — fades out as video scrubs */}
+        <div
+          data-hero-content
+          className="relative z-10 flex h-full flex-col items-start justify-end pb-24 sm:justify-center sm:pb-0 px-6 text-left text-white md:px-8"
+        >
+          <div className="mx-auto w-full max-w-7xl">
+            <div ref={accentRef} className="accent-line mb-5 md:mb-6" />
+            <span
+              ref={labelRef}
+              className="label-sm text-teal mb-5 md:mb-6 block opacity-0"
             >
-              <span>Schedule a Consultation</span>
-            </Link>
-            <div className="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:gap-4 text-sm">
-              <a
-                href={`tel:${PRACTICE_PHONE_RICHMOND}`}
-                className="text-white/30 transition-colors duration-300 hover:text-white"
-              >
-                Richmond {PRACTICE_PHONE_RICHMOND_DISPLAY}
-              </a>
-              <span className="hidden sm:inline text-white/10">|</span>
-              <a
-                href={`tel:${PRACTICE_PHONE_MIDLOTHIAN}`}
-                className="text-white/30 transition-colors duration-300 hover:text-white"
-              >
-                Midlothian {PRACTICE_PHONE_MIDLOTHIAN_DISPLAY}
-              </a>
+              Periodontics &amp; Dental Implant Surgery
+            </span>
+
+            <h1 ref={headlineRef} className="max-w-5xl">
+              <span className="block overflow-hidden">
+                <span ref={line1Ref} className="block heading-xl text-[clamp(2.25rem,7vw,5rem)] text-white leading-[1.05]">
+                  {HEADLINE_LINE1}
+                </span>
+              </span>
+              <span className="block overflow-hidden">
+                <span ref={line2Ref} className="block heading-xl text-[clamp(2.25rem,7vw,5rem)] text-white leading-[1.05]">
+                  {HEADLINE_LINE2}
+                </span>
+              </span>
+              <span className="block overflow-hidden mt-2 md:mt-4">
+                <span ref={subtitleRef} className="block heading-lg text-white/40 leading-[1.15]">
+                  {SUBTITLE}
+                </span>
+              </span>
+            </h1>
+
+            <p
+              ref={subtextRef}
+              className="hidden sm:block mt-6 md:mt-8 max-w-lg body-lg text-white/35 opacity-0"
+            >
+              Board-certified periodontists devoted to dental implant surgery, gum
+              grafting, bone regeneration, and the treatment of periodontal disease.
+              Serving Richmond &amp; Midlothian, VA.
+            </p>
+
+            <div
+              ref={ctaRef}
+              className="mt-8 md:mt-10 flex flex-col items-start gap-5 opacity-0 sm:flex-row sm:items-center"
+            >
+              <Link href="/appointments" className="btn-primary-light">
+                <span>Schedule a Consultation</span>
+              </Link>
+              <div className="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:gap-4 text-sm">
+                <a
+                  href={`tel:${PRACTICE_PHONE_RICHMOND}`}
+                  className="text-white/30 transition-colors duration-300 hover:text-white"
+                >
+                  Richmond {PRACTICE_PHONE_RICHMOND_DISPLAY}
+                </a>
+                <span className="hidden sm:inline text-white/10">|</span>
+                <a
+                  href={`tel:${PRACTICE_PHONE_MIDLOTHIAN}`}
+                  className="text-white/30 transition-colors duration-300 hover:text-white"
+                >
+                  Midlothian {PRACTICE_PHONE_MIDLOTHIAN_DISPLAY}
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Scroll-triggered service captions */}
-      {SCROLL_CAPTIONS.map((cap, i) => (
+        {/* Scroll captions — appear during video scrub */}
+        {SCROLL_CAPTIONS.map((cap, i) => (
+          <div
+            key={i}
+            ref={(el) => { if (el) captionsRef.current[i] = el; }}
+            className="absolute bottom-20 right-8 md:right-16 z-10 text-right opacity-0 pointer-events-none"
+          >
+            <span className="block font-serif text-2xl md:text-4xl text-white/90">{cap.text}</span>
+            <span className="block text-sm md:text-base text-white/40 mt-1 max-w-sm ml-auto">{cap.sub}</span>
+          </div>
+        ))}
+
+        {/* Scroll indicator */}
         <div
-          key={i}
-          ref={(el) => { captionsRef.current[i] = el; }}
-          className="absolute bottom-20 right-8 md:right-16 z-10 text-right opacity-0 pointer-events-none"
+          ref={scrollRef}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center gap-2 opacity-0"
         >
-          <span className="block font-serif text-2xl md:text-4xl text-white/90">{cap.text}</span>
-          <span className="block text-sm md:text-base text-white/40 mt-1 max-w-sm ml-auto">{cap.sub}</span>
+          <span className="text-[10px] uppercase tracking-[0.25em] text-white/25">Scroll</span>
+          <div className="h-10 w-px bg-gradient-to-b from-white/25 to-transparent" />
         </div>
-      ))}
-
-      {/* Scroll indicator */}
-      <div
-        ref={scrollRef}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center gap-2 opacity-0"
-      >
-        <span className="text-[10px] uppercase tracking-[0.25em] text-white/25">Scroll</span>
-        <div className="h-10 w-px bg-gradient-to-b from-white/25 to-transparent" />
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

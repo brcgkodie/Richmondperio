@@ -54,7 +54,7 @@ export default function MetricCounter() {
                 <div className="flex items-baseline justify-center gap-0.5">
                   <span
                     ref={(el) => {
-                      numberRefs.current[i] = el;
+                      if (el) numberRefs.current[i] = el;
                     }}
                     className="font-serif text-4xl font-normal text-white md:text-6xl lg:text-7xl tracking-tight"
                   >
