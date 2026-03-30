@@ -47,7 +47,6 @@ export default function HeroVideoScrub() {
       /* ── Video scrub on scroll ── */
       if (video && !prefersReduced) {
         const onLoaded = () => {
-          // Use a GSAP tween on a proxy object for smoother seeking
           const proxy = { t: 0 };
           gsap.to(proxy, {
             t: video.duration || 1,
@@ -55,8 +54,10 @@ export default function HeroVideoScrub() {
             scrollTrigger: {
               trigger: section,
               start: "top top",
-              end: "bottom top",
-              scrub: true, // 1:1 lock to scroll, no lag
+              end: "+=200%", // pin for 2x viewport height of scrolling
+              pin: true,     // pin the section in place while video plays
+              scrub: true,
+              anticipatePin: 1,
             },
             onUpdate: () => {
               video.currentTime = proxy.t;
