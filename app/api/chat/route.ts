@@ -1,10 +1,20 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { buildSystemPrompt } from "@/lib/chatbot-knowledge";
 
-const anthropic = new Anthropic();
-
 export async function POST(request: Request) {
   try {
+    if (!process.env.ANTHROPIC_API_KEY) {
+      console.error("ANTHROPIC_API_KEY is not set");
+      return Response.json(
+        { error: "Chat is currently unavailable. Please call our office directly." },
+        { status: 503 }
+      );
+    }
+
+    const anthropic = new Anthropic({
+      apiKey: process.env.ANTHROPIC_API_KEY,
+    });
+
     const { messages } = await request.json();
 
     if (!messages || !Array.isArray(messages) || messages.length === 0) {
@@ -14,7 +24,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // Map chat messages to Anthropic format
     const anthropicMessages = messages.map(
       (msg: { role: string; content: string }) => ({
         role: msg.role as "user" | "assistant",

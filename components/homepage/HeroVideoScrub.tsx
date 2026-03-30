@@ -37,20 +37,29 @@ export default function HeroVideoScrub() {
       "(prefers-reduced-motion: reduce)"
     ).matches;
 
+    // Pause video immediately — scroll controls playback
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+
     const ctx = gsap.context(() => {
       /* ── Video scrub on scroll ── */
       if (video && !prefersReduced) {
-        // Wait for video metadata to load so we know the duration
         const onLoaded = () => {
-          ScrollTrigger.create({
-            trigger: section,
-            start: "top top",
-            end: "bottom top",
-            scrub: 0.5,
-            onUpdate: (self) => {
-              if (video.duration) {
-                video.currentTime = self.progress * video.duration;
-              }
+          // Use a GSAP tween on a proxy object for smoother seeking
+          const proxy = { t: 0 };
+          gsap.to(proxy, {
+            t: video.duration || 1,
+            ease: "none",
+            scrollTrigger: {
+              trigger: section,
+              start: "top top",
+              end: "bottom top",
+              scrub: true, // 1:1 lock to scroll, no lag
+            },
+            onUpdate: () => {
+              video.currentTime = proxy.t;
             },
           });
         };

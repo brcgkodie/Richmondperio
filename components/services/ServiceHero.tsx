@@ -57,7 +57,7 @@ export default function ServiceHero({
     <section
       className={`relative overflow-hidden bg-[#182838] ${
         hasMedia
-          ? "h-[70vh] min-h-[500px] flex items-end"
+          ? "h-[60vh] min-h-[400px] flex items-end"
           : "flex items-end py-28 md:py-36"
       }`}
     >
@@ -84,13 +84,16 @@ export default function ServiceHero({
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43NSIgbnVtT2N0YXZlcz0iNCIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuMDMiLz48L3N2Zz4=')] opacity-20 mix-blend-overlay pointer-events-none" />
       )}
 
-      {/* Gradient overlay */}
+      {/* Gradient overlays for text legibility */}
       {hasMedia && (
-        <div className="absolute inset-0 bg-gradient-to-r from-[#182838]/90 via-[#182838]/60 to-transparent" />
+        <>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#182838]/90 via-[#182838]/70 to-[#182838]/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#182838]/80 via-transparent to-[#182838]/20" />
+        </>
       )}
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-0 md:pb-0 flex flex-col items-start">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-16 md:pb-20 flex flex-col items-start">
         <div ref={accentRef} className="accent-line mb-6" />
         <h1
           ref={titleRef}
