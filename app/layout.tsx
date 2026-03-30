@@ -46,6 +46,10 @@ export const metadata: Metadata = {
   },
   description:
     "Grove Periodontists — board-certified periodontists serving Richmond and Midlothian, VA. Specializing in dental implants, gum grafting, bone grafting, crown lengthening, and periodontal disease treatment.",
+  icons: {
+    icon: "/images/grove-favicon.png",
+    apple: "/images/grove-favicon.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -55,6 +59,7 @@ export const metadata: Metadata = {
       "Grove Periodontists — Periodontists in Richmond & Midlothian, VA",
     description:
       "Grove Periodontists — board-certified periodontists serving Richmond and Midlothian, VA. Specializing in dental implants, gum grafting, bone grafting, crown lengthening, and periodontal disease treatment.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Grove Periodontists" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -62,6 +67,7 @@ export const metadata: Metadata = {
       "Grove Periodontists — Periodontists in Richmond & Midlothian, VA",
     description:
       "Grove Periodontists — board-certified periodontists serving Richmond and Midlothian, VA.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

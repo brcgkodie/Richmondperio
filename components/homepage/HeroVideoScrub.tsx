@@ -14,6 +14,13 @@ const HEADLINE_LINE1 = "Grove";
 const HEADLINE_LINE2 = "Periodontists";
 const SUBTITLE = "Periodontal Excellence in Richmond, Virginia";
 
+const SCROLL_CAPTIONS = [
+  { text: "Dental Implants", sub: "Permanent solutions that look and feel natural" },
+  { text: "Gum Grafting", sub: "Restore receding tissue with minimally invasive techniques" },
+  { text: "Bone Regeneration", sub: "Rebuild the foundation for a healthy smile" },
+  { text: "Board-Certified", sub: "All four doctors — Diplomates of the American Board of Periodontology" },
+];
+
 export default function HeroVideoScrub() {
   const sectionRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -27,6 +34,7 @@ export default function HeroVideoScrub() {
   const labelRef = useRef<HTMLSpanElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const decoLineRef = useRef<HTMLDivElement>(null);
+  const captionsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -54,10 +62,11 @@ export default function HeroVideoScrub() {
             scrollTrigger: {
               trigger: section,
               start: "top top",
-              end: "+=200%", // pin for 2x viewport height of scrolling
-              pin: true,     // pin the section in place while video plays
-              scrub: true,
+              end: "+=300%", // pin for 3x viewport height — video plays fully before unpin
+              pin: true,
+              scrub: 0.3,    // slight smoothing for frame seeking
               anticipatePin: 1,
+              pinSpacing: true,
             },
             onUpdate: () => {
               video.currentTime = proxy.t;
@@ -70,6 +79,35 @@ export default function HeroVideoScrub() {
         } else {
           video.addEventListener("loadedmetadata", onLoaded, { once: true });
         }
+
+        // Scroll-linked captions — fade in/out at different scroll progress
+        captionsRef.current.forEach((cap, i) => {
+          if (!cap) return;
+          const segmentSize = 1 / (SCROLL_CAPTIONS.length + 1);
+          const startPct = (i + 0.5) * segmentSize;
+          const endPct = startPct + segmentSize;
+
+          // Fade in
+          ScrollTrigger.create({
+            trigger: section,
+            start: `top+=${startPct * 300}% top`,
+            end: `top+=${(startPct + segmentSize * 0.3) * 300}% top`,
+            scrub: true,
+            onUpdate: (self) => {
+              gsap.set(cap, { opacity: self.progress, y: 20 * (1 - self.progress) });
+            },
+          });
+          // Fade out
+          ScrollTrigger.create({
+            trigger: section,
+            start: `top+=${(endPct - segmentSize * 0.3) * 300}% top`,
+            end: `top+=${endPct * 300}% top`,
+            scrub: true,
+            onUpdate: (self) => {
+              gsap.set(cap, { opacity: 1 - self.progress });
+            },
+          });
+        });
       }
 
       if (prefersReduced) return;
@@ -289,6 +327,18 @@ export default function HeroVideoScrub() {
           </div>
         </div>
       </div>
+
+      {/* Scroll-triggered service captions */}
+      {SCROLL_CAPTIONS.map((cap, i) => (
+        <div
+          key={i}
+          ref={(el) => { captionsRef.current[i] = el; }}
+          className="absolute bottom-20 right-8 md:right-16 z-10 text-right opacity-0 pointer-events-none"
+        >
+          <span className="block font-serif text-2xl md:text-4xl text-white/90">{cap.text}</span>
+          <span className="block text-sm md:text-base text-white/40 mt-1 max-w-sm ml-auto">{cap.sub}</span>
+        </div>
+      ))}
 
       {/* Scroll indicator */}
       <div

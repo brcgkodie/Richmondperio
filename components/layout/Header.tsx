@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { NAV_ITEMS } from "@/lib/constants";
 import MobileMenu from "./MobileMenu";
 
@@ -43,12 +44,16 @@ export function Header() {
         }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
-          {/* Practice name */}
-          <Link
-            href="/"
-            className="label-sm tracking-[0.2em] text-white transition-colors duration-500"
-          >
-            GROVE
+          {/* Logo */}
+          <Link href="/" className="flex-shrink-0">
+            <Image
+              src="/images/grove-logo-white.png"
+              alt="Grove Periodontists"
+              width={120}
+              height={40}
+              className="h-8 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop navigation */}

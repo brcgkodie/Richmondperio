@@ -28,8 +28,8 @@ export default function SectionReveal({
 
     const ctx = gsap.context(() => {
       if (variant === "stagger") {
-        // Stagger direct children
         const kids = el.children;
+        if (!kids || kids.length === 0) return;
         gsap.set(kids, { opacity: 0, y: 40 });
         gsap.to(kids, {
           opacity: 1,

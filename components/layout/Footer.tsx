@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   PRACTICE_NAME,
   LOCATIONS,
@@ -14,7 +15,13 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-12">
           {/* Practice info */}
           <div className="md:col-span-4">
-            <p className="font-serif text-2xl text-white">{PRACTICE_NAME}</p>
+            <Image
+              src="/images/grove-logo-white.png"
+              alt={PRACTICE_NAME}
+              width={160}
+              height={50}
+              className="h-10 w-auto mb-2"
+            />
             <p className="mt-4 body-lg text-white/50">
               Board-certified periodontists providing advanced implant and
               periodontal care in the Richmond, Virginia area.
