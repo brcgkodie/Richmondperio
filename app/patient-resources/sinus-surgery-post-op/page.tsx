@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CTABand from "@/components/shared/CTABand";
+import PrintButton from "@/components/shared/PrintButton";
 
 export const metadata: Metadata = {
-  title: "Sinus Surgery Post-Operative Precautions",
+  title: "Sinus Surgery Post-Operative Precautions | Overstreet, White & Dunegan",
   description:
-    "Post-operative precautions after sinus lift or sinus augmentation surgery at Overstreet, White & Dunegan, Ltd. in Richmond and Midlothian, VA.",
+    "Post-operative precautions after sinus lift or sinus augmentation surgery at Overstreet, White & Dunegan in Richmond and Midlothian, VA. Important recovery guidelines for sinus bone grafts.",
 };
 
 export default function SinusSurgeryPostOpPage() {
@@ -28,59 +29,39 @@ export default function SinusSurgeryPostOpPage() {
             Sinus Surgery Post-Op Precautions
           </h1>
           <p className="body-lg text-gray-dark/70 mt-6">
-            Sinus lift (sinus augmentation) surgery requires special care during
-            recovery to protect the grafted area and ensure proper healing.
-            Follow these precautions in addition to your general post-operative
-            instructions.
+            The sinuses are located above the upper jaw, close to the roots of
+            the upper teeth. After a bone graft to the sinus area, it is
+            important to follow these precautions to ensure proper healing.
           </p>
+          <div className="flex flex-wrap gap-4 mt-8" data-print-hide>
+            <a
+              href="/pdfs/sinus-surgery-post-op.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              <span>Download PDF</span>
+            </a>
+            <PrintButton />
+          </div>
         </div>
       </section>
 
       {/* Content */}
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-6">
-          {/* Critical Warning */}
-          <div className="bg-[#182838] text-white p-8 mb-12">
-            <h2 className="heading-md text-white mb-4">
-              Critical Sinus Precautions
-            </h2>
-            <p className="body-lg text-white/70">
-              The sinus membrane has been elevated and bone graft material has
-              been placed beneath it. It is essential that you{" "}
-              <strong className="text-white">avoid any pressure changes</strong>{" "}
-              in your sinuses during the healing period to prevent displacement
-              of the graft material.
-            </p>
-          </div>
-
-          {/* Do Not */}
+          {/* For 2 Weeks DO NOT */}
           <div className="mb-12">
             <h2 className="heading-md text-navy mb-6">
-              Do NOT Do the Following
+              For 2 Weeks — DO NOT
             </h2>
             <div className="space-y-4">
               <div className="border-l-2 border-teal pl-5 py-1">
                 <p className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">Do not blow your nose</strong>{" "}
-                  for at least 2 weeks following surgery. If you need to sneeze,
-                  sneeze with your mouth open — never pinch your nose shut while
-                  sneezing.
-                </p>
-              </div>
-              <div className="border-l-2 border-teal pl-5 py-1">
-                <p className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">Do not use a straw</strong> for
-                  2 weeks. The suction can create negative pressure in the sinus
-                  cavity.
-                </p>
-              </div>
-              <div className="border-l-2 border-teal pl-5 py-1">
-                <p className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">
-                    Do not smoke or use tobacco
-                  </strong>{" "}
-                  for at least 2 weeks (ideally 4 weeks or longer). Smoking
-                  dramatically increases the risk of graft failure.
+                  <strong className="text-navy">Do not blow your nose.</strong>{" "}
+                  Gently wipe only. If you need to sneeze, sneeze with your{" "}
+                  <strong className="text-navy">mouth open</strong> — never
+                  sneeze with your mouth closed.
                 </p>
               </div>
               <div className="border-l-2 border-teal pl-5 py-1">
@@ -88,145 +69,79 @@ export default function SinusSurgeryPostOpPage() {
                   <strong className="text-navy">
                     Do not fly in an airplane
                   </strong>{" "}
-                  for at least 2 weeks without clearance from your
-                  periodontist. Cabin pressure changes can affect the sinus
-                  graft.
-                </p>
-              </div>
-              <div className="border-l-2 border-teal pl-5 py-1">
-                <p className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">
-                    Do not play wind or brass instruments
-                  </strong>{" "}
-                  for 2 weeks.
-                </p>
-              </div>
-              <div className="border-l-2 border-teal pl-5 py-1">
-                <p className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">
-                    Do not inflate balloons
-                  </strong>{" "}
-                  or engage in any activity that creates pressure in the nasal
-                  or sinus passages.
-                </p>
-              </div>
-              <div className="border-l-2 border-teal pl-5 py-1">
-                <p className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">Do not scuba dive</strong> or
-                  swim underwater until cleared by your periodontist.
-                </p>
-              </div>
-              <div className="border-l-2 border-teal pl-5 py-1">
-                <p className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">
-                    Avoid strenuous exercise
-                  </strong>{" "}
-                  and heavy lifting for 7–10 days. Bending over can increase
-                  pressure in the sinus area.
+                  (advisable to avoid for 2 weeks).
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Nasal Care */}
+          {/* For 4 Weeks DO NOT */}
           <div className="mb-12">
             <h2 className="heading-md text-navy mb-6">
-              Nasal &amp; Sinus Care
+              For 4 Weeks — DO NOT
             </h2>
-            <ul className="space-y-4">
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                If prescribed a nasal spray (such as Afrin or saline spray),
-                use it as directed to keep nasal passages moist and reduce
-                congestion.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                If prescribed a decongestant (such as Sudafed), take as
-                directed to keep the sinus clear and promote drainage.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Some light nasal oozing or minor bleeding from the nose is
-                normal for the first few days. If you experience a nosebleed,
-                sit upright, apply gentle pressure by pinching the soft part of
-                your nose, and breathe through your mouth.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                You may notice slight congestion or a feeling of fullness on
-                the side of the surgery. This is normal and will gradually
-                resolve.
-              </li>
-            </ul>
+            <div className="space-y-4">
+              <div className="border-l-2 border-teal pl-5 py-1">
+                <p className="body-lg text-gray-dark/70">
+                  <strong className="text-navy">Do not smoke.</strong> Smoking
+                  dramatically increases the risk of graft failure.
+                </p>
+              </div>
+              <div className="border-l-2 border-teal pl-5 py-1">
+                <p className="body-lg text-gray-dark/70">
+                  <strong className="text-navy">
+                    Do not play a wind instrument.
+                  </strong>
+                </p>
+              </div>
+              <div className="border-l-2 border-teal pl-5 py-1">
+                <p className="body-lg text-gray-dark/70">
+                  <strong className="text-navy">
+                    Do not use a CPAP machine.
+                  </strong>
+                </p>
+              </div>
+            </div>
           </div>
 
-          {/* Medications */}
+          {/* DO */}
           <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">Medications</h2>
+            <h2 className="heading-md text-navy mb-6">DO</h2>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Take all prescribed antibiotics for the full course as
-                directed. Antibiotics are especially important after sinus
-                surgery to prevent infection.
+                <strong className="text-navy">
+                  Take all medications as directed
+                </strong>{" "}
+                by your periodontist.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Take pain medication as prescribed. Begin taking it before the
-                anesthesia wears off.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Use any prescribed nasal decongestant or antihistamine as
-                directed to keep sinus passages open.
+                <strong className="text-navy">
+                  Keep your follow-up appointment.
+                </strong>
               </li>
             </ul>
           </div>
 
-          {/* General Recovery */}
+          {/* Recovery */}
           <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">General Recovery</h2>
+            <h2 className="heading-md text-navy mb-6">Recovery Expectations</h2>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Sleep with your head elevated on 2–3 pillows for the first
-                several nights.
+                Swelling is common and may last up to{" "}
+                <strong className="text-navy">5 days</strong>.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Apply ice packs to the cheek area for the first 24 hours (20
-                minutes on, 20 minutes off).
+                Bruising may be significant — this is normal and will resolve on
+                its own.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Eat soft foods and chew on the opposite side of the surgery for
-                at least 2 weeks.
+                Take pain medication on time — do not wait until discomfort
+                becomes severe.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Gently rinse with warm salt water starting the day after
-                surgery. Do not rinse vigorously.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Do not brush or floss the surgical area until instructed by
-                your periodontist.
-              </li>
-            </ul>
-          </div>
-
-          {/* When to Call */}
-          <div className="bg-[#182838] text-white p-8 mb-12">
-            <h2 className="heading-md text-white mb-4">
-              When to Call Our Office
-            </h2>
-            <ul className="space-y-3">
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Heavy or persistent nosebleed
-              </li>
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Severe pain not controlled by medication
-              </li>
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Fever above 101°F (38.3°C)
-              </li>
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Increasing swelling after 72 hours
-              </li>
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Feeling of air or liquid passing between your mouth and nose
-              </li>
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Foul taste or odor that persists beyond a few days
+                Apply ice packs for the first{" "}
+                <strong className="text-navy">3 days</strong>: 20 minutes on, 20
+                minutes off.
               </li>
             </ul>
           </div>

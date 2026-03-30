@@ -6,28 +6,15 @@ import Link from "next/link";
 import { NAV_ITEMS } from "@/lib/constants";
 import MobileMenu from "./MobileMenu";
 
-const DARK_HERO_PREFIXES = [
-  "/services/",
-  "/results",
-  "/locations",
-  "/reviews",
-  "/contact",
-  "/appointments",
-];
-
-function hasDarkHero(pathname: string): boolean {
-  if (pathname === "/") return true;
-  if (pathname === "/services") return true;
-  return DARK_HERO_PREFIXES.some((p) => pathname.startsWith(p));
-}
-
 export function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
-  const isDarkHero = hasDarkHero(pathname);
+  // Only the homepage and service detail pages have full-bleed dark heroes
+  const isDarkHero =
+    pathname === "/" || pathname.startsWith("/services/");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,16 +27,17 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // When scrolled: always navy bar + white text
-  // When at top + dark hero: white text, transparent bg
-  // When at top + light hero: navy text, transparent bg
+  // Scrolled → always dark bar + white text
+  // At top + dark hero → white text, transparent bg
+  // At top + light page → navy bar bg so text is always readable
+  const showNavyBar = scrolled || !isDarkHero;
   const useWhiteText = scrolled || isDarkHero;
 
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
+          showNavyBar
             ? "bg-[#182838]/95 backdrop-blur-md border-b border-white/5 py-3"
             : "bg-transparent py-6"
         }`}
@@ -58,9 +46,7 @@ export function Header() {
           {/* Practice name */}
           <Link
             href="/"
-            className={`label-sm tracking-[0.2em] transition-colors duration-500 ${
-              useWhiteText ? "text-white" : "text-navy"
-            }`}
+            className="label-sm tracking-[0.2em] text-white transition-colors duration-500"
           >
             OWD
           </Link>
@@ -78,11 +64,7 @@ export function Header() {
               >
                 <Link
                   href={item.href}
-                  className={`relative px-3 py-2 text-[13px] font-medium tracking-wide transition-colors duration-300 after:absolute after:bottom-0 after:left-3 after:h-px after:w-0 after:bg-teal after:transition-all after:duration-300 hover:after:w-[calc(100%-1.5rem)] ${
-                    useWhiteText
-                      ? "text-white/70 hover:text-white"
-                      : "text-navy/60 hover:text-navy"
-                  }`}
+                  className="relative px-3 py-2 text-[13px] font-medium tracking-wide text-white/70 transition-colors duration-300 hover:text-white after:absolute after:bottom-0 after:left-3 after:h-px after:w-0 after:bg-teal after:transition-all after:duration-300 hover:after:w-[calc(100%-1.5rem)]"
                 >
                   {item.label}
                   {"children" in item && (
@@ -126,20 +108,14 @@ export function Header() {
           <div className="flex items-center gap-4">
             <Link
               href="/appointments"
-              className={`hidden px-5 py-2.5 text-xs font-medium uppercase tracking-[0.12em] border transition-all duration-300 lg:inline-block ${
-                useWhiteText
-                  ? "border-white/30 text-white hover:bg-white hover:text-[#182838]"
-                  : "border-navy/30 text-navy hover:bg-navy hover:text-white"
-              }`}
+              className="hidden border border-white/30 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.12em] text-white transition-all duration-300 hover:bg-white hover:text-[#182838] lg:inline-block"
             >
               Request Appointment
             </Link>
 
             <button
               type="button"
-              className={`flex h-10 w-10 items-center justify-center lg:hidden transition-colors duration-500 ${
-                useWhiteText ? "text-white" : "text-navy"
-              }`}
+              className="flex h-10 w-10 items-center justify-center text-white lg:hidden"
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
             >

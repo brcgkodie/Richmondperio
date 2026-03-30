@@ -218,3 +218,15 @@ html.lenis body {
   background-color: var(--color-teal);
   color: white;
 }
+
+/* ───── Print Styles ───── */
+
+@media print {
+  header, footer, .chatbot-widget, .btn-primary, .btn-primary-light, [data-print-hide] { display: none !important; }
+  body { font-size: 12pt; color: #000; background: #fff; }
+  section { padding: 1rem 0 !important; page-break-inside: avoid; }
+  .accent-line { background-color: #000 !important; }
+  h1, h2, h3 { color: #000 !important; }
+  a { color: #000 !important; text-decoration: underline; }
+  @page { margin: 2cm; }
+}

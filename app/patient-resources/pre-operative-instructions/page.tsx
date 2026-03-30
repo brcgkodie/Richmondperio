@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CTABand from "@/components/shared/CTABand";
+import PrintButton from "@/components/shared/PrintButton";
 
 export const metadata: Metadata = {
-  title: "Pre-Operative Instructions — General",
+  title: "Pre-Operative Instructions | Overstreet, White & Dunegan",
   description:
-    "General pre-operative instructions for periodontal surgery at Overstreet, White & Dunegan, Ltd. in Richmond and Midlothian, VA.",
+    "Pre-operative instructions to prepare for periodontal surgery at Overstreet, White & Dunegan in Richmond and Midlothian, VA. Items to have on hand, dietary suggestions, and what to wear.",
 };
 
 export default function PreOperativeInstructionsPage() {
@@ -32,134 +33,163 @@ export default function PreOperativeInstructionsPage() {
             periodontal procedure. Proper preparation helps ensure the best
             possible outcome and a smooth recovery.
           </p>
+          <div className="flex flex-wrap gap-4 mt-8" data-print-hide>
+            <a
+              href="/pdfs/pre-operative-instructions.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              <span>Download PDF</span>
+            </a>
+            <PrintButton />
+          </div>
         </div>
       </section>
 
       {/* Content */}
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-6">
-          {/* Medications */}
+          {/* Items to Have on Hand */}
           <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">Medications</h2>
+            <h2 className="heading-md text-navy mb-6">Items to Have on Hand</h2>
+            <p className="body-lg text-gray-dark/70 mb-4">
+              Please have the following items ready at home before your procedure:
+            </p>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Take all prescribed pre-operative medications as directed by
-                your periodontist, including any antibiotics or anti-anxiety
-                medication.
+                Gauze pads
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Continue taking all of your regular daily medications (blood
-                pressure, cholesterol, thyroid, etc.) unless specifically
-                instructed otherwise.
+                Black tea bags
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                <strong className="text-navy">Blood thinners:</strong> Do NOT
-                stop taking blood thinners (Coumadin, Eliquis, Xarelto, Plavix,
-                aspirin) unless your periodontist and prescribing physician have
-                both agreed to discontinue them.
+                Ibuprofen (Advil/Motrin)
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Avoid aspirin, ibuprofen (Advil, Motrin), naproxen (Aleve), and
-                other NSAIDs for <strong className="text-navy">7 days</strong>{" "}
-                prior to surgery unless you take them daily for a medical
-                condition.
+                Tylenol (acetaminophen)
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Avoid herbal supplements such as fish oil, vitamin E, ginkgo
-                biloba, and St. John&apos;s Wort for 7 days before surgery, as
-                they may increase bleeding.
+                Gel or ice packs
               </li>
             </ul>
           </div>
 
-          {/* Eating & Drinking */}
+          {/* Dietary Suggestions */}
           <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">Eating &amp; Drinking</h2>
+            <h2 className="heading-md text-navy mb-6">Dietary Suggestions</h2>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Eat a light, nutritious meal 1–2 hours before your appointment.
-                Surgery should not be performed on an empty stomach (unless you
-                are receiving IV sedation — see separate instructions).
+                Plan to follow a{" "}
+                <strong className="text-navy">soft-food diet</strong> for the
+                first week after surgery.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Avoid alcoholic beverages for at least 24 hours before your
-                procedure.
+                Stock up on: yogurt, avocado, cottage cheese, fish, soups, eggs,
+                and protein shakes.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Stay well hydrated by drinking water before your appointment.
+                Avoid straws, sodas, and acidic beverages during recovery.
               </li>
             </ul>
           </div>
 
-          {/* Day of Surgery */}
+          {/* Prescribed Medications */}
           <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">Day of Surgery</h2>
+            <h2 className="heading-md text-navy mb-6">Prescribed Medications</h2>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Wear comfortable, loose-fitting clothing with sleeves that can
-                be rolled up above the elbow.
+                Take all prescribed medications as directed.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Remove contact lenses before surgery if possible.
+                Continue taking your regular medications unless told otherwise by
+                your periodontist.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Brush and floss your teeth thoroughly before arriving at the
-                office.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Arrive on time — if you need to complete any paperwork, plan to
-                arrive 10–15 minutes early.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                <strong className="text-navy">Do not smoke</strong> on the day
-                of surgery. Smoking significantly impairs healing and increases
-                the risk of complications.
+                <strong className="text-navy">Important:</strong> Please inform our
+                office if you are taking blood thinners.
               </li>
             </ul>
           </div>
 
-          {/* Transportation */}
+          {/* Activity & Work */}
           <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">Transportation</h2>
+            <h2 className="heading-md text-navy mb-6">Activity &amp; Work</h2>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                If you are receiving any form of sedation (oral or IV), you{" "}
-                <strong className="text-navy">must</strong> have a responsible
-                adult drive you to and from your appointment.
+                No physical activity on the day of surgery.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                You should not drive, operate heavy machinery, or make important
-                decisions for 24 hours following sedation.
+                Light activity only for the first week.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                If you are having local anesthesia only (no sedation), you may
-                drive yourself.
+                Plan to take at minimum the{" "}
+                <strong className="text-navy">day of surgery off</strong> from work.
               </li>
             </ul>
           </div>
 
-          {/* What to Bring */}
+          {/* What to Wear */}
           <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">What to Bring</h2>
+            <h2 className="heading-md text-navy mb-6">What to Wear</h2>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Photo ID and insurance card
+                Wear loose, comfortable clothing.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                A list of all current medications including dosages
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Any referral notes or X-rays from your referring dentist
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Completed patient forms if not previously submitted
+                Wear <strong className="text-navy">short sleeves</strong> if you
+                are being sedated.
               </li>
             </ul>
           </div>
 
-          {/* Questions */}
+          {/* If Being Sedated */}
+          <div className="mb-12">
+            <h2 className="heading-md text-navy mb-6">If Being Sedated</h2>
+            <ul className="space-y-4">
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Please review the{" "}
+                <Link
+                  href="/patient-resources/pre-operative-iv-sedation"
+                  className="text-teal hover:text-navy transition-colors underline"
+                >
+                  IV Sedation Checklist
+                </Link>{" "}
+                or{" "}
+                <Link
+                  href="/patient-resources/pre-operative-oral-sedation"
+                  className="text-teal hover:text-navy transition-colors underline"
+                >
+                  Oral Sedation Checklist
+                </Link>{" "}
+                for specific sedation instructions.
+              </li>
+            </ul>
+          </div>
+
+          {/* Additional Information */}
+          <div className="mb-12">
+            <h2 className="heading-md text-navy mb-6">Additional Information</h2>
+            <ul className="space-y-4">
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Detailed post-surgical instructions will be provided to you after
+                your procedure. You can also review our{" "}
+                <Link
+                  href="/patient-resources/post-operative-instructions"
+                  className="text-teal hover:text-navy transition-colors underline"
+                >
+                  Post-Operative Instructions
+                </Link>{" "}
+                ahead of time.
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact */}
           <div className="bg-cream border-l-2 border-teal p-6">
-            <h3 className="font-serif text-xl text-navy mb-2">Questions?</h3>
+            <h3 className="font-serif text-xl text-navy mb-2">
+              Questions?
+            </h3>
             <p className="body-lg text-gray-dark/70">
               If you have any questions about these instructions or your
               upcoming procedure, please call our{" "}

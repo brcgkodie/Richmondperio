@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CTABand from "@/components/shared/CTABand";
+import PrintButton from "@/components/shared/PrintButton";
 
 export const metadata: Metadata = {
-  title: "Pre-Operative Oral Sedation Checklist",
+  title: "Oral Sedation Checklist | Overstreet, White & Dunegan",
   description:
-    "Oral sedation checklist for patients at Overstreet, White & Dunegan, Ltd. Follow these instructions before your sedation appointment in Richmond or Midlothian, VA.",
+    "Pre-operative oral sedation checklist for patients at Overstreet, White & Dunegan in Richmond and Midlothian, VA. Follow these safety instructions before your sedation appointment.",
 };
 
 export default function PreOperativeOralSedationPage() {
@@ -32,123 +33,87 @@ export default function PreOperativeOralSedationPage() {
             follow this checklist carefully. These instructions are essential for
             your safety.
           </p>
+          <div className="flex flex-wrap gap-4 mt-8" data-print-hide>
+            <a
+              href="/pdfs/pre-operative-oral-sedation.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              <span>Download PDF</span>
+            </a>
+            <PrintButton />
+          </div>
         </div>
       </section>
 
       {/* Content */}
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-6">
-          {/* Important Notice */}
-          <div className="bg-[#182838] text-white p-8 mb-12">
-            <h2 className="heading-md text-white mb-4">Important Safety Information</h2>
-            <p className="body-lg text-white/70">
-              Oral sedation medication will make you drowsy and impair your
-              coordination and judgment. You{" "}
-              <strong className="text-white">must not</strong> drive, operate
-              machinery, or make important decisions for 24 hours after taking
-              sedation medication.
-            </p>
-          </div>
-
-          {/* Before Your Appointment */}
+          {/* Checklist */}
           <div className="mb-12">
             <h2 className="heading-md text-navy mb-6">
-              Before Your Appointment
+              Oral Sedation Checklist
             </h2>
             <div className="space-y-4">
               <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
                 <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
                 <span className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">Arrange transportation:</strong>{" "}
-                  A responsible adult must drive you to and from your
-                  appointment. You will not be permitted to drive yourself, take
-                  a taxi, or use a rideshare service alone.
+                  <strong className="text-navy">Call the office 1 week before</strong>{" "}
+                  your appointment to have your sedation medication called in to
+                  your pharmacy.
                 </span>
               </label>
               <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
                 <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
                 <span className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">Arrange a companion:</strong>{" "}
-                  A responsible adult should remain with you for the rest of the
-                  day following your procedure.
+                  <strong className="text-navy">Pediatric patients (under 16):</strong>{" "}
+                  Arrive 1 hour early and take the medication at the office.{" "}
+                  <strong className="text-navy">Adults:</strong> Take the medication
+                  1 hour before your scheduled arrival time.
                 </span>
               </label>
               <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
                 <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
                 <span className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">
-                    Do not eat or drink for 6 hours
-                  </strong>{" "}
-                  before your appointment. You may take small sips of water to
-                  swallow your medications.
+                  You <strong className="text-navy">must have an adult driver</strong>{" "}
+                  who will stay at the office during your procedure and drive you
+                  home.
                 </span>
               </label>
               <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
                 <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
                 <span className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">
-                    Take your sedation medication
-                  </strong>{" "}
-                  exactly as prescribed — typically 1 hour before your
-                  appointment time. Take with a small sip of water only.
+                  <strong className="text-navy">No driving, conducting business, or consuming alcohol</strong>{" "}
+                  for 24 hours after your procedure.
                 </span>
               </label>
               <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
                 <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
                 <span className="body-lg text-gray-dark/70">
-                  Continue taking all other regular daily medications as
-                  prescribed (blood pressure, heart, thyroid, etc.) with a small
-                  sip of water.
+                  <strong className="text-navy">No food or drink for 6 hours</strong>{" "}
+                  before your appointment. Clear liquids are permitted up to{" "}
+                  <strong className="text-navy">2 hours before</strong>.
                 </span>
               </label>
               <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
                 <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
                 <span className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">No alcohol</strong> for 24
-                  hours before and after your procedure.
+                  Wear <strong className="text-navy">loose, comfortable clothing</strong>{" "}
+                  with short sleeves. No eye makeup or false lashes. Remove
+                  contacts and nail polish.
                 </span>
               </label>
               <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
                 <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
                 <span className="body-lg text-gray-dark/70">
-                  Wear comfortable, loose-fitting clothing with short sleeves
-                  or sleeves that roll up easily.
-                </span>
-              </label>
-              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
-                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
-                <span className="body-lg text-gray-dark/70">
-                  Remove contact lenses, jewelry, and nail polish before your
-                  appointment.
+                  Continue taking your{" "}
+                  <strong className="text-navy">daily medications</strong> unless
+                  told otherwise by your periodontist. You may take small sips of
+                  water to swallow pills.
                 </span>
               </label>
             </div>
-          </div>
-
-          {/* After Your Procedure */}
-          <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">
-              After Your Procedure
-            </h2>
-            <ul className="space-y-4">
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Go directly home and rest for the remainder of the day.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Do not drive, operate machinery, use power tools, or sign legal
-                documents for 24 hours.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Begin with clear liquids and advance to soft foods as tolerated.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Take post-operative medications as directed by your
-                periodontist.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Follow all post-operative instructions provided at your visit.
-              </li>
-            </ul>
           </div>
 
           {/* Contact */}

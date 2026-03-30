@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CTABand from "@/components/shared/CTABand";
+import PrintButton from "@/components/shared/PrintButton";
 
 export const metadata: Metadata = {
-  title: "Post-Operative Instructions — General",
+  title: "Post-Operative Instructions | Overstreet, White & Dunegan",
   description:
-    "General post-operative instructions following periodontal surgery at Overstreet, White & Dunegan, Ltd. in Richmond and Midlothian, VA.",
+    "Detailed post-operative instructions following periodontal surgery including bleeding, swelling, pain management, diet, and hygiene guidelines at Overstreet, White & Dunegan in Richmond and Midlothian, VA.",
 };
 
 export default function PostOperativeInstructionsPage() {
@@ -32,6 +33,17 @@ export default function PostOperativeInstructionsPage() {
             recovery after your periodontal procedure. Please read carefully and
             contact our office with any questions.
           </p>
+          <div className="flex flex-wrap gap-4 mt-8" data-print-hide>
+            <a
+              href="/pdfs/post-operative-instructions.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              <span>Download PDF</span>
+            </a>
+            <PrintButton />
+          </div>
         </div>
       </section>
 
@@ -43,21 +55,42 @@ export default function PostOperativeInstructionsPage() {
             <h2 className="heading-md text-navy mb-6">Bleeding</h2>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Some bleeding and oozing is normal for the first 24–48 hours.
-                Saliva may appear pink or blood-tinged — this is expected.
+                A small amount of bleeding is normal following surgery.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                If active bleeding occurs, place a moistened gauze pad or a
-                moistened tea bag directly over the surgical site and apply firm,
-                steady pressure for 20–30 minutes.
+                If excessive bleeding occurs, apply a moistened gauze pad or a
+                moistened black tea bag directly over the surgical site and apply
+                firm, steady pressure for{" "}
+                <strong className="text-navy">20 minutes</strong>.
+              </li>
+            </ul>
+          </div>
+
+          {/* Discomfort */}
+          <div className="mb-12">
+            <h2 className="heading-md text-navy mb-6">Discomfort</h2>
+            <ul className="space-y-4">
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Moderate discomfort and bruising are expected following surgery.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Avoid spitting, rinsing vigorously, or using a straw for 24
-                hours, as this may disturb the blood clot.
+                Take prescribed medication as directed to manage discomfort.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Keep your head elevated with an extra pillow when lying down
-                for the first night.
+                Keep your head elevated, especially when lying down.
+              </li>
+            </ul>
+          </div>
+
+          {/* Prescribed Medications */}
+          <div className="mb-12">
+            <h2 className="heading-md text-navy mb-6">Prescribed Medications</h2>
+            <ul className="space-y-4">
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Take all prescribed medications according to the instructions provided.
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Start taking medications immediately after your procedure.
               </li>
             </ul>
           </div>
@@ -67,98 +100,115 @@ export default function PostOperativeInstructionsPage() {
             <h2 className="heading-md text-navy mb-6">Swelling</h2>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Swelling is a normal part of healing and typically peaks at
-                48–72 hours after surgery.
+                Apply an ice pack to the outside of your face for the first{" "}
+                <strong className="text-navy">48 hours</strong>:{" "}
+                <strong className="text-navy">20 minutes on, 20 minutes off</strong>.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Apply ice packs to the outside of your face:{" "}
+                Swelling typically peaks at <strong className="text-navy">72 hours</strong> after surgery.
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                After 48 hours, switch to warm, moist compresses to help resolve
+                swelling.
+              </li>
+            </ul>
+          </div>
+
+          {/* Pain */}
+          <div className="mb-12">
+            <h2 className="heading-md text-navy mb-6">Pain</h2>
+            <ul className="space-y-4">
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Pain medications may cause grogginess.{" "}
                 <strong className="text-navy">
-                  20 minutes on, 20 minutes off
+                  Avoid driving or operating machinery
                 </strong>{" "}
-                during the first 24 hours.
+                while taking prescription pain medication.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                After 48 hours, switch to warm, moist compresses to help
-                resolve swelling.
+                Take pain medication with food to reduce stomach upset.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Some bruising may appear near the surgical area — this is
-                normal and will resolve on its own.
-              </li>
-            </ul>
-          </div>
-
-          {/* Pain Management */}
-          <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">Pain Management</h2>
-            <ul className="space-y-4">
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Take prescribed pain medication{" "}
-                <strong className="text-navy">
-                  before the anesthesia wears off
-                </strong>{" "}
-                — do not wait until you are in pain.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                If prescribed an antibiotic, take the full course as directed
-                even if you feel well.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                For mild discomfort, extra-strength acetaminophen (Tylenol) may
-                be used as directed on the label. Avoid ibuprofen or aspirin
-                unless approved by your periodontist.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                If prescribed a medicated mouth rinse (chlorhexidine), begin
-                using it the day after surgery as directed. Do not rinse
-                vigorously — gently swish and let it flow over the surgical
-                area.
+                Stay ahead of the pain — do not wait until discomfort becomes
+                severe before taking medication.
               </li>
             </ul>
           </div>
 
-          {/* Diet */}
+          {/* Dressing */}
           <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">Diet</h2>
+            <h2 className="heading-md text-navy mb-6">Dressing</h2>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Eat soft, cool, or lukewarm foods for the first several days:
-                yogurt, applesauce, mashed potatoes, scrambled eggs, smoothies,
-                soups (not hot), pasta, and protein shakes.
+                A periodontal dressing may be placed to protect the surgical area.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Avoid hard, crunchy, spicy, acidic, or very hot foods until
-                cleared by your periodontist.
+                The dressing may dislodge over the course of several days — this is normal.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Do not chew directly on the surgical site.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Stay well hydrated — drink plenty of water.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                <strong className="text-navy">No alcohol</strong> while taking
-                prescription pain medication or antibiotics.
+                Sutures may loosen over time — this is also normal.
               </li>
             </ul>
           </div>
 
-          {/* Oral Hygiene */}
+          {/* Palatal Stent */}
           <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">Oral Hygiene</h2>
+            <h2 className="heading-md text-navy mb-6">Palatal Stent</h2>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                <strong className="text-navy">Do not brush or floss</strong>{" "}
-                the surgical area until instructed by your periodontist
-                (typically 10–14 days).
+                Wear the palatal stent{" "}
+                <strong className="text-navy">24 hours per day</strong> initially.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                You may gently brush and floss the rest of your mouth.
+                Remove the stent after eating, rinse it thoroughly, apply a thin
+                layer of Vaseline, and replace it.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Starting the day after surgery, gently rinse with warm salt
-                water (½ teaspoon salt in 8 oz warm water) 3–4 times daily,
-                especially after meals.
+                Continue wearing the stent for{" "}
+                <strong className="text-navy">7–14 days</strong> as directed.
+              </li>
+            </ul>
+          </div>
+
+          {/* Sutures */}
+          <div className="mb-12">
+            <h2 className="heading-md text-navy mb-6">Sutures</h2>
+            <ul className="space-y-4">
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Some sutures are resorbable and will dissolve on their own. Others
+                will be removed at your post-operative appointment.
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                <strong className="text-navy">DO NOT</strong> pull or play with
+                your sutures.
+              </li>
+            </ul>
+          </div>
+
+          {/* Rinsing & Hygiene */}
+          <div className="mb-12">
+            <h2 className="heading-md text-navy mb-6">Rinsing &amp; Hygiene</h2>
+            <ul className="space-y-4">
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Gently rinse with warm salt water{" "}
+                <strong className="text-navy">3 times per day</strong>.
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                <strong className="text-navy">Do not brush</strong> the surgical
+                area for 5 days following surgery.
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                <strong className="text-navy">Day 6:</strong> Begin gently brushing
+                the surgical area.
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                <strong className="text-navy">2 weeks:</strong> Resume normal
+                brushing (for patients without a graft).
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                <strong className="text-navy">Graft patients:</strong> Continue
+                gentle brushing only. Do not floss the grafted area until your
+                post-operative visit.
               </li>
             </ul>
           </div>
@@ -168,50 +218,105 @@ export default function PostOperativeInstructionsPage() {
             <h2 className="heading-md text-navy mb-6">Activity</h2>
             <ul className="space-y-4">
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Rest for the remainder of the day after surgery.
+                No physical activity on the day of surgery.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Avoid strenuous exercise, heavy lifting, and bending over for
-                3–5 days after surgery.
+                Light activity only for the first week.
               </li>
               <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                <strong className="text-navy">
-                  Do not smoke or use tobacco products
-                </strong>{" "}
-                for at least 2 weeks (ideally longer). Smoking dramatically
-                impairs wound healing and increases risk of complications.
+                No exercise for <strong className="text-navy">5 days</strong>{" "}
+                following your procedure.
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                <strong className="text-navy">NO SMOKING.</strong> Smoking
+                dramatically impairs wound healing and increases risk of
+                complications.
               </li>
             </ul>
           </div>
 
-          {/* When to Call */}
-          <div className="bg-[#182838] text-white p-8 mb-12">
-            <h2 className="heading-md text-white mb-4">When to Call Our Office</h2>
-            <p className="body-lg text-white/70 mb-4">
-              Contact us immediately if you experience any of the following:
-            </p>
-            <ul className="space-y-3">
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Excessive bleeding that does not subside after 30 minutes of
-                firm gauze pressure
+          {/* Tooth Sensitivity */}
+          <div className="mb-12">
+            <h2 className="heading-md text-navy mb-6">Tooth Sensitivity</h2>
+            <ul className="space-y-4">
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Tooth sensitivity may occur following surgery, especially to cold
+                temperatures.
               </li>
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Severe pain not controlled by prescribed medication
-              </li>
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Fever above 101°F (38.3°C)
-              </li>
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Increasing swelling after 3 days
-              </li>
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Allergic reaction to medication (rash, hives, difficulty
-                breathing)
-              </li>
-              <li className="body-lg text-white/70 pl-4 border-l border-teal">
-                Numbness that persists beyond 8 hours
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                This sensitivity typically lessens with time.
               </li>
             </ul>
+          </div>
+
+          {/* Dietary Suggestions */}
+          <div className="mb-12">
+            <h2 className="heading-md text-navy mb-6">Dietary Suggestions</h2>
+            <ul className="space-y-4">
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Follow a <strong className="text-navy">soft-food diet</strong> for
+                the first week.
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Recommended foods: yogurt, avocado, cottage cheese, fish, soups,
+                eggs, and protein shakes.
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                <strong className="text-navy">Avoid</strong> straws, sodas, and
+                acidic beverages.
+              </li>
+            </ul>
+          </div>
+
+          {/* Pain Medicine Schedule */}
+          <div className="mb-12">
+            <h2 className="heading-md text-navy mb-6">Pain Medicine Schedule</h2>
+
+            <h3 className="font-serif text-xl text-navy mb-4">
+              Standard Protocol
+            </h3>
+            <ul className="space-y-4 mb-8">
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                <strong className="text-navy">Step 1:</strong> Take 600mg Advil
+                (ibuprofen).
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                <strong className="text-navy">Step 2:</strong> 3 hours later, take
+                2 x 325mg Tylenol (acetaminophen).
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                <strong className="text-navy">Step 3:</strong> 3 hours later, take
+                600mg Advil again.
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Continue alternating and decrease as pain subsides.
+              </li>
+            </ul>
+
+            <h3 className="font-serif text-xl text-navy mb-4">
+              Blood Thinner Patients
+            </h3>
+            <ul className="space-y-4 mb-8">
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Take your prescription pain medication every 4–6 hours as directed.
+              </li>
+              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
+                Switch to Tylenol (acetaminophen) as pain decreases.
+              </li>
+            </ul>
+
+            <div className="bg-[#182838] text-white p-8">
+              <h3 className="font-serif text-xl text-white mb-3">
+                Opioid Safety Warning
+              </h3>
+              <p className="body-lg text-white/70">
+                Opioid pain medications carry risks of addiction, abuse, and
+                misuse, even at recommended doses. Use only as directed by your
+                periodontist and for the shortest duration necessary. Do not
+                combine with alcohol, sedatives, or other central nervous system
+                depressants.
+              </p>
+            </div>
           </div>
 
           {/* Contact */}

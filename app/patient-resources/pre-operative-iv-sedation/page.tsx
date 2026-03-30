@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CTABand from "@/components/shared/CTABand";
+import PrintButton from "@/components/shared/PrintButton";
 
 export const metadata: Metadata = {
-  title: "Pre-Operative IV Sedation Checklist",
+  title: "IV Sedation Checklist | Overstreet, White & Dunegan",
   description:
-    "IV sedation checklist for patients at Overstreet, White & Dunegan, Ltd. Essential safety instructions before your IV sedation appointment in Richmond or Midlothian, VA.",
+    "Pre-operative IV sedation checklist for patients at Overstreet, White & Dunegan in Richmond and Midlothian, VA. Essential safety instructions before your IV sedation appointment.",
 };
 
 export default function PreOperativeIVSedationPage() {
@@ -32,171 +33,85 @@ export default function PreOperativeIVSedationPage() {
             safety. Please review and follow every item on this checklist before
             your appointment.
           </p>
+          <div className="flex flex-wrap gap-4 mt-8" data-print-hide>
+            <a
+              href="/pdfs/pre-operative-iv-sedation.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              <span>Download PDF</span>
+            </a>
+            <PrintButton />
+          </div>
         </div>
       </section>
 
       {/* Content */}
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-6">
-          {/* Critical Notice */}
-          <div className="bg-[#182838] text-white p-8 mb-12">
-            <h2 className="heading-md text-white mb-4">
-              Critical Safety Requirements
-            </h2>
-            <p className="body-lg text-white/70 mb-4">
-              IV sedation is administered through a vein in your arm and will
-              render you unable to care for yourself during and after the
-              procedure. Failure to follow these instructions may result in your
-              procedure being{" "}
-              <strong className="text-white">rescheduled</strong>.
-            </p>
-            <p className="body-lg text-white/70">
-              You <strong className="text-white">must</strong> have a
-              responsible adult accompany you to drive you home and stay with you
-              for the remainder of the day.
-            </p>
-          </div>
-
-          {/* Fasting Requirements */}
+          {/* Checklist */}
           <div className="mb-12">
             <h2 className="heading-md text-navy mb-6">
-              Fasting Requirements (NPO)
+              IV Sedation Checklist
             </h2>
             <div className="space-y-4">
               <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
                 <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
                 <span className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">
-                    No food for 8 hours
-                  </strong>{" "}
-                  before your scheduled procedure time. This includes gum,
-                  candy, and mints.
+                  You <strong className="text-navy">must have an adult driver</strong>{" "}
+                  who will stay at the office during your procedure and drive you
+                  home.
                 </span>
               </label>
               <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
                 <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
                 <span className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">
-                    No liquids for 6 hours
-                  </strong>{" "}
-                  before your procedure. Small sips of water are permitted up to
-                  2 hours before to take essential medications only.
+                  <strong className="text-navy">No driving, conducting business, or consuming alcohol</strong>{" "}
+                  for 24 hours after your procedure.
                 </span>
               </label>
               <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
                 <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
                 <span className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">No alcohol</strong> for 24
-                  hours before your procedure.
+                  <strong className="text-navy">No food or drink for 6 hours</strong>{" "}
+                  before your appointment. Clear liquids are permitted up to{" "}
+                  <strong className="text-navy">2 hours before</strong>.
                 </span>
               </label>
               <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
                 <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
                 <span className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">No smoking or vaping</strong>{" "}
-                  on the day of surgery.
+                  Wear <strong className="text-navy">loose, comfortable clothing</strong>{" "}
+                  with short sleeves. No eye makeup or false lashes. Remove
+                  contacts and nail polish.
+                </span>
+              </label>
+              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
+                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
+                <span className="body-lg text-gray-dark/70">
+                  Continue taking your{" "}
+                  <strong className="text-navy">daily medications</strong>.
+                  You may take small sips of water to swallow pills.
+                </span>
+              </label>
+              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
+                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
+                <span className="body-lg text-gray-dark/70">
+                  A prescription may be called in{" "}
+                  <strong className="text-navy">before or after</strong> your
+                  procedure. Take antibiotics as directed.
+                </span>
+              </label>
+              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
+                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
+                <span className="body-lg text-gray-dark/70">
+                  Plan to take the{" "}
+                  <strong className="text-navy">day of surgery off</strong> from
+                  work.
                 </span>
               </label>
             </div>
-          </div>
-
-          {/* Medications */}
-          <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">Medications</h2>
-            <div className="space-y-4">
-              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
-                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
-                <span className="body-lg text-gray-dark/70">
-                  Continue taking all regular daily medications (blood pressure,
-                  heart, thyroid, seizure) with a small sip of water on the
-                  morning of surgery.
-                </span>
-              </label>
-              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
-                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
-                <span className="body-lg text-gray-dark/70">
-                  <strong className="text-navy">Diabetic patients:</strong>{" "}
-                  Do not take insulin or oral diabetes medication the morning of
-                  surgery. Bring your medication with you to take after the
-                  procedure.
-                </span>
-              </label>
-              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
-                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
-                <span className="body-lg text-gray-dark/70">
-                  Take any prescribed pre-operative antibiotics as directed.
-                </span>
-              </label>
-              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
-                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
-                <span className="body-lg text-gray-dark/70">
-                  Avoid aspirin, ibuprofen, and other NSAIDs for 7 days prior
-                  unless otherwise directed by your doctor.
-                </span>
-              </label>
-            </div>
-          </div>
-
-          {/* Day of Surgery */}
-          <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">Day of Surgery</h2>
-            <div className="space-y-4">
-              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
-                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
-                <span className="body-lg text-gray-dark/70">
-                  Wear comfortable, loose-fitting clothing with short sleeves
-                  or sleeves that can be easily pushed above the elbow for IV
-                  access.
-                </span>
-              </label>
-              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
-                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
-                <span className="body-lg text-gray-dark/70">
-                  Remove contact lenses, jewelry, lipstick, and nail polish.
-                </span>
-              </label>
-              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
-                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
-                <span className="body-lg text-gray-dark/70">
-                  Brush and floss your teeth before arriving.
-                </span>
-              </label>
-              <label className="flex items-start gap-4 border-l-2 border-teal pl-5 py-2">
-                <input type="checkbox" className="mt-1.5 h-4 w-4 accent-teal flex-shrink-0" />
-                <span className="body-lg text-gray-dark/70">
-                  Your driver must remain in the office or nearby and be
-                  available to take you home immediately after the procedure.
-                </span>
-              </label>
-            </div>
-          </div>
-
-          {/* After Your Procedure */}
-          <div className="mb-12">
-            <h2 className="heading-md text-navy mb-6">
-              After Your Procedure
-            </h2>
-            <ul className="space-y-4">
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Go directly home and rest. Do not make any stops on the way.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Do not drive, operate machinery, use power tools, climb stairs
-                unassisted, or sign legal documents for{" "}
-                <strong className="text-navy">24 hours</strong>.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Begin with clear liquids and advance to soft foods as tolerated
-                once you feel alert.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Nausea is possible — if it occurs, sip clear liquids slowly and
-                rest in a semi-upright position.
-              </li>
-              <li className="border-l-2 border-teal pl-5 body-lg text-gray-dark/70">
-                Follow all post-operative instructions provided at discharge.
-              </li>
-            </ul>
           </div>
 
           {/* Contact */}
