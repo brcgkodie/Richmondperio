@@ -53,75 +53,69 @@ export default function HeroVideoScrub() {
     }
 
     const ctx = gsap.context(() => {
-      /* ── Video scrub — uses CSS sticky, no pin conflict with Lenis ── */
+      /* ── Single ScrollTrigger controls everything ── */
       if (video && !prefersReduced) {
-        const onLoaded = () => {
-          const proxy = { t: 0 };
-          gsap.to(proxy, {
-            t: video.duration || 1,
-            ease: "none",
-            scrollTrigger: {
-              trigger: wrapper,
-              start: "top top",
-              end: "bottom bottom",
-              scrub: 0.3,
-            },
-            onUpdate: () => {
-              video.currentTime = proxy.t;
+        const heroContent = sticky.querySelector("[data-hero-content]");
+        const caps = captionsRef.current.filter(Boolean) as HTMLDivElement[];
+        const capCount = caps.length;
+
+        const onReady = () => {
+          ScrollTrigger.create({
+            trigger: wrapper,
+            start: "top top",
+            end: "bottom bottom",
+            onUpdate: (self) => {
+              const p = self.progress;
+
+              // Video: map progress to video duration
+              if (video.duration) {
+                video.currentTime = p * video.duration;
+              }
+
+              // Hero content: fade out between 0-15% progress
+              if (heroContent) {
+                const el = heroContent as HTMLElement;
+                if (p < 0.03) {
+                  el.style.opacity = "1";
+                  el.style.transform = "translateY(0)";
+                } else if (p < 0.15) {
+                  const fade = 1 - (p - 0.03) / 0.12;
+                  el.style.opacity = String(fade);
+                  el.style.transform = `translateY(${-40 * (1 - fade)}px)`;
+                } else {
+                  el.style.opacity = "0";
+                  el.style.transform = "translateY(-40px)";
+                }
+              }
+
+              // Captions: each gets a segment between 15% and 90%
+              caps.forEach((cap, i) => {
+                const segSize = 0.75 / capCount;
+                const segStart = 0.15 + i * segSize;
+                const fadeInEnd = segStart + 0.06;
+                const fadeOutStart = segStart + segSize - 0.06;
+                const segEnd = segStart + segSize;
+
+                let opacity = 0;
+                if (p >= segStart && p < fadeInEnd) {
+                  opacity = (p - segStart) / 0.06;
+                } else if (p >= fadeInEnd && p < fadeOutStart) {
+                  opacity = 1;
+                } else if (p >= fadeOutStart && p <= segEnd) {
+                  opacity = 1 - (p - fadeOutStart) / 0.06;
+                }
+
+                cap.style.opacity = String(Math.max(0, Math.min(1, opacity)));
+                cap.style.transform = `translateY(${20 * (1 - opacity)}px)`;
+              });
             },
           });
         };
 
         if (video.readyState >= 1) {
-          onLoaded();
+          onReady();
         } else {
-          video.addEventListener("loadedmetadata", onLoaded, { once: true });
-        }
-
-        // Scroll-linked captions
-        captionsRef.current.forEach((cap, i) => {
-          if (!cap) return;
-          const count = SCROLL_CAPTIONS.length;
-          const seg = 1 / (count + 1);
-          const enter = (i + 0.5) * seg;
-          const leave = enter + seg;
-
-          gsap.fromTo(cap,
-            { opacity: 0, y: 20 },
-            {
-              opacity: 1, y: 0,
-              scrollTrigger: {
-                trigger: wrapper,
-                start: `${enter * 100}% top`,
-                end: `${(enter + seg * 0.3) * 100}% top`,
-                scrub: true,
-              },
-            }
-          );
-          gsap.to(cap, {
-            opacity: 0,
-            scrollTrigger: {
-              trigger: wrapper,
-              start: `${(leave - seg * 0.3) * 100}% top`,
-              end: `${leave * 100}% top`,
-              scrub: true,
-            },
-          });
-        });
-
-        // Fade out hero content as user scrolls into video
-        const heroContent = sticky.querySelector("[data-hero-content]");
-        if (heroContent) {
-          gsap.to(heroContent, {
-            opacity: 0,
-            y: -40,
-            scrollTrigger: {
-              trigger: wrapper,
-              start: "5% top",
-              end: "15% top",
-              scrub: true,
-            },
-          });
+          video.addEventListener("loadedmetadata", onReady, { once: true });
         }
       }
 
@@ -174,7 +168,6 @@ export default function HeroVideoScrub() {
   }, []);
 
   return (
-    // Tall wrapper provides scroll distance; sticky child stays in viewport
     <div ref={wrapperRef} className="relative" style={{ height: "400vh" }}>
       <section
         ref={stickyRef}
@@ -271,12 +264,13 @@ export default function HeroVideoScrub() {
           </div>
         </div>
 
-        {/* Scroll captions — appear during video scrub */}
+        {/* Scroll captions */}
         {SCROLL_CAPTIONS.map((cap, i) => (
           <div
             key={i}
             ref={(el) => { if (el) captionsRef.current[i] = el; }}
-            className="absolute bottom-20 right-8 md:right-16 z-10 text-right opacity-0 pointer-events-none"
+            className="absolute bottom-20 right-8 md:right-16 z-10 text-right pointer-events-none"
+            style={{ opacity: 0 }}
           >
             <span className="block font-serif text-2xl md:text-4xl text-white/90">{cap.text}</span>
             <span className="block text-sm md:text-base text-white/40 mt-1 max-w-sm ml-auto">{cap.sub}</span>

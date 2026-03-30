@@ -18,9 +18,9 @@ export function Footer() {
             <Image
               src="/images/grove-logo-white.png"
               alt={PRACTICE_NAME}
-              width={160}
-              height={50}
-              className="h-10 w-auto mb-2"
+              width={220}
+              height={70}
+              className="h-14 w-auto mb-2"
             />
             <p className="mt-4 body-lg text-white/50">
               Board-certified periodontists providing advanced implant and
