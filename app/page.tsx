@@ -14,19 +14,19 @@ export default function HomePage() {
       <HeroVideoScrub />
       <MetricCounter />
 
-      <SectionReveal>
+      <SectionReveal variant="parallax">
         <ServiceGrid />
       </SectionReveal>
 
-      <SectionReveal>
+      <SectionReveal variant="stagger">
         <TeamPreview />
       </SectionReveal>
 
-      <SectionReveal>
+      <SectionReveal variant="parallax">
         <TestimonialCarousel />
       </SectionReveal>
 
-      <SectionReveal>
+      <SectionReveal variant="fade">
         <LocationSplit />
       </SectionReveal>
 
