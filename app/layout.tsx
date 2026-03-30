@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { LenisProvider } from "@/components/layout/LenisProvider";
 import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
+import ChatWidget from "@/components/chatbot/ChatWidget";
 
 // Self-hosted fonts for zero layout shift and no external requests.
 // Replace src paths with actual .woff2 files when available.
@@ -86,6 +87,7 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+          <ChatWidget />
         </LenisProvider>
       </body>
     </html>
