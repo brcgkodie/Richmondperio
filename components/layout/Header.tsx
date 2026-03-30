@@ -48,7 +48,7 @@ export function Header() {
             href="/"
             className="label-sm tracking-[0.2em] text-white transition-colors duration-500"
           >
-            OWD
+            GROVE
           </Link>
 
           {/* Desktop navigation */}

@@ -5,7 +5,7 @@ import CTABand from "@/components/shared/CTABand";
 export const metadata: Metadata = {
   title: "New Patients",
   description:
-    "Welcome to Overstreet, White & Dunegan, Ltd. Learn what to expect on your first visit, insurance information, and download patient forms.",
+    "Welcome to Grove Periodontists Learn what to expect on your first visit, insurance information, and download patient forms.",
 };
 
 export default function NewPatientsPage() {
@@ -19,7 +19,7 @@ export default function NewPatientsPage() {
             Welcome, New Patients
           </h1>
           <p className="max-w-3xl body-lg text-gray-dark/70">
-            We are thrilled you have chosen Overstreet, White &amp; Dunegan
+            We are thrilled you have chosen Grove Periodontists
             for your periodontal care. Contact our Richmond office at (804)
             355-6593 or Midlothian at (804) 794-7094. Here is everything you
             need to know before your first visit.

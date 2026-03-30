@@ -65,7 +65,7 @@ export default function InstagramFeed() {
           >
             <Image
               src="/images/instagram/post-1.jpg"
-              alt="OWD Periodontics Instagram post"
+              alt="Grove Periodontists Instagram post"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />

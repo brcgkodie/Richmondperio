@@ -5,7 +5,7 @@ import SectionReveal from "@/components/shared/SectionReveal";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Read the latest articles on dental implants, periodontal health, gum disease, and oral care from the periodontists at Overstreet, White & Dunegan, Ltd.",
+    "Read the latest articles on dental implants, periodontal health, gum disease, and oral care from the periodontists at Grove Periodontists",
 };
 
 const BLOG_POSTS = [
@@ -13,7 +13,7 @@ const BLOG_POSTS = [
     slug: "what-to-expect-dental-implant-consultation",
     title: "What to Expect at Your Dental Implant Consultation",
     excerpt:
-      "Thinking about dental implants? Learn what happens during your first consultation, from 3D imaging to personalized treatment planning, at Overstreet, White & Dunegan.",
+      "Thinking about dental implants? Learn what happens during your first consultation, from 3D imaging to personalized treatment planning, at Grove Periodontists.",
     date: "March 15, 2026",
     author: "Dr. Kara Dunegan Gilliam",
   },

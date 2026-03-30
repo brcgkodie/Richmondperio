@@ -21,7 +21,7 @@ export default function MidlothianLocationPage() {
             {midlothian.name}
           </h1>
           <p className="body-lg text-gray-dark/70">
-            Overstreet, White &amp; Dunegan, Ltd. — {midlothian.city},{" "}
+            Grove Periodontists — {midlothian.city},{" "}
             {midlothian.state}
           </p>
         </div>

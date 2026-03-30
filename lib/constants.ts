@@ -1,5 +1,5 @@
-export const PRACTICE_NAME = "Overstreet, White & Dunegan, Ltd.";
-export const PRACTICE_SHORT = "OWD Periodontics";
+export const PRACTICE_NAME = "Grove Periodontists";
+export const PRACTICE_SHORT = "Grove Perio";
 export const PRACTICE_PHONE_RICHMOND = "+18043556593";
 export const PRACTICE_PHONE_RICHMOND_DISPLAY = "(804) 355-6593";
 export const PRACTICE_PHONE_MIDLOTHIAN = "+18047947094";
@@ -283,7 +283,7 @@ export const BRAND = {
 
 export const ABOUT_TEXT = {
   intro:
-    "Overstreet, White & Dunegan, Ltd. is a practice devoted to the specialty of Periodontics and Dental Implant Surgery. Serving Richmond and Midlothian, Virginia, our team of board-certified periodontists is dedicated to providing the highest level of dental medicine along with friendly, compassionate service.",
+    "Grove Periodontists is a practice devoted to the specialty of Periodontics and Dental Implant Surgery. Serving Richmond and Midlothian, Virginia, our team of board-certified periodontists is dedicated to providing the highest level of dental medicine along with friendly, compassionate service.",
   mission:
     "Our focus extends beyond your teeth and gums. Research has linked periodontal disease to cardiovascular disease, diabetes, respiratory infection, and stroke. We take a whole-health approach, ensuring our patients receive care that supports their overall well-being — not just their smile.",
   recognition:

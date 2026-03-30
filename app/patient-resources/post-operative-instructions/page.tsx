@@ -4,9 +4,9 @@ import CTABand from "@/components/shared/CTABand";
 import PrintButton from "@/components/shared/PrintButton";
 
 export const metadata: Metadata = {
-  title: "Post-Operative Instructions | Overstreet, White & Dunegan",
+  title: "Post-Operative Instructions | Grove Periodontists",
   description:
-    "Detailed post-operative instructions following periodontal surgery including bleeding, swelling, pain management, diet, and hygiene guidelines at Overstreet, White & Dunegan in Richmond and Midlothian, VA.",
+    "Detailed post-operative instructions following periodontal surgery including bleeding, swelling, pain management, diet, and hygiene guidelines at Grove Periodontists in Richmond and Midlothian, VA.",
 };
 
 export default function PostOperativeInstructionsPage() {

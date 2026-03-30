@@ -38,7 +38,7 @@ export default function AppointmentsPage() {
             Request an Appointment
           </h1>
           <p className="max-w-3xl body-lg text-gray-dark/70">
-            Fill out the form below and our team at Overstreet, White &amp;
+            Fill out the form below and our team at Grove
             Dunegan will contact you to confirm your appointment. For immediate
             scheduling, call our Richmond office at (804) 355-6593 or our
             Midlothian office at (804) 794-7094.

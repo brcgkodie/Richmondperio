@@ -10,8 +10,8 @@ import {
   PRACTICE_PHONE_MIDLOTHIAN_DISPLAY,
 } from "@/lib/constants";
 
-const HEADLINE_LINE1 = "Overstreet, White";
-const HEADLINE_LINE2 = "& Dunegan, Ltd.";
+const HEADLINE_LINE1 = "Grove";
+const HEADLINE_LINE2 = "Periodontists";
 const SUBTITLE = "Periodontal Excellence in Richmond, Virginia";
 
 export default function HeroVideoScrub() {

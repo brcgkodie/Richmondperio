@@ -4,9 +4,9 @@ import CTABand from "@/components/shared/CTABand";
 import PrintButton from "@/components/shared/PrintButton";
 
 export const metadata: Metadata = {
-  title: "IV Sedation Checklist | Overstreet, White & Dunegan",
+  title: "IV Sedation Checklist | Grove Periodontists",
   description:
-    "Pre-operative IV sedation checklist for patients at Overstreet, White & Dunegan in Richmond and Midlothian, VA. Essential safety instructions before your IV sedation appointment.",
+    "Pre-operative IV sedation checklist for patients at Grove Periodontists in Richmond and Midlothian, VA. Essential safety instructions before your IV sedation appointment.",
 };
 
 export default function PreOperativeIVSedationPage() {

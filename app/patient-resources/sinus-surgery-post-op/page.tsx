@@ -4,9 +4,9 @@ import CTABand from "@/components/shared/CTABand";
 import PrintButton from "@/components/shared/PrintButton";
 
 export const metadata: Metadata = {
-  title: "Sinus Surgery Post-Operative Precautions | Overstreet, White & Dunegan",
+  title: "Sinus Surgery Post-Operative Precautions | Grove Periodontists",
   description:
-    "Post-operative precautions after sinus lift or sinus augmentation surgery at Overstreet, White & Dunegan in Richmond and Midlothian, VA. Important recovery guidelines for sinus bone grafts.",
+    "Post-operative precautions after sinus lift or sinus augmentation surgery at Grove Periodontists in Richmond and Midlothian, VA. Important recovery guidelines for sinus bone grafts.",
 };
 
 export default function SinusSurgeryPostOpPage() {

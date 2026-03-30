@@ -40,27 +40,27 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://richmondperioonline.com"),
   title: {
     default:
-      "Overstreet, White & Dunegan — Periodontists in Richmond & Midlothian, VA",
-    template: "%s | Overstreet, White & Dunegan — Periodontist Richmond VA",
+      "Grove Periodontists — Periodontists in Richmond & Midlothian, VA",
+    template: "%s | Grove Periodontists — Periodontist Richmond VA",
   },
   description:
-    "Overstreet, White & Dunegan, Ltd. — board-certified periodontists serving Richmond and Midlothian, VA. Specializing in dental implants, gum grafting, bone grafting, crown lengthening, and periodontal disease treatment.",
+    "Grove Periodontists — board-certified periodontists serving Richmond and Midlothian, VA. Specializing in dental implants, gum grafting, bone grafting, crown lengthening, and periodontal disease treatment.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://richmondperioonline.com",
-    siteName: "Overstreet, White & Dunegan, Ltd.",
+    siteName: "Grove Periodontists",
     title:
-      "Overstreet, White & Dunegan — Periodontists in Richmond & Midlothian, VA",
+      "Grove Periodontists — Periodontists in Richmond & Midlothian, VA",
     description:
-      "Overstreet, White & Dunegan, Ltd. — board-certified periodontists serving Richmond and Midlothian, VA. Specializing in dental implants, gum grafting, bone grafting, crown lengthening, and periodontal disease treatment.",
+      "Grove Periodontists — board-certified periodontists serving Richmond and Midlothian, VA. Specializing in dental implants, gum grafting, bone grafting, crown lengthening, and periodontal disease treatment.",
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Overstreet, White & Dunegan — Periodontists in Richmond & Midlothian, VA",
+      "Grove Periodontists — Periodontists in Richmond & Midlothian, VA",
     description:
-      "Overstreet, White & Dunegan, Ltd. — board-certified periodontists serving Richmond and Midlothian, VA.",
+      "Grove Periodontists — board-certified periodontists serving Richmond and Midlothian, VA.",
   },
   robots: {
     index: true,

@@ -4,7 +4,7 @@ import SectionReveal from "@/components/shared/SectionReveal";
 export const metadata: Metadata = {
   title: "Patient Reviews",
   description:
-    "Read patient reviews and testimonials for Overstreet, White & Dunegan, Ltd. See why patients trust our board-certified periodontists in Richmond and Midlothian, VA.",
+    "Read patient reviews and testimonials for Grove Periodontists See why patients trust our board-certified periodontists in Richmond and Midlothian, VA.",
 };
 
 const REVIEWS = [

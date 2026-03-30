@@ -5,7 +5,7 @@ import SectionReveal from "@/components/shared/SectionReveal";
 export const metadata: Metadata = {
   title: "Patient Resources",
   description:
-    "Pre- and post-operative instructions, sedation checklists, insurance information, payment options, and FAQs from Overstreet, White & Dunegan, Ltd.",
+    "Pre- and post-operative instructions, sedation checklists, insurance information, payment options, and FAQs from Grove Periodontists",
 };
 
 const CHECKLISTS = [

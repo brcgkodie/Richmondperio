@@ -7,7 +7,7 @@ import SectionReveal from "@/components/shared/SectionReveal";
 export const metadata: Metadata = {
   title: "Our Team",
   description:
-    "Meet our board-certified periodontists at Overstreet, White & Dunegan, Ltd., serving Richmond and Midlothian, VA.",
+    "Meet our board-certified periodontists at Grove Periodontists, serving Richmond and Midlothian, VA.",
 };
 
 export default function TeamPage() {
@@ -22,7 +22,7 @@ export default function TeamPage() {
             Meet Our Doctors
           </h1>
           <p className="max-w-3xl body-lg text-gray-dark/70">
-            Every periodontist at Overstreet, White &amp; Dunegan is a Diplomate
+            Every periodontist at Grove Periodontists is a Diplomate
             of the American Board of Periodontology and has been voted a Top
             Periodontist by peers in Richmond Magazine.
           </p>

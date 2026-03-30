@@ -6,7 +6,7 @@ import CTABand from "@/components/shared/CTABand";
 export const metadata: Metadata = {
   title: "About Our Practice",
   description:
-    "Learn about Overstreet, White & Dunegan, Ltd. — board-certified periodontists devoted to periodontics and dental implant surgery in Richmond and Midlothian, VA.",
+    "Learn about Grove Periodontists — board-certified periodontists devoted to periodontics and dental implant surgery in Richmond and Midlothian, VA.",
 };
 
 export default function AboutPage() {
@@ -18,10 +18,10 @@ export default function AboutPage() {
           <span className="label-sm text-teal mb-4 block">About Our Practice</span>
           <div className="accent-line mb-6" />
           <h1 className="heading-xl text-navy mb-6">
-            About Overstreet, White &amp; Dunegan
+            About Grove Periodontists
           </h1>
           <p className="max-w-3xl body-lg text-gray-dark/70">
-            Overstreet, White &amp; Dunegan, Ltd. is a practice devoted
+            Grove Periodontists is a practice devoted
             exclusively to Periodontics and Dental Implant Surgery, serving
             patients and referring dentists across the greater Richmond and
             Midlothian, Virginia area. Our practice is built on a foundation of
@@ -38,7 +38,7 @@ export default function AboutPage() {
             <div className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden bg-navy">
               <Image
                 src="/images/team/team-group.jpg"
-                alt="Drs. Dunegan Gilliam, Overstreet, Lyons, and White — the periodontists at Overstreet, White & Dunegan"
+                alt="Drs. Dunegan Gilliam, Overstreet, Lyons, and White — the periodontists at Grove Periodontists"
                 fill
                 sizes="100vw"
                 className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-1000"

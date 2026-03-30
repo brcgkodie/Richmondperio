@@ -9,7 +9,7 @@ interface Message {
 }
 
 const GREETING =
-  "Hello! I'm the virtual assistant for Overstreet, White & Dunegan. I can help you with scheduling appointments, learning about our services, insurance questions, or anything else about our practice. How can I help you today?";
+  "Hello! I'm the virtual assistant for Grove Periodontists. I can help you with scheduling appointments, learning about our services, insurance questions, or anything else about our practice. How can I help you today?";
 
 const QUICK_ACTIONS = [
   { label: "Book an appointment", message: "I'd like to schedule an appointment." },
@@ -152,7 +152,7 @@ export default function ChatWidget() {
               </svg>
             </div>
             <div className="flex-1">
-              <p className="text-sm font-semibold text-white">OWD Periodontics</p>
+              <p className="text-sm font-semibold text-white">Grove Periodontists</p>
               <p className="text-xs" style={{ color: "rgba(255,255,255,0.6)" }}>
                 Virtual Assistant
               </p>

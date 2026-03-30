@@ -4,9 +4,9 @@ import CTABand from "@/components/shared/CTABand";
 import PrintButton from "@/components/shared/PrintButton";
 
 export const metadata: Metadata = {
-  title: "Pre-Operative Instructions | Overstreet, White & Dunegan",
+  title: "Pre-Operative Instructions | Grove Periodontists",
   description:
-    "Pre-operative instructions to prepare for periodontal surgery at Overstreet, White & Dunegan in Richmond and Midlothian, VA. Items to have on hand, dietary suggestions, and what to wear.",
+    "Pre-operative instructions to prepare for periodontal surgery at Grove Periodontists in Richmond and Midlothian, VA. Items to have on hand, dietary suggestions, and what to wear.",
 };
 
 export default function PreOperativeInstructionsPage() {

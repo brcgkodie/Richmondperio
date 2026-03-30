@@ -11,7 +11,7 @@ export function generateLocalBusinessSchema() {
     "@type": "MedicalClinic",
     name: PRACTICE_NAME,
     description:
-      "Board-certified periodontal and dental implant surgery practice — Overstreet, White & Dunegan, Ltd. — serving Richmond and Midlothian, Virginia.",
+      "Board-certified periodontal and dental implant surgery practice — Grove Periodontists — serving Richmond and Midlothian, Virginia.",
     url: SITE_URL,
     telephone: PRACTICE_PHONE,
     address: LOCATIONS.map((loc) => ({

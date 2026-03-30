@@ -4,9 +4,9 @@ import CTABand from "@/components/shared/CTABand";
 import PrintButton from "@/components/shared/PrintButton";
 
 export const metadata: Metadata = {
-  title: "Oral Sedation Checklist | Overstreet, White & Dunegan",
+  title: "Oral Sedation Checklist | Grove Periodontists",
   description:
-    "Pre-operative oral sedation checklist for patients at Overstreet, White & Dunegan in Richmond and Midlothian, VA. Follow these safety instructions before your sedation appointment.",
+    "Pre-operative oral sedation checklist for patients at Grove Periodontists in Richmond and Midlothian, VA. Follow these safety instructions before your sedation appointment.",
 };
 
 export default function PreOperativeOralSedationPage() {

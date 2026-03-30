@@ -51,15 +51,17 @@ export default function MetricCounter() {
             <React.Fragment key={metric.label}>
               {i > 0 && <div className="hidden md:block w-px self-stretch bg-white/10" />}
               <div className="flex-1 text-center bg-[#182838] py-8 md:py-0">
-                <span
-                  ref={(el) => {
-                    numberRefs.current[i] = el;
-                  }}
-                  className="block font-serif text-4xl font-normal text-white md:text-6xl lg:text-7xl tracking-tight"
-                >
-                  0
-                </span>
-                <span className="text-teal text-xl md:text-2xl font-serif">+</span>
+                <div className="flex items-baseline justify-center gap-0.5">
+                  <span
+                    ref={(el) => {
+                      numberRefs.current[i] = el;
+                    }}
+                    className="font-serif text-4xl font-normal text-white md:text-6xl lg:text-7xl tracking-tight"
+                  >
+                    0
+                  </span>
+                  <span className="text-teal text-2xl md:text-3xl lg:text-4xl font-serif">+</span>
+                </div>
                 <span className="mt-2 md:mt-3 block label-sm text-white/40">
                   {metric.label}
                 </span>

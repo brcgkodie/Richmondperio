@@ -5,7 +5,7 @@ import SectionReveal from "@/components/shared/SectionReveal";
 export const metadata: Metadata = {
   title: "Patient Results",
   description:
-    "View before-and-after results from dental implant, gum grafting, and periodontal procedures at Overstreet, White & Dunegan, Ltd.",
+    "View before-and-after results from dental implant, gum grafting, and periodontal procedures at Grove Periodontists",
 };
 
 const CASES = [

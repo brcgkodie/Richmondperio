@@ -43,7 +43,7 @@ export default function ReferringDoctorsPage() {
             For Referring Doctors
           </h1>
           <p className="max-w-3xl body-lg text-gray-dark/70">
-            Thank you for trusting Overstreet, White &amp; Dunegan, Ltd. with
+            Thank you for trusting Grove Periodontists with
             your patients&apos; periodontal care. We are committed to seamless
             communication and collaborative treatment planning.
           </p>
