@@ -61,6 +61,9 @@ export default async function DoctorPage({
             (e) => `${e.degree} — ${e.institution}`
           ),
           memberships: [...member.memberships],
+          accomplishments: [...member.accomplishments],
+          publications: [...member.publications],
+          licenses: [...member.licenses],
         }}
       />
 
