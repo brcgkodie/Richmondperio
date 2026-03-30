@@ -4,6 +4,7 @@ import ServiceGrid from "@/components/homepage/ServiceGrid";
 import TeamPreview from "@/components/homepage/TeamPreview";
 import TestimonialCarousel from "@/components/homepage/TestimonialCarousel";
 import LocationSplit from "@/components/homepage/LocationSplit";
+import InstagramFeed from "@/components/homepage/InstagramFeed";
 import SectionReveal from "@/components/shared/SectionReveal";
 import CTABand from "@/components/shared/CTABand";
 
@@ -28,6 +29,8 @@ export default function HomePage() {
       <SectionReveal>
         <LocationSplit />
       </SectionReveal>
+
+      <InstagramFeed />
 
       <CTABand />
     </>

@@ -2,7 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import Link from "next/link";
-import { gsap } from "@/lib/gsap";
+import { gsap, ScrollTrigger } from "@/lib/gsap";
 import {
   PRACTICE_PHONE_RICHMOND,
   PRACTICE_PHONE_MIDLOTHIAN,
@@ -16,6 +16,7 @@ const SUBTITLE = "Periodontal Excellence in Richmond, Virginia";
 
 export default function HeroVideoScrub() {
   const sectionRef = useRef<HTMLElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const line1Ref = useRef<HTMLSpanElement>(null);
   const line2Ref = useRef<HTMLSpanElement>(null);
@@ -29,15 +30,40 @@ export default function HeroVideoScrub() {
 
   useEffect(() => {
     const section = sectionRef.current;
+    const video = videoRef.current;
     if (!section) return;
 
     const prefersReduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
 
-    if (prefersReduced) return;
-
     const ctx = gsap.context(() => {
+      /* ── Video scrub on scroll ── */
+      if (video && !prefersReduced) {
+        // Wait for video metadata to load so we know the duration
+        const onLoaded = () => {
+          ScrollTrigger.create({
+            trigger: section,
+            start: "top top",
+            end: "bottom top",
+            scrub: 0.5,
+            onUpdate: (self) => {
+              if (video.duration) {
+                video.currentTime = self.progress * video.duration;
+              }
+            },
+          });
+        };
+
+        if (video.readyState >= 1) {
+          onLoaded();
+        } else {
+          video.addEventListener("loadedmetadata", onLoaded, { once: true });
+        }
+      }
+
+      if (prefersReduced) return;
+
       /* ── Decorative line draw ── */
       if (decoLineRef.current) {
         gsap.fromTo(
@@ -132,7 +158,6 @@ export default function HeroVideoScrub() {
           1.2
         );
 
-        // Scroll indicator bounce/pulse loop
         gsap.to(scrollRef.current, {
           y: 6,
           duration: 1.4,
@@ -152,10 +177,24 @@ export default function HeroVideoScrub() {
       ref={sectionRef}
       className="relative h-[100svh] min-h-[600px] overflow-hidden bg-[#182838]"
     >
-      {/* Subtle noise texture */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43NSIgbnVtT2N0YXZlcz0iNCIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuMDMiLz48L3N2Zz4=')] opacity-30 mix-blend-overlay pointer-events-none" />
+      {/* Background video — scrubbed by scroll */}
+      <video
+        ref={videoRef}
+        className="absolute inset-0 h-full w-full object-cover"
+        src="/videos/hero.mp4"
+        muted
+        playsInline
+        preload="auto"
+      />
 
-      {/* ── Decorative horizontal line ── */}
+      {/* Dark gradient overlay for text legibility */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#182838]/85 via-[#182838]/50 to-[#182838]/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#182838]/70 via-transparent to-[#182838]/20" />
+
+      {/* Subtle noise texture */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43NSIgbnVtT2N0YXZlcz0iNCIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuMDMiLz48L3N2Zz4=')] opacity-20 mix-blend-overlay pointer-events-none" />
+
+      {/* Decorative horizontal line */}
       <div
         ref={decoLineRef}
         className="pointer-events-none absolute top-1/2 left-0 right-0 h-px bg-white/[0.05]"
