@@ -67,6 +67,23 @@ export default function TeamPreview() {
           </div>
         </div>
 
+        {/* Team in their office */}
+        <div className="relative mb-6 aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden">
+          <Image
+            src="/images/team/team-hallway.jpg"
+            alt="Drs. Dunegan Gilliam, Overstreet, Lyons, and White in the Midlothian office"
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
+        <div className="mb-14 grid grid-cols-2 gap-x-8 gap-y-3 md:grid-cols-4 border-b border-navy/10 pb-8">
+          <p className="text-sm text-gray-dark/60"><span className="text-navy font-medium">Board-certified,</span> American Board of Periodontology — all four doctors</p>
+          <p className="text-sm text-gray-dark/60"><span className="text-navy font-medium">VCU-trained,</span> with faculty and research ties to the School of Dentistry</p>
+          <p className="text-sm text-gray-dark/60"><span className="text-navy font-medium">Voted Top Periodontists</span> by their peers in Richmond Magazine</p>
+          <p className="text-sm text-gray-dark/60"><span className="text-navy font-medium">IV sedation certified,</span> periodontics and dental implant surgery only</p>
+        </div>
+
         {/* Grid */}
         <div className="flex gap-6 overflow-x-auto pb-4 md:grid md:grid-cols-2 md:overflow-visible md:pb-0 lg:grid-cols-4">
           {TEAM.map((member, i) => (
@@ -92,7 +109,7 @@ export default function TeamPreview() {
                   alt={`Dr. ${member.name}`}
                   fill
                   sizes="(max-width: 768px) 256px, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 />
               </div>
 

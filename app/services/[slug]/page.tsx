@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
-import { SERVICES } from "@/lib/constants";
+import { SERVICES, TEAM } from "@/lib/constants";
 import ServiceHero from "@/components/services/ServiceHero";
 import FAQAccordion from "@/components/services/FAQAccordion";
 import SectionReveal from "@/components/shared/SectionReveal";
@@ -375,6 +376,8 @@ export default async function ServicePage({
     data.relatedSlugs.includes(s.slug)
   );
 
+  const reviewer = TEAM[SERVICES.findIndex((s) => s.slug === slug) % TEAM.length];
+
   return (
     <>
       <ServiceHero
@@ -393,6 +396,27 @@ export default async function ServicePage({
             <p className="body-lg text-gray-dark/70">
               {data.description}
             </p>
+            <div className="mt-8 flex items-center gap-4 border-t border-navy/10 pt-6">
+              <div className="relative h-12 w-12 overflow-hidden rounded-full bg-navy/5">
+                <Image
+                  src={reviewer.image}
+                  alt={`Dr. ${reviewer.name}`}
+                  fill
+                  sizes="48px"
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-sm text-gray-dark/60">
+                Medically reviewed by{" "}
+                <Link
+                  href={`/team/${reviewer.slug}`}
+                  className="text-navy font-medium hover:text-teal transition-colors"
+                >
+                  Dr. {reviewer.name}, {reviewer.credentials}
+                </Link>
+                , Diplomate of the American Board of Periodontology
+              </p>
+            </div>
           </div>
         </section>
       </SectionReveal>

@@ -48,7 +48,7 @@ export default function AboutPage() {
                 alt="Drs. Dunegan Gilliam, Overstreet, Lyons, and White — the periodontists at Grove Periodontists"
                 fill
                 sizes="100vw"
-                className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-1000"
+                className="object-cover object-top"
                 priority
               />
             </div>

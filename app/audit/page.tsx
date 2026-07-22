@@ -374,7 +374,7 @@ export default function AuditPage() {
                   organic)
                 </h3>
                 <div className="overflow-x-auto">
-                  <table className="w-full text-left text-sm">
+                  <table className="w-full min-w-[520px] text-left text-sm">
                     <thead>
                       <tr className="border-b border-navy/20 label-sm text-navy">
                         <th className="py-3 pr-4">#</th>
@@ -408,7 +408,7 @@ export default function AuditPage() {
                   Organic top 9
                 </h3>
                 <div className="overflow-x-auto">
-                  <table className="w-full text-left text-sm">
+                  <table className="w-full min-w-[520px] text-left text-sm">
                     <tbody>
                       {ORGANIC_PERIO.map((r) => (
                         <tr
@@ -423,7 +423,7 @@ export default function AuditPage() {
                           >
                             {r.domain}
                           </td>
-                          <td className="py-3 text-gray-dark/60">{r.note}</td>
+                          <td className="py-3 text-gray-dark/60 whitespace-normal break-words">{r.note}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -436,7 +436,7 @@ export default function AuditPage() {
                   &ldquo;dental implants richmond va&rdquo; — organic top 4
                 </h3>
                 <div className="overflow-x-auto">
-                  <table className="w-full text-left text-sm">
+                  <table className="w-full min-w-[520px] text-left text-sm">
                     <tbody>
                       {ORGANIC_IMPLANTS.map((r) => (
                         <tr key={r.pos} className="border-b border-navy/10">
@@ -444,7 +444,7 @@ export default function AuditPage() {
                             {r.pos}
                           </td>
                           <td className="py-3 pr-4 text-navy">{r.domain}</td>
-                          <td className="py-3 text-gray-dark/60">{r.note}</td>
+                          <td className="py-3 text-gray-dark/60 whitespace-normal break-words">{r.note}</td>
                         </tr>
                       ))}
                       <tr className="bg-[#9C3A2E]/5">
@@ -488,7 +488,7 @@ export default function AuditPage() {
               difficulty (KD) 0-24 on those means they are easy organic wins.
             </p>
             <div className="overflow-x-auto">
-              <table className="w-full text-left text-sm">
+              <table className="w-full min-w-[520px] text-left text-sm">
                 <thead>
                   <tr className="border-b border-navy/20 label-sm text-navy">
                     <th className="py-3 pr-4">Keyword</th>
@@ -757,6 +757,83 @@ export default function AuditPage() {
         </section>
       </SectionReveal>
 
+      {/* E-E-A-T */}
+      <SectionReveal>
+        <section className="bg-cream py-16 md:py-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <h2 className="heading-lg text-navy mb-4">
+              E-E-A-T: proving experience, expertise, authority, and trust
+            </h2>
+            <p className="text-gray-dark/70 max-w-2xl mb-12">
+              Google holds medical sites to its highest content standard. Most
+              dental sites assert quality; this build documents it, signal by
+              signal, using only what is verifiably true about the practice.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[520px] text-left text-sm">
+                <thead>
+                  <tr className="border-b border-navy/20 label-sm text-navy">
+                    <th className="py-3 pr-4">Signal</th>
+                    <th className="py-3 pr-4">Old site</th>
+                    <th className="py-3">This build</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Experience", "Stock photos, no cases", "Real before-and-after cases, real office photography of both locations, real patient reviews pulled live from Google"],
+                    ["Expertise", "Doctor names only", "Full CVs: education, residencies, board certification, publications, and a Medically Reviewed By attribution from a named periodontist on every procedure page"],
+                    ["Authoritativeness", "None wired in", "Physician schema for all four doctors, ABP Diplomate status, VCU faculty ties, Richmond Magazine recognition, AAP and ADA memberships in crawlable HTML"],
+                    ["Trust", "Broken schema, wrong address", "Consistent NAP, per-location clinic schema, transparent pre- and post-op instructions, sedation checklists, HTTPS, and honest cost content"],
+                  ].map(([sig, old, now]) => (
+                    <tr key={sig} className="border-b border-navy/10 align-top">
+                      <td className="py-4 pr-4 text-navy font-medium">{sig}</td>
+                      <td className="py-4 pr-4 text-gray-dark/50">{old}</td>
+                      <td className="py-4 text-gray-dark/70">{now}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </SectionReveal>
+
+      {/* What is already built */}
+      <SectionReveal>
+        <section className="py-16 md:py-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <h2 className="heading-lg text-navy mb-4">
+              Already built into this site to help it rank
+            </h2>
+            <p className="text-gray-dark/70 max-w-2xl mb-12">
+              None of this is proposed work. It ships with the site the day it
+              goes live on the practice domain.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-6">
+              {[
+                "Dedicated, indexable page for each of the six procedures with cost and recovery FAQs",
+                "FAQPage, MedicalClinic (per location), MedicalProcedure, and Physician structured data",
+                "Medically-reviewed-by attribution from a named board-certified periodontist on every procedure page",
+                "Full redirect map from every old WordPress URL, preserving 20 years of link equity through the rebrand",
+                "llms.txt and explicit crawl access for GPTBot, ClaudeBot, PerplexityBot, and Google-Extended",
+                "Per-page titles, meta descriptions, canonicals, and branded social share cards on all 34 routes",
+                "Real photography of both offices and all four doctors — no stock, no fabricated imagery",
+                "Live Google reviews on the site, filtered to genuine 4-star-plus patient feedback",
+                "Doctor pages with complete CVs capturing branded and best-periodontist searches",
+                "XML sitemap, clean robots directives, and one canonical domain source of truth",
+                "Location pages per office with embedded maps, hours, parking, and interior photography",
+                "Sub-2-second static pages on a global CDN, mobile-first, zero render-blocking legacy scripts",
+              ].map((item) => (
+                <div key={item} className="flex items-baseline gap-3">
+                  <span className="text-teal font-serif text-lg leading-none">✓</span>
+                  <p className="text-gray-dark/70 text-sm leading-relaxed">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </SectionReveal>
+
       {/* KPIs */}
       <SectionReveal>
         <section className="bg-navy py-16 md:py-24">
@@ -767,7 +844,7 @@ export default function AuditPage() {
               get reported monthly.
             </p>
             <div className="overflow-x-auto">
-              <table className="w-full text-left text-sm">
+              <table className="w-full min-w-[520px] text-left text-sm">
                 <thead>
                   <tr className="border-b border-white/20 label-sm text-white/80">
                     <th className="py-3 pr-4">Metric</th>
