@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import BreadcrumbSchema from "@/components/seo/BreadcrumbSchema";
+import { ogMeta } from "@/lib/og";
 
 const BLOG_POSTS: Record<
   string,
@@ -75,7 +76,13 @@ export async function generateMetadata({
 
   return {
     title: post.title,
-    description: post.content[0],
+    description: post.content[0].slice(0, 160),
+    ...ogMeta({
+      title: post.title,
+      description: post.content[0].slice(0, 160),
+      path: `/blog/${slug}`,
+      subtitle: "Patient Education — Grove Periodontists",
+    }),
   };
 }
 

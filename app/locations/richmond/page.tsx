@@ -3,11 +3,18 @@ import Image from "next/image";
 import { LOCATIONS } from "@/lib/constants";
 import SectionReveal from "@/components/shared/SectionReveal";
 import CTABand from "@/components/shared/CTABand";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Richmond Office",
   description:
     "Visit our Grove Avenue office in Richmond, VA. Board-certified periodontists specializing in dental implants, gum grafting, and periodontal care.",
+  ...ogMeta({
+    title: "Richmond Office",
+    description:
+      "Visit our Grove Avenue office in Richmond, VA. Board-certified periodontists specializing in dental implants, gum grafting, and periodontal care.",
+    path: "/locations/richmond",
+  }),
 };
 
 const richmond = LOCATIONS.find((l) => l.id === "richmond")!;

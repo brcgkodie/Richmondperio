@@ -1,0 +1,416 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "address_components" : 
+      [
+         {
+            "long_name" : "Unit B",
+            "short_name" : "Unit B",
+            "types" : 
+            [
+               "subpremise"
+            ]
+         },
+         {
+            "long_name" : "11301",
+            "short_name" : "11301",
+            "types" : 
+            [
+               "street_number"
+            ]
+         },
+         {
+            "long_name" : "Polo Place",
+            "short_name" : "Polo Pl",
+            "types" : 
+            [
+               "route"
+            ]
+         },
+         {
+            "long_name" : "Midlothian",
+            "short_name" : "Midlothian",
+            "types" : 
+            [
+               "locality",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "Chesterfield County",
+            "short_name" : "Chesterfield County",
+            "types" : 
+            [
+               "administrative_area_level_2",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "Virginia",
+            "short_name" : "VA",
+            "types" : 
+            [
+               "administrative_area_level_1",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "United States",
+            "short_name" : "US",
+            "types" : 
+            [
+               "country",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "23113",
+            "short_name" : "23113",
+            "types" : 
+            [
+               "postal_code"
+            ]
+         },
+         {
+            "long_name" : "4803",
+            "short_name" : "4803",
+            "types" : 
+            [
+               "postal_code_suffix"
+            ]
+         }
+      ],
+      "business_status" : "OPERATIONAL",
+      "current_opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "date" : "2026-07-27",
+                  "day" : 1,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "date" : "2026-07-27",
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2026-07-21",
+                  "day" : 2,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "date" : "2026-07-21",
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2026-07-22",
+                  "day" : 3,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "date" : "2026-07-22",
+                  "day" : 3,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2026-07-23",
+                  "day" : 4,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "date" : "2026-07-23",
+                  "day" : 4,
+                  "time" : "0700"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2026-07-24",
+                  "day" : 5,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "date" : "2026-07-24",
+                  "day" : 5,
+                  "time" : "0700"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:00 AM – 5:00 PM",
+            "Tuesday: 8:00 AM – 5:00 PM",
+            "Wednesday: 8:00 AM – 5:00 PM",
+            "Thursday: 7:00 AM – 2:00 PM",
+            "Friday: 7:00 AM – 2:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "formatted_address" : "11301 Polo Pl Unit B, Midlothian, VA 23113, USA",
+      "formatted_phone_number" : "(804) 794-7094",
+      "geometry" : 
+      {
+         "location" : 
+         {
+            "lat" : 37.525588,
+            "lng" : -77.60580519999999
+         },
+         "viewport" : 
+         {
+            "northeast" : 
+            {
+               "lat" : 37.52687288029151,
+               "lng" : -77.60452186970849
+            },
+            "southwest" : 
+            {
+               "lat" : 37.52417491970851,
+               "lng" : -77.6072198302915
+            }
+         }
+      },
+      "international_phone_number" : "+1 804-794-7094",
+      "name" : "Overstreet, White & Dunegan, Ltd.",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "0700"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "0700"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:00 AM – 5:00 PM",
+            "Tuesday: 8:00 AM – 5:00 PM",
+            "Wednesday: 8:00 AM – 5:00 PM",
+            "Thursday: 7:00 AM – 2:00 PM",
+            "Friday: 7:00 AM – 2:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106887681993042287121\"\u003eRichardson, Overstreet &amp; White, LTD.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydggX1eUyzzg8O-KDqN6nLt9Q22S2uM2Ht6WAxPJY2Pebkq3GXMoiyKsqjVEGJtyHslAPiztcorzyoXi4h-xp3Vr6-ZbsPRvtlkHH9A6YxCAJV3c3jjl5xMbmEgQc_CxTjGgrMZ1fzo3D9x3u0wJbdnz6ATSSr6UG_VrSB_mflEuAnSbTmS1UIdcktjn2t7T5Y1b1Uh-IgVsFppskh-fSxiGVMeChiBT85J1ixq3mDe-UIbbNx5GkDOWWX3lMZocjLk9tnh6SnZnnZySBE2yzEQtsFfSCE60KE9m_pmZzI934PuN8cGUAnNVQ-O2evddlp7C5xBulPOOtCKXiK6rjTODM5PbL1bo5tg1TVLELrFJDkmMO4ve47ZZ6xJKrOd-0F0djLqbnJwpm0-oYySRPQXeg3Lm2oXcapwM6XTN9g_KDg",
+            "width" : 4032
+         },
+         {
+            "height" : 4000,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103288774590982703179\"\u003eEricaRVA\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgVNdtKk9nuaZ6MNf-LVu3mW1z9HUh77oaXMlzq2sTZqwKzxnIMAIkBsp6z9i3dSnC8imlZmQxVoNWrVi5XvGnFlA9aScrYAc_jvAB1DIyNNBe9PlQHPPW2fj9SMLTmNuiholdLkXVjFKElJuvaZ1gABuEjlnKJhbzckVx0ScXwmOLKEKjElQw0yXTWY831SKmRwJ8ohF-rLAVkFn0eLcaljX7-x9g22SegP7zmsNpco0FI9131cZ3kiiD11UclhhaR8RHact7KUy77AM-1rRPQhqF0FC-hrqqoGJqb3cd3evkR9kgjsw0_UrkCEJTsB8MLoOA3hnMHCKHmThwABhKATPj18iME8Io0HdBYR5ORKYZ15zCIXnoJSdbXLrsHD7GsQdOMWHR_J1zMWTWtmf6Z4zD6ukLA_6MaEndPHLJNF2g",
+            "width" : 3000
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106887681993042287121\"\u003eRichardson, Overstreet &amp; White, LTD.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjXVXI8OYJzkuy1d88sFWINON1dYlXrGWkau03XPedYKttnuiLa0627Wwv6Ij8GRJJlE3CU08ehJPvzNMfzPOe_xnSdAWU2fB68NKXxcxgs2KboVpyCKS4ftzwa3XRHPlMSJ98epDzEcJsHy-D7ilRTrMw5Jz3pvz_J7I6W2OQd3I8pqY3NxkdMSVp1SNyuT-BE3BN2aOXFTRWRSEi2a4q4KMShE00xBrMiJ7XA3EZEfuclP2zZ-gMAKCv4oX3rdyElpttIjIfjQp_EYgE3FqLVQ686tbQ5RIjj6y2GYAm_-z5rjZtvDsBonKYar22IyFGOes_zTlPo4dtxiJofLoIvzcRgNh_A-551ZmaF77XpvbRvtSS-RDFeIALDRXbdX_pf8UMdpdL_uWoOQr73b9QmWTlNNeoSuNMWvKjCxQQ",
+            "width" : 4032
+         },
+         {
+            "height" : 4000,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103288774590982703179\"\u003eEricaRVA\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiCBCTN-Zc-OqTJeuGkXq56TGKC1dyBsBs9hEpYwiY6Bm1ixgn323INvIr6LoigJVeevW7Auf3ASm7pdMNG-yANz2oirPVXVd7u1k_MFFEPJLwFrlbV2uui_PauioNOnR_YknIWcj8Ty_Qm6qsvwY63IeF2HszvAWRw3qBj86v49Rvs-GXLViv9jJL1TQmr8i1HP2jP8omGm2C-p6djDtWbfUmUGllM0dKZUs8R2ocjrKtBFtXQHl8xzSv-lK1gY-rchXeeocYAlIKBcxv32KhV1YI-L6JQ_j6CqpHemPOr8JGvFSaFEYpddcIR2d7ohIZDwhqb3I-TFC4nnEcvOMU_FfKK19HPnjpDC6No8ir5YIEDs0bLpxMiNC4V2IrI_WG_5mN1gHwfMPw1H7lwPeontUlCXMS78MKheb0uzxfhBg",
+            "width" : 3000
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106887681993042287121\"\u003eRichardson, Overstreet &amp; White, LTD.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhaY60I_hvifEb2DqlPas5-shOLfVCeeJA1D4249eSyu3ldJGmMOBphZgp4cngT1pKzeB0TkOE42JRa48Hxsqrq_LdiiGZRBZO2Btex9LgYsWDooEVJ7WGk0xd7IsBRmXXZTdmGj9hsO11dBdx-r9hzwyt7VS7Z1AkQc1JuhnsmoCuaiYcnrKyfgJSKZj8TpscqDy8iHQx2-JJxhAJnwjnoU5UKxZr3i2qUrwIuhFtvvZok0aMSbjuT65386_EZdhPqT_XxcaoNEvTr5hcj5ewTaFmQMrn8n4j01HQaP7VoYyVLvJlFvFXR9EtSF4Sn72kqIPqLN87wNr7aQIkgZtNoPrc3YE0qm2CdiCaBgLvSR9RKcQkZNvWkbiKkZi4BePU_omaFz7ykRP_k_gtVQ9aIBMC3LZxBqnKWOr7eRfta6AVw",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106887681993042287121\"\u003eRichardson, Overstreet &amp; White, LTD.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgWDktHVR8x_sMMDhOuAOPYw_X2ttH52iZ42g8X6gAJiiGIacpel8NuFMHjfqnNSunfssTTzn-AGe7r0W01-T-Z8b24X4XZTYbN2055SY-DxCoKAZUXMQkTeCcD4PNHuus78OMUUTVg2FBlR1-z1CDZWw539IsRcUXTNg52pPoJsfLGVFg2bchpZwafCbp2luTZyRA5t8D7jrHtySBHn5Ob0KHadx00mgRzwgihgdpZ6Sn8ZPdUXH449mjWbWjkGc3awL1DQlnsTK4p94gD6hmRJL3wByGr4ngkji4jDU99-agEwJ_yQ7MPwyrEb4aHgYuD6BZhTo9dYgI27uKbPQa0kjvdJrhu7otenbzUC0-1X6zWWZJdezlUQffsCvhjNmnX6YFIaNbptsNrYDt5wP7P0u5XQUqt9XCMSpC7w8ssUg",
+            "width" : 4032
+         },
+         {
+            "height" : 597,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106887681993042287121\"\u003eRichardson, Overstreet &amp; White, LTD.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydi2dWmDHo_Me58lAC0gN_xmszhOFMUxce7ILbfmBZwJcPXuG4AmPhff3iDavY-Yo3cf8ExEFpcZxWfFQ0RRk8uomf_PhcM3GvD68gM5VsOI7lDLeYGlqa1jry--YheDlp-ifLJVtMmD6dadDdLFCg9olMOH-Qf20fzKs061syknQIFdtjoMLFexjNOoixqwtnuiZZVTNdieGGQZRoAq5uuxzGOOpCa43_xCE33NX1OEbZoELy3kVzHXEZOUmJH-gZOivjpaI31dNYocAqtMXgbS9-lWNK2macLCmpQ6Xvgo8C1HKhi5d9fH-MRQZJEzmgQa_9HxM6zcha0_UezDDNouO8k2xP6jmuDOfFYDLDQhUAk2nR6dcNLHH7af5AdF2T81LgeMKhb94bkjKfiOa1Vbi0bY3OIGEwsBJEeki2Jn128",
+            "width" : 738
+         }
+      ],
+      "rating" : 3.8,
+      "reviews" : 
+      [
+         {
+            "author_name" : "Sherry Stadler",
+            "author_url" : "https://www.google.com/maps/contrib/100167735915474693224/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocJQ2l7QIUzXFywpEUXLeoo2LXYq0lXbXDa2yUrTvrETIBw0XA=s128-c0x00000000-cc-rp-mo",
+            "rating" : 2,
+            "relative_time_description" : "7 months ago",
+            "text" : "First I will say that Dr. Overstreet and the dental staff were excellent.  My issue was with the office staff and their lackadaisical efforts with regard to processing insurance claims.  You as the customer must pay everything up front with cash or pay a higher fee for using a credit card or paying incrementally as the work outlined in their dental plan is completed.  I have good dental insurance and had to repeatedly follow up to achieve reimbursements that are directed to their office.  In one case I was told my claim was denied.  Upon follow up the claim was denied because my insurance did not receive complete information from their office.  Rather than supplying the necessary information they just stuck this in their file and told me \"insurance companies always say that because they don't want to pay.\"  Clearly I  don't have the ability to access their files and rectify this myself and just filing this away is unacceptable.  Upon checking on my second claim it was determined that it was never submitted.  Finally upon submission and resubmission of the incomplete claim my insurance company paid a significant amount of the charges.  Now I  continue to wait for my reimbursement which was sent in early November; however, could not be cashed because the person who wrote the check spelled out a dollar amount for an amount considerably less than the numerical dollar amount on the check, requiring me to immediately void and return the check to seek a correctly reissued check.  Now we are at the end of 2025 and I am told that they will get to it next year because apparently the only person who (questionably) is capable of writing a check has jury duty and they are also all closing up to go on vacation.  Unfortunately, we pay more so that they get all their money immediately yet they are unconcerned about delays in reimbursing customer funds.  If there is a vehicle to allow customer reimbursements to be directed to you - the customer, customers of this business should definitely seek this option.",
+            "time" : 1766498725,
+            "translated" : false
+         },
+         {
+            "author_name" : "Isabelle Clune",
+            "author_url" : "https://www.google.com/maps/contrib/115568718042166603989/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocJtYFywqy6xqBvcX7mYkdhGhN2fXs-5uyrWflKNQTEOmQJDCg=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "9 months ago",
+            "text" : "Amazing experience with Dr.Lyons. My gums are identical and I feel so much more confident in my smile. The process was well communicated and I was given great post care instructions.",
+            "time" : 1760094870,
+            "translated" : false
+         },
+         {
+            "author_name" : "Clint Baker",
+            "author_url" : "https://www.google.com/maps/contrib/101632287267121756970/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjVS26dEilYzkTcWa5r7jGBFRROEXIjFpp-FlRQnY_5ZmeniMOI_xA=s128-c0x00000000-cc-rp-mo",
+            "rating" : 1,
+            "relative_time_description" : "10 months ago",
+            "text" : "I was referred here by my dentist at Midlothian Dental Center. My experience with the clinical care was fine, but the administrative and billing side is an absolute nightmare that nearly cost me my home purchase.\n\nAfter my appointment, I was told \"no payment needed, we'll bill your insurance.\" I heard nothing for weeks until I received a past due notice from a collections agency. Shocked, I called my insurer, Blue Shield, and discovered the office never even submitted a claim. If they had, it would have been covered.\n\nThis was not an isolated error. They had also incorrectly charged me for a \"missed appointment\" that I had cancelled well within their window, which I had to call to get reversed.\n\nBecause I was in the middle of closing escrow on my first home, I had no choice but to pay the collections bill immediately to protect my credit. The stress was incredible. While my insurance is reimbursing me for the procedure, this office's incompetence cost me time, money (in lost interest), and immense anxiety.\n\nThe immediate jump to collections without verifying insurance is unacceptable. I cannot risk this happening again. I will not be returning, and I have serious reservations about the dentist who recommended them.\n\nProceed with extreme caution. Double-check every statement, and do not assume they will bill your insurance correctly.",
+            "time" : 1757690540,
+            "translated" : false
+         },
+         {
+            "author_name" : "EricaRVA",
+            "author_url" : "https://www.google.com/maps/contrib/103288774590982703179/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjV91f8MsnCXejS5N1e25TcqG0YrGYDYkANsdS6tq56oFZz4G7WC=s128-c0x00000000-cc-rp-mo-ba4",
+            "rating" : 5,
+            "relative_time_description" : "6 years ago",
+            "text" : "Lovely waiting area, excellent and professional staff. I saw Dr. Richardson and he is very easy to talk to and very detailed about the procedure. Just as important, they are aware that most dental plans have a yearly cap on benefits. He suggested that I do part of my procedure this year and complete the procedure next spring. The doctors aren't looking out just for themselves, they are really concerned about the whole experience for the patient.  They have my trust and that means so much to me!",
+            "time" : 1593018738,
+            "translated" : false
+         },
+         {
+            "author_name" : "Cary",
+            "author_url" : "https://www.google.com/maps/contrib/107779774684924415889/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjUh6BD5Uk7PjcMj-n2haxoYc_kQMXT-qu4XigD_NMKpBUqst1E=s128-c0x00000000-cc-rp-mo-ba5",
+            "rating" : 5,
+            "relative_time_description" : "a year ago",
+            "text" : "Very Professional Services rendered from Richardson, Overstreet & White, DDS Ltd at Midlothian, VA office during visits there & from Office Manager Kirsten, great interpersonal skills,\nCustomer Services reign here from Front Desk & Dental Staff!\nGrateful!",
+            "time" : 1730231669,
+            "translated" : false
+         }
+      ],
+      "types" : 
+      [
+         "dentist",
+         "establishment",
+         "health",
+         "point_of_interest"
+      ],
+      "url" : "https://maps.google.com/?cid=12693300268810332798",
+      "user_ratings_total" : 10,
+      "website" : "http://www.richmondperioonline.com/"
+   },
+   "status" : "OK"
+}

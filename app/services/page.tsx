@@ -2,11 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
 import SectionReveal from "@/components/shared/SectionReveal";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Our Services",
   description:
     "Explore periodontal and dental implant services at Grove Periodontists — dental implants, gum grafting, bone grafting, crown lengthening, and more in Richmond & Midlothian, VA.",
+  ...ogMeta({
+    title: "Our Services",
+    description:
+      "Explore periodontal and dental implant services at Grove Periodontists — dental implants, gum grafting, bone grafting, crown lengthening, and more in Richmond & Midlothian, VA.",
+    path: "/services",
+  }),
 };
 
 export default function ServicesPage() {

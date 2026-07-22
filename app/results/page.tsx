@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import BeforeAfterSlider from "@/components/services/BeforeAfterSlider";
 import SectionReveal from "@/components/shared/SectionReveal";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Patient Results",
   description:
     "View before-and-after results from dental implant, gum grafting, and periodontal procedures at Grove Periodontists",
+  ...ogMeta({
+    title: "Patient Results",
+    description:
+      "View before-and-after results from dental implant, gum grafting, and periodontal procedures at Grove Periodontists",
+    path: "/results",
+  }),
 };
 
 const CASES = [

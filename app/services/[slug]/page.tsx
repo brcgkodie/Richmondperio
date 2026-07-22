@@ -6,6 +6,7 @@ import ServiceHero from "@/components/services/ServiceHero";
 import FAQAccordion from "@/components/services/FAQAccordion";
 import SectionReveal from "@/components/shared/SectionReveal";
 import CTABand from "@/components/shared/CTABand";
+import { ogMeta } from "@/lib/og";
 
 const SERVICE_IMAGES: Record<string, string> = {
   "dental-implants": "/images/services/dental-implants.jpg",
@@ -349,6 +350,12 @@ export async function generateMetadata({
   return {
     title: data.metaTitle,
     description: data.metaDescription,
+    ...ogMeta({
+      title: service.title,
+      description: data.metaDescription,
+      path: `/services/${slug}`,
+      subtitle: "Periodontal Care — Richmond & Midlothian, VA",
+    }),
   };
 }
 
@@ -465,24 +472,6 @@ export default async function ServicePage({
         </section>
       </SectionReveal>
 
-      {/* FAQ Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: data.faqs.map((faq) => ({
-              "@type": "Question",
-              name: faq.question,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: faq.answer,
-              },
-            })),
-          }),
-        }}
-      />
 
       {/* Service CTA */}
       <CTABand

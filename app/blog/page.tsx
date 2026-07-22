@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionReveal from "@/components/shared/SectionReveal";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Blog",
   description:
     "Read the latest articles on dental implants, periodontal health, gum disease, and oral care from the periodontists at Grove Periodontists",
+  ...ogMeta({
+    title: "Blog",
+    description:
+      "Read the latest articles on dental implants, periodontal health, gum disease, and oral care from the periodontists at Grove Periodontists",
+    path: "/blog",
+  }),
 };
 
 const BLOG_POSTS = [

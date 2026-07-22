@@ -1,0 +1,28 @@
+[
+  {
+    "id": "576f96e4-1af6-4b93-b909-26db40e10144",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_000705_576f96e4-1af6-4b93-b909-26db40e10144.png",
+    "created_at": 1784678825.128865,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "14cf1ecd-61dd-4cda-bb68-592262519417",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/14cf1ecd-61dd-4cda-bb68-592262519417.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Using this real reception desk as exact reference, create an elevated editorial detail photograph of the same space: stacked-stone desk front, gray marble countertop, yellow orchid in black vase, pale blue walls, warm pendant light glowing. Remove all people, papers and clutter. Shallow depth of field focused on the orchid and marble texture, warm inviting light, high-end interior magazine quality, photorealistic."
+    }
+  }
+]

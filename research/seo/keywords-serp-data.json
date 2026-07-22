@@ -1,0 +1,826 @@
+{
+  "generated": "2026-07-21",
+  "source": "DataForSEO (live)",
+  "location": {
+    "city": "Richmond,Virginia,United States",
+    "city_code": 1027270,
+    "country_code": 2840
+  },
+  "volumes": {
+    "richmond": [
+      {
+        "keyword": "periodontist richmond va",
+        "search_volume": 90,
+        "cpc": 6.12,
+        "competition": "HIGH",
+        "competition_index": 86,
+        "low_top_of_page_bid": 3.38,
+        "high_top_of_page_bid": 23.08
+      },
+      {
+        "keyword": "periodontist near me",
+        "search_volume": 70,
+        "cpc": 14.1,
+        "competition": "HIGH",
+        "competition_index": 80,
+        "low_top_of_page_bid": 3.43,
+        "high_top_of_page_bid": 25.84
+      },
+      {
+        "keyword": "dental implants richmond va",
+        "search_volume": 70,
+        "cpc": 29.89,
+        "competition": "HIGH",
+        "competition_index": 69,
+        "low_top_of_page_bid": 8.02,
+        "high_top_of_page_bid": 72.96
+      },
+      {
+        "keyword": "gum graft richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "gum grafting cost",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "periodontal disease treatment richmond",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "gum disease treatment richmond va",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "bone grafting dental",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "crown lengthening richmond",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "tooth extraction richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "LANAP richmond",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "laser gum surgery richmond",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "dental implants midlothian va",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "periodontist midlothian va",
+        "search_volume": 10,
+        "cpc": 3.29,
+        "competition": "MEDIUM",
+        "competition_index": 65,
+        "low_top_of_page_bid": 3.91,
+        "high_top_of_page_bid": 19.25
+      },
+      {
+        "keyword": "receding gums treatment",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "wisdom teeth removal richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      }
+    ],
+    "us": [
+      {
+        "keyword": "periodontist richmond va",
+        "search_volume": 1000,
+        "cpc": 11.8,
+        "competition": "MEDIUM",
+        "competition_index": 63,
+        "low_top_of_page_bid": 3.62,
+        "high_top_of_page_bid": 22.45
+      },
+      {
+        "keyword": "periodontist near me",
+        "search_volume": 40500,
+        "cpc": 11.76,
+        "competition": "MEDIUM",
+        "competition_index": 60,
+        "low_top_of_page_bid": 3.44,
+        "high_top_of_page_bid": 18.43
+      },
+      {
+        "keyword": "dental implants richmond va",
+        "search_volume": 320,
+        "cpc": 37.7,
+        "competition": "LOW",
+        "competition_index": 30,
+        "low_top_of_page_bid": 9.8,
+        "high_top_of_page_bid": 68.53
+      },
+      {
+        "keyword": "gum graft richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "gum grafting cost",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "periodontal disease treatment richmond",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "gum disease treatment richmond va",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "bone grafting dental",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "crown lengthening richmond",
+        "search_volume": 0,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "tooth extraction richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "LANAP richmond",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "laser gum surgery richmond",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "dental implants midlothian va",
+        "search_volume": 110,
+        "cpc": 22.54,
+        "competition": "HIGH",
+        "competition_index": 72,
+        "low_top_of_page_bid": 8.41,
+        "high_top_of_page_bid": 57.87
+      },
+      {
+        "keyword": "periodontist midlothian va",
+        "search_volume": 40,
+        "cpc": 8.75,
+        "competition": "HIGH",
+        "competition_index": 82,
+        "low_top_of_page_bid": 3.85,
+        "high_top_of_page_bid": 15.07
+      },
+      {
+        "keyword": "receding gums treatment",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      },
+      {
+        "keyword": "wisdom teeth removal richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null,
+        "competition_index": null,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null
+      }
+    ]
+  },
+  "suggestions": {
+    "periodontist richmond": [
+      {
+        "keyword": "richmond periodontist",
+        "search_volume": 1000,
+        "cpc": 11.8,
+        "competition": "MEDIUM"
+      },
+      {
+        "keyword": "periodontist richmond",
+        "search_volume": 1000,
+        "cpc": 11.8,
+        "competition": "MEDIUM"
+      },
+      {
+        "keyword": "periodontist richmond va",
+        "search_volume": 1000,
+        "cpc": 11.8,
+        "competition": "MEDIUM"
+      },
+      {
+        "keyword": "periodontist richmond ky",
+        "search_volume": 30,
+        "cpc": null,
+        "competition": "LOW"
+      },
+      {
+        "keyword": "best periodontist richmond va",
+        "search_volume": 30,
+        "cpc": 8.11,
+        "competition": "MEDIUM"
+      },
+      {
+        "keyword": "dr richardson periodontist richmond va",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": "LOW"
+      },
+      {
+        "keyword": "chris richardson periodontist richmond va",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": "LOW"
+      },
+      {
+        "keyword": "periodontist richmond bc",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "richmond hill periodontist",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "periodontist richmond tx",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "dr turner periodontist richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "periodontist in richmond bc",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "best periodontist in richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "dr miller periodontist richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "periodontist in richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "periodontist richmond hill",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "periodontist richmond indiana",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "periodontist in richmond",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "periodontist richmond ca",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      }
+    ],
+    "dental implants richmond": [
+      {
+        "keyword": "richmond va dental implants",
+        "search_volume": 320,
+        "cpc": 37.7,
+        "competition": "LOW"
+      },
+      {
+        "keyword": "dental implants in richmond virginia",
+        "search_volume": 320,
+        "cpc": 37.7,
+        "competition": "LOW"
+      },
+      {
+        "keyword": "dental implants richmond",
+        "search_volume": 320,
+        "cpc": 37.7,
+        "competition": "LOW"
+      },
+      {
+        "keyword": "dental implants richmond va",
+        "search_volume": 320,
+        "cpc": 37.7,
+        "competition": "LOW"
+      },
+      {
+        "keyword": "dental implants in richmond va",
+        "search_volume": 320,
+        "cpc": 37.7,
+        "competition": "LOW"
+      },
+      {
+        "keyword": "richmond dental implants",
+        "search_volume": 210,
+        "cpc": 32.55,
+        "competition": "HIGH"
+      },
+      {
+        "keyword": "dental implants richmond tx",
+        "search_volume": 90,
+        "cpc": null,
+        "competition": "LOW"
+      },
+      {
+        "keyword": "dental implants in richmond tx",
+        "search_volume": 90,
+        "cpc": null,
+        "competition": "LOW"
+      },
+      {
+        "keyword": "dental implants richmond hill",
+        "search_volume": 40,
+        "cpc": 29.83,
+        "competition": "HIGH"
+      },
+      {
+        "keyword": "dental implants in richmond hill",
+        "search_volume": 40,
+        "cpc": 29.83,
+        "competition": "HIGH"
+      },
+      {
+        "keyword": "richmond hill dental implants",
+        "search_volume": 40,
+        "cpc": 29.83,
+        "competition": "HIGH"
+      },
+      {
+        "keyword": "dental implants richmond ky",
+        "search_volume": 30,
+        "cpc": 14.83,
+        "competition": "HIGH"
+      },
+      {
+        "keyword": "dental implants richmond indiana",
+        "search_volume": 20,
+        "cpc": 19.77,
+        "competition": "HIGH"
+      },
+      {
+        "keyword": "dental implants richmond ca",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "cost of dental implants in richmond va",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": "HIGH"
+      },
+      {
+        "keyword": "dental implants richmond va cost",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": "HIGH"
+      },
+      {
+        "keyword": "dental implants in richmond ky",
+        "search_volume": 10,
+        "cpc": 4.2,
+        "competition": "HIGH"
+      },
+      {
+        "keyword": "low cost dental implants richmond va",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "dental implants richmond bc",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "same day dental implants richmond va",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "affordable dental implants richmond va",
+        "search_volume": 10,
+        "cpc": 34.09,
+        "competition": "MEDIUM"
+      },
+      {
+        "keyword": "how much do dental implants cost in richmond va",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "dental implants richmond virginia",
+        "search_volume": 10,
+        "cpc": 271.61,
+        "competition": "HIGH"
+      },
+      {
+        "keyword": "dental implants cost richmond va",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": "HIGH"
+      },
+      {
+        "keyword": "dental implants richmond cost",
+        "search_volume": 10,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "dental implants richmond surrey",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "best dental implants richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "mini dental implants richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "all on 4 dental implants richmond va",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      },
+      {
+        "keyword": "dental implants richmond nsw",
+        "search_volume": null,
+        "cpc": null,
+        "competition": null
+      }
+    ]
+  },
+  "serps": {
+    "periodontist richmond va": {
+      "datetime": "2026-07-22 00:06:05 +00:00",
+      "se_results_count": 119,
+      "item_types": [
+        "local_pack",
+        "organic",
+        "people_also_ask",
+        "related_searches"
+      ],
+      "local_pack": [
+        {
+          "rank_absolute": 1,
+          "title": "Drs. Miller & Beitz",
+          "domain": "www.richmondperio.net",
+          "rating": 4.9,
+          "reviews": 774
+        },
+        {
+          "rank_absolute": 2,
+          "title": "RVA Periodontics and Dental Implant Center",
+          "domain": "www.rvaperiodontics.com",
+          "rating": 4.8,
+          "reviews": 390
+        },
+        {
+          "rank_absolute": 3,
+          "title": "Glazier Implants & Periodontics",
+          "domain": "www.glazierperio.com",
+          "rating": 5,
+          "reviews": 11
+        }
+      ],
+      "organic": [
+        {
+          "position": 1,
+          "rank_absolute": 4,
+          "domain": "www.richmondperioonline.com",
+          "title": "Periodontics and Dental Implant Specialist in Richmond ...",
+          "url": "https://www.richmondperioonline.com/"
+        },
+        {
+          "position": 2,
+          "rank_absolute": 6,
+          "domain": "richmondperio.net",
+          "title": "Home - Periodontist Richmond VA - Miller, Beitz and Richey ...",
+          "url": "https://richmondperio.net/"
+        },
+        {
+          "position": 3,
+          "rank_absolute": 7,
+          "domain": "dentistry.vcu.edu",
+          "title": "Periodontics - Dentistry - Virginia Commonwealth University",
+          "url": "https://dentistry.vcu.edu/patients/services/periodontics/"
+        },
+        {
+          "position": 4,
+          "rank_absolute": 8,
+          "domain": "www.glazierperio.com",
+          "title": "Glazier Implants + Periodontics | Periodontist | Richmond, VA",
+          "url": "https://www.glazierperio.com/"
+        },
+        {
+          "position": 5,
+          "rank_absolute": 9,
+          "domain": "www.yelp.com",
+          "title": "THE BEST 10 PERIODONTISTS IN RICHMOND, VA",
+          "url": "https://www.yelp.com/search?cflt=periodontists&find_loc=Richmond%2C+VA"
+        },
+        {
+          "position": 6,
+          "rank_absolute": 10,
+          "domain": "vadentist.com",
+          "title": "Stephanie Voth, DDS, MSD, Periodontist",
+          "url": "https://vadentist.com/our-doctors/dr-stephanie-voth-dds-ms/"
+        },
+        {
+          "position": 7,
+          "rank_absolute": 11,
+          "domain": "www.rvaperiodontics.com",
+          "title": "Dentist | RVA Periodontics and Dental Implant Center | United ...",
+          "url": "https://www.rvaperiodontics.com/"
+        },
+        {
+          "position": 8,
+          "rank_absolute": 12,
+          "domain": "www.richmondperioonline.com",
+          "title": "Dr. White in Richmond & Midlothian, VA",
+          "url": "https://www.richmondperioonline.com/dr-white/"
+        },
+        {
+          "position": 9,
+          "rank_absolute": 13,
+          "domain": "www.healthgrades.com",
+          "title": "20 Best Periodontists Near Richmond, VA",
+          "url": "https://www.healthgrades.com/periodontal-directory/va-virginia/richmond"
+        }
+      ]
+    },
+    "dental implants richmond va": {
+      "datetime": "2026-07-22 00:06:08 +00:00",
+      "se_results_count": 134,
+      "item_types": [
+        "local_pack",
+        "people_also_ask",
+        "organic",
+        "related_searches"
+      ],
+      "local_pack": [
+        {
+          "rank_absolute": 1,
+          "title": "Richmond Dentures and Implants",
+          "domain": null,
+          "rating": 4.8,
+          "reviews": 287
+        },
+        {
+          "rank_absolute": 2,
+          "title": "Nuvia Dental Implant Center",
+          "domain": null,
+          "rating": 5,
+          "reviews": 497
+        },
+        {
+          "rank_absolute": 3,
+          "title": "RVA Periodontics and Dental Implant Center",
+          "domain": null,
+          "rating": 4.8,
+          "reviews": 390
+        }
+      ],
+      "organic": [
+        {
+          "position": 1,
+          "rank_absolute": 5,
+          "domain": "commonwealthofs.com",
+          "title": "Dental Implants in the Richmond, VA Area",
+          "url": "https://commonwealthofs.com/our-unique-implant-practice/"
+        },
+        {
+          "position": 2,
+          "rank_absolute": 6,
+          "domain": "richmonddenturesandimplants.com",
+          "title": "Richmond Dentures and Implants",
+          "url": "https://richmonddenturesandimplants.com/"
+        },
+        {
+          "position": 3,
+          "rank_absolute": 7,
+          "domain": "www.brsdentistry.com",
+          "title": "Dental Implants in Richmond | BRSL",
+          "url": "https://www.brsdentistry.com/dental-implants.html"
+        },
+        {
+          "position": 4,
+          "rank_absolute": 8,
+          "domain": "www.glazierperio.com",
+          "title": "Dental Implant Cost | Richmond, VA",
+          "url": "https://www.glazierperio.com/dental-implants/affordable-dental-implants/"
+        },
+        {
+          "position": 5,
+          "rank_absolute": 9,
+          "domain": "commonwealthprosthodontics.com",
+          "title": "The Definitive Guide to Denture Implants in Richmond, VA",
+          "url": "https://commonwealthprosthodontics.com/the-definitive-guide-to-denture-implants-in-richmond-va/"
+        },
+        {
+          "position": 6,
+          "rank_absolute": 10,
+          "domain": "www.midlothiandentalcenter.com",
+          "title": "Dental Implants in South Richmond, VA",
+          "url": "https://www.midlothiandentalcenter.com/info/south-richmond-va-services-dental-implants-south-richmond-va"
+        },
+        {
+          "position": 7,
+          "rank_absolute": 11,
+          "domain": "richmondimplantclinic.com",
+          "title": "Transform Your Smile with Our Richmond, VA in Richmond ...",
+          "url": "https://richmondimplantclinic.com/"
+        },
+        {
+          "position": 8,
+          "rank_absolute": 12,
+          "domain": "vadentist.com",
+          "title": "Dental Implants in the Richmond, VA area",
+          "url": "https://vadentist.com/services/dental-implants/"
+        },
+        {
+          "position": 9,
+          "rank_absolute": 13,
+          "domain": "www.inspiredsmiles.com",
+          "title": "All-on-4 Dental Implants in Richmond, VA",
+          "url": "https://www.inspiredsmiles.com/dental-implants/all-on-4-dental-implants/"
+        }
+      ]
+    }
+  },
+  "onpage": {
+    "url": "https://www.richmondperioonline.com/",
+    "status_code": 200,
+    "onpage_score": 94.15,
+    "title": "Periodontics and Dental Implant Specialist in Richmond & Midlothian, VA | Overstreet, White & Dunegan, Ltd",
+    "title_length": 106,
+    "description": "Periodontics and Dental Implant Specialist in Richmond & Midlothian, VA - Accepting new appointments. Call today or request an appointment online.",
+    "h1": [
+      "Overstreet, White & Dunegan, Ltd\n\u00a0Excellence In Periodontics & Dental Implants",
+      "Excellence in Periodontics and Dental Implant Surgery - Richmond & Midlothian, VA"
+    ],
+    "word_count": 479,
+    "load_time_ms": 1544,
+    "issues": [
+      "title_too_long (106 chars)",
+      "low_content_rate (479 words on homepage)",
+      "no_image_alt",
+      "no_image_title",
+      "deprecated_html_tags",
+      "frame usage",
+      "has_render_blocking_resources",
+      "https_to_http_links",
+      "double H1"
+    ]
+  }
+}

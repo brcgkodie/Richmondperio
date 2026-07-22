@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import SectionReveal from "@/components/shared/SectionReveal";
 import CTABand from "@/components/shared/CTABand";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "New Patients",
   description:
     "Welcome to Grove Periodontists Learn what to expect on your first visit, insurance information, and download patient forms.",
+  ...ogMeta({
+    title: "New Patients",
+    description:
+      "Welcome to Grove Periodontists Learn what to expect on your first visit, insurance information, and download patient forms.",
+    path: "/new-patients",
+  }),
 };
 
 export default function NewPatientsPage() {

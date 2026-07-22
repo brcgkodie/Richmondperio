@@ -2,11 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CTABand from "@/components/shared/CTABand";
 import PrintButton from "@/components/shared/PrintButton";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Pre-Operative Instructions | Grove Periodontists",
   description:
     "Pre-operative instructions to prepare for periodontal surgery at Grove Periodontists in Richmond and Midlothian, VA. Items to have on hand, dietary suggestions, and what to wear.",
+  ...ogMeta({
+    title: "Pre-Operative Instructions",
+    description:
+      "Pre-operative instructions to prepare for periodontal surgery at Grove Periodontists in Richmond and Midlothian, VA. Items to have on hand, dietary suggestions, and what to wear.",
+    path: "/patient-resources/pre-operative-instructions",
+  }),
 };
 
 export default function PreOperativeInstructionsPage() {

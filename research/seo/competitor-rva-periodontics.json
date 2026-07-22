@@ -1,0 +1,255 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "business_status" : "OPERATIONAL",
+      "formatted_address" : "2801 McRae Rd Ste C1, Richmond, VA 23235, USA",
+      "formatted_phone_number" : "(804) 272-9079",
+      "name" : "RVA Periodontics and Dental Implant Center",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "0830"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "0830"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "0830"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "0830"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "0830"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:30 AM – 5:00 PM",
+            "Tuesday: 8:30 AM – 5:00 PM",
+            "Wednesday: 8:30 AM – 5:00 PM",
+            "Thursday: 8:30 AM – 5:00 PM",
+            "Friday: 8:30 AM – 5:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113741013646480109937\"\u003eEverywhere Eyes (EverywhereEyes)\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiWCslDL8eVR0wVObrGxsFoiLuuAw1Bj7aWeeKhMqC4pNsO6YAjrCemU6nLbJQmyc8dYnhexoENdYMAJwX3aUM0yaIMJCLZXc0ft4ef1i-wy08v6RTsfnFtdMerBcPsPvXmV3OxYf8vjtLitOVz-_Ucx0j97JNcn-MwXv-z-Og-9qyr9oUzuN3ZDWELc-GLjgiEddhBbgVWs0do3DwMDQ8FWrj-33jNxHZIIdVwoBIgdlSfeMWJMImc5J-7ZIG-ZmJnjpuFbgmtRHzwBgbCYYoozBg9pFxm18IiJiAnswjE__JPXLlcA1fv0F6mJDUhuzgr1hSaTSV_tn6xJ3u5KoNJakf22Q-__fXQYbq6SvxN6fklGrfZsDZDtWfgLyhQnBHtHrOubbd5_l3OV-uRpEgvFD_rEMFWCHCN1yhS5dEY_zQ1JpC6JZjyQc0LMHWf",
+            "width" : 4032
+         },
+         {
+            "height" : 3200,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113650341497858647631\"\u003eRVA Periodontics and Dental Implant Center\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgGNQtR7BREbJ1AIL8tuQ3KJm9PhAVVhZA1Z-Bvy64YdldP7rUlrPK1FdiePPdGSXtx7a7M2zS-UN3XeVTo2hfYWTdqZ95hj7tbqjwVUjml45pkUM_QF_lua3cRVf_ssQBPmJOTxt6clBYV9xGa8pOF_3jeLpuIPcWvEMBAIOToFbyw_FwM7-TpHabO3d4KigmgZUJM4EiMN3mxVhhTn4OsXPL1RA-mtTj3BVRSycsyY9dNvq-3mGq0tcmpOINr1ix0hr-gNNRmMV2sPdqKdv8Z-_Js8KefeJTtEi3gvHCgwvgJR8yPiFayGt7emRsbUcA8-F-KmzinqgnSF7M3M47UoH_FuutgI3MdADeyHYB7CBkqISLws9MuwsghNo1LOkuvIoAPpZcp4rz7CXjy4Gllb6O3fQc5xJ6g0rQ6VBM8DjUR",
+            "width" : 4800
+         },
+         {
+            "height" : 3200,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113650341497858647631\"\u003eRVA Periodontics and Dental Implant Center\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydi7GgSZLmbvWUEEzJtZL9N4sAa8TZWjjq3N_ZVa4l4jotepelfUhVWNrvuK3QTrMOpr6mo7TfEJVjq1raI2uhs5fvxexxPC6M89bLmXrVUjkllqAxLzECQPCOxCfYv2DS0kqYLnpwO5B4XkuQgCqOU_FeaVzDfZVTmj4P2nJHMLBFo8RGHaMdYCBfXyr7KOrUiqbwZSqWdA31EGTnc71trVTjSUMPhi-N6Oih3mE2J3334i5Ha8U9QzlCwq7o8Q4SLN-nPSnI0mutOmCS--jSJhgRq8-HOmVzRMZu5YRf-aF9DxwK4mPjcX6elTwmH0vz1i_fLFSq6q82hnQ98zbvjMtcDnqqMsK_WLL0JFBTjFgcZ9pn3vfCWWA9jS2CbRcdsfePt2L_qRYO_KZfEsSQbPXjDhJf-jiPj6fNI7Y2oNOz2W",
+            "width" : 4800
+         },
+         {
+            "height" : 4800,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113650341497858647631\"\u003eRVA Periodontics and Dental Implant Center\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydh_wxoqS2HKir7s56aXGRJOGSaI5dmRsbTzUwMR6fUPhYdZgV7K_N50Y0YbobwIKI7R_yzhqzbtnufr3Wf2UOGd6CD7DLpcId7Vwnrz8z7HaHd3DuT_j7NViLLA6sY_Zpm6BonNI_Mfj2tEzux7h2FCmAXHrbV09r2bqW5q9xOY3sI-3tGEYFn5xjeRL2ZJetgdVlQ-997NlrD9UlX-SFK5klfK2-dLkOpmjbZWsdxD3WIs1m-7923uw85BQ37nr70bpujJPJs-vwsteSz_JK2ct6-NZcbo41Mk-OPI2mUTs0ZXgOutfTUH09qxSfvQuMrv0HZ3Ttu3nIyuprfO5IHoq4CYOoz2AS616T4s9H1zJAgUfoaUvksJMSNr17OKLukFxsyQxTWetOuL9VmV_kI_b3_5Ye9LqzIR_Fx-qEk",
+            "width" : 3199
+         },
+         {
+            "height" : 4800,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113650341497858647631\"\u003eRVA Periodontics and Dental Implant Center\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjPHOBcU9uhBon9u2838hMZtK15vjf3ZUwvDqlaXB0U7Z5MfcgThCqqYjf_gGspjXNHR5BXzKlnpNZgcJIfaxn5wVY51GZHTn2A19SAEA08Qd-y7ZhcPYOz4svXRh-zXKsF-t4ag_yy8o9jkRDnfNkA0TnhZNo0mLLTfcFYWR2esicdm47xZnOBTF0kjzCpeWIsxe9irqEFjCIa3ENzNlosU28e_0bfP4kgVrYIy5jrXj0VhgDbzc703lzTXTRIndSwz6snbkwKf9mPGRIRTw_qxA3h27gcnbp06xrJi2eB6014-3lL0z9kjUpAYv5iG29Ef7Bw3dzGMmpr5pkc-yQzRNn7CLM37aUYxSfzYbf4bMfQqZMEsPQWbLG8IheICwrDQlqojaINbJutftTxPsag15dIEpZfc5XZZURqXZo_8w",
+            "width" : 3200
+         },
+         {
+            "height" : 4800,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113650341497858647631\"\u003eRVA Periodontics and Dental Implant Center\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiqXKehAQXonQ9_7W_YtGTBsk-JnnucNE2DT2J8Am518WiR629G6ljG0rrfLs-bVumggSiwRefmb_o-N7Ca_IPFhOewTJhCEYGlrheaLepcxRGjuD4SJu7PNqbbPApoatDBqHiwSVT6IP_D7SuVe025J-0sOB4CLMyOJI3TaD0HGOv8aIUUJh4oBQm9w3zqAJXjCLFxtvSq5xfCMuiocd3o8kMq80Eww5qM6qw19wYBMNDf59mEaX4ob9Hm5s7zQbNMXK_o3TZSDnts16fpZWC-dJ6OA7xjO_iSAWYBg2KQc5tGd6xjHNIdrJeRz7FaEdsRzoe9CvCErBdKS6ZpjOTA5oMCDsuKrkOgMHDckFF_jSprKJINhxDzfNPR3sZlPXaMnCp6atUNUdQxZIczUNX_3pdwZTxISZT-16dmHP7wXw",
+            "width" : 3200
+         },
+         {
+            "height" : 3200,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113650341497858647631\"\u003eRVA Periodontics and Dental Implant Center\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiLsfM0JuXZ8A96QL9wxcerQXbuJwXvZ0U_AWe2XknK_IXuMeUfGDspBmY9ALUjrU_Ad4KsSHfMfRu5sfQv78QxrRodfOcm3ENewzIOPGJ1V2Qv5DxauLFZzf7GPm-whX-FAOEIfiX8qeeQYOwBLA2UGk7Ot8L2zIKOHHfg1o_qm1m6sR8BdLKtyX7v5dsdAQIn_KyAWWqoDblltOYOPAFNzChqWbOmhztLfDLSPBIDDUdfWAZslv1vB7-jSQ_eKwHN8TMO7ekVMOiiawqr0TmS51-d6QdgiF-J0J3lL-IYdqeCLYx3fYV5phWj5Tc_ZteLw-Z8W3qMtZQE2nqyteIsGAuFaltukIdFN2dq8o5DlPoHZnpEgdUI-XS9aT3TOWiQ1NXx57FD2QWSxsalg3wEsSE_yZl0myS3ruKN8-ofnw",
+            "width" : 4800
+         },
+         {
+            "height" : 4800,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113650341497858647631\"\u003eRVA Periodontics and Dental Implant Center\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjxyn9vobfoFZrCOYVE5IWzUF3sJNGL-7Wzi1BckkS9g5lnqpehjE-IB7kQz18hoXLBIyLkKJze-tf-yRe4GLQuZRNZxvokdM_dIrmq-QBQUMrf7A6_G4IkOeuTiMTN6n8ANyNuGGjMIWonGAZvHrGid0cVjq2-Pkqn3N_kyj7jtFqCUfuIT1dRENagUrMuAWBOQARKH7FDutOdCtRU7JipQpLn2YfQ3GsCGk-ITjxo7rZw0BnRZ6jt4w52sbUuW2gRvS5vJGcz-Gtt2C7HrjaXf5RjV7aDFgoEm70k9OHfk8iTKB7FrkhGhm9wNaEebcdnApHq6C374ploa3tfo3kn4awBUS1M9JnR3y3mWXcSY43J8Gp_-QYla_pV7XqfTmFG2l0lWHd7Il5IY9mhXA-M3lf-iqmb1sXJF4eFgMWScuTj",
+            "width" : 3200
+         },
+         {
+            "height" : 3600,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113741013646480109937\"\u003eEverywhere Eyes (EverywhereEyes)\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgknCgSIdsC38FLCvY38TCaKHaRXzeggpN3Uy_2z4K0w8YN_3RH2i1JQ_RKXdd3Z4snY6XIK01Jv34kDaj1cEwVhTlaonFv-KopXqDJ5iZZWIzTUpUePlzlS_0dB_FGep26de9KRikc83kao5EcaCEmJfAqQrsf0JaGvWJ6tiBO1gVFilyxpQyosIkw7q73AzxubAt6hxg7yFyLjTCuRX4pUHdSQgEkI-OZaruLLut1VlbPmLkpVI-5XFFp2qCmtWum6EjI6zPsL6VVkjgY6105pPDcMeNKBZdMOiCiyQ-T8VCZAb6cioJNq3hnNOt81avdz5LkPl1ZP4CmPXe0BkR31Sd4aRs2RhQn9AvuausAarDpfG4WZHRijpzmuhoapSMyxUeIvBXx9usy73C1jmhEB9HmsZboXxiMD7tlFBlvZcLZL2k-vWKVrLP2cKUP",
+            "width" : 4800
+         },
+         {
+            "height" : 4800,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113650341497858647631\"\u003eRVA Periodontics and Dental Implant Center\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhlv_W7zcIioCxMMWxMTzsIowYUDq-vzNcePZeDvwCIMoUd7VKxjGUrbYxKer_GSvfbnKD-s0aCLClnDnX3vW8DskVgRtHYC-rM9h7Iu7_k9J2f-lFTNfQ76gW9WhxUTjcAVXszkD_I9pt0QxlnY6Qi3MJAZhbHMu9aBbhznvxbxTknqRS70zpRfgfdyIMQvC3JJS505R-dCKGKjsmIOdyhPN8VQ7fv1soRfbV6tPeYQiR7DWpfEOPYbfLocelpOmrpTSyA4TFoQR2wAazTYvla6G6PQ6Je-ZbGPa8tPd6flrcOaBRm6E8a35HlTnxQbCMiwoS3IDo4svXn9Eo4KhwOuBOjSfCYXYLCLLL1frUTjDhGMFJhG7tbo6I3D1-9sAzxRsdZZkGtdLymJ96e8Ozc4n3CLy7qZpS2aB3aR4a51q19",
+            "width" : 3200
+         }
+      ],
+      "rating" : 4.8,
+      "reviews" : 
+      [
+         {
+            "author_name" : "Priscilla Turner",
+            "author_url" : "https://www.google.com/maps/contrib/113706657229137321709/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocJQH2hf6fcAw9m5hgFqncfoB_jAjBpmSLcWa6SHy2DzsDYlCA=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "6 months ago",
+            "text" : "Great experience! Staff was friendly, helpful, patient, very informative.  Dr. Amin was exceptional, she taught us (my husband and I) things about our dental care, that to us is life changing. She is caring, pleasant, patient, kind and took the time to make sure that we understood the best treatment plans for us. The total atmosphere in the office was welcoming. There's no doubt that they have your best interest at heart.",
+            "time" : 1767824776,
+            "translated" : false
+         },
+         {
+            "author_name" : "SE Black",
+            "author_url" : "https://www.google.com/maps/contrib/113509528265336356723/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjUNjY2e-nYdqm5BpOjt-dW8oEjaHE7Y6m0j-EjXLpGyvWfZXjF8=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "3 weeks ago",
+            "text" : "As much as one can dread the idea of having to need their  services; it was a great place to start the journey toward a better smile.  Very friendly and courteous staff with doctors who are mindful of the patients comfort.  If I ever need these services again; I’d definitely visit here.  Very highly recommended 😁",
+            "time" : 1782401995,
+            "translated" : false
+         },
+         {
+            "author_name" : "Joey Martinez",
+            "author_url" : "https://www.google.com/maps/contrib/101195399714640158041/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjWFWw0rYm8PBuEuJE61-3yaMQIU-fmCKR9p-UqMedYSL6J-L0fu=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "3 months ago",
+            "text" : "AMAZING experience in many ways!!! Very professional, thorough, knowledgeable and personable as well. Truly, I barely had any discomfort at all with my gum graft. I had very receding gums at the bottom, and now they look and feel brand new. Healed excellently and you cannot even tell anything was done. Will surely be back to have my top done as well soon enough 😊",
+            "time" : 1775147819,
+            "translated" : false
+         },
+         {
+            "author_name" : "Paola Carrera",
+            "author_url" : "https://www.google.com/maps/contrib/106063514445810924982/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjXi4aY_lN89rDF1ZSdpn46fqtumdkFXtBJtyciN-0s9KIMrjk0Z=s128-c0x00000000-cc-rp-mo-ba3",
+            "rating" : 5,
+            "relative_time_description" : "4 months ago",
+            "text" : "They took really good care of me and everyone was so friendly. I explained that I had anxiety about the procedure and they set me up with some medication and made sure I was comfortable. It wasn’t as bad as I thought and I left pretty comfortable. The people here are fantastic.",
+            "time" : 1773784281,
+            "translated" : false
+         },
+         {
+            "author_name" : "mike watkins",
+            "author_url" : "https://www.google.com/maps/contrib/110788008220670798869/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocKbRqOhzT1e4dYHVXI_hZGpNbphVNmNn9mYayTsLIlSPLsT9Q=s128-c0x00000000-cc-rp-mo",
+            "rating" : 3,
+            "relative_time_description" : "9 months ago",
+            "text" : "This was my first visit to this practice.  All of the staff from Dr Amin to her assistant, Carlos, and the front desk team were all very friendly and professional.  Dr Amin explained my issues in detail and reviewed the options available to treat my condition.  I was very impressed with her, along with her entire team.  I would highly recommend her practice to anyone who has any issues with their gums.",
+            "time" : 1759879063,
+            "translated" : false
+         }
+      ],
+      "types" : 
+      [
+         "dentist",
+         "establishment",
+         "health",
+         "point_of_interest"
+      ],
+      "url" : "https://maps.google.com/?cid=6695282679911246401",
+      "user_ratings_total" : 390,
+      "website" : "http://www.rvaperiodontics.com/"
+   },
+   "status" : "OK"
+}

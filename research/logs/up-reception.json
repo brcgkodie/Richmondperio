@@ -1,0 +1,28 @@
+[
+  {
+    "id": "77474b6c-a004-4851-8ff0-e1b2a4ff89c2",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_000715_77474b6c-a004-4851-8ff0-e1b2a4ff89c2.png",
+    "created_at": 1784678835.143899,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "e23f6625-53ef-4c79-8a87-7264b8a6d1c1",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/e23f6625-53ef-4c79-8a87-7264b8a6d1c1.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Using this real dental reception as exact reference for the space, create an elevated editorial interior photograph of the same room: same stacked-stone reception desk, gray marble counters, white-framed reception window, pale blue walls, abstract artwork and plant. Shot on medium format, warm late-afternoon window light raking across the stone, soft shadows, styled minimally with fresh white orchid and neatly stacked linen cards on the counter. Architectural Digest quality, rich tonal depth, photorealistic."
+    }
+  }
+]

@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SectionReveal from "@/components/shared/SectionReveal";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Patient Resources",
   description:
     "Pre- and post-operative instructions, sedation checklists, insurance information, payment options, and FAQs from Grove Periodontists",
+  ...ogMeta({
+    title: "Patient Resources",
+    description:
+      "Pre- and post-operative instructions, sedation checklists, insurance information, payment options, and FAQs from Grove Periodontists",
+    path: "/patient-resources",
+  }),
 };
 
 const CHECKLISTS = [

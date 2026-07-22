@@ -1,0 +1,189 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "business_status" : "OPERATIONAL",
+      "formatted_address" : "10320 Memory Ln Ste A, Chesterfield, VA 23832, USA",
+      "formatted_phone_number" : "(804) 748-9553",
+      "name" : "Tulips Periodontics & Dental Implants",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "0800"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:00 AM – 5:00 PM",
+            "Tuesday: 8:00 AM – 5:00 PM",
+            "Wednesday: 8:00 AM – 5:00 PM",
+            "Thursday: 8:00 AM – 5:00 PM",
+            "Friday: Closed",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 1192,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103592915331081693905\"\u003eTulips Periodontics &amp; Dental Implants\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhN55DuUylFANwusoF1i8TFZJAgfnrr7ssZhLJDijsuq8L3S4fiwREcynw3tahOTItxcmqPKVngxUOPh9gH2TumOSn8aHxKQr_9fAeMCBI-hPsDHJHdEpuFtgMfAmUPqdLS1CQvCzSexxGyuu8kbGC-s7FQPVd-h1HNC8EaigGbHeKtIafytKRXc7CZNOI6rveFOKGftQaWWmsFedh6EVqYmG2rvDljh1Yy7DzGYiqV1gn4UlsxwXbOEYUHIvzd3NvQ513LkClMMNqiKwj1rF1Okn2-d-BV1OXAcjhAARDYFnq-NmRDJjGaq2LhZ3RiddSruYte4fFMikrhop5B0PWJchNHaFUrXbCUZJxqr5j7yBYED6KKN-GC6Y_O3xskP-j1iU_zEsEV9JXNizWQvF3Ess6c3_m9gXhuuLiQ53YPXg",
+            "width" : 2119
+         },
+         {
+            "height" : 986,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103592915331081693905\"\u003eTulips Periodontics &amp; Dental Implants\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhIp_kh-neINmk1uMUwKkPlFUO4JyQrdJa_I8LLjCU2TIoG5KB6mGy552_aTmE8-msgEmGr6eVLhwxeynC_uK_0mR5-Gwl3KJZBYMkE3Q7MqiBH4uVDQxnrL-8EinA06-WFAfcAEG9qkSSLe9464CQ_3EGoZvlXNYJHE46eXTVmqJvZaV0xmX9in2Gn3Xcg5OnHZ5lsZpGwNdMllyypfW9gT64GVhTMK5ZgxxQ8YfqtzVbcWZDH0YBYzNOnP_FvXqUSAltN5f0TEWoVapaWodzJ9gKko-5v8mSsrNzQq9qKTzyGVlIyg6XxJTzKuuverNttsqDb1iz5mx4C11ItO5HOYDMZc3j0k2pVr5FZGh_ojjOrAsb0FNQvqOsW_C30LET9Dry6pOkfJU70y0umWW76D6skPRQb-bCNXFYwgdDPzYoMLWDVuq3ot6IM8g",
+            "width" : 1596
+         },
+         {
+            "height" : 1054,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103592915331081693905\"\u003eTulips Periodontics &amp; Dental Implants\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhOZknwNfrkTCCqV1X6UHVEdNo8rqBBqNMhn4WWAa_VPLNkLrxqQvMjkXUGnczn2iHXIcG0r-tkFMQ_JURLXpS7t_CrYn294euuQfJbvjALvloP6v-tSCWyVTSgCmO_NCAbSqM8Qaig3it_qfUUqoi83XvuQXi9Mng5QnADuYW1yOlZYWupQ1gAenSnw6NM6cjEx6DGrkWHkJ58c1kBMjM8_UYDc6BwGAITHKsuXMUYVEG9hnDVmgOXFS9twcvW-e1NFyrwq3T6yH3kAN1QeOHH6JI5yndQ0ot8feoRpWZ0460tKOhwjRM-2gevg27bu1AedWgbBbPbxUmxxUsVOs9VyLqI9JnU5qdA5M8eggR4C1AymvcaqZE_dfPuptqnZlOFF9YfkM8yGdgkPq2y5RFkQPOEyzcNQdzg22Gaf8uf0LtlWZOnJGxRKk0TJ0Mm",
+            "width" : 1492
+         },
+         {
+            "height" : 1084,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103592915331081693905\"\u003eTulips Periodontics &amp; Dental Implants\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydimJiME0nmbgbAsHd2XWYd-7ZLlGJ_zdKrmPEK5mwUiODvvKi9GS7PDFoDo5mxzd-4hm4LMLce9F3CyYOECoeOPZVFFcITaPlxQnOttT3Y9wHAKte6RUvC_OltGV5_smo1XJOkM8R6uyc03Ma0qzotyrVI_1TTgJY5nCe3oLrrLKIbFfDcwhHHGTgfKhLzTRy34rplGPzmQswFADcjwKTWcgHduuXem0cqGveYgnDW2cuUa-HFPmo0rErQ9uPBVO4GRCFfFmdUeOjPChbKUnG_MwsR6yPYpI8bJhbDqsUn1l5Ooy7oljoMUN7d1OkxxZmyr0Wq85-p_XEsjlyMkcLKnJPM26CenN4GR4vbRAPF3UWcbBVhXryklVo9CIVMgITLhzsqVITBd5Ur24azcCpDdSvZZ2e3U19Z2wjqkkPbp9-8KBE_jakhjTLdEE04R",
+            "width" : 1451
+         }
+      ],
+      "rating" : 4.6,
+      "reviews" : 
+      [
+         {
+            "author_name" : "Nikki Smith",
+            "author_url" : "https://www.google.com/maps/contrib/102314256159901963457/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocKwM0obbQWx7xBIquKRoOXRm11BpbyAxihT7IG-yS6AjFDXPg=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "6 months ago",
+            "text" : "So glad I found Dr. Patel. He's such a knowledgeable, friendly and compassionate doctor and I'm very satisfied with the level of care that I have received. Dr. Patel was able to help me with my complex dental issues when other periodontists couldn't be bothered. He performed laser surgery to heal my gum issues and he was very gentle during the procedure. He also explained each step during the procedure which made me feel comfortable and my recovery time was pretty quick! I had great results with laser surgery and can't recommend this procedure enough to those who feel they may benefit from it. His staff is amazing as well and there's hardly any wait to be seen. I highly recommend Dr. Patel if you're seeking laser treatment, have complex dental issues or just need a knowledgeable and compassionate periodontist who will help you save your teeth and get your oral health back on track!",
+            "time" : 1768439928,
+            "translated" : false
+         },
+         {
+            "author_name" : "Susan Ryan",
+            "author_url" : "https://www.google.com/maps/contrib/104886066064712037110/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocJn5ajg9GrL_GxyxXne4KLcTODLvCVXX6YLf0iu2blet37FNw=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "7 months ago",
+            "text" : "Dr. Patel provided a totally painless anesthesia injection for tooth extraction.  The office staff was friendly and professional. My visit was an excellent experience.",
+            "time" : 1765493011,
+            "translated" : false
+         },
+         {
+            "author_name" : "Bridget DeLany",
+            "author_url" : "https://www.google.com/maps/contrib/101495123544731362551/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjWaDagvl1jidSMZYBeOLp5Xj1zsVlLqOu8k1-6frLDOuvzeqUss7g=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "4 years ago",
+            "text" : "I recently had a gum graft done here at Tulips, and it was an extremely positive experience! Dr. Patel and the rest of the staff are wonderful. Every person I interacted with was kind, respectful, accommodating, and communicative. I especially appreciated that Dr. Patel took the time to fully explain what would happen before, during, and after the procedure, and answered all of my questions (and I had a lot of them!!). I was super nervous about it, but he really helped put me at ease and make me feel comfortable. And to top it all off, the surgery went perfectly and my gums look so much healthier! I couldn't have asked for a better experience. If I ever require periodontal work again, I'll definitely be returning to Tulips.",
+            "time" : 1650907383,
+            "translated" : false
+         },
+         {
+            "author_name" : "Tom Reddy",
+            "author_url" : "https://www.google.com/maps/contrib/117504632958712111315/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocITEWKDAy66ljrTh2-A6hUh8cLt-J5tDVMxKLxWmYwMQWpdoA=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "2 years ago",
+            "text" : "Dr. Patel and his staff are excellent. Very professional and focused. The laser surgery was painless and took less than 30 minutes. No stitches and no post op discomfort. Amazing!",
+            "time" : 1706274912,
+            "translated" : false
+         },
+         {
+            "author_name" : "Kathleen Meyers",
+            "author_url" : "https://www.google.com/maps/contrib/115026067182953259561/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocJWuLVBR5I4mKtS1VsL8ebDvJwI9Vpvsjzl6gSG9kycWRN_Yg=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "4 years ago",
+            "text" : "I was very impressed with Dr. Patel. He was patient, caring, and able to administer an injection that was basically painless. He was able to assist me with my dental needs and my dentist was very pleased.",
+            "time" : 1646778833,
+            "translated" : false
+         }
+      ],
+      "types" : 
+      [
+         "dentist",
+         "establishment",
+         "health",
+         "point_of_interest"
+      ],
+      "url" : "https://maps.google.com/?cid=14193345834278813522",
+      "user_ratings_total" : 9,
+      "website" : "http://www.richmondperiodontist.com/"
+   },
+   "status" : "OK"
+}

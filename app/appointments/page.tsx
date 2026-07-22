@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import AppointmentCalendar from "@/components/appointments/AppointmentCalendar";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Schedule an Appointment | Grove Periodontists",
   description:
     "Request an appointment at Grove Periodontists in Richmond or Midlothian, VA. Select your preferred location, date, and time online.",
+  ...ogMeta({
+    title: "Schedule an Appointment",
+    description:
+      "Request an appointment at Grove Periodontists in Richmond or Midlothian, VA. Select your preferred location, date, and time online.",
+    path: "/appointments",
+  }),
 };
 
 export default function AppointmentsPage() {

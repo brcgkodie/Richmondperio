@@ -2,11 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CTABand from "@/components/shared/CTABand";
 import PrintButton from "@/components/shared/PrintButton";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "IV Sedation Checklist | Grove Periodontists",
   description:
     "Pre-operative IV sedation checklist for patients at Grove Periodontists in Richmond and Midlothian, VA. Essential safety instructions before your IV sedation appointment.",
+  ...ogMeta({
+    title: "IV Sedation Checklist",
+    description:
+      "Pre-operative IV sedation checklist for patients at Grove Periodontists in Richmond and Midlothian, VA. Essential safety instructions before your IV sedation appointment.",
+    path: "/patient-resources/pre-operative-iv-sedation",
+  }),
 };
 
 export default function PreOperativeIVSedationPage() {

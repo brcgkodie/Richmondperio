@@ -1,0 +1,255 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "business_status" : "OPERATIONAL",
+      "formatted_address" : "2810 N Parham Rd Ste 210, Richmond, VA 23294, USA",
+      "formatted_phone_number" : "(804) 635-3945",
+      "name" : "Nuvia Dental Implant Center",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "0800"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:00 AM – 5:00 PM",
+            "Tuesday: 8:00 AM – 5:00 PM",
+            "Wednesday: 8:00 AM – 5:00 PM",
+            "Thursday: 8:00 AM – 5:00 PM",
+            "Friday: 8:00 AM – 5:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100856983539604899272\"\u003eTerry Anderson\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhyFIqbmVP4EG-MEFgGYtVZeB4BtTTFURju4PNVBYEFHKnKHypoZhNwHgC5CIIJ781zRtf_nFsBbmxeLx2hSJKhx7VrwmCv38I9JmR4FiHwZ-4jDSfb2Zgnxor4yHyEqUAnYpa9VQ3JUNTTuXkh4CO3FbuDHB4UwsQgQX53GeDUdoN6o6tq-AKDmYk6u8z2KqsfH2-DRokDg9FYANGwpmLLsuG_iF3jsT1xey7zl1FNGvMFFA4Vf87U87XtY4x6VQc2oCUTNFJn52tkxMwkbT6fTgDQsnJHzvYDVkaZ9U22jmNT_cpEOTatczHSNOssZOg0GbSdtPt6XgUmaCPDK3xxT_s69irKSzJZTfQX7OxQGRKtCZRCtqmkIFlke9NjHTvmudMSYAjWfYc1Vsjc1w6foSNJ_C3fVKnsKiSRtnbjfl9Uu8iRwgM4m9HvKw",
+            "width" : 4032
+         },
+         {
+            "height" : 4000,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116142472342373900175\"\u003eLenzy Jones\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhiEDATMfATuPm2JBIlEpVyvBQJZx0-9RLdK3x1nEnOZeHp6UuOeIQ0hkh8d1PwDoqa_4WiPmttxl4VWbwQyvN4u3Kk9EyFFTM7Kv48lIbK5xuWLo2aY9Dm-7PG_vmZUqoAmxu0UhWzVnZIzcKERdux2XBEgwkWmLx8fJCdAw700ifu8nnLavktf_TVyWbvuef6c3qQcWwbenQ4OmT5h20D3v9_YxDrmISy-silMbx_DMU02ic1y8M7SjdQwgTrNE1fYmS_0RouQR_GDopBkq4Wx-DkeWCrFAxnNL_-xpLCBBQiw1VQzd6OXEY4LF7UemqToR3de5gd6Ww7_cYyfjXv1br76WD5I-E_9elKSTWk8OQ8hJhGZb40ACnQ28S0VCh5OxyWPFVpA-pRr85Gd3BJI4KaFx58KiW4VJRF_nprrh77rj3KvwPokIypcci5",
+            "width" : 3000
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105161438610753279205\"\u003eDonald\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydha4B3XztNrj8Sc_ba9guvoSIJzIEjdp-y3KWFuFPl0UHX13-5tnA9a38Kh3k1XUHECr52mrld3z09Q1UX9V9gClOyNtgDKagqoDv4QR0Znn1Ga0R7DWB4meE61ql15n1pmYbnH0CiR3_1KytUm-o7eeOP9m-h5faoZRq2m6scziOqJFZcjuQbKB_kSJJhMFP7t9xHUvaGzx4wMt4h3RYgbe2HHgTD9-4HQNdZAdSpwXrkd6tRsrz79dO7Vp4HdnTfAyLcRz2klSQOTHNd0xm_KJ0FeTsJt38ebzpHRrnaXpAZGkoGF8X49D6CEWkZwUVK1ZsljW7UWyKpCa3_GaYEBDK1UvQTIwaPAl-7HCWiafYgqhTcM8YUSqmKJMCBEjWu6djnpWYhxqY-TbyzeBvhM52pnpT95D1uAVLbL3mM3UrZh2FOQposxE_AqYIJA",
+            "width" : 4032
+         },
+         {
+            "height" : 3088,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101007662729703850840\"\u003eangela poythress\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjZQ2hxyLEiHH8WrvjQ66ttHEIDoVhvGPVmoxY7QbbqveHmGOF_YvAWHrt3wAV9Pvb2rlzkChOqUCEaD5qTtLki7Lvm6CmswC9tRON3H07Ez0OeUZ7drb_qhTjOwNvBMRujiqTaRSLkOe7Skt7DcwjyL3hMqm010-_WJTTg6_LH7IRTyO4dBLL5GC22Mpm3KMSrtj1YxO8JM36RHLaTBFq4y6xoAS_RI7EEcSDOBWrXqqEdLDsaiBGnzFKPKNRfEHco9fjhL8P3370xB-hzvmtJJ6e-oYPue40tIpoQabNPmynJaqPZlaSlzsayTyH86jXsH-3V4gK9105dxupA-DsNWjoX97--1cLtV1jMMiXg9dx3l1h_NR2d9sVGA-D9idtOUDXxULn2oRItQAGFd5vPasjV-ZlqRKV2Rd-NyStPxue57ExHGoYZ15B9OA",
+            "width" : 2316
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108775784924596987462\"\u003eRodriguez Miriam\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydilxtpGPjlfWtc7lAJtNtUVHgkfzzuetI9TdqhOh716KFPjB3CCEnWlMQU8ydP6U3VKem0el697-kPjhPr8NWi8df3n5-j47Fqba42V116tdFiAPMKLNRX1fsrRSBPQzUVM-Lpp_w7dAqpgXvA7lRXb4GwAGrXJ93iB6W1OE7EVO5wn3OFsXaFvQJqrn1KpofXbZicmF9F-RL9s7aStV2rSUTdklwsPhkvu-1r6gYxzX7ZPvd-olEe3Yys7oBo3_XANrdyUtIiSZGcEDhx0gAmY_FnzZEPTCQ2j0godZHA9SG-cfALzTT9N4570kGWAZdCcpVvRqeaIGqrBktfK0v7lZCkJ-G8ebd9CmY7p3XDYfCdLMmsLb_Ygs39jHams5_HunSh8Ev5DeMY7OGQ6x9wuJs_ue5MRDuquY5nhALsCq875fUVcGXFBsBAl56hK",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114624490198814323902\"\u003eKenny Allen\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgJz3V5D_LoEDvYQlGELKzLsHLO5zrJ8qL1CXCaBy1eI1crvpPQVLrGoZKfXgOB5VgjLkyNTqSPYStGtE0pux0-PjFcCnWEipR-fPpseWJOx24FSvntWW7_MOez41FZPOXEiq-UMg7BTuTtCZ-Kon1UcEx0iaFudM0iUVEpVeqtuxadwucnbW14mjh-N31OUK9hDqOycdy6NLgJkWArphsj0q3U8E_TbmwE4eldWqgP1lv3jBo3X-fI6z5NFy0PtbwGc4mt7zsT5PiAyt0Ja6Bi6GP9dtZ63E59UG3qeKSvm_JuyuFmvcU7UfrvVbp-MMjFKeosRyiYb1qUt1hey-JzI_0ON-QaL_es0HvOLyjtrIhMuTZVsRReqMOoa3enG68SucCGRoYInlqzuyg_Eb3fndmSw0thv28iQwWjyjotj6RTV1QU_X6pjfe8Ug",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114076238017236929424\"\u003eTracy Bentley\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydilmjTpriaxKVexmHa2QHtzOP22OttwUYIoz1ifGBu36RA-y-tm5tLbbyaQJK3o-b5mjD4t-p74g_CfDuSZ5YKydHkItIJ-URPZhOOPNk-f2ne3TBVZaXnnSj7f_xoPAT0guKMMsWn0ocOp9giZZdfL4LXtxGih_Z_56o-qBMN4tzmtveBH9UKuOcUti6l7gj85APtg6jt5uskM6Um9QROS9h7KpZxlsP3__K5felUeUYmh6_wNt5eUxHHmW853UwlVraIaWpqX7n2SlGIokwrfovfpz7CumD1PlCU9_CvN7G_5yCn4mykJ3VdCvRp-vfoCg4_u9GpL8wAM8Hx6xuAH67njo2BuMjf_SQSdjFHFl0emD_NdcWntIUeu88gdyTmIvP85NurofIzunzHbQSWMyqpnMO_hIlOcXROZvZUwk62VMTcJNLrDrQ8WN5uu",
+            "width" : 3024
+         },
+         {
+            "height" : 3648,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/102288687964457143084\"\u003eKenny Mantooth\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydi5VEEr-hYhFxkywz2gQIm2CG2RTyG_GqL6z0XZVH1MOnuooplUpVojyGVT3uZJjQrsBVs9eBnbdx2Fm_bJ0qAS0yixwSd3aOkWEAyWCYpxEZiOE0tnkhLRqpqmXe4Y192WY_smbTc522lDThLPKhkCpyYrI-gwOLSwxndNnb7zMyiVrJrLx9050zDQIouDJ0KYhjmanq1lJHNMwPOUI18EqGi9TTM_Z0qDNlp-1t1zRAdPOSwLYsgG9CQ8dFEjXp_VZ47KfZp86izGACmYIyMs1dN3QoIoXX_mER3cBZ-EKQ6uWHJfpfOYAbmPjwswlbtzMZTsCGJjCYTp5xTfmFNW_s13Wn6P6fbZZvZz4qeHbb95bgZGEP3RbRRSH8eyM6epxcrN5SIeDzLrKk2dlcvwJNLeG9DdoHi1dZlP2BZDCNPv4WMF6NAMiDoMuLEe",
+            "width" : 2736
+         },
+         {
+            "height" : 4800,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/107430058139599250673\"\u003eAllen Jackson\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhV_mRb7OZ1azXIq1THOVNvaXOhi4xfPKsK0_-6ETa05WQewlHKW2cn4RRy6sh_pT5Yl1K1T1iQ-qQ2GDRRdlApUs5S5qY12tITiFQUJc5GXuZBSGAAB0Qda7gRMuu0HMpsPY1rf43s9QyGSMxd9W-tK9meKal-QpSO6YgDLsFAY6I2ZjVqrtD0XoKs6hPp64qQ7xjyrt83BhcKT4YWX4ttEnQhQh2JZ86_MNGmi6tQ5eE7ETb2WccQnIahnW4Kz3h0W7Lv8c91xBPXlgPlgIJvXKT500MvgCMiWlSLyiuqjGJI3g9m0bSRrpTN5Efrg3KFxzjKFkeBQ7bDFwgGD-L4UK4LS2skmCzkc5eemu5Y5RM8amxeHS97IgkyRwPpfkqFDUp3gqTSh3MttDpkIr7gnxMxTUlye7WUaToXkTgAO5FU6ochGeYUDMbaruwk",
+            "width" : 3600
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103711693721427476821\"\u003ePierre Benoit\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhsbWrMJJTFq6PViNVWndNjD_GWkIhZhGqAzuFLykiNCXDxbM4ORb5R_-POaI8-fv7Loy_qxAXwdTM8Zm5Q33fgAtIXu9zkKpIuMD7XHDCXobyHatKlEqX8e3wp3ECNKxHlnKNhKkMHzCHXzyLA2FlPkskxFi0Z5ppUqxCzWACgwEmN9-5AJ0D7rrPtlLt4lXMq6mecHCAvU-1l8Efgnklm03-I3DTbYNUBNYQwFZnHIk1O0Ph_kVm_8esNIVyLXck88Umihw665P3d1l8xhzUaWNHMApiOuzJbSaIhE3K9GO4avstJgu9wjI8IfvN_xqYrSUbjAsQ9JVuKmh6Xl4UqU_-Gduwgd3YMHyU5LCnCeS4QuhaogaGI1L1tqU5DmnmqBoPkUhmFfM9qNprSmApXXRsF_gpnP8iF2OtZh9Cg_1Sn-JqLIK7aB0a0ayHx",
+            "width" : 4032
+         }
+      ],
+      "rating" : 5,
+      "reviews" : 
+      [
+         {
+            "author_name" : "Tracy Bentley",
+            "author_url" : "https://www.google.com/maps/contrib/114076238017236929424/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjV-TeXXq4OZaWOcJVSxorcbYU-zO5EYSXK4XqtecrjOtLq8RYQ=s128-c0x00000000-cc-rp-mo-ba3",
+            "rating" : 5,
+            "relative_time_description" : "6 months ago",
+            "text" : "His teeth look AMAZING and this is the best thing he's ever done for himself. Very worth it! The experience with this center has been EXCELLENT!  I can't say enough good about how they accommodated, took care of and went the extra mile for my husband and his journey!",
+            "time" : 1767908958,
+            "translated" : false
+         },
+         {
+            "author_name" : "Amber Shannon",
+            "author_url" : "https://www.google.com/maps/contrib/115014829704247661056/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjUgo7K1dSxC6pQlWRXyUeq30YAha1_TQAANSIPnHygjqhVAqhUH=s128-c0x00000000-cc-rp-mo-ba2",
+            "rating" : 5,
+            "relative_time_description" : "a month ago",
+            "text" : "I recently went in for a dental implant consultation at NUVIA Dental Implant Center, and I cannot recommend them enough. From the moment I walked in, it was clear that they genuinely care about their patients' health and well-being, not just the financial side of things. I was really embarrassed to show my smile, but the team was incredibly discreet, compassionate, and understanding. They have a wonderful way of making you feel completely at ease and comfortable with the entire process. If you are looking for a team that treats you with genuine care and respect, this is the place to go.",
+            "time" : 1779999890,
+            "translated" : false
+         },
+         {
+            "author_name" : "Patricia Marshall",
+            "author_url" : "https://www.google.com/maps/contrib/110910202614887443639/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocLeIXLE3vduF7bM2PoUwMFBvgvS9VX2NpMQO11crsx8rpruU5o=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "5 months ago",
+            "text" : "My visit to nuvia was awesome. Everybody was very cordial, very welcoming the atmosphere looks very sterile and clean, also to leading with the consultant and everything they went over everything they took x-rays. They ensured that you know, they would do nothing to, you know, endanger your health or anything like that so I was very pleased you know, with the service that I received the information that I received and I would recommend nuia to anyone who's looking for a beautiful smile.",
+            "time" : 1770659704,
+            "translated" : false
+         },
+         {
+            "author_name" : "Robert Yancey",
+            "author_url" : "https://www.google.com/maps/contrib/100389125817827255008/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjWOWnWScEO4KNMBaohNTVH-RRchdL3qdN83QfIeGOoR3Lb8UFb4=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "2 months ago",
+            "text" : "my experience here at this clinic in nuvia first of all the atmosphere and professionalism of everybody who helped po I went through quite a few people to be able to get me set up and it was very quick and fast, but the most of all I was just on the Internet the other day and now I am sitting in Clinic getting ready to get my facial smile like I wanted. I’ve been waiting for 10 years to make this happen you know thank you for the great had great marketing skills to be able to get me in here. thank you.",
+            "time" : 1778184803,
+            "translated" : false
+         },
+         {
+            "author_name" : "Angelina Miles",
+            "author_url" : "https://www.google.com/maps/contrib/111328696739334278088/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocIGZS9KmJSq4FpJ5D_wsol6rwdEA1IhlPATaZxGqhua10sfHg=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "7 months ago",
+            "text" : "I just had the most beautiful experience at Nuvia Dental Implant Center. The staff is amazing from the front desk receptionist all of them to the x-ray technician to the doctors and the people that do the consultations in office are all amazing! I would recommend this place to anyone that is interested in getting dental implants they work with you and help you decide what is best for you. They take their time with you. Once again an amazing group of people and staff, thank you so much for making my visits so pleasant!",
+            "time" : 1764868815,
+            "translated" : false
+         }
+      ],
+      "types" : 
+      [
+         "doctor",
+         "establishment",
+         "health",
+         "point_of_interest"
+      ],
+      "url" : "https://maps.google.com/?cid=7394428103318511507",
+      "user_ratings_total" : 497,
+      "website" : "https://www.nuviasmiles.com/locations/dental-implants-richmond-virginia?o_source=Organic&o_medium=Website&o_campaign=GMB&o_term=Richmond_GMB"
+   },
+   "status" : "OK"
+}

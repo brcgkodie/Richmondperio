@@ -1,0 +1,29 @@
+# Grove Periodontists
+
+> Board-certified periodontal and dental implant surgery practice serving Richmond and Midlothian, Virginia. Four periodontists — Dr. Benjamin T. Overstreet, Dr. John H. White, Dr. Kara Dunegan Gilliam, and Dr. Denver J. Lyons — all Diplomates of the American Board of Periodontology.
+
+Grove Periodontists (formerly Overstreet, White & Dunegan, Ltd.) practices exclusively periodontics and dental implant surgery: dental implants, gum (soft tissue) grafting, bone grafting and ridge augmentation, crown lengthening, periodontal (gum) disease treatment, and surgical tooth extractions, with IV and oral sedation available.
+
+Two offices:
+- Richmond: 4909 Grove Avenue, Richmond, VA 23226 — (804) 355-6593
+- Midlothian: 11301-B Polo Place, Midlothian, VA 23113 — (804) 794-7094
+
+## Services
+- [Dental Implants](/services/dental-implants): single-tooth, multiple-tooth, and full-arch implant surgery
+- [Gum Grafting](/services/gum-grafting): treatment for gum recession and root exposure
+- [Bone Grafting](/services/bone-grafting): ridge preservation and augmentation for implant readiness
+- [Crown Lengthening](/services/crown-lengthening): functional and esthetic crown lengthening
+- [Periodontal Disease Treatment](/services/periodontal-disease-treatment): scaling and root planing, pocket reduction, maintenance
+- [Tooth Extractions](/services/tooth-extractions): surgical extractions with site preservation
+
+## Doctors
+- [Dr. Benjamin T. Overstreet](/team/dr-overstreet): DDS, MS — Medical College of Virginia; board-certified periodontist
+- [Dr. John H. White](/team/dr-white): DDS, MSD — VCU; board-certified periodontist
+- [Dr. Kara Dunegan Gilliam](/team/dr-kara-dunegan): DDS, MS — VCU, UT Health San Antonio residency; board-certified periodontist
+- [Dr. Denver J. Lyons](/team/denver-j-lyons): DDS, MSD — VCU; board-certified periodontist
+
+## Patients
+- [New Patients](/new-patients): registration forms, insurance, first-visit guide
+- [Patient Resources](/patient-resources): pre- and post-operative instructions, sedation checklists
+- [Appointments](/appointments): request an appointment at either office
+- [Referring Doctors](/referring-doctors): referral form and co-management for general dentists

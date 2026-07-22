@@ -1,0 +1,30 @@
+[
+  {
+    "id": "a98e8ffc-c621-4368-b8d0-424e019e95d8",
+    "status": "completed",
+    "display_name": "Seedream 5.0 Pro",
+    "job_set_type": "seedream_v5_pro",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_000715_a98e8ffc-c621-4368-b8d0-424e019e95d8.png",
+    "created_at": 1784678835.2042,
+    "params": {
+      "prompt": "Using this real white brick dental office building as exact reference — same architecture, gray gable roofs, green entrance awnings, surrounding pine trees and parking lot — create an elevated architectural photograph at golden hour dusk: warm glow from the entrance glass doors, long soft shadows across fresh asphalt, rich blue-hour sky with subtle clouds, manicured landscaping. Professional architectural photography, dramatic but believable, photorealistic. Keep all signage exactly as in the reference.",
+      "medias": [
+        {
+          "data": {
+            "id": "69311e08-67f5-453b-8be5-698198a55278",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/69311e08-67f5-453b-8be5-698198a55278.png",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "batch_size": 1,
+      "aspect_ratio": "1:1",
+      "width": 2048,
+      "height": 2048,
+      "resolution": "2k",
+      "seed": 556678,
+      "reference_elements": []
+    }
+  }
+]

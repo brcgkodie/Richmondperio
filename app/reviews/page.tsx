@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import SectionReveal from "@/components/shared/SectionReveal";
 import GoogleReviews from "@/components/reviews/GoogleReviews";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Patient Reviews | Grove Periodontists",
   description:
     "Read real patient reviews for Grove Periodontists. See why patients trust our board-certified periodontists in Richmond and Midlothian, VA.",
+  ...ogMeta({
+    title: "Patient Reviews",
+    description:
+      "Read real patient reviews for Grove Periodontists. See why patients trust our board-certified periodontists in Richmond and Midlothian, VA.",
+    path: "/reviews",
+  }),
 };
 
 export default function ReviewsPage() {

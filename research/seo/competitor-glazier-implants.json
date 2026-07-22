@@ -1,0 +1,243 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "business_status" : "OPERATIONAL",
+      "formatted_address" : "7229 Forest Ave Ste 112, Richmond, VA 23226, USA",
+      "formatted_phone_number" : "(804) 802-1487",
+      "name" : "Glazier Implants & Periodontics",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "1600"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "1600"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1600"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "1600"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "0800"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:00 AM – 4:00 PM",
+            "Tuesday: 8:00 AM – 4:00 PM",
+            "Wednesday: Closed",
+            "Thursday: 8:00 AM – 4:00 PM",
+            "Friday: 8:00 AM – 4:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105646644200782559416\"\u003eGlazier Implants &amp; Periodontics\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydh0e-HE9zNEyytxBMQa86VwqSfyzFHalyojDqCoCCWYOLE6l_LhOaFGRTwwfCckuft3b8JH5Yy7DF0djmOr2IvSi08c66sYxici4ldfttJP7189T_mJdz8ngvemiGkrz8uR7k7ijhFJUiL7DZC4q9XzmVSf7fvRN_qQYZvFD1ert3w3uKEuw8TDejZ8R5rsQX2A-LckTxaB4RyZYi1Y6yFJKBNHE6JIMmI3cDAeQEUBHXg9nFqhRjj9hhbr-5ACdcngfcQ486KvuKgAW_BPDnOkwA9mydQ4m6DnX0vWYH1jHZKR3loha2ucFJ-nDEnZNpMoDftowdflEujiIPT3i3vfT7ZEHjLlbIFbgRL0_TeqeTQ75cBdXfCXN4TIwza6wLHIdkRsD3oSoR_KQ0o4n34SytlxeWRR9fo9UwuBCvOLRQ",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105646644200782559416\"\u003eGlazier Implants &amp; Periodontics\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgYpp-dI1DoNhdxa1SKYl2OIzff-Z5BwPZCD4xj1_GXd8yv2h6deqa3nm5VtMDgQy2GYbdHfTIX8YnazGCLGQuRI4XndRWqkWxWDY1ZNWwoNM_VoZ0HxQegp09Z350v7gFTtDVcyVM7ST1DTkGMr1EgD0Ivy8IW85CmG3URHfM7QRmdOHvGZws10vl8ix_QttRm33jaFKQalN0DWgZW97Vr-LQTmVarqIrObCQNquFew8qNwHbJypYEe8fBkYfEFhitmYrwOfvv7V1tMKpA9y9HGS7YL4TIMnbMbcplwQbADyAJPZr51CM6JItUN2oc--tRKtZKBBLFxhckUoSL0oUI_WINya5C95J_YPbQKCE88FaNEbsZR6UMJ3hoA_LLqpw-VjCWQOpSQAgUWHL56RFw9eDnmyYJlQlKH7MbvXUgIjM",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105646644200782559416\"\u003eGlazier Implants &amp; Periodontics\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjacojjXRNkRkNGaI05GVc5rWTiexORJvQ3hJrb1lm1Gs5zBXLn-2RtsGMAGVqK0Dyx4Pe1kjmLM1N03G6Z2EkyA7DOhjotCY7lwukh7-2jGOvoWT-S2iGbICL4OQlmwCrGpmc0vO1OZi8ooGRoEohb0ewzT2PVjeumLjOpOdwNcMVJ63CVe4CSeqzal4omhCbQJdfEzpvEHapVWVcr3pJXBl87SsEwyvCfOET_59QovbxR8hoQyjqmziYMT-KmpAGdJ32PSqNPOKy4A5jXFrIbqw9GJvBFM6-vh6JuAWoLKEmIBqk-f6-Vj5UX3d3szULBXWq_egOR5K7rffEVCPEPJENeauLVjttwOnQg9QQWqS8q0CIfqybq7PtjLz4zN31Cxy5OgQHc-d74gZ5AGtryyyyFgcBCPBWeTm0",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105646644200782559416\"\u003eGlazier Implants &amp; Periodontics\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiIYBlLv62grJ9HPeBqVJnAXjw16OTN1a_70-31GosdLBYQtQYW2rzGLjdY8QFff1pcRTzZjxpXzGhiCx4YG-vLaTJtvxm2nl3qk74IKGR7MBBayZHViqa8ERT7FZHxEtldVjlUPEPGRkAS4UEynHlNX_62-3DYp2KQsqBKfiCpv8LRXkKFSCVs-7jkUpKJIzhjI5_uJS4KfP0umbdjj3KjGpYXIYBwigPz1tcbkeJEU-vCel-ty-iwSqk_u16FrK4-16oaT0PmVeSRN7m1q1DHJE4LslA5sZL3A09AHIc-Ry1ZHtJ9AM84bp0hijpzoiq28DQEqXXgM5SI-mCVGd6zO8aTciOW1CUci_hvhb9tfPTsziQmXZAz8b17beZHXgwIJhlkhulz6rxs9bfyWJDXMVoc0MYda4A12gZIDSVNWA",
+            "width" : 4032
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105646644200782559416\"\u003eGlazier Implants &amp; Periodontics\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydich0nP7_hlD3Re_ieAuDNDbMmSubR-3SIIOS8ahNNP2Bmu7PSLVJ7arNMRNoE91K5O6Q4yyhjb2sfPniZBmCAM6PLHEpbrID33CwPvduy_QyJXWuMyHG50Be-UT3BLdvCw_zMfZ_0AATBpvIOgMyW9dYnMrajHjjPoTaGhYjqAKN9Il4ANFHD_bnDOFI8tXwxZDOVwB03As3pvdboBFTveLrKrpW9H6ZXtOAyE_zPu-DZjo7D-qRIm_UoXv-Zq95v2vfSnSTabeFczILKRCp1LHB2oZcGVDZsK1ZIMVd7yFRWTcpn4Qm-ObQI8cGIgRF2RUxd7RBA7Rzt_i3bP1leWHygRmFgUPl2dH9rxJiLa8GFlbZfExo1hSh3-0zaAkTno_5svFBJch2P4ul9f4NVdFrltyXpqptjf7546_AGeoNY",
+            "width" : 3024
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105646644200782559416\"\u003eGlazier Implants &amp; Periodontics\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhYw-mtRxeTBI2LqJ4thO_QvNu9UmbsCypVH9g7csoMpUWtwLesMt4vIukQyAolpHbueLnPJDoPwKNspSY0IyTV-9l-X9N-LqgxrS_sDrgi3NAZN9f6vqwlxMSg_YeR0CXyCdU65kwuqBDI7P_9AHL75-XsKImSB3iSE0DCIlcfiExS7I-KdoX7DiDxSkejUEQYzdzNiyLHfySAmz260T_Cj9ygAnCeHgfgMTTBftBs1y0nBl2UUKMcOXIakgRuFnPIFp1SNtZTnjNQrE5Lh5aC47nVF7tpzCpvCPfjvt47BjtVpopiU7BN3B3YUbtMT1n5yMQ_0N0JmUz-aKGiY7gTHgOrPlgR4moGlBEq0ygUw8Sb4kALp7Ss2DdSknwNlfZqbq_htXYz9JoWVNiY37j0-vXqCTkNn2xX8k27Tj0G8sk",
+            "width" : 4032
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105646644200782559416\"\u003eGlazier Implants &amp; Periodontics\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgoQJ2V3YCZ895stO8VyE1a6s8KiSDqFIs5Z5Xzwe7Eze21qjkRlRZtEZNEuPLiyoN9tZz1sRIEjUQVje8BNSSvmMWy1Jsk4HiEP9NKyQCf-nnrlCkpsG3h_pK1doPDWRLIdixT3C8gqMif-ZY0UfAAFX8x6iD6evdCsp5yG5ukKOR-8--kP1d3v9HZ0aSO4pBJdSM9ASXXxNomFzoqYJ8_b_krEXIySCikOj4pn0jvkkJMdEe4xgfn-n3xMFXIVTnamgRWt5mgJrVkd_i_bT-APJS-J-jAXgYFlJ-As_XgWqWAajMxsDW7WOdsGSlt3CJ0_qNIbgKvuiZ8VghJl6uUYS0eigT3rIcIdAX3_PiW0709OA-AEW3lCQeZxkErsnyC8BG0NKuHcJKgnIiWpOxaRXzjQsMq6zBJOger1zMN7w",
+            "width" : 3024
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100885215444235628554\"\u003enycblaster\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhVA23CvOm5M2-pNa8-efBQ1EZaU1LfL5sjsTUZoEXNagGHj5EVoA7ImnNPtGvxN7X8_jzvRF6jJtGfVVoUgkznUFmy_kaPEQ21x7Bz5I0Dgr87FiJrKT7pUpcWN_IZY4vCP3tEABYPbL-BRIzrLgd4-p3LqQk1DHPSl77xKDR07a3iSo1FxckiE4fc9Ltld-TgE83VhFtmREfzhMMxyQ2z41piTwbDWWvcPHIQuPrIhiTJvH_3LYa5kHszfWXTmO_Qve44EP6G47Iz7RoVzwlh-HRgBRmP76WyGKp2EUOsXQvo57BUgVs0cUOgy2oOVNai_KfA1xN-nFLz8uK-ioE69Q57o4dGPs2p8SG9BhMiZxS_YkE8NMA5DBQz9PZ927JP6t4usxhXHKxG-KYBPW4huyfdomqNbV2qK3I7ePNgtP3KBo0Frt5rfBgINZNo",
+            "width" : 3780
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105646644200782559416\"\u003eGlazier Implants &amp; Periodontics\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydh7wphTLVNuHibh8BNtXb_GUO40C8vwlHMZrlNYN0-XBgG68PMNZb9HAQfIWsercmdAi4S4c1IJwuEbasnsxSQa1lhpJZ0qOIAwu7XW4gHx2lLyX_N5XG6T9ZRDygLbab4U--7r2mpML-iarxtHPhEE40rU8nefWqNy_sJ-TOU30dXzVEg5jedu01rQZoxdfkqSKuP0tRxmwpGcTGB3BsdSEPLsAKVYFTkUkDnILPMAHil5K8AOAINWtLCsi6mP7AYnLyNEGvZexIzC-scU8aN_QDX6nS3vnvgjpIFIKVbCWGHYo-sGIlmX8N0XzlxikF6XGvxY9JXqXxcCvSgZixjb9kmrM6ysM9kzfymoEYl9VSAR_EsWtk6ymaDGLpaR09t6Wv1Tb3OgC33IXDrCq3I4LI7W_Ia6jfTmItnf3y_-cig3",
+            "width" : 3024
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105646644200782559416\"\u003eGlazier Implants &amp; Periodontics\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiOnHNw8ihEpQxA-aVe319hmkeUUbgPh3SzqVavZ9EjN6qBiHLdPyqi8Y1uTYnFGBywLultJ_1l40Q00q1WCZ12Feqb-fdqWpCvE_dTGoydh-7dROf23YBkCcYjMW59F-EpLZ7S7Y6fOyMP_UgCIfxrKIcKDGH_EyaXw_foq8ghtz8a6s1DjIbcqOaCn79-fp18jj04_Ehe15QrUcBGpg3MJ0DNMS26JoqYXmUbQKvzLY72M9yMzzj6lz2qLfFLCNg-255BT9gDW3ZaU77NTwtlLTJSLy2DIXu_7VxUkxTvCRDQDMTkNmDKoN8bEOs-T5VFM7hiVVIEV1aR_1OT2t5gWDRaZg0vtTj0qwQGxZTmPzCypPGByRrIF0jGAruhnJK55UjTc8j3NfO6458ZIN2quY3JV9gbaPj0XehQpaxwXsD6",
+            "width" : 4032
+         }
+      ],
+      "rating" : 5,
+      "reviews" : 
+      [
+         {
+            "author_name" : "nycblaster",
+            "author_url" : "https://www.google.com/maps/contrib/100885215444235628554/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjWrLj9kuooxlywHyNJvPi88k4lfUQNuze3AqC9BW3Ps7_vYwU4=s128-c0x00000000-cc-rp-mo-ba4",
+            "rating" : 5,
+            "relative_time_description" : "4 weeks ago",
+            "text" : "Phenomenal Doctor!\nDr . Glazier and his staff are the best of the best.  I can’t begin to describe what a pleasure it was to visit his practice.  He’s probably the best communicator in the medical field I’ve ever encountered.. I’m usually afraid and nervous while entering a medical scenario.. Dr. Glazier put me at ease within minutes. He went above and beyond what any doctor has ever done for me. I’m so grateful and thankful to have found my way to his office and would recommend him to everyone !\n\nA+ knowledge\nA+ communication\nA+ bedside manner",
+            "time" : 1782258134,
+            "translated" : false
+         },
+         {
+            "author_name" : "Mark",
+            "author_url" : "https://www.google.com/maps/contrib/103078434626180862274/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjWcYbrjaSi0lsg1T6zB_UTtDWQ7oe4RAeKvWEo-PYodR59thupL7A=s128-c0x00000000-cc-rp-mo-ba3",
+            "rating" : 5,
+            "relative_time_description" : "11 months ago",
+            "text" : "An Unmatched Dental Experience — Personal, Empowering, and Expert-Level Care\n\nAfter seeing two other dentists who couldn't offer solutions or hope, walking into Dr. Glazier’s implant office in Richmond was nothing short of redemptive. From the very first moment, I was treated with a level of care and attention that far exceeded anything I’ve ever experienced in any medical setting.\n\nKristy ( or 'the Mom' affectionately referred to as) and Dr. Thomas both brought an incredible blend of warmth, expertise, and genuine interest in my well-being. Dr. Glazier didn't just explain my options—he took time to truly educate me. He even lent me books so I could make informed decisions on my own. That kind of empowerment is rare and deeply appreciated.\n\nWhat stood out most was how personal it all felt. Dr. Glazier, or Thomas as he preferrd to be called by, gave me his direct cell phone number, encouraged questions, and made sure I was never rushed. It wasn’t about selling a procedure; it was about finding what was truly best for me. The office was efficient, friendly, and easy to work with from scheduling to follow-up.\n\nThis was not just a refreshing change—it was the most incredible dental visit I’ve ever had. I felt seen, heard, and cared for on every level. If you're looking for a place where clinical excellence meets compassion and empowerment, this is it. I can’t recommend Dr. Glazier and his team enough.",
+            "time" : 1754572975,
+            "translated" : false
+         },
+         {
+            "author_name" : "Susie Hudgins",
+            "author_url" : "https://www.google.com/maps/contrib/103819087493413995365/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocJZkxu7ZZVvh5USbD7ydIqyGvl65hBP9EB6FwRHT2cBdH4FGWQ=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "4 months ago",
+            "text" : "Superlative!  No one loves gum grafts, but Dr. Glazier made this procedure simple, painless, and with almost no recovery time.  He listened because I had previously had surgery in which they graphed my palate, and my speech was affected for over a year.  He heard this and tried another area; I never felt a thing.  The office's friendly approach to treating each patient as they would want to be treated is unmatched.  I loved listening to the gong as I left today, knowing this procedure was far easier and almost pleasant.  Thank you!",
+            "time" : 1772560140,
+            "translated" : false
+         },
+         {
+            "author_name" : "Dee Meredith",
+            "author_url" : "https://www.google.com/maps/contrib/106108353846112117126/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocIHWIbUpDuuKe_hEX2w4p2rNVKSk3glTcwbIsYRgqMWt5wy=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "9 months ago",
+            "text" : "I love Dr Glazier.  I’m one of those patients who experience high anxiety about going to the dentist. After my first visit, I never experienced anxiety in his office again. He took such great care of me. Aside from being so highly skilled in his field, he is truly compassionate and trustworthy. He took such great care of me. I also want to give kudos to his dental assistant (Angie and I hope I got your name, right) I love them both! Unfortunately, I no longer live in Virginia, but I sing his praises wherever I go.\nDee Meredith",
+            "time" : 1758807455,
+            "translated" : false
+         },
+         {
+            "author_name" : "A M-R",
+            "author_url" : "https://www.google.com/maps/contrib/115970258257023733798/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjVWaB-4RN_MupaEq5C8f3vv_1MCppqtjxsxTYInHeTlMm6ZBfV_=s128-c0x00000000-cc-rp-mo-ba2",
+            "rating" : 5,
+            "relative_time_description" : "a year ago",
+            "text" : "I recently had a crown lengthening procedure and I can’t recommend Dr. Glazier and his team highly enough. From start to finish, my experience was outstanding. Dr. Glazier has an exceptional bedside manner that is truly rare to find. He takes his time to listen carefully to your concerns, explains every step of the procedure in clear detail, and does everything possible to put you at ease.\n\nAs someone with a lot of dental anxiety, I felt completely confident that everything would go smoothly—and it did! The procedure itself was quick and, to my surprise, painless! The atmosphere in the office is calm and welcoming, which really helps you relax and have a positive experience.\n\nEqually impressive is the wonderful staff and nurses working with Dr. Glazier. They are warm, professional, and make the entire process incredibly simple and well-guided. You genuinely feel cared for from the moment you walk in the door.\n\nIf you’re looking for personalized care and a doc who goes above and beyond to make sure you feel comfortable and informed, look no further. I will be sending everyone I know to Dr. Glazier ;)",
+            "time" : 1751412175,
+            "translated" : false
+         }
+      ],
+      "types" : 
+      [
+         "dentist",
+         "establishment",
+         "health",
+         "point_of_interest"
+      ],
+      "url" : "https://maps.google.com/?cid=1535191784440697876",
+      "user_ratings_total" : 11,
+      "website" : "https://www.glazierperio.com/"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,246 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "business_status" : "OPERATIONAL",
+      "formatted_address" : "8530 Mayland Dr, Richmond, VA 23294, USA",
+      "formatted_phone_number" : "(804) 270-3131",
+      "name" : "Tulips Periodontics & Dental Implants",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "1300"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "0800"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:00 AM – 5:00 PM",
+            "Tuesday: 8:00 AM – 5:00 PM",
+            "Wednesday: 8:00 AM – 5:00 PM",
+            "Thursday: 8:00 AM – 5:00 PM",
+            "Friday: 8:00 AM – 1:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 1073,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106177296068667624356\"\u003eTulips Periodontics &amp; Dental Implants\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjqkiFQnw_e0c0nGhtvYMm5V-_42_A0CV1pCHOC_xzjHAtL9NpEf7velSfa6KgszWcaOTJOy1tkc907jjxHMUyXu1vYnJr2faFgtmiNFQjgsc-onbvwSyqG_P3aeFZ31dHQlOhllArZ1jvZv9sdJJhl2OjM5yOV1nRQQZ8d7K_pKlDR-9NTzkyqgWEUtNvckM7l-_5HlMdqYBNOmxnNIsCP9lTiZm19VXmRvQw4awPHiFCZSTHfzyEXP9ItJkhm1NutVezMJ7l0ynAQiFIU0ysSwyvGuv5QEpe7j50mMawQ8pQb0ghHDAS_E9rrPAquDzRuJskvsFeqviD4W-FTnsJ7_omKEJMRdkdLU0-kYySv3NdwwaWp6EP--toI06Bedpb31dD-4k7qxhWXW49mwlsi6vx-DKBEcd3XJWVf5GE",
+            "width" : 1906
+         },
+         {
+            "height" : 1086,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106177296068667624356\"\u003eTulips Periodontics &amp; Dental Implants\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhJEiIFwzRRtS5KKlIUvgefQWj37STSgbU_fLFOnGYWsD6Ae0VeH9i6DFIcgUoP4DKws0zWA2L2ZosgIMgT_UdGuDyjlw2ayyQmLtJFkxgaTR7jUGNJdGUGF6BMbo4ZuDTAasL2-UuFZ_K_LeNclW21-AmjQRNzgQJvZDoQOBfUvBafY2fJoRSsRkKVAwG-f-_OJ1dK5HiJT4cPfnZpti1NMF4lO2teosRoJYaoCZc0PtWmfmKIsdBiG-HeMRJaoV0Hun829xSsMnI8RjYBMWhh4oCcWnBSpQkDqN9C2e_LoMTjTfYXVg4MviWfC9PaWP9K0Koue_xcxsK6--8FvJs2wL3Lz3eR3vxhFS9yLcW99Dq4Y1KPJFYm3xgRvgfIoJGvEyfK_yAUoUeKHK54J0a7tbqN7zDYUBiMyfcnvScENckBTvW6BTQxz2xEcQ",
+            "width" : 1448
+         },
+         {
+            "height" : 1040,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106177296068667624356\"\u003eTulips Periodontics &amp; Dental Implants\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiCI85p_-85MlTEQhLE1gBPrf872VPJJZ_mGy4qedPJIpRXjFTmVhPBvSyCmyxgU8lPTX9p7dWVp11Cm7dQNHINXymnYh9Wti7W-NvR8CqjzTIEyeu8sF8sGENgEc--2z856E9KQDPH4-RppAdcbTsfNEsCD0aFlUv-8Ugsdm4rvYceN58haClt_RAMrljhNeTrJdsUVYhINCDIbpsSQQxrEgVOxO1JnEtqmLy50LVwPR4xFf3Xo5NzeVu-crnYE-RbakZYg_AOP7tU_ZMnTwJ6mmdgVcjQ11BcRZmoGjtwGa5LXB6nxHE2u0_IxO6XK_lLwVh7FmUjBjhER2OFqPqsP5_-RG2InSzyXaOH5b3_i7i_7lNkvJAN5n1ZfItw29XrbdoLkPFjdC8olODBtqGOvjR2yEamrS7f0Sup0N0UIZ8ZDvi7Uck9FoNy9eFy",
+            "width" : 1900
+         },
+         {
+            "height" : 1086,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106177296068667624356\"\u003eTulips Periodontics &amp; Dental Implants\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgz7WokJAfFcgE9AORzD4AX4ArZAH0BpT4SP7Umw7ff3vycHq-2bqdSkHNXlbVkIkGjCUNN6ERZHBCzMEriITWXtx2phG8z9h6IqaZEEKyAFdD8dpGXXsx5oUsVmAKSgBwuOyBEbHLoZ3GAMGUIv2eJuualmgciiy_Fo3A152H6FpcdCJZAzbVCvyqMy2EIdZKUENk93rB5GWFBFhnvJuv_0AwmmFdYfMUsnbEKfBO_zxK5OXSSkG8IFFapgWLy_4HQSYmP0W1o_pkmiT-emXMqQK3xsL3DRiyw0h5EJorKaFuXfsuPAI1FUJiIe0uKLlpwSkz7bL44n1Imgx5vN7dZNXftRQhr-AtoizjhzmBaILpZKboEo2fo3tF_hcMju1a0IqYkCRAS-0DNFP7ly-ltoOqoYS-K8GapSrL8z-Qd_jV4lsTFptvX2vAhKTmz",
+            "width" : 1448
+         },
+         {
+            "height" : 1086,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106177296068667624356\"\u003eTulips Periodontics &amp; Dental Implants\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiqwSjdg418fMjPpse4TS45hWKJ6veFROCi0jiun08TzG4iidFHo-9yxQfy32Mocub4EP4xu0o8sPvQtUNpwS9m3MAAJ5EkRHmgQmxnSCMwuYjGq9DUEj8yPKlloM6ZTfdiQA0WYyKCX2HiK_uMQm_dD9KiOXlOh6ZwVjaIYSwpx3ki6GLVM2X-9-5WnANox5Zic4UyGZwCciAqCcpyEuwF3-2On0TDyr7J7OxDjcox_QRJCks0jlvFNTxd3X3dlHlmcoI_GmE8K-6rsKEws-dVkZ-a-CiMxPqEYlX2nAQ3Y5PR030rQijVlpA8pR6rX-dfVHGAG9svEsgbajvtVciIocGr7m9-MtyF_YJy1SsJ4QqBJJqHBOKaXSW7kmq6qb55QScz6bs_wznDL6oTnyMh2Ibm5rcnFI9uwQDNiPN7fAkiU9g6Jwl6fz0OM0Ur",
+            "width" : 1448
+         },
+         {
+            "height" : 1086,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106177296068667624356\"\u003eTulips Periodontics &amp; Dental Implants\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydillXizqFHn1rhknS82Fv1T0T9ldwMD3c2nSOMkGO2U1FZ6mCrSv3I23KaFaQROAiSj1Qk8JpESLY2ECg4zaFxsDd8sPxqvrZkIzDjQveIR572S8FEfPRc08KDUzwQ15v1qSmeDds5JpKj4-bWzAUpFmZV7sAVZd64PoShS2zEgE53sQF1A18J8demFoC1tTgiBKYwSvnW0TY4084Rz8NHz_90JVWMN3GfZwK3j1XRvL9vcoeBfu7wuGCZdbhnou_fhw9UmomEvWqec_pqW0lwKYO7yrhXxTU8FVZiKX_6rdj45c_3cCdSqwHPwAxi_Ul5s6_YXTdEu1f43z2uemU-2cHBTXaALfTbub7UHNrGrTbys5zHnj53_EU1To2MR3JNTeIqSRW3Q5Ivose0Q9YcSxsFlKZTTxrhWmm_6qeD2hhV67kJTUvnRkSYQIq7e",
+            "width" : 1448
+         },
+         {
+            "height" : 1086,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106177296068667624356\"\u003eTulips Periodontics &amp; Dental Implants\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhla1Fofet_h-7bLxvaFwt36UgjOw5yAwP2Nn3Zlcnk8X8h0A7-vuXS_KZtQPvSVar_xYBwskVTdEPtBDNQ3v2spUzNKqSOl4YFJJoe-95zoSTevSA1YXCiUWJCuywHPVu4HrfbUI2yGdG7hIspaSbgpviYWa-a60JaCJ9K-mL_s-Xjhk4xX0UPF5qlvWrk9Pe8_niILLocDamGH26RvjJnUMLJZXJaxgZzdbSBRDR_yON_u3rr-_MW5RzTPjBTL-HWLneYT4x95mGejWDMsJ9MVXbRbqUkxh0jZTss1LfgZSfYYCavecBoZSWvfP1vrjN8Z3c9xfh4XCRDkCt61MWURDZ-OOCkSDZRAiOFj9bAfcxkpuS_JPfubag5_FEgl0UV_vVXnQUA7BAdoMxfEpF_vrthjV1Zi1L4nEiC2EBJgKkHJ-vt-ZEY9M_SSUSH",
+            "width" : 1448
+         },
+         {
+            "height" : 2208,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/102260778367936358612\"\u003eJay Mitchell\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjXRBWFG5KmfzTlyNAUmWh68LDAQycX0CeEcaHgT61KxqVkRAn1CnveM5DSbdx0aIZJl0DN7F-VQdhaM5165msWSTCyZpN6EUD3hud5dHNS6iEtKcbGyMsgnl9ElcyWaYutFjZo3Yggtvx-foON0qTZEkL0PHlwEva8HuUz8ElObOfEwT-c975gv6yyzsAw8UV1FVX1X2V25I1lj6mjass5pCDy5LrmNWi663YnO5-o_Wa4t01YGgfhzry2W0A5fRSaBIZaqgcWAj3tbNwUyug_U1yrEmdxAt2JfsZAsWUHivNX3zT7l3JhVpzDL9WlVf-Z8RRDMh90krq_uScem5N9qTaJbwosHn3gq4r3g9dd09_FVzlrtZ1U5AbPjvp2OZpIsv0RkJwim4HCAksixpNDtwKC7Eg9wtEdAE_mC0H4MQ",
+            "width" : 1170
+         },
+         {
+            "height" : 2208,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/102260778367936358612\"\u003eJay Mitchell\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydj59hz6mgmdSX8V2eiHWrqz0cEoBZzzb9l6vUjfqC0ocK1tjpwVK9AWLwfrtIUpy8wWRXcM4dHWJi8JPnbYyGyr8Jx6GTd3Kbeisb4reWOUfNhr6GVSsw8CmsLf43al3Xn2dxvo8M3RRaZKrDavPRSul4okXApAk1VAke16yXNuMKO4FrYf6MxVs528M9DFhoT5eTH97a1QlUaqZ7lYy402l5zzvs67QhUCG4srPsLR_Ey4aWYDegntzF06WBwfBFetixwNdjT8yjZdj8SEOxaKQZNe7a7HRx-hYwY7nKBy5EOALyKEx6kam1UyqHuWaNoN2ZubUxkAB51H1HkxGclxp9KgfYCTEauVO2Ijrmr1GHdz-xU2PLPhDjbt2rnFm0ja-x4pTAUkD4B7pnboZDNlwZ3iooug-NaTPuXAvN-jyqs",
+            "width" : 1170
+         }
+      ],
+      "rating" : 4.6,
+      "reviews" : 
+      [
+         {
+            "author_name" : "SHESHA",
+            "author_url" : "https://www.google.com/maps/contrib/104852535084037845924/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocIYYvBxGZMW8OaGhHV9MXhRe0dYyQvV7ZPYWZBUdYbiDYcxWA=s128-c0x00000000-cc-rp-mo-ba4",
+            "rating" : 5,
+            "relative_time_description" : "8 months ago",
+            "text" : "I went to Dr. Patel for an implant, and I’m very satisfied with the level of care I received. He was very gentle throughout the treatment and made the whole process comfortable. My implant looks and feels great — highly recommend Dr. Patel.",
+            "time" : 1762130436,
+            "translated" : false
+         },
+         {
+            "author_name" : "Shannon Koller",
+            "author_url" : "https://www.google.com/maps/contrib/108869393457752711111/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocLUvrkQ0TFHrw9HMUdTOsVBbYSOIh5PKR6hX0FMODUIL69r-g=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "2 years ago",
+            "text" : "Dr. Patel and his staff are absolutely wonderful! I got a gum graft earlier this month and was extremely nervous before the procedure and had a lot of questions and Dr. Patel and his assistant put me at ease and answered all of my questions. I even called the office days after the procedure and left messages with questions and concerns and they were quick in returning my calls and providing me with information and reassurance that I could call the office at any time. I am so pleased with my experience with them! Thank you, Dr. Patel!",
+            "time" : 1692448351,
+            "translated" : false
+         },
+         {
+            "author_name" : "Diane Herro",
+            "author_url" : "https://www.google.com/maps/contrib/106758946956551672067/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocIrA7d81OA0V7PVr52_H80gVWUsGoB7eEyedhVcuE7YKXmRdA=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "4 years ago",
+            "text" : "Dr. Patel and his staff are absolutely wonderful! Everyone is so friendly, professional, and very efficient.  I was really nervous during my gum grafting procedure. Dr. Patel and his great assistant really helped me through it..very accommodating and comforting. I had my 2 week follow up today and am so pleased that all was good! I highly recommend Tulips!",
+            "time" : 1628726284,
+            "translated" : false
+         },
+         {
+            "author_name" : "Tabitha McCormick",
+            "author_url" : "https://www.google.com/maps/contrib/111182736690718617136/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjW1XpKEweqdk-hf8eoFpmkZ_olQpxqfUdQ097GavQLzcofOlfx9=s128-c0x00000000-cc-rp-mo-ba2",
+            "rating" : 5,
+            "relative_time_description" : "2 years ago",
+            "text" : "I had to have deep cleaning done and was glad I did the research and found Dr. Patel.  He was very gentle and kind during the procedure with little to no pain. His staff was amazing as well.  I felt comfortable throughout the process and would highly recommend them to anyone needing a periodontist.  Thank you so much!",
+            "time" : 1710861044,
+            "translated" : false
+         },
+         {
+            "author_name" : "Jeff Q",
+            "author_url" : "https://www.google.com/maps/contrib/101689593854651873207/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjWV1RAysc4L3pNfdLo_7KQ6itlwS_MtMs4olb1Nq46w3NK9Lck=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "4 years ago",
+            "text" : "Dr. Patel and the staff are great - informative, supportive, and skilled. They clearly want your experience with them to be as positive as it can possibly be. My recovery from gum surgery was quick and virtually painless, which tells me it was done skillfully. My thanks to them all!",
+            "time" : 1630005346,
+            "translated" : false
+         }
+      ],
+      "types" : 
+      [
+         "dentist",
+         "establishment",
+         "health",
+         "point_of_interest"
+      ],
+      "url" : "https://maps.google.com/?cid=10944815682745468032",
+      "user_ratings_total" : 20,
+      "website" : "https://www.richmondperiodontist.com/"
+   },
+   "status" : "OK"
+}

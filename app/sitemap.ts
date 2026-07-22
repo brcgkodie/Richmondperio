@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
-import { SERVICES, TEAM } from "@/lib/constants";
+import { SERVICES, TEAM, SITE_URL } from "@/lib/constants";
 
-const BASE_URL = "https://richmondperioonline.com";
+const BASE_URL = SITE_URL;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [

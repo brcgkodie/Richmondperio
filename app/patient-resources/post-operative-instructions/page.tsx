@@ -2,11 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CTABand from "@/components/shared/CTABand";
 import PrintButton from "@/components/shared/PrintButton";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Post-Operative Instructions | Grove Periodontists",
   description:
     "Detailed post-operative instructions following periodontal surgery including bleeding, swelling, pain management, diet, and hygiene guidelines at Grove Periodontists in Richmond and Midlothian, VA.",
+  ...ogMeta({
+    title: "Post-Operative Instructions",
+    description:
+      "Detailed post-operative instructions following periodontal surgery including bleeding, swelling, pain management, diet, and hygiene guidelines at Grove Periodontists in Richmond and Midlothian, VA.",
+    path: "/patient-resources/post-operative-instructions",
+  }),
 };
 
 export default function PostOperativeInstructionsPage() {

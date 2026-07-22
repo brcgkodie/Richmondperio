@@ -40,7 +40,9 @@ const instrumentSerif = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://richmondperioonline.com"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://richmondperio.vercel.app",
+  ),
   title: {
     default:
       "Grove Periodontists — Periodontists in Richmond & Midlothian, VA",
@@ -55,13 +57,20 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://richmondperioonline.com",
+    url: "/",
     siteName: "Grove Periodontists",
     title:
       "Grove Periodontists — Periodontists in Richmond & Midlothian, VA",
     description:
       "Grove Periodontists — board-certified periodontists serving Richmond and Midlothian, VA. Specializing in dental implants, gum grafting, bone grafting, crown lengthening, and periodontal disease treatment.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Grove Periodontists" }],
+    images: [
+      {
+        url: "/api/og?title=Periodontists%20in%20Richmond%20%26%20Midlothian",
+        width: 1200,
+        height: 630,
+        alt: "Grove Periodontists",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -69,14 +78,16 @@ export const metadata: Metadata = {
       "Grove Periodontists — Periodontists in Richmond & Midlothian, VA",
     description:
       "Grove Periodontists — board-certified periodontists serving Richmond and Midlothian, VA.",
-    images: ["/og-image.png"],
+    images: [
+      "/api/og?title=Periodontists%20in%20Richmond%20%26%20Midlothian",
+    ],
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://richmondperioonline.com",
+    canonical: "/",
   },
 };
 

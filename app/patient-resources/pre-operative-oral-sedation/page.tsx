@@ -2,11 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CTABand from "@/components/shared/CTABand";
 import PrintButton from "@/components/shared/PrintButton";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Oral Sedation Checklist | Grove Periodontists",
   description:
     "Pre-operative oral sedation checklist for patients at Grove Periodontists in Richmond and Midlothian, VA. Follow these safety instructions before your sedation appointment.",
+  ...ogMeta({
+    title: "Oral Sedation Checklist",
+    description:
+      "Pre-operative oral sedation checklist for patients at Grove Periodontists in Richmond and Midlothian, VA. Follow these safety instructions before your sedation appointment.",
+    path: "/patient-resources/pre-operative-oral-sedation",
+  }),
 };
 
 export default function PreOperativeOralSedationPage() {

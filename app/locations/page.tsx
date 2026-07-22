@@ -2,11 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LOCATIONS } from "@/lib/constants";
 import SectionReveal from "@/components/shared/SectionReveal";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Our Locations",
   description:
     "Visit Grove Periodontists at our Richmond Grove Avenue or Midlothian Polo Place office. Board-certified periodontists serving central Virginia.",
+  ...ogMeta({
+    title: "Our Locations",
+    description:
+      "Visit Grove Periodontists at our Richmond Grove Avenue or Midlothian Polo Place office. Board-certified periodontists serving central Virginia.",
+    path: "/locations",
+  }),
 };
 
 export default function LocationsPage() {

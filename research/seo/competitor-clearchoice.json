@@ -1,0 +1,256 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "business_status" : "OPERATIONAL",
+      "formatted_address" : "4820 Lake Brook Dr Ste 100, Glen Allen, VA 23060, USA",
+      "formatted_phone_number" : "(804) 456-4117",
+      "name" : "ClearChoice Dental Implant Center - Richmond",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "1600"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "0800"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:00 AM – 5:00 PM",
+            "Tuesday: 8:00 AM – 5:00 PM",
+            "Wednesday: 8:00 AM – 5:00 PM",
+            "Thursday: 8:00 AM – 5:00 PM",
+            "Friday: 8:00 AM – 4:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 348,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117184500433937233229\"\u003eClearChoice Dental Implant Center - Richmond\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydh8NSACoTiIY5cx6Z8GbYfrcugxkpIMtg9GH9RdDzmdaWaT9fiUMRVL_0WWxHB1H6KZT_Fg9JxajJtTpe1X4TIvEH7Zc9UWHcloIYWm-Tq9bXBIoMiX2nhhTuPlp9NTFLiCpnQQao00Des_zkN8hHA-3E_96QvV0ttxwMzrVrCaRxHMibr-tsc7F9x94wdwS5xrX0rHwx4pvvgpkGZcCel92lcbQVSpJFdpBqbefjDnltWC0-ZkHcaZgoJAApXgzKVEKuWe-Zb5IcrH28OonG0z3N72hOfgHKPSRZ6HyjUwfVQV_HGNGNeGnAscNzWjORWAwpiDBu1gq5zF7xZcIqRnxQZzuApbT32UmhMzfGrFYrBFXv878g-y5rbF13dFEzVjLeFqvYXhy0XAJtI6SQp5KPK6iBG9Ig3NMJHe2ow1XL_M",
+            "width" : 619
+         },
+         {
+            "height" : 1920,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103078434626180862274\"\u003eMark\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhE6g9joA0POdARUqLQzhYxsWaa85MGClPQOmn2n-H7IIrKFP2z-QI3012RX2RBwQRa6Zoy-nYJRJhaf3NnBOefNwfQ95GUUV0w5Uzx5PwNY5A4qP3eBGpSktcGkPTjVL6N-Ok344cSXQyNMVcTbpPnRQg-ZczLNpTklYCgH0THNwPx-d8eqk3p_iA8s_7TBADH6U9sY9S0_ocTjKsgfcKcQLk206LZ2pAzBHRJfhf1ueIyC29tQa4bRAHsEGXa_bXc-DG1zCZJvOKCeO-vdmzODuSkRSgrd8SEzs1DCcXMB4a70UbMijY7bz72XV7JUxLyIqYoEJUZwKSgR4cUJG9-wGrKCpTIUDDrU1zwI35Eufax1Ou_-g7RrYv0jLqeZVgtznFjEhjRu_c6BTW9lp_rPD0WEkGnHf1jxf-avmucow",
+            "width" : 1440
+         },
+         {
+            "height" : 4800,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116945508576664981024\"\u003eYan Jing 燕京 RVA\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiwl0H7sG_XWcfOKV6tXEeH7Nb-HgT6YCqEpt0TOotu-lvMvtiIRDG8ioip86VP0UMwpfl4qiJcDnHFa_md3LjH2KYm0UsyHeOJnRB3ftXGEbzIgff9-gowdJQY3EFQCoVdxhudMKt00JW5gvfsl0N2EE4NeF7Fk8uno5QtwxClP-1pXa_1oI89K42u9MUG9Xzrzb10DPhZG2ocyKFr1NlyWmizbNk9r-EK6zax66KspITkuujv4ErcigEWrWOyVbF7AKp3otC82hOlo__ICurMGdPuYJyn4uX1W3Fexqtu2vZXTWlJMtdFY-1a3AozrTUzyCIinLRGb6RWBoCklt3I4hUQdCezV7X8LpaZ2mISE1wWATGTCQq9i7YdKWP0mcGBYUVqlhDc1omsdsS2iQn0RkfM6qtm6LJzDR_C4NGjbpJzHsdJWgu0E4WK_ecJ",
+            "width" : 3600
+         },
+         {
+            "height" : 3201,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117184500433937233229\"\u003eClearChoice Dental Implant Center - Richmond\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjJ1d0-oCt3f_fDmTFY3NOR_j5pqqdn5U2-AZkarKNr67YTEo_Tt2F-sBpae9DuPHLoaIYJJb5DdCpbcznUaqmExl4voTQj4CklB_1RMK0DGPbHVd_XWxx-pWdOE47V0HgbVqYdeFaCHgynWicYC1zCTCkCG2veAdw8cYAlWuIE3lj19ZyhJZT4RhQKBlWLp8y3YfgLFllo5JKajaMobE7RlGtSniz1WHq-r3Ol_sRJetiD3I2qqM0vPdossBY5G3DNqJjcFSjpAx7lxnodDT8LO1ljYFglOTY9vzvGVcUZm89vK8UmJE9dtKokQJeqhcfQo19ou4S58oNb6-3YH0_NiJgjGXs4NU0VnUWvi6S0mtLdCZ6Sw9qUsJ90eui7YlShFuf-OUvFhnFpThQZowntbCXlg5oQPWHPtNIoVIfrNlRN",
+            "width" : 4800
+         },
+         {
+            "height" : 3677,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100418812717458821925\"\u003ejerry lowery\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiw-Iu_-wKm16EG97dPhC23oNr3zV2lOOr1wK4xFWlowqjCYXYvfBaffxwwvgKyoSPnsJ6vl7JVkZuyUdcKJs3sKyBj85xhvrsbphVM7jEu_3DvVz8lnTNI3R6lrdWDT_zaKS5s6cO-SfycZprr_rYtNXoailFvUuR9LGXJwbWbLMqTYOVm6nwvW3R0aiNg1_ufgL86nD4AUf85epgxLTs5L2CnHTlch_uIO0aEaIPAl8Dy466I70GlJ76JT5sN5dQCJo669boG6d1fY--JiB8VS3wM0ZYE1cYdVjlYGrfiJY2829Qpzu54cdkLG0NczBp97_SE6I59ZuFlB4Ss5O3ZJZlVvzgMj9YVFef1OMMxCY9gsYEDvT3KCbzFrAnXJN2kEEY_xPLos6v4ZwZS7N53F4fnD4W1gj1Vme3SuPgptw",
+            "width" : 2157
+         },
+         {
+            "height" : 1200,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117184500433937233229\"\u003eClearChoice Dental Implant Center - Richmond\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgeda2kBYa9k-4z_sO1Sxn7U-hPatezNXXgVuFrXPJ1vvNRmd42I7LVTV9jCfkvrA7-JefiNPBd6Miv_nDcW06GOXyRgLrOVZZKDgQ7ODTkEY209vA-iBb9z1NnOf32pNIoyI192jGj3e58_tbx22dKXGtZ2zPHZ7WojeCFfSh1n3qDEN876EEEtqfj4OueM-MjBeVqHcp3PlrhTYCMzUzeImjDdyiwhHgcSYgv2VJ_rL7jms1xAh2mpEfYaXhcv7vZAz8QCUEyQDobduPra49OwiRcfMatFmr7czJubm5_H4V-X5WqWQlsyz3b3f-EPa-OEKwFJh-j3slBqwN6hfcv7nWpl1bIlwcKtgMUe3Z9-OHAoQSl6OUHhD4tiDugaBPwbgOsORaRL5dmNkm4FV3-KC_Uw_w08uDaFHUj2vw00g",
+            "width" : 1200
+         },
+         {
+            "height" : 3201,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117184500433937233229\"\u003eClearChoice Dental Implant Center - Richmond\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydit7Vl31g3VRE91m4POoiIkF8d47ya-W-zQaiem0RoINQfdDtPVZqggNCzumLzAWFNZB-D3rX3rohZ0vnAbVcjUf6Pd1z9lcO-elsiyXH9-rbxQdWS-k8C8DZJdVyMR7TNGVHSp0OpxVBYzEuzR6QFjq5wW_wLS7en5aV8VByPis7yKTMQFXZzAKOYizHTU0eceeHwGN-DTPqEQW_08XOnaSP9I93crQLEmUjmo4A0hQB6RziWTWYUdEFvg-TpsWtNal_af-sZp3P4qc10eaXPxh8Wd78s__jCEp6hN6HRIS1iFhYHiHXeq9iS45msuApQOE7yzTwid3qTusjI50FTMuNp434bYS7VpBjtu2QghN4WcNjFKMh1deGcmicqntOlGHNQRSQWyYmHPy79OVhYTfivyuOhFOvjwjtl63gsr-B21",
+            "width" : 4800
+         },
+         {
+            "height" : 3201,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117184500433937233229\"\u003eClearChoice Dental Implant Center - Richmond\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhknVdE7bOI2EzDkK1E0z9dLlTVsEAKLaW8GP_7-68b_LIY3OS3bsv20uZuHBCAXHZPX2sqKpKDcVlgJlUBSqVtxi3oVaWzjssvzgsi7jtW58W1kmoqLwFgctaaGpFjT0qMu3n6l61TV-xWbQVAuiMBWMcngI3HA9wreT1WRoggQLijmsdlr3l3KQw6aWM8T-0CGcSvSH85L4Aj6WnVJ3Q0jIgpkhC6HE7Go0wUDzr8Zz-qQ5AA4YWLhm3EmRmv6kHifrBrtgE-NzrlIaqsjLPI3XYMEzX-LCehU2n3LCMDVzgXuzBfQlyUlZuTMYY_lNn11STFvUnunotgEpXm5TZzJKd2q2-dDi-22ODW2oL56r4LqrKhhmhTaIIQW4D6ft6AE_zWAtBOvsESzKaZUlpOv_oqTYCmuCtPdb7KM47NkV_r",
+            "width" : 4800
+         },
+         {
+            "height" : 619,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117184500433937233229\"\u003eClearChoice Dental Implant Center - Richmond\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhkTT2D8TJUasww9h7hK4q35J5NTWJGvBsi8nR4f9qEJEm-3c-UXWnxGgg0Sl7h4ffKwMPLWF3e3fGqDh6ZQ5rec5Lq5pYb3lUthohfxah79hUOKIoT0lkANijaUS2VPSwtQHN9GiYNuuXCKBRooY4QJanOz3NiN1b2BL0RNutHOw2mWWhZ41fWUPZZtPuQYLSooE1bQgf7qeMN0XDVmmzMIdgFaPNhWVDmbu6UVAYZRmhxiTzaFBIPDqNb7HTgDBF-Hx0AfvXXPJGFA7ZTaxuZbK4y3Sl8I-7Uw5SGrcwSSVCgj3hr9U19ww1FeCexx98kfM_rxiKRw85A2nXeow0AbmMTX8RUGEfgbgxu3aKYdwUf4B1rKIwXFC0_SBqOU3W6clXuPBS5wEENUdNPxJ_zEzgkinvHPdwU4puao2k3xQ",
+            "width" : 619
+         },
+         {
+            "height" : 3201,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117184500433937233229\"\u003eClearChoice Dental Implant Center - Richmond\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydi46re70aFGQZ8U2o5n8_o8vDfSeYuSpaJXYH1WA_epya3AEvcuBCuPpUTy95sPA0M4g7myeBuVs0-ckKN3SIPvFlZ60MU0WhWITQsDQVviCeMxugxsyULVspEpOX86pHv5cEg1hQqjXKYeTRMXBKE34nV2IwxWEici6l7LU7ELMxBRUGLUuogEHRDJkBMGateVOIhrPDJEcly7xSu8-Zotk6nzau4OCJYid8AjWn1b0fEz3hwmAFvHnfOIfUFxbbAUN_PJ7hJkhMx5r0pqLuozKvj743VkleJunLyiPMYn_VS6COuQR9xjBoB9GXPocBftWQX0tjxajJc9Jqy2LRhpCbkuod_zl9gLictKGRKzcJSRgtTQ3pJAVOcmT9shP630pUpv3CZTag-bi2ipuXSq49EA_gYtUXcDHqUS9XDH6JXA",
+            "width" : 4800
+         }
+      ],
+      "rating" : 4.9,
+      "reviews" : 
+      [
+         {
+            "author_name" : "Monica Jocic",
+            "author_url" : "https://www.google.com/maps/contrib/110302164318358893838/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocJK-ZsjqBdjVEzJLx820yBvWJ-rclv2vjZw0wkKlYWxhu8FKg=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "4 months ago",
+            "text" : "Getting implants at clear choice has been the best decision I have made! The people in the office are so welcoming and treate me like family. Kiara the assistant has the best attitude and vibrant personality. We always have fun when we see her in the office! The implants were life changing! I have an amazing smile beyond anything I had thought it would be like! I can actually eat WHATEVER I want now. I am no longer in pain from my bad teeth. Doctor lara and doctor O are the best doctors. They made me comfortable and did amazing work. Anything I wanted done they did or anything I wasn't sure about they fixed. I highly recommend clear choice to someone looking for implants. The experience here has been great from beginning to end!",
+            "time" : 1772553175,
+            "translated" : false
+         },
+         {
+            "author_name" : "chekai pajarillo",
+            "author_url" : "https://www.google.com/maps/contrib/113731291937019578374/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocJQyqgSjH5V7msOW73_YkIGjnUa1kLvIqYiVnWzvEdfsI1UQw=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "3 weeks ago",
+            "text" : "I love this place!  I had a wonderful experience at this ClearChoice office! From the moment I walked in, the staff made me feel welcome and comfortable. Everyone was kind, sweet, professional, and took the time to explain everything clearly. The doctors was gentle, patient, and made sure I felt at ease throughout my appointment. I truly appreciate the excellent care I received and would highly recommend this ClearChoice office to anyone looking for a friendly and trustworthy dental implant team. Thank you for making my visit such a positive experience!",
+            "time" : 1782479202,
+            "translated" : false
+         },
+         {
+            "author_name" : "DAPHNE THOMAS",
+            "author_url" : "https://www.google.com/maps/contrib/100982096100688558092/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocKc1p9M3IojeMysbPjMgizaEPOrSxHUD3RFwkCN-AoZW0f4ZQ=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "4 months ago",
+            "text" : "My experience being with clear choice was absolutely the greatest.  From my first day, throughout my entire treatment process. I will recommend them to anyone looking to improve their dental structure. I had 5 implants placed and I never felt any pain from the beginning of the procedures to the final day of my installation.  Brittany was my assistant from day one. She is the best. Very knowledgeable about implants and the process as well to letting you know what to expect on each visit. I felt like I was hanging out with friends each visit. Thanks to all that helped me like my smile again. You guys are the best. CLEAR CHOICE IS THE PLACE TO GO GOR ALL YOUR IMPLANT NEEDS.",
+            "time" : 1773078988,
+            "translated" : false
+         },
+         {
+            "author_name" : "alan carter",
+            "author_url" : "https://www.google.com/maps/contrib/114330088274599651889/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocIM0iiUQrn6E9sWZrtHcPXZl5_gPMqIrjd8mczajnqtjnvm7w=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "a month ago",
+            "text" : "From the first day, I walked in there everyone was wonderful. I enjoyed my experience. They showed me around and explained everything to me each room what the operation was in each room and I ended up signing up to get Implants. I went for my first procedure. it was wonderful. Everyone was just so so nice. I couldn’t ask for a better experience. I went back for my second checkup and that went wonderful too. Awesome. I’m waiting for my third checkout for my final checkout and I’m sure it will be just the same wonderful thank you clear Choice I got my sexy back.",
+            "time" : 1779577882,
+            "translated" : false
+         },
+         {
+            "author_name" : "Rowena Johnson",
+            "author_url" : "https://www.google.com/maps/contrib/103640896498649788107/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjX0n6BHkZNaRSDn0uMnNwsYMnd2rV3wPmJaIpr7SE5TSdXYx0Q=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "a month ago",
+            "text" : "I absolutely love the office staff.  Clear choice was the choice for me after visiting many implant centers to be told I need  zygomatic implants.  Clear choice was very honest and thorough.  I didn't need zygomatic implants and had a successful surgery with no pain limited swelling.  A year later and all is great!  Thanks Clear Choice for giving me a new smile and my confidence back.",
+            "time" : 1781736928,
+            "translated" : false
+         }
+      ],
+      "types" : 
+      [
+         "dentist",
+         "doctor",
+         "establishment",
+         "health",
+         "point_of_interest"
+      ],
+      "url" : "https://maps.google.com/?cid=12751924262245822978",
+      "user_ratings_total" : 488,
+      "website" : "https://www.clearchoice.com/locations/va/glen-allen/4820-lake-brook-dr/?trans_id=rchgblisting&utm_source=google&utm_medium=listing&utm_term=richmond&utm_campaign=googlelisting"
+   },
+   "status" : "OK"
+}

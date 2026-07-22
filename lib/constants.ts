@@ -7,7 +7,8 @@ export const PRACTICE_PHONE_MIDLOTHIAN_DISPLAY = "(804) 794-7094";
 export const PRACTICE_PHONE = PRACTICE_PHONE_RICHMOND;
 export const PRACTICE_PHONE_DISPLAY = PRACTICE_PHONE_RICHMOND_DISPLAY;
 export const PRACTICE_EMAIL = "info@richmondperioonline.com";
-export const SITE_URL = "https://richmondperioonline.com";
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://richmondperio.vercel.app";
 export const OLD_SITE_URL = "https://www.richmondperioonline.com";
 export const INSTAGRAM_URL = "https://www.instagram.com/owdperio/";
 

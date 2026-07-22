@@ -6,6 +6,7 @@ import BreadcrumbSchema from "@/components/seo/BreadcrumbSchema";
 import DoctorHero from "@/components/team/DoctorHero";
 import DoctorBio from "@/components/team/DoctorBio";
 import CTABand from "@/components/shared/CTABand";
+import { ogMeta } from "@/lib/og";
 
 export function generateStaticParams() {
   return TEAM.map((member) => ({ slug: member.slug }));
@@ -22,7 +23,13 @@ export async function generateMetadata({
 
   return {
     title: `Dr. ${member.name}, ${member.credentials}`,
-    description: member.bio,
+    description: member.bio.slice(0, 160),
+    ...ogMeta({
+      title: `Dr. ${member.name}`,
+      description: member.bio.slice(0, 160),
+      path: `/team/${slug}`,
+      subtitle: `${member.credentials} — Board-Certified Periodontist`,
+    }),
   };
 }
 

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "9c42203f-88d6-41ee-934d-7330c80d0fb4",
+    "status": "completed",
+    "display_name": "Seedream 5.0 Pro",
+    "job_set_type": "seedream_v5_pro",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_000714_9c42203f-88d6-41ee-934d-7330c80d0fb4.png",
+    "created_at": 1784678834.473118,
+    "params": {
+      "prompt": "Using this real converted-house dental office as exact reference — same tan gambrel-roof two-story house, black shutters, white french-door entrance, brick garden walls, yellow flowers — create an elevated architectural photograph at warm golden hour: gentle sunlight on the facade, lush refreshed landscaping, clean sidewalk and street, soft blue sky. Professional real-estate editorial photography, inviting and upscale, photorealistic.",
+      "medias": [
+        {
+          "data": {
+            "id": "c7d51ff0-00a6-42b6-8883-86b1d78691e5",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/c7d51ff0-00a6-42b6-8883-86b1d78691e5.png",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "batch_size": 1,
+      "aspect_ratio": "1:1",
+      "width": 2048,
+      "height": 2048,
+      "resolution": "2k",
+      "seed": 373960,
+      "reference_elements": []
+    }
+  }
+]

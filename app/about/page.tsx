@@ -2,11 +2,18 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import SectionReveal from "@/components/shared/SectionReveal";
 import CTABand from "@/components/shared/CTABand";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "About Our Practice",
   description:
     "Learn about Grove Periodontists — board-certified periodontists devoted to periodontics and dental implant surgery in Richmond and Midlothian, VA.",
+  ...ogMeta({
+    title: "About Our Practice",
+    description:
+      "Learn about Grove Periodontists — board-certified periodontists devoted to periodontics and dental implant surgery in Richmond and Midlothian, VA.",
+    path: "/about",
+  }),
 };
 
 export default function AboutPage() {

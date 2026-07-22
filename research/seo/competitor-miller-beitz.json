@@ -1,0 +1,210 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "business_status" : "OPERATIONAL",
+      "formatted_address" : "5700 Old Richmond Ave C-14, Richmond, VA 23226, USA",
+      "formatted_phone_number" : "(804) 285-4867",
+      "name" : "Drs. Miller & Beitz",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "1300"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "0800"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:00 AM – 5:00 PM",
+            "Tuesday: 8:00 AM – 5:00 PM",
+            "Wednesday: 8:00 AM – 1:00 PM",
+            "Thursday: 8:00 AM – 5:00 PM",
+            "Friday: 8:00 AM – 5:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 2445,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108770197393905921090\"\u003eDrs. Kaugars, Miller &amp; Beitz\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydg3nex-iFvXe-Ena9muUPmhFeOKCKyrrGpQdrPaSy0BJ-OgGPCxCMSg8UCu-5xVmKS90_KCPDK7lsa_ehULpEu6fw3MH8oy8-rgKlg8ykYHI4Jgjw12bDb67Xsy6sUrNz4C0iQ2wc1ZdRudWLCJuoMH8iySNHbO6p69Mftpx_o6GGqUodHbz4QmobyAb--LLSj7ttb5wzMuo2Gg4nc2teNRPyeYzy1EUqXD1nmTRaDSI5GRmh-AMmpeDReKTnXpEYZ2HeOj98biEbYk8L4QNi5OSwBtjXn-f_dKWeePGFEBiw0M04_A8C57-nDZyb4c657ZOrqyFRhoSgYa_UgULqN2WE6BHs8sZe2iO8UW_xxPb2_47lngBs3ypfwv6FaQ85gAFlbGaibPwMAxLdMtSeB-IIO0wRmcy9KJpHetfNQKsg",
+            "width" : 3840
+         },
+         {
+            "height" : 1602,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117132774781133092991\"\u003eDrs. Miller &amp; Beitz\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydib_TfkE0ZawYsJbOUewRas22H6U6aLllkGz48HnzhNhcHPx6SFZDZSnluX40vL0xFyh2TXk4xLCmg6qQdPGDIV8ntn4SynNhuxDU4OVuTyg7iHnFbeT38H7pj7SgN8c0wfUc-J4IyIYA-QsQ6N5jnlKrJLhgFAdvskBTR6kWteS_rO2waPAscEnYnEmkn8CdzmWcY61_Cz6CKV7Fh6vF4amjK_CLHMjLoAK_cXTnaX2Bt6g7H11HrVCCXmHhP3wD9yqRoztB5eUOTe4mggP-4WtBRHFMBumMxFDXtW1RgQuiLFsKSlfa_StqiybTA7Q22tZDzrgOCXh3aHDO0MCA20dh0RDsGvWFd6MgM_l6DSJwjfvtEnbWz0YsUd-W29uRUzuCIuLiCx7zpU-YPlQkqlJxgeq8WhqJ5eRTLoyJ_IWC-o3upTuaxST9WVvI0_",
+            "width" : 2048
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/102987525826799531636\"\u003ejames dunn\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiCJKcKwUfOX1IYc_vOJJ60S9Gcm-lErDzEVWrKQ0t4duFf9IEU8nnh2WVvrAyASrcyCWYRXzAUsLFzFLzxjt4C2zAy183uGEeZleckdiWkE_J0SOihpNjVlHjlV2fJHGyW0PJUMxObhfkaUzsI7DLKYa3nCSwVc2qCFvN12YsjaFmA0nJCfH8s0CVTNhSlenrIPq48hBD0Hx0Hy7iSXHLiYnMCLmfot4ddRwh4csHN5OZkDHrL0Q7zIGT94K3iHlr_ghLH9tivdhDhGkdArMaWCcE0oKBJHp8uANRGQZwwpKr5nKuMuaznFPv1xhYgre8aQOjsGkwAm5f37ocxDWM1SSV_cz7PjQt7HuUnrGpe1-wqSmchxswko99Qbk3GJj_6LPNOJvR5_1Y3mIb_dntBjDL6je3HngFBFbExtBfqzzp44l32xqLsP_L6thFT",
+            "width" : 3024
+         },
+         {
+            "height" : 1472,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117132774781133092991\"\u003eDrs. Miller &amp; Beitz\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydg-V6IFiNYNFs3CzkvGnoT0RasUfusBZOOE1moyRKG4XQ8_4IiM-ovqxYZhKkizCTcHbmLEtnKEfh2Ga_tFkUpB2xSFnJkbSRQKRkI3c7q0jhDnrGwxU7uf-k7djRwAC1KXIq7KBoTubcW1UnY3x5qmfig2yZX-j81dAtLrkQUkqrESPGWPmVosR18pgp_pyB_hkyG3ocvl2ZKYNwfWii34WE7F_MbA8j_u6plr77A98YCJdBq1mHFhxgUMoCM4y5RbgSaAikt1S1RScZnbHjBBz2_O948VcDTxM3KhHGuMWfeGleNZb1e8qCJ5gbe_YWZIIxnAsWG_6O_6NO0hsBjeNvk5lfVMQYCnOPr5ueVCDJEmtD2R39EK9x8Z0U8tvjXmmjCNhotswAxmsbGB1kijW00knNA4-LpEZNMsmBGsTWMCJasYOJQax44BLA",
+            "width" : 1186
+         },
+         {
+            "height" : 2339,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117132774781133092991\"\u003eDrs. Miller &amp; Beitz\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgpUgEbit6ofB8SMeO6vYtyFK9EuwDfQXrNE_SeYnkEj7EIT5v6YyQFDTj216WEPDdNBvaA7IylRtq0LYqV-4d1VyBj_LPGI5d-emds9dyR87hzjlTlFFOKlYE7reKR6ABnFePPAzL9Z-7imRINiVOC3ZJE9dFi7mNZRIdvXQq2XNkzo3Kv4Hx6BEZanYZLtueF5OkrLj3tE9A83PbJ1iZV68IjJAtcdcvg_7jKhT8OGl5DPPfLIZv9XfrpOqHvAMWWuhvOUA6v-dbvSwKi-RwLg7INmpuuA0t5VTQNOcMgaVEJs2oLy-HnkeJk4kM5uPdO6MUgzwiXwdBUvcVhXFUYQJYTRvxpoU-cmkuB9r1eQqa5Xv6xuN39zmiW0KSkmz6kTN7u68lm8lxWoKV7Ya00EdUTv9vgUNPGug0-znvU4FBo",
+            "width" : 3024
+         }
+      ],
+      "rating" : 4.9,
+      "reviews" : 
+      [
+         {
+            "author_name" : "J. Michael Everett",
+            "author_url" : "https://www.google.com/maps/contrib/100506500444347224704/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjWAItwOPJYxYYMw1s7zV-5afdH0eaaJ6nXXbb3y73g2gZfD9CE=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "4 weeks ago",
+            "text" : "I went in for my 90 day Cleaning, they did an excellent job as always, and I was advised that I should have a general Dentist to take care of manners that are not handled at this office. I took that advice and came home and immediately made an appointment with a general dentist. This office does an outstanding job of taking care of all of their patients, their skills Our unmatched and their professionalism goes above and beyond. I would always recommend these very fine people from the moment you walk in the door until you leave and feel comfortable that you are in good health. Thank you Each and everyone.. Say Michael Everett.",
+            "time" : 1782147027,
+            "translated" : false
+         },
+         {
+            "author_name" : "Stephanie Berv",
+            "author_url" : "https://www.google.com/maps/contrib/111723753482472186296/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocI4H6gUd537sSsoXb7Vy9UP_9_3yLyV9wDxR6woIxMh6s7BXw=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "7 months ago",
+            "text" : "For someone that fears any dental procedure I was so impressed with Dr. Beitz. She is one of the most genuine,  informative and considerate doctor that I have ever had met. Her kind and positive attitude and as well as her professionalism and medical skills blew me away. Although the 70’s are calling (as far as the decor -lol) the level of care that you receive here from the doctors to the staff are outstanding.",
+            "time" : 1765816296,
+            "translated" : false
+         },
+         {
+            "author_name" : "Cynthia Maghakian",
+            "author_url" : "https://www.google.com/maps/contrib/101259443659497619480/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocLrJqxcIYYMTdq31gwSQm_hSCoEK-Rcxt5QJI6SpEXZyS30Wg=s128-c0x00000000-cc-rp-mo-ba2",
+            "rating" : 5,
+            "relative_time_description" : "3 months ago",
+            "text" : "I saw Dr. Beitz for an evaluation as referred my DDS. From the intake phone call to check out, my experience was stellar. Her assistant Montel was kind, personable, polite,  and professional. He represented the practice beautifully. Dr. Beitz was a delight. Full of positivity, knowledge, and education. She took her time and gave me the opportunity to ask questions. Her bedside manner was superb. She instilled complete confidence in me!\nLisa at check out was pleasant and helpful.\nThis practice is a gem; thank you all for you kind and excellent service!  I recommend you HIGHLY !😊",
+            "time" : 1776184074,
+            "translated" : false
+         },
+         {
+            "author_name" : "Pamela Smith",
+            "author_url" : "https://www.google.com/maps/contrib/117958557920564103218/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjXGGGZAMDzX1Obtk9DTDQ5bm2k7H8xxPWR-vJ7tTQfjyajyNlfU=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "a month ago",
+            "text" : "From the beginning that I walked to the counter, I was greeted with a good morning, and I said, good morning as well, and the young lady began to ask my name and she looked to see what procedure that I was having and was telling me a little bit about what's going to take place and that very nice,.always. I begin to sit down\n\n, then somebody call me back when they were ready for me.  They are very nice group of people,  Dr. Richey she just the sweetie,  I can talk all day,but I know she have to do . Dr Richey is a sweet and caring dr.  I will return.",
+            "time" : 1781914382,
+            "translated" : false
+         },
+         {
+            "author_name" : "Carol Wall",
+            "author_url" : "https://www.google.com/maps/contrib/104535149779706139119/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocJqDb6BlFYxqwBWiHbKgK4RRWfBql_X6WVRoDWnzVqXjRrpEA=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "a month ago",
+            "text" : "For the past 30+ years my experience with this practice has been nothing less than stellar. Terri does a fabulous job making my gums and teeth perfect. It's simply a fabulous practice!",
+            "time" : 1781128655,
+            "translated" : false
+         }
+      ],
+      "types" : 
+      [
+         "dentist",
+         "establishment",
+         "health",
+         "point_of_interest"
+      ],
+      "url" : "https://maps.google.com/?cid=1559615615627726418",
+      "user_ratings_total" : 774,
+      "website" : "http://www.richmondperio.net/"
+   },
+   "status" : "OK"
+}

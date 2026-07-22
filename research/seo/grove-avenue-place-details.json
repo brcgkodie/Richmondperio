@@ -1,0 +1,354 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "address_components" : 
+      [
+         {
+            "long_name" : "4909",
+            "short_name" : "4909",
+            "types" : 
+            [
+               "street_number"
+            ]
+         },
+         {
+            "long_name" : "Grove Avenue",
+            "short_name" : "Grove Ave",
+            "types" : 
+            [
+               "route"
+            ]
+         },
+         {
+            "long_name" : "Stonewall Court",
+            "short_name" : "Stonewall Court",
+            "types" : 
+            [
+               "neighborhood",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "Richmond",
+            "short_name" : "Richmond",
+            "types" : 
+            [
+               "locality",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "Virginia",
+            "short_name" : "VA",
+            "types" : 
+            [
+               "administrative_area_level_1",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "United States",
+            "short_name" : "US",
+            "types" : 
+            [
+               "country",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "23226",
+            "short_name" : "23226",
+            "types" : 
+            [
+               "postal_code"
+            ]
+         },
+         {
+            "long_name" : "1649",
+            "short_name" : "1649",
+            "types" : 
+            [
+               "postal_code_suffix"
+            ]
+         }
+      ],
+      "business_status" : "OPERATIONAL",
+      "current_opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "date" : "2026-07-27",
+                  "day" : 1,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "date" : "2026-07-27",
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2026-07-21",
+                  "day" : 2,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "date" : "2026-07-21",
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2026-07-22",
+                  "day" : 3,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "date" : "2026-07-22",
+                  "day" : 3,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2026-07-23",
+                  "day" : 4,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "date" : "2026-07-23",
+                  "day" : 4,
+                  "time" : "0700"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2026-07-24",
+                  "day" : 5,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "date" : "2026-07-24",
+                  "day" : 5,
+                  "time" : "0700"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:00 AM – 5:00 PM",
+            "Tuesday: 8:00 AM – 5:00 PM",
+            "Wednesday: 8:00 AM – 5:00 PM",
+            "Thursday: 7:00 AM – 2:00 PM",
+            "Friday: 7:00 AM – 2:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "formatted_address" : "4909 Grove Ave, Richmond, VA 23226, USA",
+      "formatted_phone_number" : "(804) 355-6593",
+      "geometry" : 
+      {
+         "location" : 
+         {
+            "lat" : 37.5681719,
+            "lng" : -77.5059042
+         },
+         "viewport" : 
+         {
+            "northeast" : 
+            {
+               "lat" : 37.56946958029149,
+               "lng" : -77.5045891697085
+            },
+            "southwest" : 
+            {
+               "lat" : 37.5667716197085,
+               "lng" : -77.50728713029152
+            }
+         }
+      },
+      "international_phone_number" : "+1 804-355-6593",
+      "name" : "Overstreet, White & Dunegan, Ltd.",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "0700"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "0700"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:00 AM – 5:00 PM",
+            "Tuesday: 8:00 AM – 5:00 PM",
+            "Wednesday: 8:00 AM – 5:00 PM",
+            "Thursday: 7:00 AM – 2:00 PM",
+            "Friday: 7:00 AM – 2:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 1201,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106214041351984236667\"\u003eReilly Egan\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydic8qNspbIaLgnUNPu7zgv499O7Lhj80Fpx8CyelhgPK85BBENVO7rMPeB2DMIrHShwFKOs7ltmfTr0sbiwKzkRSqcBiO0gUVF7TPys-_VMg_wOGIeX7GIYojOOD8i92dXdgaPaah8yclOBFS2YQmcmLWTEvydRexAtbhew2BJR6tLXHZnOsgK7T7SF_qsPxIPns5ZeOCY4ldVn75ikl-yFUjzivNQyTGriln8LMmpg5HTUHcY_eKRKdvPQNb07QkDujPDQGB9aMMRN86Tih-DMKcnPE7hNAqzW8IXCfNCf53b6pwBbSb_2HZGaQd4PODcKOf6UVK61HLjIAjeBgNvjydQ9RuC9RhGnHjbH2Cu3apEqltGcTd7CNKgXzUOxW8ZDQJG-3cGu6ood2bm3qBycySBZls9OwBY18_Bjgjww2e8k",
+            "width" : 1920
+         }
+      ],
+      "rating" : 4.6,
+      "reviews" : 
+      [
+         {
+            "author_name" : "Debbi Marks",
+            "author_url" : "https://www.google.com/maps/contrib/116027642523164159468/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocIB8pXK1C2B9fxbTdt17jaB20wBdjAzIAk95sGISVObeA06-w=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "11 months ago",
+            "text" : "Mariana was top notch! I had a scaling done on my upper teeth and cleaning on my lower teeth! Very, very professional and for the first time I had no pain after the Novocain wore off!! I will request her for my next appointment! 10 star service! Thx !",
+            "time" : 1754419286,
+            "translated" : false
+         },
+         {
+            "author_name" : "Cherie Lee",
+            "author_url" : "https://www.google.com/maps/contrib/104146004265313028412/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjV9vpLiciSSFiBJHuRABuzFn0IbdQR79bzRB9TY_dCA5CoFoRu2=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "a year ago",
+            "text" : "Dr. White & staff are amazing. They make me feel comfortable. They take the time to clearly explain whats going on & how to care for my treatments.  I appreciate the care I am given.",
+            "time" : 1751047608,
+            "translated" : false
+         },
+         {
+            "author_name" : "Reilly Egan",
+            "author_url" : "https://www.google.com/maps/contrib/106214041351984236667/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjXDdABxITKr7ryffzrPLkkwufUe_TqPX8JUGSpyZ8xkNLesVvANqQ=s128-c0x00000000-cc-rp-mo",
+            "rating" : 1,
+            "relative_time_description" : "3 years ago",
+            "text" : "I had my wisdom teeth as well as a tooth extracted by Dr Richardson a couple years ago. I woke up during the surgery feeling all of the pain of my teeth being extracted because the anesthesia was not properly monitored. I also had purple marks all around the roof of my mouth and gums because the suction was left on my gums for too long resulting in pain and bruising for weeks after the surgery. I remember the surgery and pain as I was awake for the majority of it with a cloth over my eyes preventing the doctors from checking that I was awake.This was a very traumatic experience and I would not recommend this practice to anyone.",
+            "time" : 1669233370,
+            "translated" : false
+         },
+         {
+            "author_name" : "Shannon Close",
+            "author_url" : "https://www.google.com/maps/contrib/103499563605401697847/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjVescmXvnS3KGTsNib2vi3E_6kuS-RI9TRMSAReuPe0N0U-QJU8HA=s128-c0x00000000-cc-rp-mo-ba3",
+            "rating" : 5,
+            "relative_time_description" : "7 months ago",
+            "text" : "I had a gum graft done.  Dr. Overstreet explained everything.  The procedure was quick.  All of the staff were super nice.  Definitely recommend them.",
+            "time" : 1765933956,
+            "translated" : false
+         },
+         {
+            "author_name" : "Cary",
+            "author_url" : "https://www.google.com/maps/contrib/107779774684924415889/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjUh6BD5Uk7PjcMj-n2haxoYc_kQMXT-qu4XigD_NMKpBUqst1E=s128-c0x00000000-cc-rp-mo-ba5",
+            "rating" : 5,
+            "relative_time_description" : "7 months ago",
+            "text" : "Visit:Compliment for this office & their staff but highlighting Dental Assistant Ms Gillian, personable & efficient! Also appreciate the front desk dental employee explaining & giving me print out of my future dental  treatments & my next appt.\nLovely decor in this Richmond, VA office!\n\nVisit: Thank you Front Desk Reception, Taylor (Dental Assistant), & Dr Ben Overstreet, DDS Periodontist for your professionalism, diligence & wonderful patient services, Periodontal work & knowledge & Expertise! Most importantly, YOU ALL CARE!",
+            "time" : 1764785449,
+            "translated" : false
+         }
+      ],
+      "types" : 
+      [
+         "dentist",
+         "establishment",
+         "health",
+         "point_of_interest"
+      ],
+      "url" : "https://maps.google.com/?cid=15023645357242770432",
+      "user_ratings_total" : 44,
+      "website" : "http://www.richmondperioonline.com/"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,228 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "business_status" : "OPERATIONAL",
+      "formatted_address" : "10200 Three Chopt Rd suite b, Richmond, VA 23233, USA",
+      "formatted_phone_number" : "(804) 384-0041",
+      "name" : "Richmond Implant & Smile Studio",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "1600"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "1600"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "1600"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1600"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "1300"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "0800"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "Monday: 8:00 AM – 4:00 PM",
+            "Tuesday: 8:00 AM – 4:00 PM",
+            "Wednesday: 8:00 AM – 4:00 PM",
+            "Thursday: 8:00 AM – 4:00 PM",
+            "Friday: 8:00 AM – 1:00 PM",
+            "Saturday: Closed",
+            "Sunday: Closed"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 3176,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100899514485587782011\"\u003eRichmond Implant &amp; Smile Studio\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydg4BnxvtYxznnFvkhR-me3CHYMUm8t3M_uW9O7_J36fjm7iMVEtFcTNwSdFt45-j2i9a_wtMgwSI9NmmoUttU0wbb3dUMW-d1T8YwLkbH2ILtkPLcEFlrHGRO21eLn-gtMnSWVAWnpkjrtgdA2vcn_2ESnyn1rme3p-j0wgEeV3Jxym3rtEAlIek92yVmpnDBul3fu_hYQGC5h5DZmnO3756PvbcXwAX8g5A7W3cIPhbPtCQ0SW3Kul8qiqkjCuAfCCJG2ThWXymAHzNmvkxEuHK-Nc14vd0ZZfo4l35Hbn2SGGL9NIm0K0lm2sPuXTjrnv6uI2C89K4LNwOqryIHFQdPEjLVxAeJwSfE9RFVbGb2T04-KxpNC9dqIjbVTXtttc3W6VyLaMvzNcAq1QimhNQxEFRq5uggmZsQIDGRhm73ucNt6qtXCoA4E9-Als",
+            "width" : 4800
+         },
+         {
+            "height" : 2321,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100899514485587782011\"\u003eRichmond Implant &amp; Smile Studio\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgnibftJJ9JBx3zN6MBqLoBv3MDr3iLtmkxXAIff6EXYC02xM2SSfiHE3rqvFa5506ABf2p1x_sckx_wbTGPsb0ypKh8buuTgoUSKR0git3gwFSP9ObG_6fFV7k0KBc3l-VOHHtgOv_U4KlyPHxtP-kiorY6LXrobG_fgAUYUHkmzpanAUaPZ8E3b3Qk0i12Xge6zerL0rugv5dGBsvPxhEdtS0YfD4WfF8OYE5OH9v4mYOy5_GCg4OMkyEb6-wHcT2K8qh2NFQ5_Zy7P0oQr5lAwaqgTjHQqUJ1B81na9sfoSOK47Q4uCzn5hZrX1yzpPSXYKmkCWZ0IMcbGpsGufKCUUGRO8Qx46DcyyPuQnDUahPFC6QVyZK3M2UvLMAZ7WGgLltqZTOyapFI7Sa0gGCmE402_nmx1cBP_JPuS4SHGxjai1hYXM0BTqQmUqY",
+            "width" : 2001
+         },
+         {
+            "height" : 1914,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100899514485587782011\"\u003eRichmond Implant &amp; Smile Studio\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiF8gbYMwZdDhR3Rcf45bx_mkUN9TSxGLbFSy8A7z8hQha5o9UUPHmWKVui11za_oiaCdvJeOPIOn04GGPn7marVrfa6-yQAs8dKNO3lrVRTW9XbY1fZfFDDjRXxPOqcip9A3ssQFOL_PolNDTDVHhJbzKNy6xbLOO_9ED5LGVJzP8qymstme-mfmV0Si1MpyXjmv7BoxGR3c_MOA_VI86gtA7SWB-bXtBLqJafa_Znvu5I1uJ7DqrD9Msqg2mo1b5I_1KIP_tRZYhMEPxB2Tzpeja1DERTZz1ii3_wMg6NPcAmLIOG89rA9FXKMTn2_YgwUQs-vjA3IMc2ag__7F_pD8sTaFOA2CkJVGeaxKJnsz3GqRXKyj2vxbJ-jqo0kGLzYJB17z2NN0S24OleKk6-N2RE6yw7aAOmAN-RYq0Msp40JqwKTGl0gyU5LJ2U",
+            "width" : 1510
+         },
+         {
+            "height" : 630,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100899514485587782011\"\u003eRichmond Implant &amp; Smile Studio\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjXiOWItNLseSsSSUcTYJTG9Wga03sPNMMl4N-1zlGOz0UbE5j2S58BmaThJpS7AJNhUBLMh6E0gI2xz86S4DPBbBVvXxdxHGmJ9nEHc6NN7Vail4-A63i-6IJKygJD7MbZoCDC2XfZCoG-oKoKkaYeODoucCvgABFoO-ggLyXsIOO18V4yNu36Z_hX5Nxse26LZkepht51n5X2nItcK1hAvnjkJKBTG4jGY8wtLM99EZf7Z4e6_Pul8yW64w-ewtKxnjOvvNLb-O5FpuMqo7NtMhTxVmeh0-Awsvg0D9YvMVA_yoxDjzaxUf5nlU8Co7TDQubMaomc1by7IHvROmjyh-_Cb68QZij37TzxPA83obzF_zPW1W9dbXgc-wZNxGW90fssODAKokDnDfjYSMoDtMOat4jLwuIrnZAGh4Ktv44rFrnr1yWW6na6Sms4",
+            "width" : 1200
+         },
+         {
+            "height" : 1152,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100899514485587782011\"\u003eRichmond Implant &amp; Smile Studio\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgjQQzTVtYsbw3R6nWlXVlng5ANAiObQFAz5M9cx2fNpeL-bum-R8DeXJzpyQ8A_f4loFQ25seQcDpTxHElg9n92tMS0KDRo0bAO838oLq-E0ngEzBEsNQVrkHZqnR84wWemXCpBnVDFbcX3sU6nNAxXAgfUWlDuWwXp-ILukLhkLg3olxzPLdRfr7gDvMXMI_qZFAIqZNAvWH0lKZwSCXXNutLlN4H2IjN1CzmmUJ9hLQ2aAsxnT86k53THtIx7FRC510VzLLGwSWkHn3Uw1TlBlLdo0k6G8NFfDb_qDXZSz_Pplf3VAwJ1TzoiYnPR98T6f5DxNz-P_owxptfiuwDRIriw8mmqlYUIeX5dbdX_maYiWrLzvTx0TvV7xgI_FeLu9J6k2gXRuKcjVEJkjqRzPlacqMZVix2eUaNeO9NRLbl_1cXGO93Go0R4Gkp",
+            "width" : 2048
+         },
+         {
+            "height" : 576,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100899514485587782011\"\u003eRichmond Implant &amp; Smile Studio\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydh5ZpMKH2y7OH7RwUZgiTmZ_k5FY5uPKJDTdU1NETcm_yr54ZKkW_9lVQkX4rj38EJEEeqI0N63EHcjhidw-gN_AXKeN1wAakPbrNSgfcydc6-Rkmy43kVdpNfgofdMMgM77IFtbZO-1VYIXMYC7AUMtkDhsUcYwJP7zX1_PnoxQ-cMtF751Edh6w16xtjM5Q6UNL7tBiHcRScYqthTYUfI8iQmbxiPUPjogzW6uyQoeByP-MN0zoNOaA0dMzEZ9ObsN267L2q92ERKc1iOH53ztAHQGWi4pBthB5rybeWDf45IwUdiJ3kDquKAqqmsfg6jP3HAgBuHZusAyOqi7PAJCUBPau5NaZSYL3ZFLvdBzRau6uBE6rzBe2zJzSN3KL2MZATBcCxHTU-sbnTipizwJ6ZzigKiLeEaUbT3v0IHSgFw4naqxtPkqiJ_OTNs",
+            "width" : 1024
+         },
+         {
+            "height" : 576,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100899514485587782011\"\u003eRichmond Implant &amp; Smile Studio\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydikfe1nF0Sm0_dngv7C5GXdsvV8TylFERRa8Ebjrcs90eMbybCwI6YBUy6ypmlvYemz_mhyj-G_K118KXLAo9XFgQbn05LRTt_VY7hmMT64P3RyGTmJ8TBk2_SkDIFP9sL87MUCyIvgw-_02zJUu3TFhzWLNxAJkj3L0LXIr-KEsIDBObXhcmxOxsCQ4XRtV93d9816jSPQjDYGWzZWdWKMV8kj9kFsLEPHdbp54GRbOsRZZ13nRApnr8KxOPayVmcH2YMwebY-V-fejpp8cB9pAIVfcsLw0BLQqnbgt6RnA7WcKLBIVa2xWXDH-DHZSJjhMvocnmj00NG2DrTMTmbicgXSL2Wmfkziq5ec1gXMSm9oH17DHWPOhlVjmK96EcYwuzfIHZ1Ce85KimHYxBHoU7BscBnY2-hEsFgjQPGhm20E7Nd2KjPPG_grhjYW",
+            "width" : 1024
+         }
+      ],
+      "rating" : 5,
+      "reviews" : 
+      [
+         {
+            "author_name" : "Rebecca L.",
+            "author_url" : "https://www.google.com/maps/contrib/117804046387077019624/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocJ4mTMWmG52ymETui18YSYJXfd1mCiBGNuHmSANZhehPSANYw=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "5 months ago",
+            "text" : "I am so happy to write this 5 star review because Dr Ammoun was exceptional.\n\nMy 30+ year old veneer needed to be replaced. How fortunate I was to have Dr Ammoun take care of me.\n\nHe handled the procedure with ease—fitting me with a temporary one day;  the next day I had my replacement veneer. This quick turn around was possible because of his in-house lab.\n\nI was nervous at first, but Dr. Ammoun’s calm expertise and warm demeanor put me at ease. I highly recommend Dr. Ammoun and staff for any advanced dental needs!",
+            "time" : 1769893092,
+            "translated" : false
+         },
+         {
+            "author_name" : "Trang Nguyen",
+            "author_url" : "https://www.google.com/maps/contrib/108351577779840658067/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocJO0gQSROHr06kMmyxcZwPDxLW4lxl-WcK4oLS2UehHIDMmfA=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "4 weeks ago",
+            "text" : "I visited this clinic for a dental implant and returned for a follow-up check-up. Dr. Anmoun and the female staff were very friendly and highly skilled. It was my first time undergoing a dental procedure and I was quite nervous, but they ensured I felt absolutely no pain. I was able to eat normally after returning home without any difficulty. I am very grateful to have chosen this place.",
+            "time" : 1782162187,
+            "translated" : false
+         },
+         {
+            "author_name" : "Jon Corbett",
+            "author_url" : "https://www.google.com/maps/contrib/115831506748489558356/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocLWUBCwnAiVkRmSq_Xonk8OAPKvH-AHE1F54J0ef1EVk5mAgQ=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "2 months ago",
+            "text" : "**STOP** If you need any type of cosmetic dental work then you NEED Dr. Ammoun and his staff. Period. I came to the Richmond Implant & Smile Studio desperately needing a permanent smile makeover. And that's exactly what I got. This is not some corporate mouth mill - rather it's a custom smile studio with incredibly competitive pricing and the very best equipment which resulted in a smile makeover that blew me away.\n\nIt's very rare in any type of medical practice that you can reach out and speak with your doctor at almost anytime. I was able to communicate with Dr. Ammoun directly many times and never felt ignored or that I was just another patient. This is a man who takes his patients smiles very very seriously. His work is absolute top-notch and he is highly skilled in every step of the process.\n\nDr. Ammoun even walked me out to my transportation home personally the day of my procedure. Accolades as well to his incredible staff. Each one of them is patient, professional, understanding and very welcoming.  Special thanks to Natalia who took the time to explain my options to me prior to meeting with the doctor without any high pressure sales tactics during my initial exam and consultation. All around my experience has been extremely positive and best of all I get compliments constantly on my new smile. I would give Dr. Ammoun and his staff 50 stars if I could. It's the best investment in myself I've ever made.  I highly recommend Dr. Ammoun and the Richmond Implant & Smile Studio staff to anyone needing any type of cosmetic dentistry.",
+            "time" : 1777262459,
+            "translated" : false
+         },
+         {
+            "author_name" : "Sandra Gaston",
+            "author_url" : "https://www.google.com/maps/contrib/116666539691273203212/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocKJ4xoS_CQYZBWsmBuKwN3AbUmwaD4UtM9VGY3IsHHfTbV2ew=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "3 months ago",
+            "text" : "Call and make the appointment! You will never regret it! On Tuesday, March 31st I walked into the office for a consultation. I was greeted warmly by Nayeli A., I was immediately put at ease. I don’t know of anyone who goes to the dentist gleefully. Flor R. added to the relaxed atmosphere while I handled the New Patient paperwork, another breeze. When I met Natalia P. again, greeted with compassion because I’m certain I looked as tense as I felt; insurance handle within minutes; the Dr was next. If ever I wished I had met a dentist years prior, it is Dr. Rami Ammoun, gently checked the issue and had me back the next morning to complete the formalities. Today I have the smile I wished I had years ago, the procedure was painless, quick and Dr Ammoun reassured me that I would be happy. Three trips to the dentist in as many days, UNHEARD OF FOR ME, worth it? ABSOLUTELY YES!!! Call\nand make the appointment! You will never regret it!",
+            "time" : 1775153577,
+            "translated" : false
+         },
+         {
+            "author_name" : "Joe",
+            "author_url" : "https://www.google.com/maps/contrib/116809911842857102939/reviews",
+            "language" : "en",
+            "original_language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocK_pqcdYGK_3QamjiAX5gnTGLSagc7Ey_twKQ69kNPjlvbo2g=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "2 months ago",
+            "text" : "Dr. Ammoun is the best and his staff are very friendly and courteous. I needed all on 4 and didn’t know what to expect and I was a bit nervous but I trusted him and he did an excellent job. He has the knowledge, experience, and personality to meet the needs of anyone. I am very happy with the outcome. If you are looking for a place then stop looking and make an appointment.",
+            "time" : 1779483040,
+            "translated" : false
+         }
+      ],
+      "types" : 
+      [
+         "dentist",
+         "establishment",
+         "health",
+         "point_of_interest"
+      ],
+      "url" : "https://maps.google.com/?cid=6577476378597830057",
+      "user_ratings_total" : 46,
+      "website" : "https://richmondimplantstudio.com/"
+   },
+   "status" : "OK"
+}

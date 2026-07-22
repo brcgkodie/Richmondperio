@@ -1,0 +1,28 @@
+[
+  {
+    "id": "448d071e-a91a-481b-b4fe-86a6c89d8324",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_000715_448d071e-a91a-481b-b4fe-86a6c89d8324.png",
+    "created_at": 1784678835.487599,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "62cd2b58-47ad-4e6f-9f48-46680666e017",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/62cd2b58-47ad-4e6f-9f48-46680666e017.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Using this real dental treatment room as exact reference, create an elevated editorial interior photograph of the same room: same tan dental chair, dark walnut-grain cabinets, white marble counters, pale blue walls, window with venetian blinds and lush green trees outside. Golden hour light filtering through the blinds casting soft striped light across the chair, calm spa-like atmosphere, medium format architectural photography, crisp details, photorealistic."
+    }
+  }
+]

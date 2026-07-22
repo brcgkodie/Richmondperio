@@ -1,56 +1,68 @@
 import {
   PRACTICE_NAME,
-  PRACTICE_PHONE,
   SITE_URL,
   LOCATIONS,
 } from "./constants";
 
+const AVAILABLE_SERVICES = [
+  { "@type": "MedicalProcedure", name: "Dental Implant Surgery" },
+  { "@type": "MedicalProcedure", name: "Gum Grafting" },
+  { "@type": "MedicalProcedure", name: "Bone Grafting" },
+  { "@type": "MedicalProcedure", name: "Crown Lengthening" },
+  { "@type": "MedicalProcedure", name: "Periodontal Disease Treatment" },
+  { "@type": "MedicalProcedure", name: "Tooth Extractions" },
+];
+
+function hoursFor(loc: (typeof LOCATIONS)[number]) {
+  return loc.hours
+    .filter((h) => h.time !== "Closed")
+    .map((h) => {
+      const [opens, closes] = h.time.split(" – ");
+      const to24 = (t: string) => {
+        const [time, mer] = t.split(" ");
+        const [hRaw, m] = time.split(":");
+        let h = parseInt(hRaw, 10);
+        if (mer === "PM" && h !== 12) h += 12;
+        if (mer === "AM" && h === 12) h = 0;
+        return `${String(h).padStart(2, "0")}:${m}`;
+      };
+      return {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: h.days.split(" – "),
+        opens: to24(opens),
+        closes: to24(closes),
+      };
+    });
+}
+
 export function generateLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    name: PRACTICE_NAME,
-    description:
-      "Board-certified periodontal and dental implant surgery practice — Grove Periodontists — serving Richmond and Midlothian, Virginia.",
-    url: SITE_URL,
-    telephone: PRACTICE_PHONE,
-    address: LOCATIONS.map((loc) => ({
-      "@type": "PostalAddress",
-      streetAddress: loc.street,
-      addressLocality: loc.city,
-      addressRegion: loc.state,
-      postalCode: loc.zip,
+    "@graph": LOCATIONS.map((loc) => ({
+      "@type": "MedicalClinic",
+      "@id": `${SITE_URL}/locations/${loc.id}#clinic`,
+      name: `${PRACTICE_NAME} — ${loc.name}`,
+      description:
+        "Board-certified periodontal and dental implant surgery practice serving Richmond and Midlothian, Virginia.",
+      url: `${SITE_URL}/locations/${loc.id}`,
+      telephone: loc.phoneTel,
+      image: `${SITE_URL}${loc.image}`,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: loc.street,
+        addressLocality: loc.city,
+        addressRegion: loc.state,
+        postalCode: loc.zip,
+        addressCountry: "US",
+      },
+      medicalSpecialty: "Periodontics",
+      availableService: AVAILABLE_SERVICES,
+      openingHoursSpecification: hoursFor(loc),
+      sameAs: [
+        "https://www.instagram.com/owdperio/",
+        "https://www.facebook.com/owdperio",
+      ],
     })),
-    medicalSpecialty: "Periodontics",
-    availableService: [
-      { "@type": "MedicalProcedure", name: "Dental Implant Surgery" },
-      { "@type": "MedicalProcedure", name: "Gum Grafting" },
-      { "@type": "MedicalProcedure", name: "Bone Grafting" },
-      { "@type": "MedicalProcedure", name: "Crown Lengthening" },
-      {
-        "@type": "MedicalProcedure",
-        name: "Periodontal Disease Treatment",
-      },
-      { "@type": "MedicalProcedure", name: "Tooth Extractions" },
-    ],
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday"],
-        opens: "08:00",
-        closes: "17:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Thursday", "Friday"],
-        opens: "08:00",
-        closes: "17:00",
-      },
-    ],
-    sameAs: [
-      "https://www.instagram.com/owdperio/",
-      "https://www.facebook.com/owdperio",
-    ],
   };
 }
 

@@ -3,11 +3,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { TEAM } from "@/lib/constants";
 import SectionReveal from "@/components/shared/SectionReveal";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Our Team",
   description:
     "Meet our board-certified periodontists at Grove Periodontists, serving Richmond and Midlothian, VA.",
+  ...ogMeta({
+    title: "Our Team",
+    description:
+      "Meet our board-certified periodontists at Grove Periodontists, serving Richmond and Midlothian, VA.",
+    path: "/team",
+  }),
 };
 
 export default function TeamPage() {

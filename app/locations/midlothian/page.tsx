@@ -3,11 +3,18 @@ import Image from "next/image";
 import { LOCATIONS } from "@/lib/constants";
 import SectionReveal from "@/components/shared/SectionReveal";
 import CTABand from "@/components/shared/CTABand";
+import { ogMeta } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Midlothian Office",
   description:
     "Visit our Midlothian, VA office. Board-certified periodontists specializing in dental implants, gum grafting, and periodontal care.",
+  ...ogMeta({
+    title: "Midlothian Office",
+    description:
+      "Visit our Midlothian, VA office. Board-certified periodontists specializing in dental implants, gum grafting, and periodontal care.",
+    path: "/locations/midlothian",
+  }),
 };
 
 const midlothian = LOCATIONS.find((l) => l.id === "midlothian")!;
