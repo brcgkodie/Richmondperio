@@ -1,0 +1,28 @@
+[
+  {
+    "id": "03c1f5cb-74ab-463c-9d90-d97c5524a784",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_003924_03c1f5cb-74ab-463c-9d90-d97c5524a784.png",
+    "created_at": 1784680764.854535,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "a754aa83-0c38-4faf-81e7-056dedbc8859",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/a754aa83-0c38-4faf-81e7-056dedbc8859.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Using this group portrait as the exact identity reference for all four doctors, create a new environmental group photo: the same four people — identical faces, hair and builds, same relative heights — standing together relaxed and smiling in a bright modern dental office corridor with pale blue walls and warm natural window light, wearing the same professional attire. CRITICAL: each face must remain recognizably identical to the reference. Editorial healthcare brand photography, medium format, photorealistic."
+    }
+  }
+]

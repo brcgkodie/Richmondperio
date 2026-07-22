@@ -1,0 +1,28 @@
+[
+  {
+    "id": "94bd78f6-a2a8-47b5-82b7-dac1f601fad4",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_003925_94bd78f6-a2a8-47b5-82b7-dac1f601fad4.png",
+    "created_at": 1784680765.677724,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "d9f26b02-5963-429d-a1b9-d22633e83c47",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/d9f26b02-5963-429d-a1b9-d22633e83c47_resize.jpg",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Professional editorial re-light of this exact headshot. CRITICAL: this must remain the same person — identical face, features, skin, hair, expression. Do not alter facial structure. Only elevate the photography: soft directional key light, subtle rim light, deep slate-blue studio backdrop with gentle falloff, refined blazer contrast, natural skin texture, medium format quality. Photorealistic."
+    }
+  }
+]

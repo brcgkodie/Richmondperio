@@ -19,12 +19,22 @@ export function LenisProvider({ children }: LenisProviderProps) {
     lenis.on("scroll", ScrollTrigger.update);
 
     // Use GSAP ticker for Lenis RAF — more reliable than manual requestAnimationFrame
-    gsap.ticker.add((time) => {
+    const tick = (time: number) => {
       lenis.raf(time * 1000);
-    });
+    };
+    gsap.ticker.add(tick);
     gsap.ticker.lagSmoothing(0);
 
+    // Reveal trigger positions drift as images/fonts load — recalc once settled
+    const refresh = () => ScrollTrigger.refresh();
+    window.addEventListener("load", refresh);
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(refresh).catch(() => {});
+    }
+
     return () => {
+      window.removeEventListener("load", refresh);
+      gsap.ticker.remove(tick);
       lenis.destroy();
     };
   }, []);

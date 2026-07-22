@@ -7,8 +7,13 @@ interface SectionRevealProps {
   children: ReactNode;
   className?: string;
   delay?: number;
-  /** "fade" = simple fade-up (default), "stagger" = children stagger in, "parallax" = subtle parallax shift */
-  variant?: "fade" | "stagger" | "parallax";
+  /**
+   * "fade"     = fade-up with automatic micro-stagger of direct children (default)
+   * "stagger"  = explicit child stagger, larger travel
+   * "parallax" = scrubbed drift tied to scroll
+   * "image"    = clip + scale unveil for media blocks
+   */
+  variant?: "fade" | "stagger" | "parallax" | "image";
 }
 
 export default function SectionReveal({
@@ -23,54 +28,81 @@ export default function SectionReveal({
     const el = wrapperRef.current;
     if (!el) return;
 
-    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const prefersReduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     if (prefersReduced) return;
 
     const ctx = gsap.context(() => {
       if (variant === "stagger") {
         const kids = el.children;
         if (!kids || kids.length === 0) return;
-        gsap.set(kids, { opacity: 0, y: 40 });
+        gsap.set(kids, { opacity: 0, y: 36 });
         gsap.to(kids, {
           opacity: 1,
           y: 0,
           ease: "grove-smooth",
-          duration: 0.8,
-          stagger: 0.12,
+          duration: 1.0,
+          stagger: { each: 0.09, ease: "power1.in" },
           delay: delay ?? 0,
           scrollTrigger: {
             trigger: el,
             start: "top 85%",
-            toggleActions: "play none none none",
+            once: true,
           },
         });
       } else if (variant === "parallax") {
-        // Subtle parallax — element moves slower than scroll
-        gsap.set(el, { opacity: 0, y: 80 });
+        gsap.set(el, { opacity: 0, y: 64 });
         gsap.to(el, {
           opacity: 1,
           y: 0,
           ease: "none",
           scrollTrigger: {
             trigger: el,
-            start: "top 90%",
-            end: "top 40%",
-            scrub: 0.8,
+            start: "top 92%",
+            end: "top 45%",
+            scrub: 0.6,
           },
         });
+      } else if (variant === "image") {
+        // Media unveil: wipe + settle. Inner media scales down as the mask opens.
+        const media = el.querySelector("img, video") ?? el;
+        gsap.set(el, {
+          clipPath: "inset(8% 4% 8% 4% round 2px)",
+          opacity: 0,
+        });
+        gsap.set(media, { scale: 1.08 });
+        const tl = gsap.timeline({
+          delay: delay ?? 0,
+          scrollTrigger: { trigger: el, start: "top 82%", once: true },
+        });
+        tl.to(el, {
+          clipPath: "inset(0% 0% 0% 0% round 0px)",
+          opacity: 1,
+          duration: 1.1,
+          ease: "grove-in",
+        }).to(
+          media,
+          { scale: 1, duration: 1.4, ease: "grove-smooth" },
+          "<",
+        );
       } else {
-        // Default fade-up
-        gsap.set(el, { opacity: 0, y: 60 });
-        gsap.to(el, {
+        // Default: fade-up with micro-stagger across direct children so a
+        // section arrives as a sequence, not a slab.
+        const kids = Array.from(el.children);
+        const targets = kids.length > 1 ? kids : [el];
+        gsap.set(targets, { opacity: 0, y: 28 });
+        gsap.to(targets, {
           opacity: 1,
           y: 0,
           ease: "grove-in",
-          duration: 0.9,
+          duration: 1.05,
+          stagger: kids.length > 1 ? 0.08 : 0,
           delay: delay ?? 0,
           scrollTrigger: {
             trigger: el,
             start: "top 85%",
-            toggleActions: "play none none none",
+            once: true,
           },
         });
       }

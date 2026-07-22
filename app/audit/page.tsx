@@ -119,6 +119,78 @@ const KEYWORDS = [
   { kw: "best periodontist richmond va", vol: "30 US", cpc: "$8.11", play: "Reviews page + GBP reviews" },
 ];
 
+const DOMINATION = [
+  {
+    kw: "periodontist richmond va",
+    today: "#1 organic (old site), absent from the pack above it",
+    asset: "This site + Richmond GBP overhaul",
+    moves: "Migrate the #1 page with exact redirects, fix GBP category to Periodontist, photo set, review velocity",
+    when: "Pack entry in 60-90 days; defend #1 through the rebrand",
+  },
+  {
+    kw: "periodontist near me (40,500/mo US)",
+    today: "Invisible — pack-only query, won on GBP signals",
+    asset: "Both GBP listings",
+    moves: "Category + services + 25 photos + review cadence + owner replies within 24h",
+    when: "Proximity-dependent; visible gains as review velocity compounds",
+  },
+  {
+    kw: "dental implants richmond va (~530/mo cluster)",
+    today: "Not in top 10, not in the pack",
+    asset: "Implant hub + “Dental Implant Cost in Richmond” page",
+    moves: "Out-depth Glazier's cost page (ranges, financing, cases), internal links from every procedure page, FAQ schema",
+    when: "Top 10 in 60 days, top 5 by day 120",
+  },
+  {
+    kw: "implant cost searches (7 variants)",
+    today: "Nobody local owns it except Glazier at #4",
+    asset: "Cost page with real ranges and a cost table",
+    moves: "Answer-first pricing content AI engines can quote; refresh quarterly",
+    when: "First-page inside 45 days (KD is near zero)",
+  },
+  {
+    kw: "dental implants midlothian va (110/mo)",
+    today: "No local practice has a dedicated page",
+    asset: "Midlothian implant page tied to the Polo Place office",
+    moves: "City-specific page + Midlothian GBP services + review push at that office",
+    when: "Top 3 in 90 days — least contested valuable query on the board",
+  },
+  {
+    kw: "gum grafting / receding gums (restricted volume, KD 0-24)",
+    today: "All six procedures share one page on the old site",
+    asset: "Six dedicated procedure pages (built) + cost and recovery FAQs",
+    moves: "Ship cost ranges, recovery tables, before/after cases per procedure",
+    when: "First-page within 30-60 days of launch on near-zero difficulty",
+  },
+  {
+    kw: "best periodontist richmond va + doctor names",
+    today: "Patients search competitor doctors by name",
+    asset: "Four doctor pages (built) + reviews page",
+    moves: "Physician schema, Richmond Magazine mentions, review snippets",
+    when: "Branded queries immediately; “best” queries as reviews pass 100",
+  },
+];
+
+const AI_QUESTIONS = [
+  "What does a periodontist do, and when should I see one?",
+  "How much do dental implants cost in Richmond, VA?",
+  "How much does gum grafting cost, and does insurance cover it?",
+  "How long does dental implant recovery take?",
+  "Periodontist vs dentist — who should treat gum disease?",
+  "What happens if periodontal disease goes untreated?",
+  "How painful is a gum graft?",
+  "Who is the best periodontist in Richmond?",
+];
+
+const KPIS = [
+  { metric: "Local pack presence", now: "0 of 2 money queries", target: "Both queries, both cities, by day 90" },
+  { metric: "Implant query rankings", now: "Not in top 10", target: "Top 5 on the full cluster by day 120" },
+  { metric: "Google reviews", now: "44 Richmond / 10 Midlothian (3.8)", target: "+15-20/mo each; Midlothian above 4.5 by fall" },
+  { metric: "GBP actions (calls + directions)", now: "Unmeasured", target: "Baseline in week 1, +50% by day 90, UTM-attributed" },
+  { metric: "AI search readiness", now: "33/100 old site", target: "70+ at launch; cited for 8 target questions" },
+  { metric: "Organic sessions", now: "GSC/GA4 baseline at launch", target: "+40% in 6 months on non-branded queries" },
+];
+
 const CONTENT_PLAN = [
   {
     phase: "Now",
@@ -441,6 +513,50 @@ export default function AuditPage() {
         </section>
       </SectionReveal>
 
+      {/* Keyword domination roadmap */}
+      <SectionReveal>
+        <section className="py-16 md:py-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <h2 className="heading-lg text-navy mb-4">
+              The domination roadmap, keyword by keyword
+            </h2>
+            <p className="text-gray-dark/70 max-w-2xl mb-12">
+              For every target: where the practice stands today, the asset that
+              wins it, the moves, and when to expect the ranking.
+            </p>
+            <div className="space-y-10">
+              {DOMINATION.map((d) => (
+                <div
+                  key={d.kw}
+                  className="grid grid-cols-1 lg:grid-cols-12 gap-6 border-t border-navy/15 pt-8"
+                >
+                  <div className="lg:col-span-3">
+                    <p className="font-serif text-2xl text-navy leading-snug">
+                      {d.kw}
+                    </p>
+                  </div>
+                  <div className="lg:col-span-3">
+                    <p className="label-sm text-teal/60 mb-1">Today</p>
+                    <p className="text-gray-dark/70 text-sm leading-relaxed">{d.today}</p>
+                  </div>
+                  <div className="lg:col-span-4">
+                    <p className="label-sm text-teal/60 mb-1">The asset and the moves</p>
+                    <p className="text-gray-dark/70 text-sm leading-relaxed">
+                      <span className="text-navy font-medium">{d.asset}.</span>{" "}
+                      {d.moves}.
+                    </p>
+                  </div>
+                  <div className="lg:col-span-2">
+                    <p className="label-sm text-teal/60 mb-1">Timeline</p>
+                    <p className="text-gray-dark/70 text-sm leading-relaxed">{d.when}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </SectionReveal>
+
       {/* Content plan */}
       <SectionReveal>
         <section className="py-16 md:py-24">
@@ -538,6 +654,137 @@ export default function AuditPage() {
                   <li>AI-search readiness score: 33/100 on the current site, 70/100 on this build after launch fixes.</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+      </SectionReveal>
+
+      {/* AI search battleground */}
+      <SectionReveal>
+        <section className="bg-cream py-16 md:py-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <h2 className="heading-lg text-navy mb-4">
+              AI search: the questions we will own
+            </h2>
+            <p className="text-gray-dark/70 max-w-2xl mb-10">
+              A growing share of patients now ask ChatGPT, Perplexity, and
+              Google AI Overviews instead of scrolling results. The current
+              site scores 33/100 for AI citability; this build reaches 70+ at
+              launch. Each question below gets a self-contained, quotable
+              answer on the page built to win it.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+              {AI_QUESTIONS.map((q, i) => (
+                <div
+                  key={q}
+                  className="flex items-baseline gap-4 border-b border-navy/10 pb-4"
+                >
+                  <span className="font-serif text-teal text-xl">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <p className="text-navy">{q}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-dark/60 text-sm mt-8 max-w-2xl">
+              Supporting moves: llms.txt shipped, AI crawlers explicitly
+              allowed, FAQ and MedicalClinic schema on every relevant page, and
+              a YouTube presence — the strongest measured correlate of AI
+              citations, and one no Richmond periodontist has today.
+            </p>
+          </div>
+        </section>
+      </SectionReveal>
+
+      {/* Authority */}
+      <SectionReveal>
+        <section className="py-16 md:py-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <h2 className="heading-lg text-navy mb-4">
+              Authority: why Google will trust this practice
+            </h2>
+            <p className="text-gray-dark/70 max-w-2xl mb-12">
+              Rankings compound when the entity looks credible everywhere
+              Google checks. The raw material already exists; it has never been
+              wired together.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+              <div className="border-t-2 border-teal pt-6">
+                <h3 className="font-serif text-2xl text-navy mb-3">
+                  Credentials on every page
+                </h3>
+                <p className="text-gray-dark/70 leading-relaxed">
+                  Four Diplomates of the American Board of Periodontology, VCU
+                  faculty ties, published research, Richmond Magazine Top
+                  Periodontists. Physician schema and citation blocks put those
+                  signals where crawlers read them.
+                </p>
+              </div>
+              <div className="border-t-2 border-teal pt-6">
+                <h3 className="font-serif text-2xl text-navy mb-3">
+                  Citations that agree with each other
+                </h3>
+                <p className="text-gray-dark/70 leading-relaxed">
+                  One name, address, and phone across Google, Yelp,
+                  Healthgrades, ADA, insurance directories, and the site. The
+                  current schema literally lists a wrong address; the sweep
+                  fixes every copy of the record.
+                </p>
+              </div>
+              <div className="border-t-2 border-teal pt-6">
+                <h3 className="font-serif text-2xl text-navy mb-3">
+                  Referring-doctor link network
+                </h3>
+                <p className="text-gray-dark/70 leading-relaxed">
+                  The study club Dr. White runs and the referring practices
+                  across Richmond are natural, relevant links no agency can
+                  fabricate. A referring-doctors hub gives them a reason to
+                  link.
+                </p>
+              </div>
+              <div className="border-t-2 border-teal pt-6">
+                <h3 className="font-serif text-2xl text-navy mb-3">
+                  Video, where nobody competes
+                </h3>
+                <p className="text-gray-dark/70 leading-relaxed">
+                  Short procedure explainers and doctor introductions on
+                  YouTube feed both classic SEO and AI citations. No Richmond
+                  periodontist has any presence there; first mover keeps it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </SectionReveal>
+
+      {/* KPIs */}
+      <SectionReveal>
+        <section className="bg-navy py-16 md:py-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <h2 className="heading-lg text-white mb-4">How we measure it</h2>
+            <p className="text-white/60 max-w-2xl mb-12">
+              Every claim above has a number attached. These are the six that
+              get reported monthly.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-sm">
+                <thead>
+                  <tr className="border-b border-white/20 label-sm text-white/80">
+                    <th className="py-3 pr-4">Metric</th>
+                    <th className="py-3 pr-4">Today</th>
+                    <th className="py-3">Target</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {KPIS.map((k) => (
+                    <tr key={k.metric} className="border-b border-white/10">
+                      <td className="py-4 pr-4 text-white font-medium">{k.metric}</td>
+                      <td className="py-4 pr-4 text-white/60">{k.now}</td>
+                      <td className="py-4 text-white/60">{k.target}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </section>

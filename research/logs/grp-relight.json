@@ -1,0 +1,28 @@
+[
+  {
+    "id": "d58cef07-9616-4468-8c46-b3d05e52f49b",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_003924_d58cef07-9616-4468-8c46-b3d05e52f49b.png",
+    "created_at": 1784680764.838782,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "0aac2f45-296d-4c18-ae58-1a7747123974",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/0aac2f45-296d-4c18-ae58-1a7747123974.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Professional editorial re-light of this exact group portrait of four doctors. CRITICAL: all four people must remain exactly the same — identical faces, features, hair, expressions, poses, arrangement and clothing. Do not alter anyone's facial structure. Only elevate the photography: unify lighting into soft studio key with gentle rim, replace the flat blue-gray wall with a deep slate-blue studio backdrop with subtle vignette and falloff, clean up the harsh cut-out edges around hair and shoulders, natural skin texture, medium format quality. Photorealistic."
+    }
+  }
+]

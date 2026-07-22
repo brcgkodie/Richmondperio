@@ -1,0 +1,30 @@
+[
+  {
+    "id": "6ad34647-d276-47e2-8663-0bcad2a354da",
+    "status": "completed",
+    "display_name": "Seedream 5.0 Pro",
+    "job_set_type": "seedream_v5_pro",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_003058_6ad34647-d276-47e2-8663-0bcad2a354da.png",
+    "created_at": 1784680258.697885,
+    "params": {
+      "prompt": "Award-winning twilight architectural photograph of this exact white brick dental office building with green awnings and gray gable roofs. Blue hour sky with deep indigo gradient, every window glowing warm amber from inside, green awning entrance lit softly from below, wet-look asphalt reflecting the warm light, silhouetted pines behind the roofline. Shot on Phase One, 35mm tilt-shift, perfectly level verticals, luxury healthcare brand campaign quality. Keep the building architecture and signage exactly as the reference. Photorealistic, no people.",
+      "medias": [
+        {
+          "data": {
+            "id": "9e69b0f5-fb85-4a0a-90d9-1b1d04c0e703",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/9e69b0f5-fb85-4a0a-90d9-1b1d04c0e703.png",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "batch_size": 1,
+      "aspect_ratio": "1:1",
+      "width": 2048,
+      "height": 2048,
+      "resolution": "2k",
+      "seed": 891106,
+      "reference_elements": []
+    }
+  }
+]

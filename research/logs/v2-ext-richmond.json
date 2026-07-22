@@ -1,0 +1,30 @@
+[
+  {
+    "id": "030a6dc7-e2e0-4c29-8c41-b887d7112b5e",
+    "status": "completed",
+    "display_name": "Seedream 5.0 Pro",
+    "job_set_type": "seedream_v5_pro",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_003059_030a6dc7-e2e0-4c29-8c41-b887d7112b5e.png",
+    "created_at": 1784680259.598646,
+    "params": {
+      "prompt": "Award-winning twilight architectural photograph of this exact tan gambrel-roof converted-house dental office with black shutters and white french-door entrance. Blue hour, warm golden light glowing from every window and the glass entrance, brick garden walls and yellow flower beds subtly uplit, dewy manicured lawn, soft indigo sky with a few stars. Shot on Phase One, 35mm tilt-shift, perfectly level verticals, luxury boutique-practice brand campaign. Keep the house architecture exactly as the reference, remove the hanging sign entirely. Photorealistic, no people, no cars.",
+      "medias": [
+        {
+          "data": {
+            "id": "34464e39-d886-429d-9d1b-016bbb9b83d0",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/34464e39-d886-429d-9d1b-016bbb9b83d0.png",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "batch_size": 1,
+      "aspect_ratio": "1:1",
+      "width": 2048,
+      "height": 2048,
+      "resolution": "2k",
+      "seed": 896485,
+      "reference_elements": []
+    }
+  }
+]

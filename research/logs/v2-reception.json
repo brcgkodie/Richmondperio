@@ -1,0 +1,30 @@
+[
+  {
+    "id": "d5b9cc2c-04bf-4d34-81c8-99f68e4d5e4f",
+    "status": "completed",
+    "display_name": "Seedream 5.0 Pro",
+    "job_set_type": "seedream_v5_pro",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_003057_d5b9cc2c-04bf-4d34-81c8-99f68e4d5e4f.png",
+    "created_at": 1784680257.659837,
+    "params": {
+      "prompt": "Award-winning interior photograph of this exact dental reception: stacked-stone desk with marble top, white-framed reception window, pale blue walls. Recompose slightly wider and lower, one-point perspective centered on the stone desk, late golden-hour sun raking through the interior window casting long warm shadows across the stone texture, white orchid catching the light, subtle atmospheric haze in the sunbeam, dark moody edges framing a glowing warm center. Kinfolk magazine interior story, medium format, photorealistic. Keep the room's real materials and layout.",
+      "medias": [
+        {
+          "data": {
+            "id": "c9b9e381-6f35-4823-a18e-4ffc47086888",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/c9b9e381-6f35-4823-a18e-4ffc47086888.png",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "batch_size": 1,
+      "aspect_ratio": "1:1",
+      "width": 2048,
+      "height": 2048,
+      "resolution": "2k",
+      "seed": 645421,
+      "reference_elements": []
+    }
+  }
+]

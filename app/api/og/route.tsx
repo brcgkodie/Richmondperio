@@ -1,5 +1,7 @@
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
+import { readFile } from "fs/promises";
+import path from "path";
 
 export const runtime = "nodejs";
 
@@ -14,18 +16,19 @@ export async function GET(req: NextRequest) {
     searchParams.get("subtitle") ??
     "Board-Certified Periodontists — Richmond & Midlothian, VA";
 
+  const assets = path.join(
+    process.cwd(),
+    "app",
+    "api",
+    "og",
+    "assets",
+  );
   const [serifFont, logoData] = await Promise.all([
-    fetch(new URL("/fonts/InstrumentSerif-Regular.woff2", req.url)).then((r) =>
-      r.arrayBuffer(),
-    ),
-    fetch(new URL("/images/grove-logo-white.png", req.url)).then((r) =>
-      r.arrayBuffer(),
-    ),
+    readFile(path.join(assets, "InstrumentSerif-Regular.ttf")),
+    readFile(path.join(assets, "grove-logo-white.png")),
   ]);
 
-  const logoSrc = `data:image/png;base64,${Buffer.from(logoData).toString(
-    "base64",
-  )}`;
+  const logoSrc = `data:image/png;base64,${logoData.toString("base64")}`;
 
   return new ImageResponse(
     (
@@ -41,32 +44,23 @@ export async function GET(req: NextRequest) {
           position: "relative",
         }}
       >
-        {/* subtle top accent line */}
         <div
           style={{
             position: "absolute",
             top: 0,
             left: 0,
-            width: "100%",
+            width: 1200,
             height: 6,
             backgroundColor: TEAL,
             display: "flex",
           }}
         />
-        {/* logo row */}
         <div style={{ display: "flex", alignItems: "center" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={logoSrc} alt="" height={44} />
+          <img src={logoSrc} alt="" height={56} />
         </div>
 
-        {/* headline */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: 24,
-          }}
-        >
+        <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
           <div
             style={{
               fontFamily: "Instrument Serif",

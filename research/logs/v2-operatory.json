@@ -1,0 +1,30 @@
+[
+  {
+    "id": "a7024eba-7c6a-4f06-a398-90bc3f834607",
+    "status": "completed",
+    "display_name": "Seedream 5.0 Pro",
+    "job_set_type": "seedream_v5_pro",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_003058_a7024eba-7c6a-4f06-a398-90bc3f834607.png",
+    "created_at": 1784680258.877443,
+    "params": {
+      "prompt": "Award-winning interior photograph of this exact dental treatment room: tan chair, dark walnut cabinets, white marble counters, pale blue walls, window with venetian blinds onto green trees. Recompose as a calm hero shot: low three-quarter angle on the chair, dramatic late-sun venetian-blind light stripes raking across the chair and floor, the overhead light arm silhouetted elegantly, cool shadow tones against warm highlights, spa-like serenity, medium format, luxury medical brand campaign. Keep the room's real equipment and materials. Photorealistic.",
+      "medias": [
+        {
+          "data": {
+            "id": "9dd0be21-4927-47e6-bd79-2f0f8259e6ef",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/9dd0be21-4927-47e6-bd79-2f0f8259e6ef.png",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "batch_size": 1,
+      "aspect_ratio": "1:1",
+      "width": 2048,
+      "height": 2048,
+      "resolution": "2k",
+      "seed": 954706,
+      "reference_elements": []
+    }
+  }
+]

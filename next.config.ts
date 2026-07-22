@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  outputFileTracingIncludes: {
+    "/api/og": ["./app/api/og/assets/**"],
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "efa7d162-05eb-4160-8338-3a20062c17c2",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_003937_efa7d162-05eb-4160-8338-3a20062c17c2.mp4",
+    "created_at": 1784680777.084861,
+    "params": {
+      "width": 1280,
+      "height": 720,
+      "prompt": "Ultra-slow cinematic dolly push-in toward the glowing green-awning entrance of this dental office at blue hour. Camera glides forward smoothly and continuously, perfectly level. Warm window light flickers subtly, pine trees sway gently, a few clouds drift slowly in the deep blue sky. No people, no cars, no text changes. Luxury brand film, photoreal, tripod-stable, constant speed.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "a77296a0-6cf8-43c0-8812-990a86a14786",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/a77296a0-6cf8-43c0-8812-990a86a14786.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        }
+      ],
+      "duration": 8,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "std",
+      "model": "seedance_2_0",
+      "bitrate_mode": "standard"
+    }
+  }
+]

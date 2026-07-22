@@ -1,0 +1,30 @@
+[
+  {
+    "id": "33a6294b-b6d0-4fbf-859d-178ada34a195",
+    "status": "completed",
+    "display_name": "Seedream 5.0 Pro",
+    "job_set_type": "seedream_v5_pro",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_003050_33a6294b-b6d0-4fbf-859d-178ada34a195.png",
+    "created_at": 1784680250.662712,
+    "params": {
+      "prompt": "Award-winning brand photograph of this exact dental office entrance: dark green fabric awning with white tooth-and-implant logo over a glass door in white painted brick. Recompose as a tight symmetrical one-point shot centered on the awning and door, dusk light, awning logo glowing softly backlit, warm light spilling through the glass door onto the concrete, deep green awning color rich and saturated against cream brick, subtle vignette. Luxury boutique storefront campaign, medium format, photorealistic. Keep the awning logo shape exactly; render any small signage as softly out of focus.",
+      "medias": [
+        {
+          "data": {
+            "id": "4ceb3e60-ca53-4293-bd32-cadeadc24ab0",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/4ceb3e60-ca53-4293-bd32-cadeadc24ab0.png",
+            "type": "media_input"
+          },
+          "role": "image"
+        }
+      ],
+      "batch_size": 1,
+      "aspect_ratio": "1:1",
+      "width": 2048,
+      "height": 2048,
+      "resolution": "2k",
+      "seed": 59008,
+      "reference_elements": []
+    }
+  }
+]
