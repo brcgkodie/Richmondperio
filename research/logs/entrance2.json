@@ -1,0 +1,28 @@
+[
+  {
+    "id": "e63e1d65-a98c-4f32-bf0c-b93ac3f6e844",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260721_235522_e63e1d65-a98c-4f32-bf0c-b93ac3f6e844.png",
+    "created_at": 1784678122.015057,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "51274f57-bd26-4eb5-821b-87bdf7a3b6c8",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/51274f57-bd26-4eb5-821b-87bdf7a3b6c8.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Only adjust global lighting and color: make it bright pleasant daylight with richer contrast, like a professional architectural photo. CRITICAL: do not redraw, retouch or modify ANY text, letters, signs or logos anywhere in the image — the green awning logo, the wall sign, the door lettering, the address numbers and the parking sign must remain pixel-identical to the original. Do not add or remove any objects."
+    }
+  }
+]

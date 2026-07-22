@@ -105,6 +105,34 @@ export default function AboutPage() {
         </section>
       </SectionReveal>
 
+      {/* Our Offices */}
+      <SectionReveal>
+        <section className="pb-16 md:pb-24">
+          <div className="mx-auto max-w-7xl px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="relative aspect-[4/3] overflow-hidden bg-navy/5">
+                <Image
+                  src="/images/practice/reception-desk.jpg"
+                  alt="Reception area at Grove Periodontists"
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden bg-navy/5">
+                <Image
+                  src="/images/practice/operatory.jpg"
+                  alt="Treatment room equipped with modern surgical technology"
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </SectionReveal>
+
       {/* Mission */}
       <SectionReveal>
         <section className="bg-[#182838] py-16 md:py-24">

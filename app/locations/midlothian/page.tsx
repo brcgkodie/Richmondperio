@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { LOCATIONS } from "@/lib/constants";
 import SectionReveal from "@/components/shared/SectionReveal";
 import CTABand from "@/components/shared/CTABand";
@@ -87,16 +88,63 @@ export default function MidlothianLocationPage() {
                 </a>
               </div>
 
-              {/* Map */}
-              <div className="relative aspect-square w-full overflow-hidden bg-navy/5">
-                <iframe
-                  src={midlothian.mapEmbed}
-                  className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700 border-0"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Midlothian Office Map"
-                  allowFullScreen
-                />
+              {/* Photo + Map */}
+              <div className="flex flex-col gap-6">
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-navy/5">
+                  <Image
+                    src="/images/practice/exterior-midlothian.jpg"
+                    alt={midlothian.imageAlt}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-navy/5">
+                  <iframe
+                    src={midlothian.mapEmbed}
+                    className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700 border-0"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Midlothian Office Map"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Inside the office */}
+            <div className="mt-16">
+              <h3 className="label-sm text-teal/60 mb-6">
+                Inside Our Midlothian Office
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="relative aspect-[3/4] overflow-hidden bg-navy/5">
+                  <Image
+                    src="/images/practice/entrance-midlothian.jpg"
+                    alt="Entrance to the Midlothian office"
+                    fill
+                    sizes="(min-width: 640px) 33vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative aspect-[3/4] overflow-hidden bg-navy/5">
+                  <Image
+                    src="/images/practice/reception.jpg"
+                    alt="Reception area at the Midlothian office"
+                    fill
+                    sizes="(min-width: 640px) 33vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative aspect-[3/4] overflow-hidden bg-navy/5">
+                  <Image
+                    src="/images/practice/operatory.jpg"
+                    alt="Treatment room at the Midlothian office"
+                    fill
+                    sizes="(min-width: 640px) 33vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1c174601-5c1f-4d3f-a1ce-b95b73c37704",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260721_235323_1c174601-5c1f-4d3f-a1ce-b95b73c37704.png",
+    "created_at": 1784678003.018332,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "aa26cbca-0b92-4ca8-ae05-913e6cb8a843",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/aa26cbca-0b92-4ca8-ae05-913e6cb8a843.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Remove the people behind the desk, the white air purifier on the floor, and the loose papers, cards and small signs on the countertop. Keep the exact same reception unchanged: stacked stone desk, marble counter, yellow orchid in black pot, pale blue walls, wood door, pendant light. Professional interior photography lighting, warm and inviting. Photorealistic."
+    }
+  }
+]

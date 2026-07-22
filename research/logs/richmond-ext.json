@@ -1,0 +1,28 @@
+[
+  {
+    "id": "e6147b2d-a185-4f49-a0b2-4f8c027963e8",
+    "status": "nsfw",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "",
+    "created_at": 1784678236.096569,
+    "params": {
+      "width": 1024,
+      "height": 1024,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "fb95c2a0-ff4c-460f-8129-46f07318012d",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/fb95c2a0-ff4c-460f-8129-46f07318012d.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Remove the red pickup truck in the foreground and any faint watermark text overlays. Keep the exact same building unchanged: tan two-story gambrel-roof converted house with black shutters, white french-door entrance, brick garden wall, yellow flowers, landscaping, sidewalk and trees. Improve to bright, pleasant professional architectural photography with natural daylight. Photorealistic, no structural changes."
+    }
+  }
+]

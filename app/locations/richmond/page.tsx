@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { LOCATIONS } from "@/lib/constants";
 import SectionReveal from "@/components/shared/SectionReveal";
 import CTABand from "@/components/shared/CTABand";
@@ -87,8 +88,18 @@ export default function RichmondLocationPage() {
                 </a>
               </div>
 
-              {/* Map */}
-              <div className="relative aspect-square w-full overflow-hidden bg-navy/5">
+              {/* Photo + Map */}
+              <div className="flex flex-col gap-6">
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-navy/5">
+                  <Image
+                    src="/images/practice/exterior-richmond.jpg"
+                    alt={richmond.imageAlt}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-navy/5">
                 <iframe
                   src={richmond.mapEmbed}
                   className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700 border-0"
@@ -97,6 +108,7 @@ export default function RichmondLocationPage() {
                   title="Richmond Office Map"
                   allowFullScreen
                 />
+                </div>
               </div>
             </div>
           </div>

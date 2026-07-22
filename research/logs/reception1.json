@@ -1,0 +1,28 @@
+[
+  {
+    "id": "4b23fa78-df4b-4dc1-8e59-61dcddb35007",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260721_235322_4b23fa78-df4b-4dc1-8e59-61dcddb35007.png",
+    "created_at": 1784678002.825718,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "0f171f51-26ab-4f99-af37-6869400ad047",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/0f171f51-26ab-4f99-af37-6869400ad047.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Remove the person behind the desk, the purple thermometer on the counter, and the tissue box. Keep the exact same reception area unchanged: stacked stone desk front, gray marble countertop, white-framed reception window, pale blue walls, abstract artwork, green plant, wood cabinets. Brighten to warm, inviting professional interior photography lighting. Photorealistic."
+    }
+  }
+]

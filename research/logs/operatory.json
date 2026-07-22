@@ -1,0 +1,28 @@
+[
+  {
+    "id": "424160c1-e11d-433f-ae4c-bc950c434517",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260721_235322_424160c1-e11d-433f-ae4c-bc950c434517.png",
+    "created_at": 1784678002.671045,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "56427d95-1f67-4f73-8a43-47deb22be986",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/56427d95-1f67-4f73-8a43-47deb22be986.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Remove the protective plastic wrap on the dental light and chair, and the pink gloves visible in the cabinet cutouts. Keep the exact same treatment room unchanged: tan dental chair, dark wood-grain cabinets, white marble counters, pale blue walls, window with blinds and green trees outside, monitor and equipment. Bright, clean professional interior photography. Photorealistic."
+    }
+  }
+]

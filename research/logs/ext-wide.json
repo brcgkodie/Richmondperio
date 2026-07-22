@@ -1,0 +1,28 @@
+[
+  {
+    "id": "6434fb3d-4aaf-4403-84ee-2f972dbc2ee9",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260721_235322_6434fb3d-4aaf-4403-84ee-2f972dbc2ee9.png",
+    "created_at": 1784678002.995937,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "a6ade875-f5e3-4c3b-9be6-c51167204b6d",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/a6ade875-f5e3-4c3b-9be6-c51167204b6d.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Remove the large red arrow graphic drawn over the sky, and remove the parked cars. Keep the exact same white brick dental office building, green awnings, roof, trees, parking lot and all signage text completely unchanged. Subtly improve exposure and color like a professional architectural photograph. Photorealistic, no other changes."
+    }
+  }
+]

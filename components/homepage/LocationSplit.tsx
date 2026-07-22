@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import { LOCATIONS } from "@/lib/constants";
 
@@ -76,8 +77,18 @@ export default function LocationSplit() {
               ref={(el) => {
                 cardRefs.current[i] = el;
               }}
-              className="bg-white p-8 md:p-12 border-l-2 border-teal transition-colors duration-300 hover:border-blue"
+              className="bg-white border-l-2 border-teal transition-colors duration-300 hover:border-blue"
             >
+              <div className="relative aspect-[16/9] w-full overflow-hidden">
+                <Image
+                  src={loc.image}
+                  alt={loc.imageAlt}
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-8 md:p-12">
               <h3 className="heading-md text-navy mb-4">
                 {loc.name}
               </h3>
@@ -138,6 +149,7 @@ export default function LocationSplit() {
               >
                 <span>Get Directions</span>
               </Link>
+              </div>
             </div>
           ))}
         </div>

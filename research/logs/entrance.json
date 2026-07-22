@@ -1,0 +1,28 @@
+[
+  {
+    "id": "0c8ba118-e455-4ed8-a1b6-7646eca440ff",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260721_235322_0c8ba118-e455-4ed8-a1b6-7646eca440ff.png",
+    "created_at": 1784678002.804729,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "7f95a129-9e88-459a-a2f0-b704ba6dbe4d",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/7f95a129-9e88-459a-a2f0-b704ba6dbe4d.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Keep this exact building entrance photo unchanged: green awning with white tooth logo, white painted brick, glass door, address 11301-B, all signage text exactly as-is. Only improve it to bright, pleasant daylight with richer color and contrast, like a professional architectural photograph. Photorealistic, no structural changes."
+    }
+  }
+]
