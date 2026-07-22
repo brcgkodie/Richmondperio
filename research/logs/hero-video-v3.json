@@ -1,0 +1,39 @@
+[
+  {
+    "id": "37d2eee1-a297-418b-a4be-d9a9849cce99",
+    "status": "completed",
+    "display_name": "Seedance 2.0",
+    "job_set_type": "seedance_2_0",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_012525_37d2eee1-a297-418b-a4be-d9a9849cce99.mp4",
+    "created_at": 1784683525.911676,
+    "params": {
+      "width": 1280,
+      "height": 720,
+      "prompt": "Slow, smooth cinematic camera move forward toward the entrance of this dental office building in the evening. The camera glides gently and stays level. Window lights glow warmly, pine trees sway softly in the breeze, clouds drift across the sky. Photorealistic architectural film, steady and calm.",
+      "genre": "auto",
+      "medias": [
+        {
+          "data": {
+            "id": "6487c0f1-5b01-4c6d-85d5-eff8af8bf1f3",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/6487c0f1-5b01-4c6d-85d5-eff8af8bf1f3.png",
+            "type": "media_input"
+          },
+          "role": "start_image"
+        }
+      ],
+      "duration": 8,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "generate_audio": true,
+      "multi_shots": false,
+      "multi_shot_mode": "custom",
+      "multi_prompt": [],
+      "speedramp": "auto",
+      "reference_elements": [],
+      "prompt_language": "en",
+      "mode": "std",
+      "model": "seedance_2_0",
+      "bitrate_mode": "standard"
+    }
+  }
+]

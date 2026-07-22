@@ -1,0 +1,28 @@
+[
+  {
+    "id": "8848a485-087f-48a9-a75e-f04d65532cf0",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/hf_20260722_011927_8848a485-087f-48a9-a75e-f04d65532cf0.png",
+    "created_at": 1784683167.484964,
+    "params": {
+      "width": 2048,
+      "height": 2048,
+      "aspect_ratio": "1:1",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "6ebd24f8-5a44-4157-a45e-31463536b95b",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B64M52Omm16mpkOIvhgcbgXHCw/6ebd24f8-5a44-4157-a45e-31463536b95b.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Keep this exact twilight photo unchanged except for one edit: the right-hand entrance pavilion's green awning currently shows text reading '11301-C Family Dentistry Daniel R. Leahy, D.D.S.' — replace that awning with a plain dark green awning with NO text or lettering at all, and remove any lettering on the glass door beneath it. Do not change anything else: same building, lighting, glowing windows, sky, trees, parking lot, and the left awning with the white tooth logo stays exactly as-is. Photorealistic."
+    }
+  }
+]
